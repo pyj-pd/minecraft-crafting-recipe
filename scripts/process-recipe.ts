@@ -17,7 +17,7 @@ import * as z from 'zod'
 // Paths
 const RAW_RECIPE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
-  '../data/recipes/'
+  '../data/raw_recipes/'
 )
 const PROCESSED_RECIPE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
@@ -27,19 +27,31 @@ const PROCESSED_RECIPE_DATA_FOLDER = path.resolve(
 // Recipe
 const DEFAULT_ITEM_COUNT = 1
 
+async function parseRawRecipeDataFile(fileContent: string) {
+  try {
+    const rawRecipeData = await RawRecipeData.parseAsync(
+      JSON.parse(fileContent)
+    )
+
+    return rawRecipeData
+  } catch {
+    return null
+  }
+}
+
 /**
  * @see https://minecraft.wiki/w/Recipe
  */
 export async function processRawRecipeData() {
   const rawRecipeFileList = await readdir(RAW_RECIPE_DATA_FOLDER)
 
+  let processed = 0
+
   for (const fileName of rawRecipeFileList) {
     const filePath = path.join(RAW_RECIPE_DATA_FOLDER, fileName)
     const fileContent = await readFile(filePath, { encoding: 'utf-8' })
 
-    const rawRecipeData = await RawRecipeData.parseAsync(
-      JSON.parse(fileContent)
-    ).catch(() => null)
+    const rawRecipeData = await parseRawRecipeDataFile(fileContent)
 
     if (rawRecipeData === null) continue
 
@@ -62,7 +74,12 @@ export async function processRawRecipeData() {
 
     const processedFilePath = path.join(PROCESSED_RECIPE_DATA_FOLDER, fileName)
     await writeFile(processedFilePath, JSON.stringify(recipeData))
+    processed++
   }
+
+  console.log(
+    `Processed ${processed} file${processed > 1 ? 's' : ''} successfully.`
+  )
 }
 
 /**
