@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 
 # Raw data
-data/raw_recipes/*
-!data/raw_recipes/.gitkeep
+data/raw_data/lang/*
+data/raw_data/recipe/*
+!.gitkeep

@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "process:language-data": "tsx ./scripts/process-language.ts",
     "process:recipe-data": "tsx ./scripts/process-recipe.ts",
+    "process": "pnpm run process:language-data && pnpm run process:recipe-data",
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "pnpm process && vue-tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -7,5 +7,6 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 # How to process recipe data
 
 1. Download Minecraft client `.jar` file.
-1. Copy all contents inside the `data/minecraft/recipe` folder inside that JAR file.
+1. Copy `data/minecraft/recipe` folder entirely inside that JAR file into `data/raw_data` folder in project directory.
+1. Copy `assets/minecraft/lang` folder entirely inside that JAR file into `data/raw_data` folder in project directory.
 1. Run `pnpm run process:recipe-data` command.

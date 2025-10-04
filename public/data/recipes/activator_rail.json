@@ -1,1 +1,16 @@
-{"type":"shaped","itemId":"minecraft:activator_rail","count":6,"recipe":{"grid":[["minecraft:iron_ingot","minecraft:stick","minecraft:iron_ingot"],["minecraft:iron_ingot","minecraft:redstone_torch","minecraft:iron_ingot"],["minecraft:iron_ingot","minecraft:stick","minecraft:iron_ingot"]]}}
+{
+  "type": "shaped",
+  "itemId": "minecraft:activator_rail",
+  "count": 6,
+  "recipe": {
+    "grid": [
+      ["minecraft:iron_ingot", "minecraft:stick", "minecraft:iron_ingot"],
+      [
+        "minecraft:iron_ingot",
+        "minecraft:redstone_torch",
+        "minecraft:iron_ingot"
+      ],
+      ["minecraft:iron_ingot", "minecraft:stick", "minecraft:iron_ingot"]
+    ]
+  }
+}

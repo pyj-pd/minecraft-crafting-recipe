@@ -4,12 +4,8 @@ import {
   RawRecipeData,
   RawShapedRecipeData,
   RawShapelessRecipeData,
-} from '../types/recipe/raw'
-import {
   ShapedRecipe,
   ShapedRecipeGrid,
-  ShapedRecipeItem,
-  ShapedRecipeRow,
   ShapelessRecipe,
 } from '../types/recipe'
 import * as z from 'zod'
@@ -17,7 +13,7 @@ import * as z from 'zod'
 // Paths
 const RAW_RECIPE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
-  '../data/raw_recipes/'
+  '../data/raw_data/recipe'
 )
 const PROCESSED_RECIPE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
@@ -53,7 +49,7 @@ export async function processRawRecipeData() {
 
     const rawRecipeData = await parseRawRecipeDataFile(fileContent)
 
-    if (rawRecipeData === null) continue
+    if (rawRecipeData === null) continue // Invalid file format
 
     let recipeData
 
@@ -70,7 +66,7 @@ export async function processRawRecipeData() {
         break
     }
 
-    if (typeof recipeData !== 'object') continue
+    if (typeof recipeData !== 'object') continue // The data was not parsed
 
     const processedFilePath = path.join(PROCESSED_RECIPE_DATA_FOLDER, fileName)
     await writeFile(processedFilePath, JSON.stringify(recipeData))
@@ -78,7 +74,9 @@ export async function processRawRecipeData() {
   }
 
   console.log(
-    `Processed ${processed} file${processed > 1 ? 's' : ''} successfully.`
+    `Processed ${processed} recipe file${
+      processed > 1 ? 's' : ''
+    } successfully.`
   )
 }
 

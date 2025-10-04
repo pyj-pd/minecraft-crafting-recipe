@@ -1,5 +1,5 @@
 import * as z from 'zod'
-import { ItemId, ItemTag } from './minecraft'
+import { ItemId, ItemTag } from '../minecraft'
 
 const RecipeDataCommon = z.object({
   itemId: ItemId,
