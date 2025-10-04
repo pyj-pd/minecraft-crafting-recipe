@@ -1,0 +1,48 @@
+import * as z from 'zod'
+import { ItemId, ItemTag } from './minecraft'
+
+const RecipeDataCommon = z.object({
+  itemId: ItemId,
+  count: z.number(),
+})
+
+// Shaped recipe
+export const ShapedRecipeType = z.literal('shaped')
+
+export const ShapedRecipeItem = z.union([z.null(), ItemId, ItemTag])
+
+export const ShapedRecipeRow = z.tuple([
+  ShapedRecipeItem,
+  ShapedRecipeItem,
+  ShapedRecipeItem,
+])
+
+export const ShapedRecipeGrid = z.tuple([
+  ShapedRecipeRow,
+  ShapedRecipeRow,
+  ShapedRecipeRow,
+])
+
+export const ShapedRecipe = RecipeDataCommon.extend({
+  type: ShapedRecipeType,
+  recipe: z.object({ grid: ShapedRecipeGrid }),
+})
+
+export type ShapedRecipe = z.infer<typeof ShapedRecipe>
+
+// Shapeless recipe
+export const ShapelessRecipeType = z.literal('shapeless')
+
+export const ShapelessRecipeItem = z.union([ItemId, ItemTag])
+
+export const ShapelessRecipe = RecipeDataCommon.extend({
+  type: ShapelessRecipeType,
+  recipe: z.object({ items: z.array(ShapelessRecipeItem) }),
+})
+
+export type ShapelessRecipe = z.infer<typeof ShapelessRecipe>
+
+// Recipe data
+export const RecipeData = z.union([ShapedRecipe, ShapelessRecipe])
+
+export type RecipeData = z.infer<typeof RecipeData>
