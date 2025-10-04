@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:stone_hoe","count":1,"recipe":{"grid":[["#minecraft:stone_tool_materials","#minecraft:stone_tool_materials",null],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}
+{"type":"shaped","itemId":"minecraft:stone_hoe","count":1,"recipe":{"grid":[["#minecraft:stone_tool_materials","#minecraft:stone_tool_materials",null],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]},"tags":{"#minecraft:stone_tool_materials":["minecraft:cobblestone","minecraft:blackstone","minecraft:cobbled_deepslate"]}}

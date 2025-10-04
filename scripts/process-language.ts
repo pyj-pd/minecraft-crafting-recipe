@@ -2,6 +2,12 @@ import { readdir, readFile, writeFile } from 'fs/promises'
 import path from 'path'
 import { LanguageData, RawLanguageFile } from '../types/language'
 import { minecraftPrefix } from '../types/minecraft'
+import {
+  getFileNameWithoutExtension,
+  parseRawFile,
+  PARSING_TAG_TYPES,
+} from './common'
+import { getTagData } from './process-tags'
 
 // Paths
 const RAW_LANGUAGE_DATA_FOLDER = path.resolve(
@@ -14,31 +20,8 @@ const PROCESSED_LANGUAGE_DATA_FOLDER = path.resolve(
 )
 
 // Strings
-const TO_PARSE_ID = ['block', 'item']
-
 const TRANSLATION_SEPARATOR = '.'
 const ITEM_SEPARATOR = ':'
-
-const EXTENSION_SEPARATOR = '.'
-
-async function parseRawLanguageFile(fileContent: string) {
-  try {
-    const rawLanguageData = await RawLanguageFile.parseAsync(
-      JSON.parse(fileContent)
-    )
-
-    return rawLanguageData
-  } catch {
-    return null
-  }
-}
-
-function getLanguageId(fileName: string) {
-  const lastIndex = fileName.lastIndexOf(EXTENSION_SEPARATOR)
-
-  if (lastIndex < 0) return fileName
-  else return fileName.substring(0, lastIndex)
-}
 
 export async function processRawLanguageData() {
   const rawLanguageFileList = await readdir(RAW_LANGUAGE_DATA_FOLDER)
@@ -49,18 +32,18 @@ export async function processRawLanguageData() {
     const filePath = path.join(RAW_LANGUAGE_DATA_FOLDER, fileName)
     const fileContent = await readFile(filePath, { encoding: 'utf-8' })
 
-    const rawLanguageData = await parseRawLanguageFile(fileContent)
+    const rawLanguageData = await parseRawFile(fileContent, RawLanguageFile)
 
     if (rawLanguageData === null) continue // Invalid file format
 
-    const languageId = getLanguageId(fileName)
+    const languageId = getFileNameWithoutExtension(fileName)
 
     const languageData: LanguageData = { languageId, translations: {} }
 
     for (const [key, translation] of Object.entries(rawLanguageData)) {
       const splitKeys = key.split(TRANSLATION_SEPARATOR)
 
-      if (!TO_PARSE_ID.includes(splitKeys[0])) continue // Only useful translations
+      if (!PARSING_TAG_TYPES.includes(splitKeys[0])) continue // Only useful translations
 
       const itemKeys = splitKeys.slice(1) // Remove key types(such as `item.`, `block.`)
 

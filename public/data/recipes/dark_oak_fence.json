@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:dark_oak_fence","count":3,"recipe":{"grid":[["minecraft:dark_oak_planks","minecraft:stick","minecraft:dark_oak_planks"],["minecraft:dark_oak_planks","minecraft:stick","minecraft:dark_oak_planks"],[null,null,null]]}}
+{"type":"shaped","itemId":"minecraft:dark_oak_fence","count":3,"recipe":{"grid":[["minecraft:dark_oak_planks","minecraft:stick","minecraft:dark_oak_planks"],["minecraft:dark_oak_planks","minecraft:stick","minecraft:dark_oak_planks"],[null,null,null]]},"tags":{}}

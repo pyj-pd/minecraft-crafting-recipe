@@ -1,9 +1,13 @@
 import * as z from 'zod'
 import { ItemId, ItemTag } from '../minecraft'
 
+export const RecipeDataTagData = z.record(ItemTag, ItemId).optional()
+export type RecipeDataTagData = z.infer<typeof RecipeDataTagData>
+
 const RecipeDataCommon = z.object({
   itemId: ItemId,
   count: z.number(),
+  tags: RecipeDataTagData,
 })
 
 // Shaped recipe

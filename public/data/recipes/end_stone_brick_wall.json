@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:end_stone_brick_wall","count":6,"recipe":{"grid":[["minecraft:end_stone_bricks","minecraft:end_stone_bricks","minecraft:end_stone_bricks"],["minecraft:end_stone_bricks","minecraft:end_stone_bricks","minecraft:end_stone_bricks"],[null,null,null]]}}
+{"type":"shaped","itemId":"minecraft:end_stone_brick_wall","count":6,"recipe":{"grid":[["minecraft:end_stone_bricks","minecraft:end_stone_bricks","minecraft:end_stone_bricks"],["minecraft:end_stone_bricks","minecraft:end_stone_bricks","minecraft:end_stone_bricks"],[null,null,null]]},"tags":{}}

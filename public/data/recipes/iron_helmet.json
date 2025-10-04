@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:iron_helmet","count":1,"recipe":{"grid":[["minecraft:iron_ingot","minecraft:iron_ingot","minecraft:iron_ingot"],["minecraft:iron_ingot",null,"minecraft:iron_ingot"],[null,null,null]]}}
+{"type":"shaped","itemId":"minecraft:iron_helmet","count":1,"recipe":{"grid":[["minecraft:iron_ingot","minecraft:iron_ingot","minecraft:iron_ingot"],["minecraft:iron_ingot",null,"minecraft:iron_ingot"],[null,null,null]]},"tags":{}}

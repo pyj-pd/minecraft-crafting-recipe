@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:copper_axe","count":1,"recipe":{"grid":[["#minecraft:copper_tool_materials","#minecraft:copper_tool_materials",null],["#minecraft:copper_tool_materials","minecraft:stick",null],[null,"minecraft:stick",null]]}}
+{"type":"shaped","itemId":"minecraft:copper_axe","count":1,"recipe":{"grid":[["#minecraft:copper_tool_materials","#minecraft:copper_tool_materials",null],["#minecraft:copper_tool_materials","minecraft:stick",null],[null,"minecraft:stick",null]]},"tags":{"#minecraft:copper_tool_materials":["minecraft:copper_ingot"]}}

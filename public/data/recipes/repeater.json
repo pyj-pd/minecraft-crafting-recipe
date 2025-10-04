@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:repeater","count":1,"recipe":{"grid":[["minecraft:redstone_torch","minecraft:redstone","minecraft:redstone_torch"],["minecraft:stone","minecraft:stone","minecraft:stone"],[null,null,null]]}}
+{"type":"shaped","itemId":"minecraft:repeater","count":1,"recipe":{"grid":[["minecraft:redstone_torch","minecraft:redstone","minecraft:redstone_torch"],["minecraft:stone","minecraft:stone","minecraft:stone"],[null,null,null]]},"tags":{}}

@@ -4,11 +4,15 @@ import {
   RawRecipeData,
   RawShapedRecipeData,
   RawShapelessRecipeData,
+  RecipeDataTagData,
   ShapedRecipe,
   ShapedRecipeGrid,
   ShapelessRecipe,
 } from '../types/recipe'
 import * as z from 'zod'
+import { parseRawFile } from './common'
+import { getTagData } from './process-tags'
+import { ITEM_TAG_PREFIX } from '../types/minecraft'
 
 // Paths
 const RAW_RECIPE_DATA_FOLDER = path.resolve(
@@ -23,17 +27,8 @@ const PROCESSED_RECIPE_DATA_FOLDER = path.resolve(
 // Recipe
 const DEFAULT_ITEM_COUNT = 1
 
-async function parseRawRecipeDataFile(fileContent: string) {
-  try {
-    const rawRecipeData = await RawRecipeData.parseAsync(
-      JSON.parse(fileContent)
-    )
-
-    return rawRecipeData
-  } catch {
-    return null
-  }
-}
+// Tags
+const tagData = await getTagData()
 
 /**
  * @see https://minecraft.wiki/w/Recipe
@@ -42,12 +37,11 @@ export async function processRawRecipeData() {
   const rawRecipeFileList = await readdir(RAW_RECIPE_DATA_FOLDER)
 
   let processed = 0
-
   for (const fileName of rawRecipeFileList) {
     const filePath = path.join(RAW_RECIPE_DATA_FOLDER, fileName)
     const fileContent = await readFile(filePath, { encoding: 'utf-8' })
 
-    const rawRecipeData = await parseRawRecipeDataFile(fileContent)
+    const rawRecipeData = await parseRawFile(fileContent, RawRecipeData)
 
     if (rawRecipeData === null) continue // Invalid file format
 
@@ -95,6 +89,8 @@ async function processShapedRecipeData(data: RawShapedRecipeData) {
     ] as z.infer<typeof ShapedRecipeGrid>,
   }
 
+  const tags: RecipeDataTagData = {}
+
   for (
     let patternIndex = 0;
     patternIndex < data.pattern.length;
@@ -105,7 +101,13 @@ async function processShapedRecipeData(data: RawShapedRecipeData) {
     for (let keyIndex = 0; keyIndex < rawPatternRow.length; keyIndex++) {
       const key = rawPatternRow[keyIndex]
 
-      if (key in data.key) recipe.grid[patternIndex][keyIndex] = data.key[key]
+      if (!(key in data.key)) continue
+
+      const id = data.key[key]
+      recipe.grid[patternIndex][keyIndex] = id
+
+      if (id.startsWith(ITEM_TAG_PREFIX) && !(id in tags))
+        tags[id] = tagData[id]
     }
   }
 
@@ -114,6 +116,7 @@ async function processShapedRecipeData(data: RawShapedRecipeData) {
     itemId: data.result.id,
     count: data.result.count ?? DEFAULT_ITEM_COUNT,
     recipe,
+    tags,
   }
 
   return processedData
@@ -126,6 +129,14 @@ async function processShapedRecipeData(data: RawShapedRecipeData) {
  * @see https://minecraft.wiki/w/Recipe#crafting_shapeless
  */
 async function processShapelessRecipeData(data: RawShapelessRecipeData) {
+  // Get tag list
+  const tags: RecipeDataTagData = {}
+
+  for (const id of data.ingredients) {
+    if (id.startsWith(ITEM_TAG_PREFIX) && !(id in tags)) tags[id] = tagData[id]
+  }
+
+  // Result
   const processedData: ShapelessRecipe = {
     type: 'shapeless',
     itemId: data.result.id,
@@ -133,8 +144,8 @@ async function processShapelessRecipeData(data: RawShapelessRecipeData) {
     recipe: {
       items: data.ingredients,
     },
+    tags,
   }
-
   return processedData
 }
 

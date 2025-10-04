@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:rail","count":16,"recipe":{"grid":[["minecraft:iron_ingot",null,"minecraft:iron_ingot"],["minecraft:iron_ingot","minecraft:stick","minecraft:iron_ingot"],["minecraft:iron_ingot",null,"minecraft:iron_ingot"]]}}
+{"type":"shaped","itemId":"minecraft:rail","count":16,"recipe":{"grid":[["minecraft:iron_ingot",null,"minecraft:iron_ingot"],["minecraft:iron_ingot","minecraft:stick","minecraft:iron_ingot"],["minecraft:iron_ingot",null,"minecraft:iron_ingot"]]},"tags":{}}

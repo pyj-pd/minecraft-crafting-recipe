@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:warped_fence","count":3,"recipe":{"grid":[["minecraft:warped_planks","minecraft:stick","minecraft:warped_planks"],["minecraft:warped_planks","minecraft:stick","minecraft:warped_planks"],[null,null,null]]}}
+{"type":"shaped","itemId":"minecraft:warped_fence","count":3,"recipe":{"grid":[["minecraft:warped_planks","minecraft:stick","minecraft:warped_planks"],["minecraft:warped_planks","minecraft:stick","minecraft:warped_planks"],[null,null,null]]},"tags":{}}
