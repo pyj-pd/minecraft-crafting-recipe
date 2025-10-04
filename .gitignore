@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 # Raw data
-data/raw_recipes/*
-!data/raw_recipes/
+data/raw_recipes/*.json
