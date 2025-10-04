@@ -25,3 +25,4 @@ dist-ssr
 
 # Raw data
 data/raw_recipes/*
+!data/raw_recipes/
