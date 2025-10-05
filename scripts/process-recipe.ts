@@ -12,7 +12,8 @@ import {
 import * as z from 'zod'
 import { parseRawFile } from './common'
 import { getTagData } from './process-tags'
-import { ITEM_TAG_PREFIX } from '../types/minecraft'
+import { ITEM_TAG_PREFIX, ItemTag } from '../types/minecraft'
+import { Console } from 'console'
 
 // Paths
 const RAW_RECIPE_DATA_FOLDER = path.resolve(
@@ -34,10 +35,15 @@ const tagData = await getTagData()
  * @see https://minecraft.wiki/w/Recipe
  */
 export async function processRawRecipeData() {
-  const rawRecipeFileList = await readdir(RAW_RECIPE_DATA_FOLDER)
+  const rawRecipeFileList = await readdir(RAW_RECIPE_DATA_FOLDER, {
+    withFileTypes: true,
+  })
 
   let processed = 0
-  for (const fileName of rawRecipeFileList) {
+  for (const fileInfo of rawRecipeFileList) {
+    if (!fileInfo.isFile()) continue // Only parse files
+
+    const fileName = fileInfo.name
     const filePath = path.join(RAW_RECIPE_DATA_FOLDER, fileName)
     const fileContent = await readFile(filePath, { encoding: 'utf-8' })
 
@@ -106,8 +112,9 @@ async function processShapedRecipeData(data: RawShapedRecipeData) {
       const id = data.key[key]
       recipe.grid[patternIndex][keyIndex] = id
 
-      if (id.startsWith(ITEM_TAG_PREFIX) && !(id in tags))
-        tags[id] = tagData[id]
+      if (id.startsWith(ITEM_TAG_PREFIX) && !(id in tags)) {
+        tags[id as ItemTag] = tagData[id as ItemTag]
+      }
     }
   }
 
@@ -133,7 +140,8 @@ async function processShapelessRecipeData(data: RawShapelessRecipeData) {
   const tags: RecipeDataTagData = {}
 
   for (const id of data.ingredients) {
-    if (id.startsWith(ITEM_TAG_PREFIX) && !(id in tags)) tags[id] = tagData[id]
+    if (id.startsWith(ITEM_TAG_PREFIX) && !(id in tags))
+      tags[id as ItemTag] = tagData[id as ItemTag]
   }
 
   // Result

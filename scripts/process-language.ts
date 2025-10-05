@@ -1,7 +1,7 @@
 import { readdir, readFile, writeFile } from 'fs/promises'
 import path from 'path'
 import { LanguageData, RawLanguageFile } from '../types/language'
-import { minecraftPrefix } from '../types/minecraft'
+import { ItemId, minecraftPrefix } from '../types/minecraft'
 import {
   getFileNameWithoutExtension,
   parseRawFile,
@@ -24,11 +24,16 @@ const TRANSLATION_SEPARATOR = '.'
 const ITEM_SEPARATOR = ':'
 
 export async function processRawLanguageData() {
-  const rawLanguageFileList = await readdir(RAW_LANGUAGE_DATA_FOLDER)
+  const rawLanguageFileList = await readdir(RAW_LANGUAGE_DATA_FOLDER, {
+    withFileTypes: true,
+  })
 
   let processed = 0
 
-  for (const fileName of rawLanguageFileList) {
+  for (const fileInfo of rawLanguageFileList) {
+    if (!fileInfo.isFile()) continue // Only parse files
+
+    const fileName = fileInfo.name
     const filePath = path.join(RAW_LANGUAGE_DATA_FOLDER, fileName)
     const fileContent = await readFile(filePath, { encoding: 'utf-8' })
 
@@ -50,7 +55,7 @@ export async function processRawLanguageData() {
       if (itemKeys.length !== 2) continue // Items such as banner have several types of items, so exclude these things
       if (itemKeys[0] !== minecraftPrefix) continue
 
-      const itemId = itemKeys.join(ITEM_SEPARATOR)
+      const itemId = itemKeys.join(ITEM_SEPARATOR) as ItemId
       languageData.translations[itemId] = translation
     }
 
