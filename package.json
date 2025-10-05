@@ -6,7 +6,7 @@
   "scripts": {
     "process:language-data": "tsx ./scripts/process-language.ts",
     "process:recipe-data": "tsx ./scripts/process-recipe.ts",
-    "process": "pnpm run process:language-data && pnpm run process:recipe-data",
+    "process": "pnpm run process:recipe-data && pnpm run process:language-data",
     "dev": "vite",
     "build": "pnpm process && vue-tsc -b && vite build",
     "preview": "vite preview"
