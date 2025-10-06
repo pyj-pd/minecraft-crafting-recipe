@@ -6,6 +6,7 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 
 # How to process raw data
 
+1. Make sure you have deleted all the folders inside `public/data` folder for proper processing.
 1. Download Minecraft client `.jar` file.
 1. Copy `data/minecraft/recipe` folder entirely inside that JAR file into `data/raw_data` folder in project directory.
 1. Copy `data/minecraft/tags` folder entirely inside that JAR file into `data/raw_data` folder in project directory.

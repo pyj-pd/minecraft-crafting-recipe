@@ -4,22 +4,17 @@ import {
   ITEM_TAG_PREFIX,
   ItemId,
   ItemTag,
-  minecraftPrefix,
+  minecraftNamespace,
 } from '../types/minecraft'
 import { RawTagFile, TagsData } from '../types/tags'
 import {
   getFileNameWithoutExtension,
   parseRawFile,
   PARSING_TAG_TYPES,
+  RAW_TAGS_DATA_FOLDER,
 } from './common'
 
-// Paths
-const RAW_TAGS_DATA_FOLDER = path.resolve(
-  import.meta.dirname,
-  '../data/raw_data/tags'
-)
-
-const TAG_PREFIX = `${ITEM_TAG_PREFIX}${minecraftPrefix}:`
+const TAG_PREFIX = `${ITEM_TAG_PREFIX}${minecraftNamespace}:`
 
 /**
  * This one loop through the tag files and replaces all recursive tags into items inside the files for easier development and usage.

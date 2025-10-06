@@ -1,4 +1,4 @@
-import { readdir, readFile, writeFile } from 'fs/promises'
+import { readdir, readFile, writeFile, mkdir, access } from 'fs/promises'
 import path from 'path'
 import {
   RawRecipeData,
@@ -10,20 +10,15 @@ import {
   ShapelessRecipe,
 } from '../types/recipe'
 import * as z from 'zod'
-import { parseRawFile } from './common'
+import {
+  DATA_FILE_EXTENSION,
+  getPureItemName,
+  parseRawFile,
+  PROCESSED_RECIPE_DATA_FOLDER,
+  RAW_RECIPE_DATA_FOLDER,
+} from './common'
 import { getTagData } from './process-tags'
 import { ITEM_TAG_PREFIX, ItemTag } from '../types/minecraft'
-import { Console } from 'console'
-
-// Paths
-const RAW_RECIPE_DATA_FOLDER = path.resolve(
-  import.meta.dirname,
-  '../data/raw_data/recipe'
-)
-const PROCESSED_RECIPE_DATA_FOLDER = path.resolve(
-  import.meta.dirname,
-  '../public/data/recipes/'
-)
 
 // Recipe
 const DEFAULT_ITEM_COUNT = 1
@@ -32,12 +27,20 @@ const DEFAULT_ITEM_COUNT = 1
 const tagData = await getTagData()
 
 /**
+ * @todo handle duplicated recipes(such as `black_glass_pane`)
  * @see https://minecraft.wiki/w/Recipe
  */
 export async function processRawRecipeData() {
   const rawRecipeFileList = await readdir(RAW_RECIPE_DATA_FOLDER, {
     withFileTypes: true,
   })
+
+  // Create processed data folder if not exists
+  try {
+    await access(PROCESSED_RECIPE_DATA_FOLDER)
+  } catch {
+    await mkdir(PROCESSED_RECIPE_DATA_FOLDER)
+  }
 
   let processed = 0
   for (const fileInfo of rawRecipeFileList) {
@@ -68,7 +71,12 @@ export async function processRawRecipeData() {
 
     if (typeof recipeData !== 'object') continue // The data was not parsed
 
-    const processedFilePath = path.join(PROCESSED_RECIPE_DATA_FOLDER, fileName)
+    const itemName = getPureItemName(recipeData.itemId)
+
+    const processedFilePath = path.join(
+      PROCESSED_RECIPE_DATA_FOLDER,
+      itemName + DATA_FILE_EXTENSION
+    )
     await writeFile(processedFilePath, JSON.stringify(recipeData))
     processed++
   }
