@@ -1,7 +1,11 @@
 import { access, mkdir, readdir, readFile, writeFile } from 'fs/promises'
 import path from 'path'
-import { LanguageData, RawLanguageFile } from '../types/language'
-import { ItemId, minecraftNamespace, minecraftPrefix } from '../types/minecraft'
+import { LanguageData, RawLanguageFile } from '../src/types/language'
+import {
+  ItemId,
+  minecraftNamespace,
+  minecraftPrefix,
+} from '../src/types/minecraft'
 import {
   DATA_FILE_EXTENSION,
   getFileNameWithoutExtension,

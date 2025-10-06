@@ -5,8 +5,8 @@ import {
   ItemId,
   ItemTag,
   minecraftNamespace,
-} from '../types/minecraft'
-import { RawTagFile, TagsData } from '../types/tags'
+} from '../src/types/minecraft'
+import { RawTagFile, TagsData } from '../src/types/tags'
 import {
   getFileNameWithoutExtension,
   parseRawFile,

@@ -1,5 +1,5 @@
 import { ZodType } from 'zod'
-import { ItemId, minecraftPrefix } from '../types/minecraft'
+import { ItemId, minecraftPrefix } from '../src/types/minecraft'
 import path from 'path'
 
 // Paths

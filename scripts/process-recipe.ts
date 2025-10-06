@@ -9,7 +9,7 @@ import {
   ShapedRecipe,
   ShapedRecipeGrid,
   ShapelessRecipe,
-} from '../types/recipe'
+} from '../src/types/recipe'
 import * as z from 'zod'
 import {
   DATA_FILE_EXTENSION,
@@ -19,7 +19,7 @@ import {
   RAW_RECIPE_DATA_FOLDER,
 } from './common'
 import { getTagData } from './process-tags'
-import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '../types/minecraft'
+import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '../src/types/minecraft'
 
 // Recipe
 const DEFAULT_ITEM_COUNT = 1

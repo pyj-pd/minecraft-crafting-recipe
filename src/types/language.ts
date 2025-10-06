@@ -9,3 +9,12 @@ export const LanguageData = z.object({
   translations: z.record(ItemId, z.string()),
 })
 export type LanguageData = z.infer<typeof LanguageData>
+
+// For searching
+export const SearchLanguageData = z.array(
+  z.object({
+    itemId: ItemId,
+    translations: z.array(z.string()),
+  })
+)
+export type SearchLanguageData = z.infer<typeof SearchLanguageData>
