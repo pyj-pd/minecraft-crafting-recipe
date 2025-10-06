@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:waxed_oxidized_copper_grate","count":4,"recipe":{"grid":[[null,"minecraft:waxed_oxidized_copper",null],["minecraft:waxed_oxidized_copper",null,"minecraft:waxed_oxidized_copper"],[null,"minecraft:waxed_oxidized_copper",null]]},"tags":{}}
+{"type":"shapeless","itemId":"minecraft:waxed_oxidized_copper_grate","count":1,"recipe":{"items":["minecraft:oxidized_copper_grate","minecraft:honeycomb"]},"tags":{}}

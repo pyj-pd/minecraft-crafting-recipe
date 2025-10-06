@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:waxed_exposed_copper_bulb","count":4,"recipe":{"grid":[[null,"minecraft:waxed_exposed_copper",null],["minecraft:waxed_exposed_copper","minecraft:blaze_rod","minecraft:waxed_exposed_copper"],[null,"minecraft:redstone",null]]},"tags":{}}
+{"type":"shapeless","itemId":"minecraft:waxed_exposed_copper_bulb","count":1,"recipe":{"items":["minecraft:exposed_copper_bulb","minecraft:honeycomb"]},"tags":{}}

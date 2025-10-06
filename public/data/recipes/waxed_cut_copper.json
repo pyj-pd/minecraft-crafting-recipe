@@ -1,1 +1,1 @@
-{"type":"shaped","itemId":"minecraft:waxed_cut_copper","count":4,"recipe":{"grid":[["minecraft:waxed_copper_block","minecraft:waxed_copper_block",null],["minecraft:waxed_copper_block","minecraft:waxed_copper_block",null],[null,null,null]]},"tags":{}}
+{"type":"shapeless","itemId":"minecraft:waxed_cut_copper","count":1,"recipe":{"items":["minecraft:cut_copper","minecraft:honeycomb"]},"tags":{}}
