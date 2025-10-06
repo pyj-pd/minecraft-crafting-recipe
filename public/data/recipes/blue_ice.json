@@ -1,1 +1,21 @@
-{"type":"shapeless","itemId":"minecraft:blue_ice","count":1,"recipe":{"items":["minecraft:packed_ice","minecraft:packed_ice","minecraft:packed_ice","minecraft:packed_ice","minecraft:packed_ice","minecraft:packed_ice","minecraft:packed_ice","minecraft:packed_ice","minecraft:packed_ice"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:blue_ice",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:packed_ice",
+        "minecraft:packed_ice",
+        "minecraft:packed_ice",
+        "minecraft:packed_ice",
+        "minecraft:packed_ice",
+        "minecraft:packed_ice",
+        "minecraft:packed_ice",
+        "minecraft:packed_ice",
+        "minecraft:packed_ice"
+      ]
+    },
+    "tags": {}
+  }
+]

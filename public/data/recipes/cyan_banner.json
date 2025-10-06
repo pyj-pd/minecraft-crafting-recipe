@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:cyan_banner","count":1,"recipe":{"grid":[["minecraft:cyan_wool","minecraft:cyan_wool","minecraft:cyan_wool"],["minecraft:cyan_wool","minecraft:cyan_wool","minecraft:cyan_wool"],[null,"minecraft:stick",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:cyan_banner",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:cyan_wool",
+          "minecraft:cyan_wool",
+          "minecraft:cyan_wool"
+        ],
+        [
+          "minecraft:cyan_wool",
+          "minecraft:cyan_wool",
+          "minecraft:cyan_wool"
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

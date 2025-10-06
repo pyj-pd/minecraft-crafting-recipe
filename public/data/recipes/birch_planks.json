@@ -1,1 +1,20 @@
-{"type":"shapeless","itemId":"minecraft:birch_planks","count":4,"recipe":{"items":["#minecraft:birch_logs"]},"tags":{"#minecraft:birch_logs":["minecraft:birch_log","minecraft:birch_wood","minecraft:stripped_birch_log","minecraft:stripped_birch_wood"]}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:birch_planks",
+    "count": 4,
+    "recipe": {
+      "items": [
+        "#minecraft:birch_logs"
+      ]
+    },
+    "tags": {
+      "#minecraft:birch_logs": [
+        "minecraft:birch_log",
+        "minecraft:birch_wood",
+        "minecraft:stripped_birch_log",
+        "minecraft:stripped_birch_wood"
+      ]
+    }
+  }
+]

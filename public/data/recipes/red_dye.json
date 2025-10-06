@@ -1,1 +1,46 @@
-{"type":"shapeless","itemId":"minecraft:red_dye","count":1,"recipe":{"items":["minecraft:red_tulip"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:red_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:beetroot"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:red_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:poppy"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:red_dye",
+    "count": 2,
+    "recipe": {
+      "items": [
+        "minecraft:rose_bush"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:red_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:red_tulip"
+      ]
+    },
+    "tags": {}
+  }
+]

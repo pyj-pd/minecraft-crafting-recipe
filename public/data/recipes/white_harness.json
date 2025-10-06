@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:white_harness","count":1,"recipe":{"grid":[["minecraft:leather","minecraft:leather","minecraft:leather"],["minecraft:glass","minecraft:white_wool","minecraft:glass"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:white_harness",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:leather",
+          "minecraft:leather",
+          "minecraft:leather"
+        ],
+        [
+          "minecraft:glass",
+          "minecraft:white_wool",
+          "minecraft:glass"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

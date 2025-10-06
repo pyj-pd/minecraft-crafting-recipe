@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:magma_block","count":1,"recipe":{"grid":[["minecraft:magma_cream","minecraft:magma_cream",null],["minecraft:magma_cream","minecraft:magma_cream",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:magma_block",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:magma_cream",
+          "minecraft:magma_cream",
+          null
+        ],
+        [
+          "minecraft:magma_cream",
+          "minecraft:magma_cream",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:pale_oak_shelf","count":6,"recipe":{"grid":[["minecraft:stripped_pale_oak_log","minecraft:stripped_pale_oak_log","minecraft:stripped_pale_oak_log"],[null,null,null],["minecraft:stripped_pale_oak_log","minecraft:stripped_pale_oak_log","minecraft:stripped_pale_oak_log"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:pale_oak_shelf",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:stripped_pale_oak_log",
+          "minecraft:stripped_pale_oak_log",
+          "minecraft:stripped_pale_oak_log"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          "minecraft:stripped_pale_oak_log",
+          "minecraft:stripped_pale_oak_log",
+          "minecraft:stripped_pale_oak_log"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

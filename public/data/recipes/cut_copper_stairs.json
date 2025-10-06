@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:cut_copper_stairs","count":4,"recipe":{"grid":[["minecraft:cut_copper",null,null],["minecraft:cut_copper","minecraft:cut_copper",null],["minecraft:cut_copper","minecraft:cut_copper","minecraft:cut_copper"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:cut_copper_stairs",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:cut_copper",
+          null,
+          null
+        ],
+        [
+          "minecraft:cut_copper",
+          "minecraft:cut_copper",
+          null
+        ],
+        [
+          "minecraft:cut_copper",
+          "minecraft:cut_copper",
+          "minecraft:cut_copper"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

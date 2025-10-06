@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:jungle_sign","count":3,"recipe":{"grid":[["minecraft:jungle_planks","minecraft:jungle_planks","minecraft:jungle_planks"],["minecraft:jungle_planks","minecraft:jungle_planks","minecraft:jungle_planks"],[null,"minecraft:stick",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:jungle_sign",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:jungle_planks",
+          "minecraft:jungle_planks",
+          "minecraft:jungle_planks"
+        ],
+        [
+          "minecraft:jungle_planks",
+          "minecraft:jungle_planks",
+          "minecraft:jungle_planks"
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

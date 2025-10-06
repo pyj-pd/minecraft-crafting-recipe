@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:recovery_compass","count":1,"recipe":{"grid":[["minecraft:echo_shard","minecraft:echo_shard","minecraft:echo_shard"],["minecraft:echo_shard","minecraft:compass","minecraft:echo_shard"],["minecraft:echo_shard","minecraft:echo_shard","minecraft:echo_shard"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:recovery_compass",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:echo_shard",
+          "minecraft:echo_shard",
+          "minecraft:echo_shard"
+        ],
+        [
+          "minecraft:echo_shard",
+          "minecraft:compass",
+          "minecraft:echo_shard"
+        ],
+        [
+          "minecraft:echo_shard",
+          "minecraft:echo_shard",
+          "minecraft:echo_shard"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

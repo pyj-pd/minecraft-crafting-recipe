@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:stripped_spruce_wood","count":3,"recipe":{"grid":[["minecraft:stripped_spruce_log","minecraft:stripped_spruce_log",null],["minecraft:stripped_spruce_log","minecraft:stripped_spruce_log",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:stripped_spruce_wood",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:stripped_spruce_log",
+          "minecraft:stripped_spruce_log",
+          null
+        ],
+        [
+          "minecraft:stripped_spruce_log",
+          "minecraft:stripped_spruce_log",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

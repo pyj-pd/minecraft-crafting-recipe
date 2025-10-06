@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:cobblestone_wall","count":6,"recipe":{"grid":[["minecraft:cobblestone","minecraft:cobblestone","minecraft:cobblestone"],["minecraft:cobblestone","minecraft:cobblestone","minecraft:cobblestone"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:cobblestone_wall",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:cobblestone",
+          "minecraft:cobblestone",
+          "minecraft:cobblestone"
+        ],
+        [
+          "minecraft:cobblestone",
+          "minecraft:cobblestone",
+          "minecraft:cobblestone"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

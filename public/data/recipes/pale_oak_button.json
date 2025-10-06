@@ -1,1 +1,13 @@
-{"type":"shapeless","itemId":"minecraft:pale_oak_button","count":1,"recipe":{"items":["minecraft:pale_oak_planks"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:pale_oak_button",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:pale_oak_planks"
+      ]
+    },
+    "tags": {}
+  }
+]

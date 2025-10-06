@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:diorite","count":2,"recipe":{"grid":[["minecraft:cobblestone","minecraft:quartz",null],["minecraft:quartz","minecraft:cobblestone",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:diorite",
+    "count": 2,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:cobblestone",
+          "minecraft:quartz",
+          null
+        ],
+        [
+          "minecraft:quartz",
+          "minecraft:cobblestone",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

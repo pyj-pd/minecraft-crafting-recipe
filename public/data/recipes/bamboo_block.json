@@ -1,1 +1,21 @@
-{"type":"shapeless","itemId":"minecraft:bamboo_block","count":1,"recipe":{"items":["minecraft:bamboo","minecraft:bamboo","minecraft:bamboo","minecraft:bamboo","minecraft:bamboo","minecraft:bamboo","minecraft:bamboo","minecraft:bamboo","minecraft:bamboo"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:bamboo_block",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:bamboo",
+        "minecraft:bamboo",
+        "minecraft:bamboo",
+        "minecraft:bamboo",
+        "minecraft:bamboo",
+        "minecraft:bamboo",
+        "minecraft:bamboo",
+        "minecraft:bamboo",
+        "minecraft:bamboo"
+      ]
+    },
+    "tags": {}
+  }
+]

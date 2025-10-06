@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:acacia_fence","count":3,"recipe":{"grid":[["minecraft:acacia_planks","minecraft:stick","minecraft:acacia_planks"],["minecraft:acacia_planks","minecraft:stick","minecraft:acacia_planks"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:acacia_fence",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:acacia_planks",
+          "minecraft:stick",
+          "minecraft:acacia_planks"
+        ],
+        [
+          "minecraft:acacia_planks",
+          "minecraft:stick",
+          "minecraft:acacia_planks"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

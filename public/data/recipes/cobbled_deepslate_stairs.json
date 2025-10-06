@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:cobbled_deepslate_stairs","count":4,"recipe":{"grid":[["minecraft:cobbled_deepslate",null,null],["minecraft:cobbled_deepslate","minecraft:cobbled_deepslate",null],["minecraft:cobbled_deepslate","minecraft:cobbled_deepslate","minecraft:cobbled_deepslate"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:cobbled_deepslate_stairs",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:cobbled_deepslate",
+          null,
+          null
+        ],
+        [
+          "minecraft:cobbled_deepslate",
+          "minecraft:cobbled_deepslate",
+          null
+        ],
+        [
+          "minecraft:cobbled_deepslate",
+          "minecraft:cobbled_deepslate",
+          "minecraft:cobbled_deepslate"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

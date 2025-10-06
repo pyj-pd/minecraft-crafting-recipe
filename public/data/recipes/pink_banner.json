@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:pink_banner","count":1,"recipe":{"grid":[["minecraft:pink_wool","minecraft:pink_wool","minecraft:pink_wool"],["minecraft:pink_wool","minecraft:pink_wool","minecraft:pink_wool"],[null,"minecraft:stick",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:pink_banner",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:pink_wool",
+          "minecraft:pink_wool",
+          "minecraft:pink_wool"
+        ],
+        [
+          "minecraft:pink_wool",
+          "minecraft:pink_wool",
+          "minecraft:pink_wool"
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

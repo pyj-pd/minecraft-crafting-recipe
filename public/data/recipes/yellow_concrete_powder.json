@@ -1,1 +1,21 @@
-{"type":"shapeless","itemId":"minecraft:yellow_concrete_powder","count":8,"recipe":{"items":["minecraft:yellow_dye","minecraft:sand","minecraft:sand","minecraft:sand","minecraft:sand","minecraft:gravel","minecraft:gravel","minecraft:gravel","minecraft:gravel"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:yellow_concrete_powder",
+    "count": 8,
+    "recipe": {
+      "items": [
+        "minecraft:yellow_dye",
+        "minecraft:sand",
+        "minecraft:sand",
+        "minecraft:sand",
+        "minecraft:sand",
+        "minecraft:gravel",
+        "minecraft:gravel",
+        "minecraft:gravel",
+        "minecraft:gravel"
+      ]
+    },
+    "tags": {}
+  }
+]

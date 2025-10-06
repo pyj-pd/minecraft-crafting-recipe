@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:coal_block","count":1,"recipe":{"grid":[["minecraft:coal","minecraft:coal","minecraft:coal"],["minecraft:coal","minecraft:coal","minecraft:coal"],["minecraft:coal","minecraft:coal","minecraft:coal"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:coal_block",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:coal",
+          "minecraft:coal",
+          "minecraft:coal"
+        ],
+        [
+          "minecraft:coal",
+          "minecraft:coal",
+          "minecraft:coal"
+        ],
+        [
+          "minecraft:coal",
+          "minecraft:coal",
+          "minecraft:coal"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

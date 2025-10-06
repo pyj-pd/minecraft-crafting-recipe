@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:deepslate_brick_wall","count":6,"recipe":{"grid":[["minecraft:deepslate_bricks","minecraft:deepslate_bricks","minecraft:deepslate_bricks"],["minecraft:deepslate_bricks","minecraft:deepslate_bricks","minecraft:deepslate_bricks"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:deepslate_brick_wall",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:deepslate_bricks",
+          "minecraft:deepslate_bricks",
+          "minecraft:deepslate_bricks"
+        ],
+        [
+          "minecraft:deepslate_bricks",
+          "minecraft:deepslate_bricks",
+          "minecraft:deepslate_bricks"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

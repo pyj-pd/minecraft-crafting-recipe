@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:magenta_harness","count":1,"recipe":{"grid":[["minecraft:leather","minecraft:leather","minecraft:leather"],["minecraft:glass","minecraft:magenta_wool","minecraft:glass"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:magenta_harness",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:leather",
+          "minecraft:leather",
+          "minecraft:leather"
+        ],
+        [
+          "minecraft:glass",
+          "minecraft:magenta_wool",
+          "minecraft:glass"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

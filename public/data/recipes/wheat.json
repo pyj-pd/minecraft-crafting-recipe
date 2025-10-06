@@ -1,1 +1,13 @@
-{"type":"shapeless","itemId":"minecraft:wheat","count":9,"recipe":{"items":["minecraft:hay_block"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:wheat",
+    "count": 9,
+    "recipe": {
+      "items": [
+        "minecraft:hay_block"
+      ]
+    },
+    "tags": {}
+  }
+]

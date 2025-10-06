@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:glistering_melon_slice","count":1,"recipe":{"grid":[["minecraft:gold_nugget","minecraft:gold_nugget","minecraft:gold_nugget"],["minecraft:gold_nugget","minecraft:melon_slice","minecraft:gold_nugget"],["minecraft:gold_nugget","minecraft:gold_nugget","minecraft:gold_nugget"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:glistering_melon_slice",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:gold_nugget",
+          "minecraft:gold_nugget",
+          "minecraft:gold_nugget"
+        ],
+        [
+          "minecraft:gold_nugget",
+          "minecraft:melon_slice",
+          "minecraft:gold_nugget"
+        ],
+        [
+          "minecraft:gold_nugget",
+          "minecraft:gold_nugget",
+          "minecraft:gold_nugget"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:polished_tuff_wall","count":6,"recipe":{"grid":[["minecraft:polished_tuff","minecraft:polished_tuff","minecraft:polished_tuff"],["minecraft:polished_tuff","minecraft:polished_tuff","minecraft:polished_tuff"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:polished_tuff_wall",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:polished_tuff",
+          "minecraft:polished_tuff",
+          "minecraft:polished_tuff"
+        ],
+        [
+          "minecraft:polished_tuff",
+          "minecraft:polished_tuff",
+          "minecraft:polished_tuff"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

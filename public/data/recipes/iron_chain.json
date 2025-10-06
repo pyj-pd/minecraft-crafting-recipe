@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:iron_chain","count":1,"recipe":{"grid":[["minecraft:iron_nugget",null,null],["minecraft:iron_ingot",null,null],["minecraft:iron_nugget",null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:iron_chain",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:iron_nugget",
+          null,
+          null
+        ],
+        [
+          "minecraft:iron_ingot",
+          null,
+          null
+        ],
+        [
+          "minecraft:iron_nugget",
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

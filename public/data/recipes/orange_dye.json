@@ -1,1 +1,47 @@
-{"type":"shapeless","itemId":"minecraft:orange_dye","count":1,"recipe":{"items":["minecraft:torchflower"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:orange_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:open_eyeblossom"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:orange_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:orange_tulip"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:orange_dye",
+    "count": 2,
+    "recipe": {
+      "items": [
+        "minecraft:red_dye",
+        "minecraft:yellow_dye"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:orange_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:torchflower"
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,35 @@
-{"type":"shapeless","itemId":"minecraft:yellow_dye","count":1,"recipe":{"items":["minecraft:wildflowers"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:yellow_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:dandelion"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:yellow_dye",
+    "count": 2,
+    "recipe": {
+      "items": [
+        "minecraft:sunflower"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:yellow_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:wildflowers"
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:mangrove_shelf","count":6,"recipe":{"grid":[["minecraft:stripped_mangrove_log","minecraft:stripped_mangrove_log","minecraft:stripped_mangrove_log"],[null,null,null],["minecraft:stripped_mangrove_log","minecraft:stripped_mangrove_log","minecraft:stripped_mangrove_log"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:mangrove_shelf",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:stripped_mangrove_log",
+          "minecraft:stripped_mangrove_log",
+          "minecraft:stripped_mangrove_log"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          "minecraft:stripped_mangrove_log",
+          "minecraft:stripped_mangrove_log",
+          "minecraft:stripped_mangrove_log"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

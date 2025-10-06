@@ -1,1 +1,13 @@
-{"type":"shapeless","itemId":"minecraft:spruce_button","count":1,"recipe":{"items":["minecraft:spruce_planks"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:spruce_button",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:spruce_planks"
+      ]
+    },
+    "tags": {}
+  }
+]

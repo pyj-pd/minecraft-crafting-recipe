@@ -1,1 +1,14 @@
-{"type":"shapeless","itemId":"minecraft:brown_candle","count":1,"recipe":{"items":["minecraft:candle","minecraft:brown_dye"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:brown_candle",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:candle",
+        "minecraft:brown_dye"
+      ]
+    },
+    "tags": {}
+  }
+]

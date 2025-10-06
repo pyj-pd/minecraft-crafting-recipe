@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:yellow_banner","count":1,"recipe":{"grid":[["minecraft:yellow_wool","minecraft:yellow_wool","minecraft:yellow_wool"],["minecraft:yellow_wool","minecraft:yellow_wool","minecraft:yellow_wool"],[null,"minecraft:stick",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:yellow_banner",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:yellow_wool",
+          "minecraft:yellow_wool",
+          "minecraft:yellow_wool"
+        ],
+        [
+          "minecraft:yellow_wool",
+          "minecraft:yellow_wool",
+          "minecraft:yellow_wool"
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

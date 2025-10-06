@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:respawn_anchor","count":1,"recipe":{"grid":[["minecraft:crying_obsidian","minecraft:crying_obsidian","minecraft:crying_obsidian"],["minecraft:glowstone","minecraft:glowstone","minecraft:glowstone"],["minecraft:crying_obsidian","minecraft:crying_obsidian","minecraft:crying_obsidian"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:respawn_anchor",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:crying_obsidian",
+          "minecraft:crying_obsidian",
+          "minecraft:crying_obsidian"
+        ],
+        [
+          "minecraft:glowstone",
+          "minecraft:glowstone",
+          "minecraft:glowstone"
+        ],
+        [
+          "minecraft:crying_obsidian",
+          "minecraft:crying_obsidian",
+          "minecraft:crying_obsidian"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

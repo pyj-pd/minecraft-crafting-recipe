@@ -1,1 +1,21 @@
-{"type":"shapeless","itemId":"minecraft:packed_ice","count":1,"recipe":{"items":["minecraft:ice","minecraft:ice","minecraft:ice","minecraft:ice","minecraft:ice","minecraft:ice","minecraft:ice","minecraft:ice","minecraft:ice"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:packed_ice",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:ice",
+        "minecraft:ice",
+        "minecraft:ice",
+        "minecraft:ice",
+        "minecraft:ice",
+        "minecraft:ice",
+        "minecraft:ice",
+        "minecraft:ice",
+        "minecraft:ice"
+      ]
+    },
+    "tags": {}
+  }
+]

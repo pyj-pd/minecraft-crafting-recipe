@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:mossy_cobblestone_stairs","count":4,"recipe":{"grid":[["minecraft:mossy_cobblestone",null,null],["minecraft:mossy_cobblestone","minecraft:mossy_cobblestone",null],["minecraft:mossy_cobblestone","minecraft:mossy_cobblestone","minecraft:mossy_cobblestone"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:mossy_cobblestone_stairs",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:mossy_cobblestone",
+          null,
+          null
+        ],
+        [
+          "minecraft:mossy_cobblestone",
+          "minecraft:mossy_cobblestone",
+          null
+        ],
+        [
+          "minecraft:mossy_cobblestone",
+          "minecraft:mossy_cobblestone",
+          "minecraft:mossy_cobblestone"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

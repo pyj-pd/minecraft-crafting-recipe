@@ -1,1 +1,21 @@
-{"type":"shapeless","itemId":"minecraft:pumpkin_pie","count":1,"recipe":{"items":["minecraft:pumpkin","minecraft:sugar","#minecraft:eggs"]},"tags":{"#minecraft:eggs":["minecraft:egg","minecraft:blue_egg","minecraft:brown_egg"]}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:pumpkin_pie",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:pumpkin",
+        "minecraft:sugar",
+        "#minecraft:eggs"
+      ]
+    },
+    "tags": {
+      "#minecraft:eggs": [
+        "minecraft:egg",
+        "minecraft:blue_egg",
+        "minecraft:brown_egg"
+      ]
+    }
+  }
+]

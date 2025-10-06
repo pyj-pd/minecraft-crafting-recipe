@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:coarse_dirt","count":4,"recipe":{"grid":[["minecraft:dirt","minecraft:gravel",null],["minecraft:gravel","minecraft:dirt",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:coarse_dirt",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:dirt",
+          "minecraft:gravel",
+          null
+        ],
+        [
+          "minecraft:gravel",
+          "minecraft:dirt",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,52 @@
-{"type":"shaped","itemId":"minecraft:blue_stained_glass_pane","count":8,"recipe":{"grid":[["minecraft:glass_pane","minecraft:glass_pane","minecraft:glass_pane"],["minecraft:glass_pane","minecraft:blue_dye","minecraft:glass_pane"],["minecraft:glass_pane","minecraft:glass_pane","minecraft:glass_pane"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:blue_stained_glass_pane",
+    "count": 16,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:blue_stained_glass",
+          "minecraft:blue_stained_glass",
+          "minecraft:blue_stained_glass"
+        ],
+        [
+          "minecraft:blue_stained_glass",
+          "minecraft:blue_stained_glass",
+          "minecraft:blue_stained_glass"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shaped",
+    "itemId": "minecraft:blue_stained_glass_pane",
+    "count": 8,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:glass_pane",
+          "minecraft:glass_pane",
+          "minecraft:glass_pane"
+        ],
+        [
+          "minecraft:glass_pane",
+          "minecraft:blue_dye",
+          "minecraft:glass_pane"
+        ],
+        [
+          "minecraft:glass_pane",
+          "minecraft:glass_pane",
+          "minecraft:glass_pane"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

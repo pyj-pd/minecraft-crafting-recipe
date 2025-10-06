@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:magenta_carpet","count":3,"recipe":{"grid":[["minecraft:magenta_wool","minecraft:magenta_wool",null],[null,null,null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:magenta_carpet",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:magenta_wool",
+          "minecraft:magenta_wool",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

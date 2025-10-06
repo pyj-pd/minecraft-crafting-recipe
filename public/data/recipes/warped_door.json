@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:warped_door","count":3,"recipe":{"grid":[["minecraft:warped_planks","minecraft:warped_planks",null],["minecraft:warped_planks","minecraft:warped_planks",null],["minecraft:warped_planks","minecraft:warped_planks",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:warped_door",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:warped_planks",
+          "minecraft:warped_planks",
+          null
+        ],
+        [
+          "minecraft:warped_planks",
+          "minecraft:warped_planks",
+          null
+        ],
+        [
+          "minecraft:warped_planks",
+          "minecraft:warped_planks",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

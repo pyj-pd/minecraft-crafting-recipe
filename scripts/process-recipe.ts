@@ -4,6 +4,7 @@ import {
   RawRecipeData,
   RawShapedRecipeData,
   RawShapelessRecipeData,
+  RecipeFileData,
   RecipeDataTagData,
   ShapedRecipe,
   ShapedRecipeGrid,
@@ -18,7 +19,7 @@ import {
   RAW_RECIPE_DATA_FOLDER,
 } from './common'
 import { getTagData } from './process-tags'
-import { ITEM_TAG_PREFIX, ItemTag } from '../types/minecraft'
+import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '../types/minecraft'
 
 // Recipe
 const DEFAULT_ITEM_COUNT = 1
@@ -42,7 +43,13 @@ export async function processRawRecipeData() {
     await mkdir(PROCESSED_RECIPE_DATA_FOLDER)
   }
 
-  let processed = 0
+  // Temporary object before actually writing to files
+  const fileData: Record<ItemId, RecipeFileData> = {}
+
+  let processedItems = 0,
+    processedRecipes = 0, // Because there are duplicated recipes sometimes
+    processedFiles = 0
+
   for (const fileInfo of rawRecipeFileList) {
     if (!fileInfo.isFile()) continue // Only parse files
 
@@ -71,21 +78,36 @@ export async function processRawRecipeData() {
 
     if (typeof recipeData !== 'object') continue // The data was not parsed
 
-    const itemName = getPureItemName(recipeData.itemId)
+    const { itemId } = recipeData
+
+    if (!(itemId in fileData)) {
+      processedItems++
+      fileData[itemId] = []
+    }
+    fileData[itemId].push(recipeData)
+
+    processedRecipes++
+  }
+
+  // Write to files
+  for (const [itemId, recipeFileData] of Object.entries(fileData)) {
+    const itemName = getPureItemName(itemId as ItemId)
 
     const processedFilePath = path.join(
       PROCESSED_RECIPE_DATA_FOLDER,
       itemName + DATA_FILE_EXTENSION
     )
-    await writeFile(processedFilePath, JSON.stringify(recipeData))
-    processed++
+    await writeFile(
+      processedFilePath,
+      JSON.stringify(recipeFileData, undefined, 2)
+    )
+
+    processedFiles++
   }
 
-  console.log(
-    `Processed ${processed} recipe file${
-      processed > 1 ? 's' : ''
-    } successfully.`
-  )
+  console.log(`Processed files: ${processedFiles}`)
+  console.log(`Processed items: ${processedItems}`)
+  console.log(`Processed recipes: ${processedRecipes}`)
 }
 
 /**

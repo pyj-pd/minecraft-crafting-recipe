@@ -1,1 +1,14 @@
-{"type":"shapeless","itemId":"minecraft:white_candle","count":1,"recipe":{"items":["minecraft:candle","minecraft:white_dye"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:white_candle",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:candle",
+        "minecraft:white_dye"
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:lime_carpet","count":3,"recipe":{"grid":[["minecraft:lime_wool","minecraft:lime_wool",null],[null,null,null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:lime_carpet",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:lime_wool",
+          "minecraft:lime_wool",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

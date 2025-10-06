@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:cherry_fence_gate","count":1,"recipe":{"grid":[["minecraft:stick","minecraft:cherry_planks","minecraft:stick"],["minecraft:stick","minecraft:cherry_planks","minecraft:stick"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:cherry_fence_gate",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:stick",
+          "minecraft:cherry_planks",
+          "minecraft:stick"
+        ],
+        [
+          "minecraft:stick",
+          "minecraft:cherry_planks",
+          "minecraft:stick"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

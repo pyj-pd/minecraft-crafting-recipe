@@ -1,1 +1,21 @@
-{"type":"shapeless","itemId":"minecraft:prismarine_bricks","count":1,"recipe":{"items":["minecraft:prismarine_shard","minecraft:prismarine_shard","minecraft:prismarine_shard","minecraft:prismarine_shard","minecraft:prismarine_shard","minecraft:prismarine_shard","minecraft:prismarine_shard","minecraft:prismarine_shard","minecraft:prismarine_shard"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:prismarine_bricks",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:prismarine_shard",
+        "minecraft:prismarine_shard",
+        "minecraft:prismarine_shard",
+        "minecraft:prismarine_shard",
+        "minecraft:prismarine_shard",
+        "minecraft:prismarine_shard",
+        "minecraft:prismarine_shard",
+        "minecraft:prismarine_shard",
+        "minecraft:prismarine_shard"
+      ]
+    },
+    "tags": {}
+  }
+]

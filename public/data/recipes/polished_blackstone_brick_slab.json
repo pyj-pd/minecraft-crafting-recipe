@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:polished_blackstone_brick_slab","count":6,"recipe":{"grid":[["minecraft:polished_blackstone_bricks","minecraft:polished_blackstone_bricks","minecraft:polished_blackstone_bricks"],[null,null,null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:polished_blackstone_brick_slab",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:polished_blackstone_bricks",
+          "minecraft:polished_blackstone_bricks",
+          "minecraft:polished_blackstone_bricks"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

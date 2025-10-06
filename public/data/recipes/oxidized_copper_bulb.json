@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:oxidized_copper_bulb","count":4,"recipe":{"grid":[[null,"minecraft:oxidized_copper",null],["minecraft:oxidized_copper","minecraft:blaze_rod","minecraft:oxidized_copper"],[null,"minecraft:redstone",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:oxidized_copper_bulb",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          null,
+          "minecraft:oxidized_copper",
+          null
+        ],
+        [
+          "minecraft:oxidized_copper",
+          "minecraft:blaze_rod",
+          "minecraft:oxidized_copper"
+        ],
+        [
+          null,
+          "minecraft:redstone",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

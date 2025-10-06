@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:redstone_lamp","count":1,"recipe":{"grid":[[null,"minecraft:redstone",null],["minecraft:redstone","minecraft:glowstone","minecraft:redstone"],[null,"minecraft:redstone",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:redstone_lamp",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          null,
+          "minecraft:redstone",
+          null
+        ],
+        [
+          "minecraft:redstone",
+          "minecraft:glowstone",
+          "minecraft:redstone"
+        ],
+        [
+          null,
+          "minecraft:redstone",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

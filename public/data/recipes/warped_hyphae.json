@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:warped_hyphae","count":3,"recipe":{"grid":[["minecraft:warped_stem","minecraft:warped_stem",null],["minecraft:warped_stem","minecraft:warped_stem",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:warped_hyphae",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:warped_stem",
+          "minecraft:warped_stem",
+          null
+        ],
+        [
+          "minecraft:warped_stem",
+          "minecraft:warped_stem",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

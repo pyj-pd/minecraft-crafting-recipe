@@ -1,1 +1,60 @@
-{"type":"shapeless","itemId":"minecraft:light_gray_dye","count":1,"recipe":{"items":["minecraft:white_tulip"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:light_gray_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:azure_bluet"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:light_gray_dye",
+    "count": 3,
+    "recipe": {
+      "items": [
+        "minecraft:black_dye",
+        "minecraft:white_dye",
+        "minecraft:white_dye"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:light_gray_dye",
+    "count": 2,
+    "recipe": {
+      "items": [
+        "minecraft:gray_dye",
+        "minecraft:white_dye"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:light_gray_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:oxeye_daisy"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:light_gray_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:white_tulip"
+      ]
+    },
+    "tags": {}
+  }
+]

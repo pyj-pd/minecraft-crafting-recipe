@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:conduit","count":1,"recipe":{"grid":[["minecraft:nautilus_shell","minecraft:nautilus_shell","minecraft:nautilus_shell"],["minecraft:nautilus_shell","minecraft:heart_of_the_sea","minecraft:nautilus_shell"],["minecraft:nautilus_shell","minecraft:nautilus_shell","minecraft:nautilus_shell"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:conduit",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:nautilus_shell",
+          "minecraft:nautilus_shell",
+          "minecraft:nautilus_shell"
+        ],
+        [
+          "minecraft:nautilus_shell",
+          "minecraft:heart_of_the_sea",
+          "minecraft:nautilus_shell"
+        ],
+        [
+          "minecraft:nautilus_shell",
+          "minecraft:nautilus_shell",
+          "minecraft:nautilus_shell"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

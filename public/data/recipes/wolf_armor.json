@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:wolf_armor","count":1,"recipe":{"grid":[["minecraft:armadillo_scute",null,null],["minecraft:armadillo_scute","minecraft:armadillo_scute","minecraft:armadillo_scute"],["minecraft:armadillo_scute",null,"minecraft:armadillo_scute"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:wolf_armor",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:armadillo_scute",
+          null,
+          null
+        ],
+        [
+          "minecraft:armadillo_scute",
+          "minecraft:armadillo_scute",
+          "minecraft:armadillo_scute"
+        ],
+        [
+          "minecraft:armadillo_scute",
+          null,
+          "minecraft:armadillo_scute"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

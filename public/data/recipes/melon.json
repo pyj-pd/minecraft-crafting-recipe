@@ -1,1 +1,21 @@
-{"type":"shapeless","itemId":"minecraft:melon","count":1,"recipe":{"items":["minecraft:melon_slice","minecraft:melon_slice","minecraft:melon_slice","minecraft:melon_slice","minecraft:melon_slice","minecraft:melon_slice","minecraft:melon_slice","minecraft:melon_slice","minecraft:melon_slice"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:melon",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:melon_slice",
+        "minecraft:melon_slice",
+        "minecraft:melon_slice",
+        "minecraft:melon_slice",
+        "minecraft:melon_slice",
+        "minecraft:melon_slice",
+        "minecraft:melon_slice",
+        "minecraft:melon_slice",
+        "minecraft:melon_slice"
+      ]
+    },
+    "tags": {}
+  }
+]

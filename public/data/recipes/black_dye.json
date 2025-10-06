@@ -1,1 +1,24 @@
-{"type":"shapeless","itemId":"minecraft:black_dye","count":1,"recipe":{"items":["minecraft:wither_rose"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:black_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:ink_sac"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:black_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:wither_rose"
+      ]
+    },
+    "tags": {}
+  }
+]

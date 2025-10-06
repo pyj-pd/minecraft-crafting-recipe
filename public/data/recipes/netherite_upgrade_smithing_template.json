@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:netherite_upgrade_smithing_template","count":2,"recipe":{"grid":[["minecraft:diamond","minecraft:netherite_upgrade_smithing_template","minecraft:diamond"],["minecraft:diamond","minecraft:netherrack","minecraft:diamond"],["minecraft:diamond","minecraft:diamond","minecraft:diamond"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:netherite_upgrade_smithing_template",
+    "count": 2,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:diamond",
+          "minecraft:netherite_upgrade_smithing_template",
+          "minecraft:diamond"
+        ],
+        [
+          "minecraft:diamond",
+          "minecraft:netherrack",
+          "minecraft:diamond"
+        ],
+        [
+          "minecraft:diamond",
+          "minecraft:diamond",
+          "minecraft:diamond"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

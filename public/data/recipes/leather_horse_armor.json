@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:leather_horse_armor","count":1,"recipe":{"grid":[["minecraft:leather",null,"minecraft:leather"],["minecraft:leather","minecraft:leather","minecraft:leather"],["minecraft:leather",null,"minecraft:leather"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:leather_horse_armor",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:leather",
+          null,
+          "minecraft:leather"
+        ],
+        [
+          "minecraft:leather",
+          "minecraft:leather",
+          "minecraft:leather"
+        ],
+        [
+          "minecraft:leather",
+          null,
+          "minecraft:leather"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

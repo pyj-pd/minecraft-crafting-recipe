@@ -1,1 +1,14 @@
-{"type":"shapeless","itemId":"minecraft:skull_banner_pattern","count":1,"recipe":{"items":["minecraft:paper","minecraft:wither_skeleton_skull"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:skull_banner_pattern",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:paper",
+        "minecraft:wither_skeleton_skull"
+      ]
+    },
+    "tags": {}
+  }
+]

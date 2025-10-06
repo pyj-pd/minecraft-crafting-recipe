@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:redstone_block","count":1,"recipe":{"grid":[["minecraft:redstone","minecraft:redstone","minecraft:redstone"],["minecraft:redstone","minecraft:redstone","minecraft:redstone"],["minecraft:redstone","minecraft:redstone","minecraft:redstone"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:redstone_block",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:redstone",
+          "minecraft:redstone",
+          "minecraft:redstone"
+        ],
+        [
+          "minecraft:redstone",
+          "minecraft:redstone",
+          "minecraft:redstone"
+        ],
+        [
+          "minecraft:redstone",
+          "minecraft:redstone",
+          "minecraft:redstone"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

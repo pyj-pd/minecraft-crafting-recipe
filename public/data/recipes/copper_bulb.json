@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:copper_bulb","count":4,"recipe":{"grid":[[null,"minecraft:copper_block",null],["minecraft:copper_block","minecraft:blaze_rod","minecraft:copper_block"],[null,"minecraft:redstone",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:copper_bulb",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          null,
+          "minecraft:copper_block",
+          null
+        ],
+        [
+          "minecraft:copper_block",
+          "minecraft:blaze_rod",
+          "minecraft:copper_block"
+        ],
+        [
+          null,
+          "minecraft:redstone",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

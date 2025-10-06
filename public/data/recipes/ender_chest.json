@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:ender_chest","count":1,"recipe":{"grid":[["minecraft:obsidian","minecraft:obsidian","minecraft:obsidian"],["minecraft:obsidian","minecraft:ender_eye","minecraft:obsidian"],["minecraft:obsidian","minecraft:obsidian","minecraft:obsidian"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:ender_chest",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:obsidian",
+          "minecraft:obsidian",
+          "minecraft:obsidian"
+        ],
+        [
+          "minecraft:obsidian",
+          "minecraft:ender_eye",
+          "minecraft:obsidian"
+        ],
+        [
+          "minecraft:obsidian",
+          "minecraft:obsidian",
+          "minecraft:obsidian"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

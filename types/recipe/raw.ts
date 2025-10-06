@@ -35,5 +35,4 @@ export const RawRecipeData = z.union([
   RawShapedRecipeData,
   RawShapelessRecipeData,
 ])
-
 export type RawRecipeData = z.infer<typeof RawRecipeData>

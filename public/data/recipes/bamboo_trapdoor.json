@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:bamboo_trapdoor","count":2,"recipe":{"grid":[["minecraft:bamboo_planks","minecraft:bamboo_planks","minecraft:bamboo_planks"],["minecraft:bamboo_planks","minecraft:bamboo_planks","minecraft:bamboo_planks"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:bamboo_trapdoor",
+    "count": 2,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:bamboo_planks",
+          "minecraft:bamboo_planks",
+          "minecraft:bamboo_planks"
+        ],
+        [
+          "minecraft:bamboo_planks",
+          "minecraft:bamboo_planks",
+          "minecraft:bamboo_planks"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

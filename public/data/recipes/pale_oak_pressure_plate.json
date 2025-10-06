@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:pale_oak_pressure_plate","count":1,"recipe":{"grid":[["minecraft:pale_oak_planks","minecraft:pale_oak_planks",null],[null,null,null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:pale_oak_pressure_plate",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:pale_oak_planks",
+          "minecraft:pale_oak_planks",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

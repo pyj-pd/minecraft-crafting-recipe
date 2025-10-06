@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:dark_prismarine_stairs","count":4,"recipe":{"grid":[["minecraft:dark_prismarine",null,null],["minecraft:dark_prismarine","minecraft:dark_prismarine",null],["minecraft:dark_prismarine","minecraft:dark_prismarine","minecraft:dark_prismarine"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:dark_prismarine_stairs",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:dark_prismarine",
+          null,
+          null
+        ],
+        [
+          "minecraft:dark_prismarine",
+          "minecraft:dark_prismarine",
+          null
+        ],
+        [
+          "minecraft:dark_prismarine",
+          "minecraft:dark_prismarine",
+          "minecraft:dark_prismarine"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

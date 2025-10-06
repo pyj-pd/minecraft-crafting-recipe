@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:white_banner","count":1,"recipe":{"grid":[["minecraft:white_wool","minecraft:white_wool","minecraft:white_wool"],["minecraft:white_wool","minecraft:white_wool","minecraft:white_wool"],[null,"minecraft:stick",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:white_banner",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:white_wool",
+          "minecraft:white_wool",
+          "minecraft:white_wool"
+        ],
+        [
+          "minecraft:white_wool",
+          "minecraft:white_wool",
+          "minecraft:white_wool"
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

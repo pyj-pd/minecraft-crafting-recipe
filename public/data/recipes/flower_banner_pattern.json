@@ -1,1 +1,14 @@
-{"type":"shapeless","itemId":"minecraft:flower_banner_pattern","count":1,"recipe":{"items":["minecraft:paper","minecraft:oxeye_daisy"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:flower_banner_pattern",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:paper",
+        "minecraft:oxeye_daisy"
+      ]
+    },
+    "tags": {}
+  }
+]

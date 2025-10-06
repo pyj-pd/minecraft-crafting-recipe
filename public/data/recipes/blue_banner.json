@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:blue_banner","count":1,"recipe":{"grid":[["minecraft:blue_wool","minecraft:blue_wool","minecraft:blue_wool"],["minecraft:blue_wool","minecraft:blue_wool","minecraft:blue_wool"],[null,"minecraft:stick",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:blue_banner",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:blue_wool",
+          "minecraft:blue_wool",
+          "minecraft:blue_wool"
+        ],
+        [
+          "minecraft:blue_wool",
+          "minecraft:blue_wool",
+          "minecraft:blue_wool"
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

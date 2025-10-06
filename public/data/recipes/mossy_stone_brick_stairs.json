@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:mossy_stone_brick_stairs","count":4,"recipe":{"grid":[["minecraft:mossy_stone_bricks",null,null],["minecraft:mossy_stone_bricks","minecraft:mossy_stone_bricks",null],["minecraft:mossy_stone_bricks","minecraft:mossy_stone_bricks","minecraft:mossy_stone_bricks"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:mossy_stone_brick_stairs",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:mossy_stone_bricks",
+          null,
+          null
+        ],
+        [
+          "minecraft:mossy_stone_bricks",
+          "minecraft:mossy_stone_bricks",
+          null
+        ],
+        [
+          "minecraft:mossy_stone_bricks",
+          "minecraft:mossy_stone_bricks",
+          "minecraft:mossy_stone_bricks"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

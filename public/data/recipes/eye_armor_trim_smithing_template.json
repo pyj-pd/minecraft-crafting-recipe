@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:eye_armor_trim_smithing_template","count":2,"recipe":{"grid":[["minecraft:diamond","minecraft:eye_armor_trim_smithing_template","minecraft:diamond"],["minecraft:diamond","minecraft:end_stone","minecraft:diamond"],["minecraft:diamond","minecraft:diamond","minecraft:diamond"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:eye_armor_trim_smithing_template",
+    "count": 2,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:diamond",
+          "minecraft:eye_armor_trim_smithing_template",
+          "minecraft:diamond"
+        ],
+        [
+          "minecraft:diamond",
+          "minecraft:end_stone",
+          "minecraft:diamond"
+        ],
+        [
+          "minecraft:diamond",
+          "minecraft:diamond",
+          "minecraft:diamond"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

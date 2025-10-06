@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:cherry_shelf","count":6,"recipe":{"grid":[["minecraft:stripped_cherry_log","minecraft:stripped_cherry_log","minecraft:stripped_cherry_log"],[null,null,null],["minecraft:stripped_cherry_log","minecraft:stripped_cherry_log","minecraft:stripped_cherry_log"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:cherry_shelf",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:stripped_cherry_log",
+          "minecraft:stripped_cherry_log",
+          "minecraft:stripped_cherry_log"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          "minecraft:stripped_cherry_log",
+          "minecraft:stripped_cherry_log",
+          "minecraft:stripped_cherry_log"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

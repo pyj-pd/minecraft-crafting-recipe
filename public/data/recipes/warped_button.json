@@ -1,1 +1,13 @@
-{"type":"shapeless","itemId":"minecraft:warped_button","count":1,"recipe":{"items":["minecraft:warped_planks"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:warped_button",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:warped_planks"
+      ]
+    },
+    "tags": {}
+  }
+]

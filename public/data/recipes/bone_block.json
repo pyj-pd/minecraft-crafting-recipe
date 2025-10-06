@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:bone_block","count":1,"recipe":{"grid":[["minecraft:bone_meal","minecraft:bone_meal","minecraft:bone_meal"],["minecraft:bone_meal","minecraft:bone_meal","minecraft:bone_meal"],["minecraft:bone_meal","minecraft:bone_meal","minecraft:bone_meal"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:bone_block",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:bone_meal",
+          "minecraft:bone_meal",
+          "minecraft:bone_meal"
+        ],
+        [
+          "minecraft:bone_meal",
+          "minecraft:bone_meal",
+          "minecraft:bone_meal"
+        ],
+        [
+          "minecraft:bone_meal",
+          "minecraft:bone_meal",
+          "minecraft:bone_meal"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,21 @@
-{"type":"shapeless","itemId":"minecraft:nether_wart_block","count":1,"recipe":{"items":["minecraft:nether_wart","minecraft:nether_wart","minecraft:nether_wart","minecraft:nether_wart","minecraft:nether_wart","minecraft:nether_wart","minecraft:nether_wart","minecraft:nether_wart","minecraft:nether_wart"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:nether_wart_block",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:nether_wart",
+        "minecraft:nether_wart",
+        "minecraft:nether_wart",
+        "minecraft:nether_wart",
+        "minecraft:nether_wart",
+        "minecraft:nether_wart",
+        "minecraft:nether_wart",
+        "minecraft:nether_wart",
+        "minecraft:nether_wart"
+      ]
+    },
+    "tags": {}
+  }
+]

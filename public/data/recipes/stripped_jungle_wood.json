@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:stripped_jungle_wood","count":3,"recipe":{"grid":[["minecraft:stripped_jungle_log","minecraft:stripped_jungle_log",null],["minecraft:stripped_jungle_log","minecraft:stripped_jungle_log",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:stripped_jungle_wood",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:stripped_jungle_log",
+          "minecraft:stripped_jungle_log",
+          null
+        ],
+        [
+          "minecraft:stripped_jungle_log",
+          "minecraft:stripped_jungle_log",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

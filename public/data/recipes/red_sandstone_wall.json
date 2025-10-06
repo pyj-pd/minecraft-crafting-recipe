@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:red_sandstone_wall","count":6,"recipe":{"grid":[["minecraft:red_sandstone","minecraft:red_sandstone","minecraft:red_sandstone"],["minecraft:red_sandstone","minecraft:red_sandstone","minecraft:red_sandstone"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:red_sandstone_wall",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:red_sandstone",
+          "minecraft:red_sandstone",
+          "minecraft:red_sandstone"
+        ],
+        [
+          "minecraft:red_sandstone",
+          "minecraft:red_sandstone",
+          "minecraft:red_sandstone"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

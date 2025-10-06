@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:chiseled_resin_bricks","count":1,"recipe":{"grid":[["minecraft:resin_brick_slab",null,null],["minecraft:resin_brick_slab",null,null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:chiseled_resin_bricks",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:resin_brick_slab",
+          null,
+          null
+        ],
+        [
+          "minecraft:resin_brick_slab",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,38 @@
-{"type":"shaped","itemId":"minecraft:iron_ingot","count":1,"recipe":{"grid":[["minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget"],["minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget"],["minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget"]]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:iron_ingot",
+    "count": 9,
+    "recipe": {
+      "items": [
+        "minecraft:iron_block"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shaped",
+    "itemId": "minecraft:iron_ingot",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:iron_nugget",
+          "minecraft:iron_nugget",
+          "minecraft:iron_nugget"
+        ],
+        [
+          "minecraft:iron_nugget",
+          "minecraft:iron_nugget",
+          "minecraft:iron_nugget"
+        ],
+        [
+          "minecraft:iron_nugget",
+          "minecraft:iron_nugget",
+          "minecraft:iron_nugget"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

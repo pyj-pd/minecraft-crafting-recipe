@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:lime_stained_glass","count":8,"recipe":{"grid":[["minecraft:glass","minecraft:glass","minecraft:glass"],["minecraft:glass","minecraft:lime_dye","minecraft:glass"],["minecraft:glass","minecraft:glass","minecraft:glass"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:lime_stained_glass",
+    "count": 8,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:glass",
+          "minecraft:glass",
+          "minecraft:glass"
+        ],
+        [
+          "minecraft:glass",
+          "minecraft:lime_dye",
+          "minecraft:glass"
+        ],
+        [
+          "minecraft:glass",
+          "minecraft:glass",
+          "minecraft:glass"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

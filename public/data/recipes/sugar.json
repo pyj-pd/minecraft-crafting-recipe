@@ -1,1 +1,24 @@
-{"type":"shapeless","itemId":"minecraft:sugar","count":1,"recipe":{"items":["minecraft:sugar_cane"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:sugar",
+    "count": 3,
+    "recipe": {
+      "items": [
+        "minecraft:honey_bottle"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:sugar",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:sugar_cane"
+      ]
+    },
+    "tags": {}
+  }
+]

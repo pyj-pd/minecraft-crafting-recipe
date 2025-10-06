@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:copper_grate","count":4,"recipe":{"grid":[[null,"minecraft:copper_block",null],["minecraft:copper_block",null,"minecraft:copper_block"],[null,"minecraft:copper_block",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:copper_grate",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          null,
+          "minecraft:copper_block",
+          null
+        ],
+        [
+          "minecraft:copper_block",
+          null,
+          "minecraft:copper_block"
+        ],
+        [
+          null,
+          "minecraft:copper_block",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

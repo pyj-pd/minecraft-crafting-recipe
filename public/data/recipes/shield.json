@@ -1,1 +1,42 @@
-{"type":"shaped","itemId":"minecraft:shield","count":1,"recipe":{"grid":[["#minecraft:wooden_tool_materials","minecraft:iron_ingot","#minecraft:wooden_tool_materials"],["#minecraft:wooden_tool_materials","#minecraft:wooden_tool_materials","#minecraft:wooden_tool_materials"],[null,"#minecraft:wooden_tool_materials",null]]},"tags":{"#minecraft:wooden_tool_materials":["minecraft:oak_planks","minecraft:spruce_planks","minecraft:birch_planks","minecraft:jungle_planks","minecraft:acacia_planks","minecraft:dark_oak_planks","minecraft:pale_oak_planks","minecraft:crimson_planks","minecraft:warped_planks","minecraft:mangrove_planks","minecraft:bamboo_planks","minecraft:cherry_planks"]}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:shield",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "#minecraft:wooden_tool_materials",
+          "minecraft:iron_ingot",
+          "#minecraft:wooden_tool_materials"
+        ],
+        [
+          "#minecraft:wooden_tool_materials",
+          "#minecraft:wooden_tool_materials",
+          "#minecraft:wooden_tool_materials"
+        ],
+        [
+          null,
+          "#minecraft:wooden_tool_materials",
+          null
+        ]
+      ]
+    },
+    "tags": {
+      "#minecraft:wooden_tool_materials": [
+        "minecraft:oak_planks",
+        "minecraft:spruce_planks",
+        "minecraft:birch_planks",
+        "minecraft:jungle_planks",
+        "minecraft:acacia_planks",
+        "minecraft:dark_oak_planks",
+        "minecraft:pale_oak_planks",
+        "minecraft:crimson_planks",
+        "minecraft:warped_planks",
+        "minecraft:mangrove_planks",
+        "minecraft:bamboo_planks",
+        "minecraft:cherry_planks"
+      ]
+    }
+  }
+]

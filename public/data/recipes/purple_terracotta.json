@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:purple_terracotta","count":8,"recipe":{"grid":[["minecraft:terracotta","minecraft:terracotta","minecraft:terracotta"],["minecraft:terracotta","minecraft:purple_dye","minecraft:terracotta"],["minecraft:terracotta","minecraft:terracotta","minecraft:terracotta"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:purple_terracotta",
+    "count": 8,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:terracotta",
+          "minecraft:terracotta",
+          "minecraft:terracotta"
+        ],
+        [
+          "minecraft:terracotta",
+          "minecraft:purple_dye",
+          "minecraft:terracotta"
+        ],
+        [
+          "minecraft:terracotta",
+          "minecraft:terracotta",
+          "minecraft:terracotta"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

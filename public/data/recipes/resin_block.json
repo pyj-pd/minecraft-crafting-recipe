@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:resin_block","count":1,"recipe":{"grid":[["minecraft:resin_clump","minecraft:resin_clump","minecraft:resin_clump"],["minecraft:resin_clump","minecraft:resin_clump","minecraft:resin_clump"],["minecraft:resin_clump","minecraft:resin_clump","minecraft:resin_clump"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:resin_block",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:resin_clump",
+          "minecraft:resin_clump",
+          "minecraft:resin_clump"
+        ],
+        [
+          "minecraft:resin_clump",
+          "minecraft:resin_clump",
+          "minecraft:resin_clump"
+        ],
+        [
+          "minecraft:resin_clump",
+          "minecraft:resin_clump",
+          "minecraft:resin_clump"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

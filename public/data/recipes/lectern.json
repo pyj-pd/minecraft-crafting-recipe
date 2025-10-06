@@ -1,1 +1,42 @@
-{"type":"shaped","itemId":"minecraft:lectern","count":1,"recipe":{"grid":[["#minecraft:wooden_slabs","#minecraft:wooden_slabs","#minecraft:wooden_slabs"],[null,"minecraft:bookshelf",null],[null,"#minecraft:wooden_slabs",null]]},"tags":{"#minecraft:wooden_slabs":["minecraft:oak_slab","minecraft:spruce_slab","minecraft:birch_slab","minecraft:jungle_slab","minecraft:acacia_slab","minecraft:dark_oak_slab","minecraft:pale_oak_slab","minecraft:crimson_slab","minecraft:warped_slab","minecraft:mangrove_slab","minecraft:bamboo_slab","minecraft:cherry_slab"]}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:lectern",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "#minecraft:wooden_slabs",
+          "#minecraft:wooden_slabs",
+          "#minecraft:wooden_slabs"
+        ],
+        [
+          null,
+          "minecraft:bookshelf",
+          null
+        ],
+        [
+          null,
+          "#minecraft:wooden_slabs",
+          null
+        ]
+      ]
+    },
+    "tags": {
+      "#minecraft:wooden_slabs": [
+        "minecraft:oak_slab",
+        "minecraft:spruce_slab",
+        "minecraft:birch_slab",
+        "minecraft:jungle_slab",
+        "minecraft:acacia_slab",
+        "minecraft:dark_oak_slab",
+        "minecraft:pale_oak_slab",
+        "minecraft:crimson_slab",
+        "minecraft:warped_slab",
+        "minecraft:mangrove_slab",
+        "minecraft:bamboo_slab",
+        "minecraft:cherry_slab"
+      ]
+    }
+  }
+]

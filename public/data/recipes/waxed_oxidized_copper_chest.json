@@ -1,1 +1,14 @@
-{"type":"shapeless","itemId":"minecraft:waxed_oxidized_copper_chest","count":1,"recipe":{"items":["minecraft:oxidized_copper_chest","minecraft:honeycomb"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:waxed_oxidized_copper_chest",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:oxidized_copper_chest",
+        "minecraft:honeycomb"
+      ]
+    },
+    "tags": {}
+  }
+]

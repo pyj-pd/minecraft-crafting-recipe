@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:copper_door","count":3,"recipe":{"grid":[["minecraft:copper_ingot","minecraft:copper_ingot",null],["minecraft:copper_ingot","minecraft:copper_ingot",null],["minecraft:copper_ingot","minecraft:copper_ingot",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:copper_door",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:copper_ingot",
+          "minecraft:copper_ingot",
+          null
+        ],
+        [
+          "minecraft:copper_ingot",
+          "minecraft:copper_ingot",
+          null
+        ],
+        [
+          "minecraft:copper_ingot",
+          "minecraft:copper_ingot",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

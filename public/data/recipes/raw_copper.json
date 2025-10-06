@@ -1,1 +1,13 @@
-{"type":"shapeless","itemId":"minecraft:raw_copper","count":9,"recipe":{"items":["minecraft:raw_copper_block"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:raw_copper",
+    "count": 9,
+    "recipe": {
+      "items": [
+        "minecraft:raw_copper_block"
+      ]
+    },
+    "tags": {}
+  }
+]

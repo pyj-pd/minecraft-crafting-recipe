@@ -1,1 +1,13 @@
-{"type":"shapeless","itemId":"minecraft:acacia_button","count":1,"recipe":{"items":["minecraft:acacia_planks"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:acacia_button",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:acacia_planks"
+      ]
+    },
+    "tags": {}
+  }
+]

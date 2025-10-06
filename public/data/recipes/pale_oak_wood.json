@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:pale_oak_wood","count":3,"recipe":{"grid":[["minecraft:pale_oak_log","minecraft:pale_oak_log",null],["minecraft:pale_oak_log","minecraft:pale_oak_log",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:pale_oak_wood",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:pale_oak_log",
+          "minecraft:pale_oak_log",
+          null
+        ],
+        [
+          "minecraft:pale_oak_log",
+          "minecraft:pale_oak_log",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

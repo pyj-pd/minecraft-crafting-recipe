@@ -1,1 +1,39 @@
-{"type":"shapeless","itemId":"minecraft:waxed_cut_copper_stairs","count":1,"recipe":{"items":["minecraft:cut_copper_stairs","minecraft:honeycomb"]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:waxed_cut_copper_stairs",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:waxed_cut_copper",
+          null,
+          null
+        ],
+        [
+          "minecraft:waxed_cut_copper",
+          "minecraft:waxed_cut_copper",
+          null
+        ],
+        [
+          "minecraft:waxed_cut_copper",
+          "minecraft:waxed_cut_copper",
+          "minecraft:waxed_cut_copper"
+        ]
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:waxed_cut_copper_stairs",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:cut_copper_stairs",
+        "minecraft:honeycomb"
+      ]
+    },
+    "tags": {}
+  }
+]

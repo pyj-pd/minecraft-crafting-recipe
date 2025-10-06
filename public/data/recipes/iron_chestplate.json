@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:iron_chestplate","count":1,"recipe":{"grid":[["minecraft:iron_ingot",null,"minecraft:iron_ingot"],["minecraft:iron_ingot","minecraft:iron_ingot","minecraft:iron_ingot"],["minecraft:iron_ingot","minecraft:iron_ingot","minecraft:iron_ingot"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:iron_chestplate",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:iron_ingot",
+          null,
+          "minecraft:iron_ingot"
+        ],
+        [
+          "minecraft:iron_ingot",
+          "minecraft:iron_ingot",
+          "minecraft:iron_ingot"
+        ],
+        [
+          "minecraft:iron_ingot",
+          "minecraft:iron_ingot",
+          "minecraft:iron_ingot"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

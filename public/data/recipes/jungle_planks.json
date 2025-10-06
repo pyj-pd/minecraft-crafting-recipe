@@ -1,1 +1,20 @@
-{"type":"shapeless","itemId":"minecraft:jungle_planks","count":4,"recipe":{"items":["#minecraft:jungle_logs"]},"tags":{"#minecraft:jungle_logs":["minecraft:jungle_log","minecraft:jungle_wood","minecraft:stripped_jungle_log","minecraft:stripped_jungle_wood"]}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:jungle_planks",
+    "count": 4,
+    "recipe": {
+      "items": [
+        "#minecraft:jungle_logs"
+      ]
+    },
+    "tags": {
+      "#minecraft:jungle_logs": [
+        "minecraft:jungle_log",
+        "minecraft:jungle_wood",
+        "minecraft:stripped_jungle_log",
+        "minecraft:stripped_jungle_wood"
+      ]
+    }
+  }
+]

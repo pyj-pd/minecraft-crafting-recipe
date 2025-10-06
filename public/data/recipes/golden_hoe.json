@@ -1,1 +1,31 @@
-{"type":"shaped","itemId":"minecraft:golden_hoe","count":1,"recipe":{"grid":[["#minecraft:gold_tool_materials","#minecraft:gold_tool_materials",null],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]},"tags":{"#minecraft:gold_tool_materials":["minecraft:gold_ingot"]}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:golden_hoe",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "#minecraft:gold_tool_materials",
+          "#minecraft:gold_tool_materials",
+          null
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ]
+      ]
+    },
+    "tags": {
+      "#minecraft:gold_tool_materials": [
+        "minecraft:gold_ingot"
+      ]
+    }
+  }
+]

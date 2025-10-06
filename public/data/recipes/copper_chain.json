@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:copper_chain","count":1,"recipe":{"grid":[["minecraft:copper_nugget",null,null],["minecraft:copper_ingot",null,null],["minecraft:copper_nugget",null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:copper_chain",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:copper_nugget",
+          null,
+          null
+        ],
+        [
+          "minecraft:copper_ingot",
+          null,
+          null
+        ],
+        [
+          "minecraft:copper_nugget",
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

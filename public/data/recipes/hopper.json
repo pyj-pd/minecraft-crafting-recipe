@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:hopper","count":1,"recipe":{"grid":[["minecraft:iron_ingot",null,"minecraft:iron_ingot"],["minecraft:iron_ingot","minecraft:chest","minecraft:iron_ingot"],[null,"minecraft:iron_ingot",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:hopper",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:iron_ingot",
+          null,
+          "minecraft:iron_ingot"
+        ],
+        [
+          "minecraft:iron_ingot",
+          "minecraft:chest",
+          "minecraft:iron_ingot"
+        ],
+        [
+          null,
+          "minecraft:iron_ingot",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

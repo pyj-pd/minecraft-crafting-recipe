@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:moss_carpet","count":3,"recipe":{"grid":[["minecraft:moss_block","minecraft:moss_block",null],[null,null,null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:moss_carpet",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:moss_block",
+          "minecraft:moss_block",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

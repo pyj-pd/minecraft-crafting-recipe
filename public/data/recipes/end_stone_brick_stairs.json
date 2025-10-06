@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:end_stone_brick_stairs","count":4,"recipe":{"grid":[["minecraft:end_stone_bricks",null,null],["minecraft:end_stone_bricks","minecraft:end_stone_bricks",null],["minecraft:end_stone_bricks","minecraft:end_stone_bricks","minecraft:end_stone_bricks"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:end_stone_brick_stairs",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:end_stone_bricks",
+          null,
+          null
+        ],
+        [
+          "minecraft:end_stone_bricks",
+          "minecraft:end_stone_bricks",
+          null
+        ],
+        [
+          "minecraft:end_stone_bricks",
+          "minecraft:end_stone_bricks",
+          "minecraft:end_stone_bricks"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

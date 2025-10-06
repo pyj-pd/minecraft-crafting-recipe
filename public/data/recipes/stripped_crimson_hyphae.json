@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:stripped_crimson_hyphae","count":3,"recipe":{"grid":[["minecraft:stripped_crimson_stem","minecraft:stripped_crimson_stem",null],["minecraft:stripped_crimson_stem","minecraft:stripped_crimson_stem",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:stripped_crimson_hyphae",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:stripped_crimson_stem",
+          "minecraft:stripped_crimson_stem",
+          null
+        ],
+        [
+          "minecraft:stripped_crimson_stem",
+          "minecraft:stripped_crimson_stem",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

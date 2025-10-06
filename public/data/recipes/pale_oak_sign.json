@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:pale_oak_sign","count":3,"recipe":{"grid":[["minecraft:pale_oak_planks","minecraft:pale_oak_planks","minecraft:pale_oak_planks"],["minecraft:pale_oak_planks","minecraft:pale_oak_planks","minecraft:pale_oak_planks"],[null,"minecraft:stick",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:pale_oak_sign",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:pale_oak_planks",
+          "minecraft:pale_oak_planks",
+          "minecraft:pale_oak_planks"
+        ],
+        [
+          "minecraft:pale_oak_planks",
+          "minecraft:pale_oak_planks",
+          "minecraft:pale_oak_planks"
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

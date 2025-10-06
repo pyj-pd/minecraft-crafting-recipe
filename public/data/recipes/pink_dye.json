@@ -1,1 +1,58 @@
-{"type":"shapeless","itemId":"minecraft:pink_dye","count":2,"recipe":{"items":["minecraft:red_dye","minecraft:white_dye"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:pink_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:cactus_flower"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:pink_dye",
+    "count": 2,
+    "recipe": {
+      "items": [
+        "minecraft:peony"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:pink_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:pink_petals"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:pink_dye",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:pink_tulip"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:pink_dye",
+    "count": 2,
+    "recipe": {
+      "items": [
+        "minecraft:red_dye",
+        "minecraft:white_dye"
+      ]
+    },
+    "tags": {}
+  }
+]

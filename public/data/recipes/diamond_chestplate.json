@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:diamond_chestplate","count":1,"recipe":{"grid":[["minecraft:diamond",null,"minecraft:diamond"],["minecraft:diamond","minecraft:diamond","minecraft:diamond"],["minecraft:diamond","minecraft:diamond","minecraft:diamond"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:diamond_chestplate",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:diamond",
+          null,
+          "minecraft:diamond"
+        ],
+        [
+          "minecraft:diamond",
+          "minecraft:diamond",
+          "minecraft:diamond"
+        ],
+        [
+          "minecraft:diamond",
+          "minecraft:diamond",
+          "minecraft:diamond"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

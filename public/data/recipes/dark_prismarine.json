@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:dark_prismarine","count":1,"recipe":{"grid":[["minecraft:prismarine_shard","minecraft:prismarine_shard","minecraft:prismarine_shard"],["minecraft:prismarine_shard","minecraft:black_dye","minecraft:prismarine_shard"],["minecraft:prismarine_shard","minecraft:prismarine_shard","minecraft:prismarine_shard"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:dark_prismarine",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:prismarine_shard",
+          "minecraft:prismarine_shard",
+          "minecraft:prismarine_shard"
+        ],
+        [
+          "minecraft:prismarine_shard",
+          "minecraft:black_dye",
+          "minecraft:prismarine_shard"
+        ],
+        [
+          "minecraft:prismarine_shard",
+          "minecraft:prismarine_shard",
+          "minecraft:prismarine_shard"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

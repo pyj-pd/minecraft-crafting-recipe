@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:flower_pot","count":1,"recipe":{"grid":[["minecraft:brick",null,"minecraft:brick"],[null,"minecraft:brick",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:flower_pot",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:brick",
+          null,
+          "minecraft:brick"
+        ],
+        [
+          null,
+          "minecraft:brick",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

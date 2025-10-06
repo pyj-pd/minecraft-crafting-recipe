@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:resin_brick_stairs","count":4,"recipe":{"grid":[["minecraft:resin_bricks",null,null],["minecraft:resin_bricks","minecraft:resin_bricks",null],["minecraft:resin_bricks","minecraft:resin_bricks","minecraft:resin_bricks"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:resin_brick_stairs",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:resin_bricks",
+          null,
+          null
+        ],
+        [
+          "minecraft:resin_bricks",
+          "minecraft:resin_bricks",
+          null
+        ],
+        [
+          "minecraft:resin_bricks",
+          "minecraft:resin_bricks",
+          "minecraft:resin_bricks"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

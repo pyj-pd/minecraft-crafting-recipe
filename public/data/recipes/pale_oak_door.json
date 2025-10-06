@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:pale_oak_door","count":3,"recipe":{"grid":[["minecraft:pale_oak_planks","minecraft:pale_oak_planks",null],["minecraft:pale_oak_planks","minecraft:pale_oak_planks",null],["minecraft:pale_oak_planks","minecraft:pale_oak_planks",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:pale_oak_door",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:pale_oak_planks",
+          "minecraft:pale_oak_planks",
+          null
+        ],
+        [
+          "minecraft:pale_oak_planks",
+          "minecraft:pale_oak_planks",
+          null
+        ],
+        [
+          "minecraft:pale_oak_planks",
+          "minecraft:pale_oak_planks",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

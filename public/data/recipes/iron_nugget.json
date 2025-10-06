@@ -1,1 +1,13 @@
-{"type":"shapeless","itemId":"minecraft:iron_nugget","count":9,"recipe":{"items":["minecraft:iron_ingot"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:iron_nugget",
+    "count": 9,
+    "recipe": {
+      "items": [
+        "minecraft:iron_ingot"
+      ]
+    },
+    "tags": {}
+  }
+]

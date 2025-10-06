@@ -1,1 +1,32 @@
-{"type":"shapeless","itemId":"minecraft:rabbit_stew","count":1,"recipe":{"items":["minecraft:baked_potato","minecraft:cooked_rabbit","minecraft:bowl","minecraft:carrot","minecraft:red_mushroom"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:rabbit_stew",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:baked_potato",
+        "minecraft:cooked_rabbit",
+        "minecraft:bowl",
+        "minecraft:carrot",
+        "minecraft:brown_mushroom"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:rabbit_stew",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:baked_potato",
+        "minecraft:cooked_rabbit",
+        "minecraft:bowl",
+        "minecraft:carrot",
+        "minecraft:red_mushroom"
+      ]
+    },
+    "tags": {}
+  }
+]

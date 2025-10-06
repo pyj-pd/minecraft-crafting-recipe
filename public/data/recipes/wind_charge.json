@@ -1,1 +1,13 @@
-{"type":"shapeless","itemId":"minecraft:wind_charge","count":4,"recipe":{"items":["minecraft:breeze_rod"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:wind_charge",
+    "count": 4,
+    "recipe": {
+      "items": [
+        "minecraft:breeze_rod"
+      ]
+    },
+    "tags": {}
+  }
+]

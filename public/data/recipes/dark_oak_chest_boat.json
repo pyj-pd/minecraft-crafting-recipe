@@ -1,1 +1,14 @@
-{"type":"shapeless","itemId":"minecraft:dark_oak_chest_boat","count":1,"recipe":{"items":["minecraft:chest","minecraft:dark_oak_boat"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:dark_oak_chest_boat",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:chest",
+        "minecraft:dark_oak_boat"
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:blackstone_wall","count":6,"recipe":{"grid":[["minecraft:blackstone","minecraft:blackstone","minecraft:blackstone"],["minecraft:blackstone","minecraft:blackstone","minecraft:blackstone"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:blackstone_wall",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:blackstone",
+          "minecraft:blackstone",
+          "minecraft:blackstone"
+        ],
+        [
+          "minecraft:blackstone",
+          "minecraft:blackstone",
+          "minecraft:blackstone"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

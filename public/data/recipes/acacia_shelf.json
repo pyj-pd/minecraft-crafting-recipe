@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:acacia_shelf","count":6,"recipe":{"grid":[["minecraft:stripped_acacia_log","minecraft:stripped_acacia_log","minecraft:stripped_acacia_log"],[null,null,null],["minecraft:stripped_acacia_log","minecraft:stripped_acacia_log","minecraft:stripped_acacia_log"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:acacia_shelf",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_acacia_log"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_acacia_log"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

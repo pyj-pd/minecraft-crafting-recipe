@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:emerald_block","count":1,"recipe":{"grid":[["minecraft:emerald","minecraft:emerald","minecraft:emerald"],["minecraft:emerald","minecraft:emerald","minecraft:emerald"],["minecraft:emerald","minecraft:emerald","minecraft:emerald"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:emerald_block",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:emerald",
+          "minecraft:emerald",
+          "minecraft:emerald"
+        ],
+        [
+          "minecraft:emerald",
+          "minecraft:emerald",
+          "minecraft:emerald"
+        ],
+        [
+          "minecraft:emerald",
+          "minecraft:emerald",
+          "minecraft:emerald"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

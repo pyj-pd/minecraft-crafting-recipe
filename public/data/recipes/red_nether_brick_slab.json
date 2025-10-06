@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:red_nether_brick_slab","count":6,"recipe":{"grid":[["minecraft:red_nether_bricks","minecraft:red_nether_bricks","minecraft:red_nether_bricks"],[null,null,null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:red_nether_brick_slab",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:red_nether_bricks",
+          "minecraft:red_nether_bricks",
+          "minecraft:red_nether_bricks"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

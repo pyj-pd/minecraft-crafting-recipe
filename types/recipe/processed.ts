@@ -48,5 +48,7 @@ export type ShapelessRecipe = z.infer<typeof ShapelessRecipe>
 
 // Recipe data
 export const RecipeData = z.union([ShapedRecipe, ShapelessRecipe])
-
 export type RecipeData = z.infer<typeof RecipeData>
+
+export const RecipeFileData = z.array(RecipeData)
+export type RecipeFileData = z.infer<typeof RecipeFileData>

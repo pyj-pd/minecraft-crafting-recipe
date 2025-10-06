@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:dried_ghast","count":1,"recipe":{"grid":[["minecraft:ghast_tear","minecraft:ghast_tear","minecraft:ghast_tear"],["minecraft:ghast_tear","minecraft:soul_sand","minecraft:ghast_tear"],["minecraft:ghast_tear","minecraft:ghast_tear","minecraft:ghast_tear"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:dried_ghast",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:ghast_tear",
+          "minecraft:ghast_tear",
+          "minecraft:ghast_tear"
+        ],
+        [
+          "minecraft:ghast_tear",
+          "minecraft:soul_sand",
+          "minecraft:ghast_tear"
+        ],
+        [
+          "minecraft:ghast_tear",
+          "minecraft:ghast_tear",
+          "minecraft:ghast_tear"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:cherry_boat","count":1,"recipe":{"grid":[["minecraft:cherry_planks",null,"minecraft:cherry_planks"],["minecraft:cherry_planks","minecraft:cherry_planks","minecraft:cherry_planks"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:cherry_boat",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:cherry_planks",
+          null,
+          "minecraft:cherry_planks"
+        ],
+        [
+          "minecraft:cherry_planks",
+          "minecraft:cherry_planks",
+          "minecraft:cherry_planks"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

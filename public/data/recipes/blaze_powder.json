@@ -1,1 +1,13 @@
-{"type":"shapeless","itemId":"minecraft:blaze_powder","count":2,"recipe":{"items":["minecraft:blaze_rod"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:blaze_powder",
+    "count": 2,
+    "recipe": {
+      "items": [
+        "minecraft:blaze_rod"
+      ]
+    },
+    "tags": {}
+  }
+]

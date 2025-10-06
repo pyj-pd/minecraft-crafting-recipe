@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:dried_kelp_block","count":1,"recipe":{"grid":[["minecraft:dried_kelp","minecraft:dried_kelp","minecraft:dried_kelp"],["minecraft:dried_kelp","minecraft:dried_kelp","minecraft:dried_kelp"],["minecraft:dried_kelp","minecraft:dried_kelp","minecraft:dried_kelp"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:dried_kelp_block",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:dried_kelp",
+          "minecraft:dried_kelp",
+          "minecraft:dried_kelp"
+        ],
+        [
+          "minecraft:dried_kelp",
+          "minecraft:dried_kelp",
+          "minecraft:dried_kelp"
+        ],
+        [
+          "minecraft:dried_kelp",
+          "minecraft:dried_kelp",
+          "minecraft:dried_kelp"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

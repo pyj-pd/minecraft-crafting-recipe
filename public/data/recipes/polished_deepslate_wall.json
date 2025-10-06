@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:polished_deepslate_wall","count":6,"recipe":{"grid":[["minecraft:polished_deepslate","minecraft:polished_deepslate","minecraft:polished_deepslate"],["minecraft:polished_deepslate","minecraft:polished_deepslate","minecraft:polished_deepslate"],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:polished_deepslate_wall",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:polished_deepslate",
+          "minecraft:polished_deepslate",
+          "minecraft:polished_deepslate"
+        ],
+        [
+          "minecraft:polished_deepslate",
+          "minecraft:polished_deepslate",
+          "minecraft:polished_deepslate"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

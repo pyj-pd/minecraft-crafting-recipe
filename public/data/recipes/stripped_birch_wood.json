@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:stripped_birch_wood","count":3,"recipe":{"grid":[["minecraft:stripped_birch_log","minecraft:stripped_birch_log",null],["minecraft:stripped_birch_log","minecraft:stripped_birch_log",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:stripped_birch_wood",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:stripped_birch_log",
+          "minecraft:stripped_birch_log",
+          null
+        ],
+        [
+          "minecraft:stripped_birch_log",
+          "minecraft:stripped_birch_log",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

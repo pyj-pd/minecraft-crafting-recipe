@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:bricks","count":1,"recipe":{"grid":[["minecraft:brick","minecraft:brick",null],["minecraft:brick","minecraft:brick",null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:bricks",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:brick",
+          "minecraft:brick",
+          null
+        ],
+        [
+          "minecraft:brick",
+          "minecraft:brick",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

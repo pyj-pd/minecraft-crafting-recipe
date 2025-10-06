@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:cherry_sign","count":3,"recipe":{"grid":[["minecraft:cherry_planks","minecraft:cherry_planks","minecraft:cherry_planks"],["minecraft:cherry_planks","minecraft:cherry_planks","minecraft:cherry_planks"],[null,"minecraft:stick",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:cherry_sign",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:cherry_planks",
+          "minecraft:cherry_planks",
+          "minecraft:cherry_planks"
+        ],
+        [
+          "minecraft:cherry_planks",
+          "minecraft:cherry_planks",
+          "minecraft:cherry_planks"
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

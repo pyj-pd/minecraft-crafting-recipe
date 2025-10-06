@@ -1,1 +1,14 @@
-{"type":"shapeless","itemId":"minecraft:waxed_copper_lantern","count":1,"recipe":{"items":["minecraft:copper_lantern","minecraft:honeycomb"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:waxed_copper_lantern",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:copper_lantern",
+        "minecraft:honeycomb"
+      ]
+    },
+    "tags": {}
+  }
+]

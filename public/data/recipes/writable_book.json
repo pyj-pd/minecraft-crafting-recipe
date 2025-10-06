@@ -1,1 +1,15 @@
-{"type":"shapeless","itemId":"minecraft:writable_book","count":1,"recipe":{"items":["minecraft:book","minecraft:ink_sac","minecraft:feather"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:writable_book",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:book",
+        "minecraft:ink_sac",
+        "minecraft:feather"
+      ]
+    },
+    "tags": {}
+  }
+]

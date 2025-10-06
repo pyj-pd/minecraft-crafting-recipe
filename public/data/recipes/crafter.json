@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:crafter","count":1,"recipe":{"grid":[["minecraft:iron_ingot","minecraft:iron_ingot","minecraft:iron_ingot"],["minecraft:iron_ingot","minecraft:crafting_table","minecraft:iron_ingot"],["minecraft:redstone","minecraft:dropper","minecraft:redstone"]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:crafter",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:iron_ingot",
+          "minecraft:iron_ingot",
+          "minecraft:iron_ingot"
+        ],
+        [
+          "minecraft:iron_ingot",
+          "minecraft:crafting_table",
+          "minecraft:iron_ingot"
+        ],
+        [
+          "minecraft:redstone",
+          "minecraft:dropper",
+          "minecraft:redstone"
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

@@ -1,1 +1,13 @@
-{"type":"shapeless","itemId":"minecraft:raw_iron","count":9,"recipe":{"items":["minecraft:raw_iron_block"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:raw_iron",
+    "count": 9,
+    "recipe": {
+      "items": [
+        "minecraft:raw_iron_block"
+      ]
+    },
+    "tags": {}
+  }
+]

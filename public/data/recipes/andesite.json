@@ -1,1 +1,14 @@
-{"type":"shapeless","itemId":"minecraft:andesite","count":2,"recipe":{"items":["minecraft:diorite","minecraft:cobblestone"]},"tags":{}}
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:andesite",
+    "count": 2,
+    "recipe": {
+      "items": [
+        "minecraft:diorite",
+        "minecraft:cobblestone"
+      ]
+    },
+    "tags": {}
+  }
+]

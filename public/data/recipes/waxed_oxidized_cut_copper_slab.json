@@ -1,1 +1,39 @@
-{"type":"shapeless","itemId":"minecraft:waxed_oxidized_cut_copper_slab","count":1,"recipe":{"items":["minecraft:oxidized_cut_copper_slab","minecraft:honeycomb"]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:waxed_oxidized_cut_copper_slab",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:waxed_oxidized_cut_copper",
+          "minecraft:waxed_oxidized_cut_copper",
+          "minecraft:waxed_oxidized_cut_copper"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:waxed_oxidized_cut_copper_slab",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:oxidized_cut_copper_slab",
+        "minecraft:honeycomb"
+      ]
+    },
+    "tags": {}
+  }
+]

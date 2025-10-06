@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:gray_carpet","count":3,"recipe":{"grid":[["minecraft:gray_wool","minecraft:gray_wool",null],[null,null,null],[null,null,null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:gray_carpet",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:gray_wool",
+          "minecraft:gray_wool",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]

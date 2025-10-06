@@ -1,1 +1,27 @@
-{"type":"shaped","itemId":"minecraft:spruce_sign","count":3,"recipe":{"grid":[["minecraft:spruce_planks","minecraft:spruce_planks","minecraft:spruce_planks"],["minecraft:spruce_planks","minecraft:spruce_planks","minecraft:spruce_planks"],[null,"minecraft:stick",null]]},"tags":{}}
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:spruce_sign",
+    "count": 3,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:spruce_planks",
+          "minecraft:spruce_planks",
+          "minecraft:spruce_planks"
+        ],
+        [
+          "minecraft:spruce_planks",
+          "minecraft:spruce_planks",
+          "minecraft:spruce_planks"
+        ],
+        [
+          null,
+          "minecraft:stick",
+          null
+        ]
+      ]
+    },
+    "tags": {}
+  }
+]
