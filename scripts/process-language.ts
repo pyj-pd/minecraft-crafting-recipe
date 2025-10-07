@@ -9,7 +9,6 @@ import {
 import {
   DATA_FILE_EXTENSION,
   getFileNameWithoutExtension,
-  getPureItemName,
   parseRawFile,
   PARSING_TAG_TYPES,
   PROCESSED_LANGUAGE_DATA_FOLDER,
