@@ -6,6 +6,7 @@ import {
   DATA_FILE_EXTENSION,
   LANGUAGE_DATA_FILE_URL,
 } from '@shared/constants/path'
+import Inko from 'inko'
 
 export async function getTranslationData(
   languageId: string
@@ -19,6 +20,8 @@ export async function getTranslationData(
 }
 
 export const defaultLanguageData = await getTranslationData(DEFAULT_LANGUAGE_ID)
+
+export const inko = new Inko()
 
 /**
  * Gets array of items' translations that can be used for fuzzy searching.
@@ -43,8 +46,11 @@ export function getTranslationsForSearching(
 
     /** @todo optimize? */
     for (const translation of allLanguageData) {
-      const translationString = translation.translations[itemId as ItemId]
-      if (translationString) itemData.translations.push(translationString)
+      const rawTranslationString = translation.translations[itemId as ItemId]
+      if (!rawTranslationString) continue
+
+      const translationString = inko.ko2en(rawTranslationString) // For korean search
+      itemData.translations.push(translationString)
     }
 
     if (itemData.translations.length > 0) data.push(itemData)
