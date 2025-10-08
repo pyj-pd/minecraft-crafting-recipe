@@ -1,4 +1,4 @@
-import { ItemId, minecraftPrefix } from '@shared/types/minecraft'
+import { ItemId, minecraftPrefix } from '../types/minecraft'
 
 /**
  * Removes `minecraft:` prefix from item id.

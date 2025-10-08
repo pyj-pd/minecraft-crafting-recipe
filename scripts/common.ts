@@ -3,7 +3,7 @@ import path from 'path'
 import {
   LANGUAGE_DATA_FILE_URL,
   RECIPE_DATA_FILE_URL,
-} from '@shared/constants/path'
+} from '../shared/constants/path'
 
 // Paths
 // Recipe files

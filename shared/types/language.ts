@@ -1,5 +1,5 @@
 import * as z from 'zod'
-import { ItemId } from '@shared/types/minecraft'
+import { ItemId } from './minecraft'
 
 export const RawLanguageFile = z.record(z.string(), z.string())
 export type RawLanguageFile = z.infer<typeof RawLanguageFile>

@@ -1,11 +1,11 @@
 import { access, mkdir, readdir, readFile, writeFile } from 'fs/promises'
 import path from 'path'
-import { LanguageData, RawLanguageFile } from '@shared/types/language'
+import { LanguageData, RawLanguageFile } from '../shared/types/language'
 import {
   ItemId,
   minecraftNamespace,
   minecraftPrefix,
-} from '@shared/types/minecraft'
+} from '../shared/types/minecraft'
 import {
   getFileNameWithoutExtension,
   parseRawFile,
@@ -14,7 +14,7 @@ import {
   PROCESSED_RECIPE_DATA_FOLDER,
   RAW_LANGUAGE_DATA_FOLDER,
 } from './common'
-import { DATA_FILE_EXTENSION } from '@shared/constants/path'
+import { DATA_FILE_EXTENSION } from '../shared/constants/path'
 
 // Strings
 const TRANSLATION_SEPARATOR = '.'

@@ -1,5 +1,5 @@
 import * as z from 'zod'
-import { ItemId, ItemTag } from '@shared/types/minecraft'
+import { ItemId, ItemTag } from './minecraft'
 
 export const RawTagFile = z.object({
   values: z.array(z.union([ItemId, ItemTag])),

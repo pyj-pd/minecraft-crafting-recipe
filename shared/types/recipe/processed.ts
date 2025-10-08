@@ -1,5 +1,5 @@
 import * as z from 'zod'
-import { ItemId, ItemTag } from '@shared/types/minecraft'
+import { ItemId, ItemTag } from '../minecraft'
 
 export const RecipeDataTagData = z.record(ItemTag, z.array(ItemId))
 export type RecipeDataTagData = z.infer<typeof RecipeDataTagData>

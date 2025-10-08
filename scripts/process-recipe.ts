@@ -9,7 +9,7 @@ import {
   ShapedRecipe,
   ShapedRecipeGrid,
   ShapelessRecipe,
-} from '@shared/types/recipe'
+} from '../shared/types/recipe'
 import * as z from 'zod'
 import {
   parseRawFile,
@@ -17,9 +17,9 @@ import {
   RAW_RECIPE_DATA_FOLDER,
 } from './common'
 import { getTagData } from './process-tags'
-import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '@shared/types/minecraft'
-import { DATA_FILE_EXTENSION } from '@shared/constants/path'
-import { getPureItemName } from '@shared/utils/string'
+import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '../shared/types/minecraft'
+import { DATA_FILE_EXTENSION } from '../shared/constants/path'
+import { getPureItemName } from '../shared/utils/string'
 
 // Recipe
 const DEFAULT_ITEM_COUNT = 1
