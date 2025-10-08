@@ -1,6 +1,10 @@
 import { ZodType } from 'zod'
 import { ItemId, minecraftPrefix } from '../src/types/minecraft'
 import path from 'path'
+import {
+  LANGUAGE_DATA_FILE_URL,
+  RECIPE_DATA_FILE_URL,
+} from '../shared/constants/path'
 
 // Paths
 // Recipe files
@@ -10,7 +14,8 @@ export const RAW_RECIPE_DATA_FOLDER = path.resolve(
 )
 export const PROCESSED_RECIPE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
-  '../public/data/recipes/'
+  '../public',
+  `.${RECIPE_DATA_FILE_URL}`
 )
 
 // Language files
@@ -20,7 +25,8 @@ export const RAW_LANGUAGE_DATA_FOLDER = path.resolve(
 )
 export const PROCESSED_LANGUAGE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
-  '../public/data/translations/'
+  '../public',
+  `.${LANGUAGE_DATA_FILE_URL}`
 )
 
 // Tag files
@@ -31,7 +37,6 @@ export const RAW_TAGS_DATA_FOLDER = path.resolve(
 
 // Strings
 export const PARSING_TAG_TYPES = ['block', 'item']
-export const DATA_FILE_EXTENSION = '.json'
 
 export async function parseRawFile<DataType extends ZodType>(
   fileContent: string,

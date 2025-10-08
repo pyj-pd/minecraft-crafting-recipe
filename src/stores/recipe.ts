@@ -1,5 +1,6 @@
 import type { ItemId } from '@/types/minecraft'
 import type { RecipeFileData } from '@/types/recipe'
+import { getRecipeData } from '@/utils/recipe'
 import { defineStore } from 'pinia'
 
 export const useRecipeStore = defineStore('recipe', {
@@ -14,6 +15,11 @@ export const useRecipeStore = defineStore('recipe', {
         this.recipeData = null
         return
       }
+
+      const recipeData = await getRecipeData(newItemId)
+
+      this.itemId = newItemId
+      this.recipeData = recipeData
     },
   },
 })

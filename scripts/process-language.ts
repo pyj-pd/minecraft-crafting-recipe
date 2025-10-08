@@ -7,7 +7,6 @@ import {
   minecraftPrefix,
 } from '../src/types/minecraft'
 import {
-  DATA_FILE_EXTENSION,
   getFileNameWithoutExtension,
   parseRawFile,
   PARSING_TAG_TYPES,
@@ -15,6 +14,7 @@ import {
   PROCESSED_RECIPE_DATA_FOLDER,
   RAW_LANGUAGE_DATA_FOLDER,
 } from './common'
+import { DATA_FILE_EXTENSION } from '../shared/constants/path'
 
 // Strings
 const TRANSLATION_SEPARATOR = '.'

@@ -1,16 +1,17 @@
 /** @todo support multiple languages */
 import { DEFAULT_LANGUAGE_ID } from '@/constants/default'
-import { DATA_FILE_EXTENSION } from '@/constants/files'
 import { LanguageData, SearchLanguageData } from '@/types/language'
 import type { ItemId } from '@/types/minecraft'
-
-const TRANSLATION_DATA_URL = '/data/translations/'
+import {
+  DATA_FILE_EXTENSION,
+  LANGUAGE_DATA_FILE_URL,
+} from '@shared/constants/path'
 
 export async function getTranslationData(
   languageId: string
 ): Promise<LanguageData> {
   const response = await fetch(
-    `${TRANSLATION_DATA_URL}${languageId}${DATA_FILE_EXTENSION}`
+    `${LANGUAGE_DATA_FILE_URL}${languageId}${DATA_FILE_EXTENSION}`
   )
   const data = LanguageData.parse(await response.json())
 

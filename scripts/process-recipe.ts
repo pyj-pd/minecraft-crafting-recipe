@@ -12,7 +12,6 @@ import {
 } from '../src/types/recipe'
 import * as z from 'zod'
 import {
-  DATA_FILE_EXTENSION,
   getPureItemName,
   parseRawFile,
   PROCESSED_RECIPE_DATA_FOLDER,
@@ -20,6 +19,7 @@ import {
 } from './common'
 import { getTagData } from './process-tags'
 import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '../src/types/minecraft'
+import { DATA_FILE_EXTENSION } from '../shared/constants/path'
 
 // Recipe
 const DEFAULT_ITEM_COUNT = 1
