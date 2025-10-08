@@ -1,5 +1,5 @@
-import type { ItemId } from '@/types/minecraft'
-import type { RecipeFileData } from '@/types/recipe'
+import type { ItemId } from '@shared/types/minecraft'
+import type { RecipeFileData } from '@shared/types/recipe'
 import { getRecipeData } from '@/utils/recipe'
 import { defineStore } from 'pinia'
 

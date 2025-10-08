@@ -1,7 +1,6 @@
-/** @todo support multiple languages */
 import { DEFAULT_LANGUAGE_ID } from '@/constants/default'
-import { LanguageData, SearchLanguageData } from '@/types/language'
-import type { ItemId } from '@/types/minecraft'
+import { LanguageData, SearchLanguageData } from '@shared/types/language'
+import type { ItemId } from '@shared/types/minecraft'
 import {
   DATA_FILE_EXTENSION,
   LANGUAGE_DATA_FILE_URL,
@@ -44,7 +43,6 @@ export function getTranslationsForSearching(
       translations: [],
     }
 
-    /** @todo optimize? */
     for (const translation of allLanguageData) {
       const rawTranslationString = translation.translations[itemId as ItemId]
       if (!rawTranslationString) continue

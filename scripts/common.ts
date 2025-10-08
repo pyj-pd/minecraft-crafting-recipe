@@ -1,10 +1,9 @@
 import { ZodType } from 'zod'
-import { ItemId, minecraftPrefix } from '../src/types/minecraft'
 import path from 'path'
 import {
   LANGUAGE_DATA_FILE_URL,
   RECIPE_DATA_FILE_URL,
-} from '../shared/constants/path'
+} from '@shared/constants/path'
 
 // Paths
 // Recipe files
@@ -58,14 +57,4 @@ export function getFileNameWithoutExtension(fileName: string) {
 
   if (lastIndex < 0) return fileName
   else return fileName.substring(0, lastIndex)
-}
-
-/**
- * Removes `minecraft:` prefix from item id.
- */
-export function getPureItemName(itemId: ItemId): string {
-  const index = itemId.indexOf(minecraftPrefix)
-
-  if (index < 0) return itemId
-  else return itemId.substring(index + minecraftPrefix.length)
 }

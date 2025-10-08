@@ -1,5 +1,5 @@
 import * as z from 'zod'
-import { ItemId, ItemTag } from '../minecraft'
+import { ItemId, ItemTag } from '@shared/types/minecraft'
 
 const RawRecipeDataCommon = z.object({
   category: z.string(),

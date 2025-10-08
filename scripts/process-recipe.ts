@@ -9,17 +9,17 @@ import {
   ShapedRecipe,
   ShapedRecipeGrid,
   ShapelessRecipe,
-} from '../src/types/recipe'
+} from '@shared/types/recipe'
 import * as z from 'zod'
 import {
-  getPureItemName,
   parseRawFile,
   PROCESSED_RECIPE_DATA_FOLDER,
   RAW_RECIPE_DATA_FOLDER,
 } from './common'
 import { getTagData } from './process-tags'
-import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '../src/types/minecraft'
-import { DATA_FILE_EXTENSION } from '../shared/constants/path'
+import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '@shared/types/minecraft'
+import { DATA_FILE_EXTENSION } from '@shared/constants/path'
+import { getPureItemName } from '@shared/utils/string'
 
 // Recipe
 const DEFAULT_ITEM_COUNT = 1
@@ -28,7 +28,6 @@ const DEFAULT_ITEM_COUNT = 1
 const tagData = await getTagData()
 
 /**
- * @todo handle duplicated recipes(such as `black_glass_pane`)
  * @see https://minecraft.wiki/w/Recipe
  */
 export async function processRawRecipeData() {

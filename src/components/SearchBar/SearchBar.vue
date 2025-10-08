@@ -1,41 +1,20 @@
 <script setup lang="ts">
-import { useLanguageStore } from '@/stores/language'
+import { useSearchStore } from '@/stores/search'
 import { useRecipeStore } from '@/stores/recipe'
-import type { ItemId } from '@/types/minecraft'
-import { getTranslationsForSearching, inko } from '@/utils/language'
-import Fuse from 'fuse.js'
-import { storeToRefs } from 'pinia'
-import { computed, ref } from 'vue'
+import type { ItemId } from '@shared/types/minecraft'
+import { ref } from 'vue'
 
-const languageStore = useLanguageStore()
-const { setLanguage } = languageStore
-const { translationData } = storeToRefs(languageStore)
+const searchStore = useSearchStore()
+const { setLanguage, searchItem } = searchStore
 
 const { setItemId } = useRecipeStore()
-
-const translations = computed(() =>
-  getTranslationsForSearching(
-    translationData.value ? [translationData.value] : undefined
-  )
-)
-
-/** @todo put this in a store */
-const fuse = computed(
-  () =>
-    new Fuse(translations.value, {
-      isCaseSensitive: false,
-      keys: ['itemId', 'translations'],
-    })
-)
 
 let resultIds = ref<ItemId[]>([])
 
 const onInput = (event: InputEvent) => {
-  const query = inko.ko2en((event.target as HTMLInputElement).value)
+  const query = (event.target as HTMLInputElement).value
 
-  resultIds.value = fuse.value
-    .search(query, { limit: 10 })
-    .map((result) => result.item.itemId)
+  resultIds.value = searchItem(query)
 }
 </script>
 
