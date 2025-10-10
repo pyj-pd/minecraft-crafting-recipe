@@ -21,7 +21,7 @@ const TAG_PREFIX = `${ITEM_TAG_PREFIX}${minecraftNamespace}:`
  * This function will NOT write any files, but return processed data only.
  * @see https://minecraft.wiki/w/Tag_(Java_Edition)
  */
-export async function getTagData() {
+export async function getTagData(): Promise<TagsData> {
   const rawTagFileList = await readdir(RAW_TAGS_DATA_FOLDER, {
     withFileTypes: true,
   })
@@ -74,7 +74,7 @@ export async function getTagData() {
           const tagItemIds =
             tagData[value as ItemTag] || (await getTagItems(value as ItemTag))
           itemIds.push(...tagItemIds)
-        } catch (error) {
+        } catch {
           continue
         }
       }

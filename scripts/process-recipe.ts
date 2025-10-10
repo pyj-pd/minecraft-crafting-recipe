@@ -30,7 +30,7 @@ const tagData = await getTagData()
 /**
  * @see https://minecraft.wiki/w/Recipe
  */
-export async function processRawRecipeData() {
+export async function processRawRecipeData(): Promise<void> {
   const rawRecipeFileList = await readdir(RAW_RECIPE_DATA_FOLDER, {
     withFileTypes: true,
   })
@@ -115,7 +115,9 @@ export async function processRawRecipeData() {
  * @returns Processed shaped recipe data
  * @see https://minecraft.wiki/w/Recipe#crafting_shaped
  */
-async function processShapedRecipeData(data: RawShapedRecipeData) {
+async function processShapedRecipeData(
+  data: RawShapedRecipeData
+): Promise<ShapedRecipe> {
   const recipe = {
     grid: [
       [null, null, null],
@@ -164,7 +166,9 @@ async function processShapedRecipeData(data: RawShapedRecipeData) {
  * @returns Processed shapeless recipe data
  * @see https://minecraft.wiki/w/Recipe#crafting_shapeless
  */
-async function processShapelessRecipeData(data: RawShapelessRecipeData) {
+async function processShapelessRecipeData(
+  data: RawShapelessRecipeData
+): Promise<ShapelessRecipe> {
   // Get tag list
   const tags: RecipeDataTagData = {}
 

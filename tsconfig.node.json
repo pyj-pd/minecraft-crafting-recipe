@@ -22,5 +22,10 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["shared/**/*.ts", "scripts/**/*.ts", "vite.config.ts"]
+  "include": [
+    "shared/**/*.ts",
+    "scripts/**/*.ts",
+    "vite.config.ts",
+    "eslint.config.ts"
+  ]
 }

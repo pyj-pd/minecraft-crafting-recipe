@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "process:language-data": "tsx ./scripts/process-language.ts",
-    "process:recipe-data": "tsx ./scripts/process-recipe.ts",
+    "process:language-data": "jiti ./scripts/process-language.ts",
+    "process:recipe-data": "jiti ./scripts/process-recipe.ts",
     "process": "pnpm run process:recipe-data && pnpm run process:language-data",
     "dev": "vite",
     "build": "pnpm process && vue-tsc -b && vite build",
@@ -18,15 +18,23 @@
     "vue": "^3.5.22"
   },
   "devDependencies": {
-    "@types/node": "^24.6.0",
+    "@eslint/js": "^9.37.0",
+    "@types/node": "^24.7.1",
+    "@typescript-eslint/parser": "^8.46.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.5.0",
+    "globals": "^16.4.0",
+    "jiti": "^2.6.1",
     "sass": "^1.93.2",
-    "tsx": "^4.20.6",
     "typescript": "~5.9.3",
-    "vite": "npm:rolldown-vite@7.1.14",
-    "vue-tsc": "^3.1.0",
-    "zod": "^4.1.11"
+    "typescript-eslint": "^8.46.0",
+    "vite": "npm:rolldown-vite@7.1.16",
+    "vue-eslint-parser": "^10.2.0",
+    "vue-tsc": "^3.1.1",
+    "zod": "^4.1.12"
   },
   "pnpm": {
     "overrides": {

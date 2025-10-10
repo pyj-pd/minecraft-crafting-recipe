@@ -24,7 +24,7 @@ const ITEM_SEPARATOR = ':'
  * Parses raw language files into processed data.
  * This function will remove all other translations that are not included in the recipe data.
  */
-export async function processRawLanguageData() {
+export async function processRawLanguageData(): Promise<void> {
   const rawLanguageFileList = await readdir(RAW_LANGUAGE_DATA_FOLDER, {
     withFileTypes: true,
   })

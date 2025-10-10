@@ -1,15 +1,7 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia'
-import SearchBar from './components/SearchBar/SearchBar.vue'
-import { useRecipeStore } from './stores/recipe'
-
-const { itemId, recipeData } = storeToRefs(useRecipeStore())
+import SearchSection from './components/SearchSection/SearchSection.vue'
 </script>
 
 <template>
-  <SearchBar />
-  <p>{{ itemId }}</p>
-  <textarea readonly>{{ JSON.stringify(recipeData, undefined, 2) }}</textarea>
+  <SearchSection />
 </template>
-
-<style scoped></style>

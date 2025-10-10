@@ -1,4 +1,4 @@
-import { ZodType } from 'zod'
+import { ZodType, type output } from 'zod'
 import path from 'path'
 import {
   LANGUAGE_DATA_FILE_URL,
@@ -40,9 +40,9 @@ export const PARSING_TAG_TYPES = ['block', 'item']
 export async function parseRawFile<DataType extends ZodType>(
   fileContent: string,
   Schema: DataType
-) {
+): Promise<null | output<DataType>> {
   try {
-    const rawLanguageData = await Schema.parseAsync(JSON.parse(fileContent))
+    const rawLanguageData = Schema.parse(JSON.parse(fileContent))
 
     return rawLanguageData
   } catch {
@@ -52,7 +52,7 @@ export async function parseRawFile<DataType extends ZodType>(
 
 const EXTENSION_SEPARATOR = '.'
 
-export function getFileNameWithoutExtension(fileName: string) {
+export function getFileNameWithoutExtension(fileName: string): string {
   const lastIndex = fileName.lastIndexOf(EXTENSION_SEPARATOR)
 
   if (lastIndex < 0) return fileName

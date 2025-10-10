@@ -9,6 +9,8 @@ import {
 import Fuse from 'fuse.js'
 import { defineStore } from 'pinia'
 
+const SEARCH_RESULT_LIMIT = 5
+
 const createFuseInstance = (
   translationData?: LanguageData
 ): Fuse<SearchLanguageData[number]> => {
@@ -29,6 +31,9 @@ export const useSearchStore = defineStore('search', {
     languageId: DEFAULT_LANGUAGE_ID,
     translationData: null as null | LanguageData,
 
+    // Search
+    searchResults: null as null | ItemId[],
+
     // Fuse
     fuseInstance: createFuseInstance(),
     selectedItemId: null as null | ItemId,
@@ -44,14 +49,14 @@ export const useSearchStore = defineStore('search', {
       // Create Fuse instance
       this.fuseInstance = createFuseInstance(translationData)
     },
-    searchItem(rawQuery: string): ItemId[] {
+    searchItem(rawQuery: string): void {
       const query = inko.ko2en(rawQuery)
 
       const results = this.fuseInstance
-        .search(query, { limit: 10 })
+        .search(query, { limit: SEARCH_RESULT_LIMIT })
         .map((result) => result.item.itemId)
 
-      return results
+      this.searchResults = results
     },
   },
 })
