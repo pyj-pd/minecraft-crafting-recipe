@@ -1,15 +1,34 @@
 <script setup lang="ts">
+import { useSearchStore } from '@/stores/search'
 import MyButton from '../common/MyButton.vue'
 import SearchTextInput from './SearchTextInput/SearchTextInput.vue'
+import { useTemplateRef } from 'vue'
+
+let searchRawQuery = ''
+
+const { searchItem } = useSearchStore()
+
+const searchTextInputRef = useTemplateRef('text-input')
+
+const onClickSearch = (): void => {
+  searchItem(searchRawQuery)
+  searchTextInputRef.value?.focusText()
+}
 </script>
 
 <template>
   <section :class="$style['search-section']">
-    <h2 :class="$style.title">Minecraft Crafting Recipe</h2>
-    <div :class="$style['input-container']">
-      <SearchTextInput />
-      <MyButton>Search</MyButton>
-    </div>
+    <h1 :class="$style.title">Minecraft Crafting Recipe</h1>
+    <form
+      :class="$style['input-container']"
+      @submit.prevent="onClickSearch"
+    >
+      <SearchTextInput
+        ref="text-input"
+        v-model="searchRawQuery"
+      />
+      <MyButton type="submit">Search</MyButton>
+    </form>
   </section>
 </template>
 
@@ -18,7 +37,7 @@ import SearchTextInput from './SearchTextInput/SearchTextInput.vue'
 
 .search-section {
   display: flex;
-  gap: 23px;
+  gap: 30px;
   flex-direction: column;
   align-items: center;
 
@@ -28,6 +47,8 @@ import SearchTextInput from './SearchTextInput/SearchTextInput.vue'
 .title {
   font-size: value.$main-title;
   font-weight: value.$bold-weight;
+
+  text-align: center;
 }
 
 .input-container {

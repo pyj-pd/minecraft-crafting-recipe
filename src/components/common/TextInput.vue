@@ -1,18 +1,27 @@
 <script setup lang="ts">
-import type { InputHTMLAttributes } from 'vue'
+import { useTemplateRef, type InputHTMLAttributes } from 'vue'
 
-/* @vue-ignore */
-interface TextInputProps extends InputHTMLAttributes {
+type TextInputProps = /* @vue-ignore */ InputHTMLAttributes & {
   type?: 'text' | 'search'
 }
 
 withDefaults(defineProps<TextInputProps>(), {
   type: 'text',
 })
+
+const model = defineModel<string>()
+
+const inputRef = useTemplateRef('input-element')
+
+defineExpose({ inputRef })
 </script>
 
 <template>
-  <input :type="$props.type" />
+  <input
+    ref="input-element"
+    v-model="model"
+    :type="$props.type"
+  />
 </template>
 
 <style lang="scss" scoped>

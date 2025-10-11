@@ -1,15 +1,27 @@
 <script setup lang="ts">
 import TextInput from '@/components/common/TextInput.vue'
 import SearchResult from './SearchResult.vue'
+import { useTemplateRef } from 'vue'
+
+const model = defineModel<string>()
+
+const input = useTemplateRef('text-input')
+
+const focusText = (): void => input.value?.inputRef?.focus()
+
+defineExpose({ focusText })
 </script>
 
 <template>
   <div :class="$style['search-text-input-container']">
     <TextInput
+      ref="text-input"
+      v-model="model"
       placeholder="Search for items"
       :class="$style.input"
+      type="search"
     />
-    <SearchResult />
+    <SearchResult :class="$style['search-result']" />
   </div>
 </template>
 
@@ -19,6 +31,12 @@ import SearchResult from './SearchResult.vue'
 
   display: flex;
   width: 100%;
+
+  &:not(:focus-within) {
+    .search-result {
+      display: none;
+    }
+  }
 }
 
 .input {

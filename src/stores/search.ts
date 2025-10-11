@@ -2,6 +2,7 @@ import { DEFAULT_LANGUAGE_ID } from '@/constants/default'
 import type { LanguageData, SearchLanguageData } from '@shared/types/language'
 import type { ItemId } from '@shared/types/minecraft'
 import {
+  defaultLanguageData,
   getTranslationData,
   getTranslationsForSearching,
   inko,
@@ -29,17 +30,14 @@ export const useSearchStore = defineStore('search', {
   state: () => ({
     // Language
     languageId: DEFAULT_LANGUAGE_ID,
-    translationData: null as null | LanguageData,
+    translationData: defaultLanguageData as null | LanguageData,
 
     // Search
     searchResults: null as null | ItemId[],
-
-    // Fuse
     fuseInstance: createFuseInstance(),
-    selectedItemId: null as null | ItemId,
   }),
   actions: {
-    async setLanguage(newLanguageId: string) {
+    async setLanguage(newLanguageId: string): Promise<void> {
       const translationData = await getTranslationData(newLanguageId)
 
       // Set language

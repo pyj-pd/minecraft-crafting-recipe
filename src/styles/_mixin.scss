@@ -1,0 +1,13 @@
+@mixin hover-animation($hovered-background-color, $brightness: 120%) {
+  &:not(:active) {
+    &:hover,
+    &:focus-visible {
+      filter: brightness($brightness);
+    }
+  }
+
+  &:active {
+    box-shadow: none;
+    background-color: $hovered-background-color;
+  }
+}

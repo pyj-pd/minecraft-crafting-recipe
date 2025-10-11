@@ -9,7 +9,8 @@ export const useRecipeStore = defineStore('recipe', {
     recipeData: null as null | RecipeFileData,
   }),
   actions: {
-    async setItemId(newItemId: null | ItemId) {
+    /** @todo add abort controller */
+    async setItemId(newItemId: null | ItemId): Promise<void> {
       if (newItemId === null) {
         this.itemId = null
         this.recipeData = null

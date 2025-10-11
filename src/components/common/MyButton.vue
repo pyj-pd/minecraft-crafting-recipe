@@ -1,5 +1,13 @@
 <script setup lang="ts">
+import type { ButtonHTMLAttributes } from 'vue'
+
+type MyButtonProps = /* @vue-ignore */ ButtonHTMLAttributes
+
 defineSlots()
+
+withDefaults(defineProps<MyButtonProps>(), {
+  type: 'button',
+})
 </script>
 
 <template>
@@ -9,6 +17,7 @@ defineSlots()
 <style lang="scss" module>
 @use '@/styles/value' as value;
 @use '@/styles/palette' as palette;
+@use '@/styles/mixin' as mixin;
 
 button {
   padding: value.$button-padding;
@@ -25,5 +34,7 @@ button {
   cursor: pointer;
 
   border: solid value.$border-width-normal palette.$black;
+
+  @include mixin.hover-animation($hovered-background-color: palette.$green-1);
 }
 </style>
