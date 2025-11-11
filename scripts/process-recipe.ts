@@ -1,3 +1,4 @@
+import 'server-only'
 import { readdir, readFile, writeFile, mkdir, access } from 'fs/promises'
 import path from 'path'
 import {

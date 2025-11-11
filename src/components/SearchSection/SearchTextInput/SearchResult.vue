@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useRecipeStore } from '@/stores/recipe'
 import { useSearchStore } from '@/stores/search'
+import { getItemImageUrl } from '@/utils/image'
 import type { ItemId } from '@shared/types/minecraft'
 import { storeToRefs } from 'pinia'
 
@@ -30,8 +31,7 @@ const onItemSelect = (itemId: ItemId): void => {
           @click="() => onItemSelect(searchResult)"
         >
           <div :class="$style['image-container']">
-            <!-- @todo change to item images -->
-            <img src="/assets/images/steve.webp" />
+            <img :src="getItemImageUrl(searchResult)" />
           </div>
           <div :class="$style['info-container']">
             <span :class="$style['item-name']">{{
