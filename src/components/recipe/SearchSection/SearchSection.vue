@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useSearchStore } from '@/stores/search'
-import MyButton from '../common/MyButton.vue'
+import MyButton from '@/components/common/MyButton.vue'
 import SearchTextInput from './SearchTextInput/SearchTextInput.vue'
 import { useTemplateRef } from 'vue'
 

@@ -13,6 +13,10 @@ const { setItemId } = useRecipeStore()
 
 const onItemSelect = (itemId: ItemId): void => {
   setItemId(itemId)
+
+  // Unfocus search bar
+  const currentActiveElement = document.activeElement as HTMLElement | null
+  currentActiveElement?.blur()
 }
 </script>
 
@@ -27,6 +31,7 @@ const onItemSelect = (itemId: ItemId): void => {
         :key="searchResult"
       >
         <button
+          type="button"
           :class="$style['search-result-item']"
           @click="() => onItemSelect(searchResult)"
         >
