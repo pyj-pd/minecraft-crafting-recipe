@@ -1,4 +1,7 @@
-@mixin hover-animation($hovered-background-color, $brightness: 120%) {
+@use '@/styles/value' as value;
+@use '@/styles/palette' as palette;
+
+@mixin hover-animation($active-background-color, $brightness: 120%) {
   &:not(:active) {
     &:hover,
     &:focus-visible {
@@ -8,6 +11,38 @@
 
   &:active {
     box-shadow: none;
-    background-color: $hovered-background-color;
+    background-color: $active-background-color;
   }
+}
+
+// Button
+@mixin button-color-style(
+  // Color
+  $background-color: palette.$green-2,
+  $active-background-color: palette.$green-1,
+  $color: palette.$text-color,
+
+  // Shadow
+  $shadow-width: value.$button-inset-shadow-offset,
+
+  $shadow-color-bright: palette.$green-3,
+  $shadow-color-dark: palette.$green-1,
+
+  // Border
+  $border-width: value.$border-width-normal,
+  $border-color: palette.$black
+) {
+  background-color: $background-color;
+  color: $color;
+
+  box-shadow: inset 0 $shadow-width 0 0 $shadow-color-bright,
+    inset 0 (-1 * $shadow-width) 0 0 $shadow-color-dark;
+
+  @if ($border-color == null or $border-width == null) {
+    border: none;
+  } @else {
+    border: solid $border-width $border-color;
+  }
+
+  @include hover-animation($active-background-color: $active-background-color);
 }

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TextInput from '@/components/common/TextInput.vue'
-import SearchResult from './SearchResult.vue'
+import SearchResult from './SearchResultList.vue'
 import { useTemplateRef } from 'vue'
 
 const model = defineModel<string>()

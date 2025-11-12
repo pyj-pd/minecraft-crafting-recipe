@@ -4,12 +4,19 @@ import { useSearchStore } from '@/stores/search'
 import { getItemImageUrl } from '@/utils/image'
 import type { ItemId } from '@shared/types/minecraft'
 import { storeToRefs } from 'pinia'
+import { useTemplateRef, watch } from 'vue'
 
 const searchStore = useSearchStore()
 const { translationData } = storeToRefs(searchStore)
 const { searchResults } = storeToRefs(searchStore)
 
 const { setItemId } = useRecipeStore()
+
+const listRef = useTemplateRef('list-element')
+
+watch(searchResults, () => {
+  listRef.value?.scrollTo({ top: 0 })
+})
 
 const onItemSelect = (itemId: ItemId): void => {
   setItemId(itemId)
@@ -23,6 +30,7 @@ const onItemSelect = (itemId: ItemId): void => {
 <template>
   <div
     v-if="searchResults?.length ?? 0 > 0"
+    ref="list-element"
     :class="$style['search-result-container']"
   >
     <ul :class="$style['list-container']">
@@ -67,7 +75,10 @@ const onItemSelect = (itemId: ItemId): void => {
 
   color: palette.$text-color;
 
+  overflow-y: auto;
+
   width: 100%;
+  max-height: 300px;
 }
 
 .list-container {
@@ -84,22 +95,24 @@ const onItemSelect = (itemId: ItemId): void => {
   gap: 10px;
   align-items: center;
 
-  background-color: palette.$dark-gray-1;
-  color: palette.$text-color;
-
   padding: 12px 17px;
 
   width: 100%;
 
-  box-shadow: inset 0 value.$button-inset-shadow-offset-small 0 0
-      palette.$dark-gray-2,
-    inset 0 (-1 * value.$button-inset-shadow-offset-small) 0 0
-      palette.$dark-gray-0;
-
   cursor: pointer;
 
-  @include mixin.hover-animation(
-    $hovered-background-color: palette.$dark-gray-0
+  @include mixin.button-color-style(
+    $background-color: palette.$dark-gray-1,
+    $active-background-color: palette.$dark-gray-0,
+    $color: palette.$text-color,
+
+    $shadow-width: value.$button-inset-shadow-offset-small,
+
+    $shadow-color-bright: palette.$dark-gray-2,
+    $shadow-color-dark: palette.$dark-gray-0,
+
+    $border-width: null,
+    $border-color: null
   );
 }
 

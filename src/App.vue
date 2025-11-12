@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import MyFooter from './components/common/MyFooter.vue'
 import RecipeView from './components/recipe/RecipeView/RecipeView.vue'
 import SearchSection from './components/recipe/SearchSection/SearchSection.vue'
 </script>
@@ -7,6 +8,7 @@ import SearchSection from './components/recipe/SearchSection/SearchSection.vue'
   <main :class="$style['main-wrapper']">
     <SearchSection />
     <RecipeView />
+    <MyFooter />
   </main>
 </template>
 
@@ -16,6 +18,7 @@ import SearchSection from './components/recipe/SearchSection/SearchSection.vue'
 .main-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: value.$section-gap;
 }
 </style>

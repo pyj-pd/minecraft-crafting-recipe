@@ -2,6 +2,7 @@ import type { ItemId } from '@shared/types/minecraft'
 import type { RecipeData, RecipeFileData } from '@shared/types/recipe'
 import { getRecipeData } from '@/utils/recipe'
 import { defineStore } from 'pinia'
+import { DEFAULT_RECIPE_VARIANT_INDEX } from '@/constants/default'
 
 export const useRecipeStore = defineStore('recipe', {
   state: () => ({
@@ -24,7 +25,22 @@ export const useRecipeStore = defineStore('recipe', {
 
       this.itemId = newItemId
       this.recipeFileData = recipeData
-      this.recipeVariantIndex = 0
+      this.recipeVariantIndex = DEFAULT_RECIPE_VARIANT_INDEX
+    },
+    /**
+     * Sets recipe varaint index.
+     * @param newIndex New index to set to.
+     * @returns `false` if failed due to unloaded recipe data, `true` if successful.
+     */
+    setRecipeVariantIndex(newIndex: number): boolean {
+      if (this.variantNumbers === null || this.variantNumbers < 1) return false // No variants or recipe not loaded
+
+      this.recipeVariantIndex = Math.min(
+        Math.max(newIndex, DEFAULT_RECIPE_VARIANT_INDEX),
+        this.variantNumbers
+      ) // Range of 0 to variant numbers
+
+      return true
     },
   },
   getters: {
@@ -33,6 +49,11 @@ export const useRecipeStore = defineStore('recipe', {
         return null
 
       return this.recipeFileData[this.recipeVariantIndex] as RecipeData
+    },
+    variantNumbers(): number | null {
+      if (this.recipeFileData === null) return null // Not loaded
+
+      return this.recipeFileData.length
     },
   },
 })

@@ -10,7 +10,7 @@ import {
 import Fuse from 'fuse.js'
 import { defineStore } from 'pinia'
 
-const SEARCH_RESULT_LIMIT = 5
+const SEARCH_RESULT_LIMIT = 15
 
 const createFuseInstance = (
   translationData?: LanguageData
