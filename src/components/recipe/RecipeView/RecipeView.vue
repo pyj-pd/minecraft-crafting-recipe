@@ -28,6 +28,8 @@ const { variantNumbers, recipeVariantIndex } = storeToRefs(recipeStore)
 </template>
 
 <style lang="scss" module>
+@use '@/styles/value' as value;
+
 .recipe-view-section {
   display: flex;
   flex-direction: column;
@@ -45,5 +47,11 @@ const { variantNumbers, recipeVariantIndex } = storeToRefs(recipeStore)
   height: 60px;
 
   overflow-x: auto;
+
+  // @todo add drag
+
+  @media screen and (max-width: value.$small-screen-width) {
+    height: 53px;
+  }
 }
 </style>

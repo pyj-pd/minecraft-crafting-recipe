@@ -20,6 +20,7 @@ withDefaults(defineProps<TabButtonProps>(), {
 </template>
 
 <style lang="scss" module>
+@use '@/styles/value' as value;
 @use '@/styles/palette' as palette;
 @use '@/styles/mixin' as mixin;
 
@@ -47,6 +48,12 @@ withDefaults(defineProps<TabButtonProps>(), {
       $shadow-color-bright: palette.$dark-gray-5,
       $shadow-color-dark: palette.$dark-gray-2
     );
+  }
+
+  @media screen and (max-width: value.$small-screen-width) {
+    padding: value.$small-button-padding;
+
+    font-size: value.$small-button-font-size;
   }
 }
 </style>
