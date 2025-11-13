@@ -18,6 +18,7 @@ const createFuseInstance = (
   const translationDataForSearching = getTranslationsForSearching(
     translationData ? [translationData] : undefined // Use default language data if data not provided
   )
+
   const fuseInstance = new Fuse(translationDataForSearching, {
     isCaseSensitive: false,
     keys: ['itemId', 'translations'],
@@ -35,6 +36,7 @@ export const useSearchStore = defineStore('search', {
     // Search
     searchResults: null as null | ItemId[],
     fuseInstance: createFuseInstance(),
+    lastQuery: null as null | string,
   }),
   actions: {
     async setLanguage(newLanguageId: string): Promise<void> {
@@ -48,7 +50,13 @@ export const useSearchStore = defineStore('search', {
       this.fuseInstance = createFuseInstance(translationData)
     },
     searchItem(rawQuery: string): void {
-      const query = inko.ko2en(rawQuery)
+      const trimmedRawQuery = rawQuery.trim()
+      if (trimmedRawQuery.length < 1) return // Empty query
+
+      const query = inko.ko2en(trimmedRawQuery)
+      if (this.lastQuery === query) return // Skip same query
+
+      this.lastQuery = query
 
       const results = this.fuseInstance
         .search(query, { limit: SEARCH_RESULT_LIMIT })

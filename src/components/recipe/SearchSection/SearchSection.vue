@@ -27,7 +27,11 @@ const onClickSearch = (): void => {
         ref="text-input"
         v-model="searchRawQuery"
       />
-      <MyButton type="submit">Search</MyButton>
+      <MyButton
+        type="submit"
+        :class="$style['search-button']"
+        >Search</MyButton
+      >
     </form>
   </section>
 </template>
@@ -57,5 +61,11 @@ const onClickSearch = (): void => {
 
   width: 100%;
   max-width: 600px;
+}
+
+@media screen and (max-width: value.$small-screen-width) {
+  .search-button {
+    display: none;
+  }
 }
 </style>
