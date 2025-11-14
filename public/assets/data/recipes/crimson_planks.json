@@ -5,15 +5,12 @@
     "count": 4,
     "recipe": {
       "items": [
-        "#minecraft:crimson_stems"
-      ]
-    },
-    "tags": {
-      "#minecraft:crimson_stems": [
-        "minecraft:crimson_stem",
-        "minecraft:stripped_crimson_stem",
-        "minecraft:crimson_hyphae",
-        "minecraft:stripped_crimson_hyphae"
+        [
+          "minecraft:crimson_stem",
+          "minecraft:stripped_crimson_stem",
+          "minecraft:crimson_hyphae",
+          "minecraft:stripped_crimson_hyphae"
+        ]
       ]
     }
   }

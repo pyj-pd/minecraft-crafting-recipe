@@ -1,11 +1,6 @@
 import { readdir, readFile } from 'fs/promises'
 import path from 'path'
-import {
-  ITEM_TAG_PREFIX,
-  ItemId,
-  ItemTag,
-  minecraftNamespace,
-} from '../shared/types/minecraft'
+import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '../shared/types/minecraft'
 import { RawTagFile, TagsData } from '../shared/types/tags'
 import {
   getFileNameWithoutExtension,
@@ -13,6 +8,7 @@ import {
   PARSING_TAG_TYPES,
   RAW_TAGS_DATA_FOLDER,
 } from './common'
+import { minecraftNamespace } from '../shared/constants/minecraft'
 
 const TAG_PREFIX = `${ITEM_TAG_PREFIX}${minecraftNamespace}:`
 

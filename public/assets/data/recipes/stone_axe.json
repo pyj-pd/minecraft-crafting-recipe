@@ -6,12 +6,24 @@
     "recipe": {
       "grid": [
         [
-          "#minecraft:stone_tool_materials",
-          "#minecraft:stone_tool_materials",
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ],
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ],
           null
         ],
         [
-          "#minecraft:stone_tool_materials",
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ],
           "minecraft:stick",
           null
         ],
@@ -20,13 +32,6 @@
           "minecraft:stick",
           null
         ]
-      ]
-    },
-    "tags": {
-      "#minecraft:stone_tool_materials": [
-        "minecraft:cobblestone",
-        "minecraft:blackstone",
-        "minecraft:cobbled_deepslate"
       ]
     }
   }

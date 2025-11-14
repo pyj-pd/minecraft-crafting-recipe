@@ -7,8 +7,7 @@
       "items": [
         "minecraft:allium"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -20,8 +19,7 @@
         "minecraft:red_dye",
         "minecraft:pink_dye"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -34,8 +32,7 @@
         "minecraft:red_dye",
         "minecraft:white_dye"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -45,8 +42,7 @@
       "items": [
         "minecraft:lilac"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -57,7 +53,6 @@
         "minecraft:purple_dye",
         "minecraft:pink_dye"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

@@ -6,7 +6,9 @@
     "recipe": {
       "grid": [
         [
-          "#minecraft:gold_tool_materials",
+          [
+            "minecraft:gold_ingot"
+          ],
           null,
           null
         ],
@@ -20,11 +22,6 @@
           null,
           null
         ]
-      ]
-    },
-    "tags": {
-      "#minecraft:gold_tool_materials": [
-        "minecraft:gold_ingot"
       ]
     }
   }

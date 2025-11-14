@@ -1,5 +1,32 @@
 [
   {
+    "type": "shapeless",
+    "itemId": "minecraft:light_blue_bed",
+    "count": 1,
+    "recipe": {
+      "items": [
+        "minecraft:light_blue_dye",
+        [
+          "minecraft:black_bed",
+          "minecraft:blue_bed",
+          "minecraft:brown_bed",
+          "minecraft:cyan_bed",
+          "minecraft:gray_bed",
+          "minecraft:green_bed",
+          "minecraft:light_gray_bed",
+          "minecraft:lime_bed",
+          "minecraft:magenta_bed",
+          "minecraft:orange_bed",
+          "minecraft:pink_bed",
+          "minecraft:purple_bed",
+          "minecraft:red_bed",
+          "minecraft:yellow_bed",
+          "minecraft:white_bed"
+        ]
+      ]
+    }
+  },
+  {
     "type": "shaped",
     "itemId": "minecraft:light_blue_bed",
     "count": 1,
@@ -11,31 +38,54 @@
           "minecraft:light_blue_wool"
         ],
         [
-          "#minecraft:planks",
-          "#minecraft:planks",
-          "#minecraft:planks"
+          [
+            "minecraft:oak_planks",
+            "minecraft:spruce_planks",
+            "minecraft:birch_planks",
+            "minecraft:jungle_planks",
+            "minecraft:acacia_planks",
+            "minecraft:dark_oak_planks",
+            "minecraft:pale_oak_planks",
+            "minecraft:crimson_planks",
+            "minecraft:warped_planks",
+            "minecraft:mangrove_planks",
+            "minecraft:bamboo_planks",
+            "minecraft:cherry_planks"
+          ],
+          [
+            "minecraft:oak_planks",
+            "minecraft:spruce_planks",
+            "minecraft:birch_planks",
+            "minecraft:jungle_planks",
+            "minecraft:acacia_planks",
+            "minecraft:dark_oak_planks",
+            "minecraft:pale_oak_planks",
+            "minecraft:crimson_planks",
+            "minecraft:warped_planks",
+            "minecraft:mangrove_planks",
+            "minecraft:bamboo_planks",
+            "minecraft:cherry_planks"
+          ],
+          [
+            "minecraft:oak_planks",
+            "minecraft:spruce_planks",
+            "minecraft:birch_planks",
+            "minecraft:jungle_planks",
+            "minecraft:acacia_planks",
+            "minecraft:dark_oak_planks",
+            "minecraft:pale_oak_planks",
+            "minecraft:crimson_planks",
+            "minecraft:warped_planks",
+            "minecraft:mangrove_planks",
+            "minecraft:bamboo_planks",
+            "minecraft:cherry_planks"
+          ]
         ],
         [
           null,
           null,
           null
         ]
-      ]
-    },
-    "tags": {
-      "#minecraft:planks": [
-        "minecraft:oak_planks",
-        "minecraft:spruce_planks",
-        "minecraft:birch_planks",
-        "minecraft:jungle_planks",
-        "minecraft:acacia_planks",
-        "minecraft:dark_oak_planks",
-        "minecraft:pale_oak_planks",
-        "minecraft:crimson_planks",
-        "minecraft:warped_planks",
-        "minecraft:mangrove_planks",
-        "minecraft:bamboo_planks",
-        "minecraft:cherry_planks"
       ]
     }
   }

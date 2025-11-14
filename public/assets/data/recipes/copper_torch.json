@@ -1,0 +1,29 @@
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:copper_torch",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:copper_nugget",
+          null,
+          null
+        ],
+        [
+          [
+            "minecraft:coal",
+            "minecraft:charcoal"
+          ],
+          null,
+          null
+        ],
+        [
+          "minecraft:stick",
+          null,
+          null
+        ]
+      ]
+    }
+  }
+]

@@ -21,8 +21,7 @@
           null
         ]
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shaped",
@@ -46,7 +45,6 @@
           "minecraft:glass_pane"
         ]
       ]
-    },
-    "tags": {}
+    }
   }
 ]

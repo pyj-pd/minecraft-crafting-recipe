@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useRecipeStore } from '@/stores/recipe'
 import { getItemImageUrl } from '@/utils/image'
-import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '@shared/types/minecraft'
+import { ItemId, PossibleItem } from '@shared/types/minecraft'
 import { storeToRefs } from 'pinia'
 
 const { currentRecipeData, recipeVariantIndex } = storeToRefs(useRecipeStore())
@@ -9,7 +9,7 @@ const { currentRecipeData, recipeVariantIndex } = storeToRefs(useRecipeStore())
 const getPatternItemImage = (patternIndex: number): string | null => {
   if (currentRecipeData.value === null) return null
 
-  let recipeItem: ItemId | ItemTag | null = null
+  let recipeItem: PossibleItem | null = null
   if (patternIndex >= 9)
     // Result item
     recipeItem = currentRecipeData.value.itemId
@@ -38,10 +38,8 @@ const getPatternItemImage = (patternIndex: number): string | null => {
   let itemId: ItemId | null = null
 
   // Handle item tags
-  if (recipeItem.startsWith(ITEM_TAG_PREFIX)) {
-    const tagItemId = currentRecipeData.value.tags?.[recipeItem as ItemTag]?.[0]
-    if (tagItemId) itemId = tagItemId
-  } else itemId = recipeItem as ItemId
+  if (typeof recipeItem === 'string') itemId = recipeItem as ItemId
+  else itemId = (recipeItem as ItemId[])[0] as ItemId
 
   if (itemId === null) return null
   else return getItemImageUrl(itemId)

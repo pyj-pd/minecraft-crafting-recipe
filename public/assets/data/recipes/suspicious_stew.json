@@ -10,8 +10,7 @@
         "minecraft:red_mushroom",
         "minecraft:allium"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -24,8 +23,7 @@
         "minecraft:red_mushroom",
         "minecraft:azure_bluet"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -38,8 +36,7 @@
         "minecraft:red_mushroom",
         "minecraft:blue_orchid"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -52,8 +49,7 @@
         "minecraft:red_mushroom",
         "minecraft:closed_eyeblossom"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -66,8 +62,7 @@
         "minecraft:red_mushroom",
         "minecraft:cornflower"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -80,8 +75,7 @@
         "minecraft:red_mushroom",
         "minecraft:dandelion"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -94,8 +88,7 @@
         "minecraft:red_mushroom",
         "minecraft:lily_of_the_valley"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -108,8 +101,7 @@
         "minecraft:red_mushroom",
         "minecraft:open_eyeblossom"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -122,8 +114,7 @@
         "minecraft:red_mushroom",
         "minecraft:orange_tulip"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -136,8 +127,7 @@
         "minecraft:red_mushroom",
         "minecraft:oxeye_daisy"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -150,8 +140,7 @@
         "minecraft:red_mushroom",
         "minecraft:pink_tulip"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -164,8 +153,7 @@
         "minecraft:red_mushroom",
         "minecraft:poppy"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -178,8 +166,7 @@
         "minecraft:red_mushroom",
         "minecraft:red_tulip"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -192,8 +179,7 @@
         "minecraft:red_mushroom",
         "minecraft:torchflower"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -206,8 +192,7 @@
         "minecraft:red_mushroom",
         "minecraft:white_tulip"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -220,7 +205,6 @@
         "minecraft:red_mushroom",
         "minecraft:wither_rose"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

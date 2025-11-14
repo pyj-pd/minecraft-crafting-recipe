@@ -21,8 +21,7 @@
           null
         ]
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -33,7 +32,6 @@
         "minecraft:chiseled_copper",
         "minecraft:honeycomb"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

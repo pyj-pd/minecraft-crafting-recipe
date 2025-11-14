@@ -7,8 +7,7 @@
       "items": [
         "minecraft:dandelion"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -18,8 +17,7 @@
       "items": [
         "minecraft:sunflower"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -29,7 +27,6 @@
       "items": [
         "minecraft:wildflowers"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

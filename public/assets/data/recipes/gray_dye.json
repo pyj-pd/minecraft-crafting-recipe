@@ -8,8 +8,7 @@
         "minecraft:black_dye",
         "minecraft:white_dye"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -19,7 +18,6 @@
       "items": [
         "minecraft:closed_eyeblossom"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

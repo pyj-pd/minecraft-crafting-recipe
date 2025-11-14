@@ -7,8 +7,7 @@
       "items": [
         "minecraft:bone"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -18,7 +17,6 @@
       "items": [
         "minecraft:bone_block"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

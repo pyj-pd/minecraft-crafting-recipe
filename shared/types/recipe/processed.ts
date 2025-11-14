@@ -1,5 +1,5 @@
 import * as z from 'zod'
-import { ItemId, ItemTag } from '../minecraft'
+import { ItemId, ItemTag, PossibleItem } from '../minecraft'
 
 export const RecipeDataTagData = z.record(ItemTag, z.array(ItemId))
 export type RecipeDataTagData = z.infer<typeof RecipeDataTagData>
@@ -7,13 +7,12 @@ export type RecipeDataTagData = z.infer<typeof RecipeDataTagData>
 const RecipeDataCommon = z.object({
   itemId: ItemId,
   count: z.number(),
-  tags: RecipeDataTagData.optional(),
 })
 
 // Shaped recipe
 export const ShapedRecipeType = z.literal('shaped')
 
-export const ShapedRecipeItem = z.union([z.null(), ItemId, ItemTag])
+export const ShapedRecipeItem = z.union([z.null(), PossibleItem])
 
 export const ShapedRecipeRow = z.tuple([
   ShapedRecipeItem,
@@ -37,11 +36,9 @@ export type ShapedRecipe = z.infer<typeof ShapedRecipe>
 // Shapeless recipe
 export const ShapelessRecipeType = z.literal('shapeless')
 
-export const ShapelessRecipeItem = z.union([ItemId, ItemTag])
-
 export const ShapelessRecipe = RecipeDataCommon.extend({
   type: ShapelessRecipeType,
-  recipe: z.object({ items: z.array(ShapelessRecipeItem) }),
+  recipe: z.object({ items: z.array(PossibleItem) }),
 })
 
 export type ShapelessRecipe = z.infer<typeof ShapelessRecipe>

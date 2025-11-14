@@ -1,4 +1,5 @@
-import { ItemId, minecraftPrefix } from '../types/minecraft'
+import { minecraftPrefix } from '../constants/minecraft'
+import { ItemId } from '../types/minecraft'
 
 /**
  * Removes `minecraft:` prefix from item id.

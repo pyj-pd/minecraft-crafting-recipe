@@ -7,8 +7,7 @@
       "items": [
         "minecraft:copper_block"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shaped",
@@ -32,8 +31,7 @@
           "minecraft:copper_nugget"
         ]
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -43,7 +41,6 @@
       "items": [
         "minecraft:waxed_copper_block"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

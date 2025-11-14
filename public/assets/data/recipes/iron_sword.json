@@ -6,12 +6,16 @@
     "recipe": {
       "grid": [
         [
-          "#minecraft:iron_tool_materials",
+          [
+            "minecraft:iron_ingot"
+          ],
           null,
           null
         ],
         [
-          "#minecraft:iron_tool_materials",
+          [
+            "minecraft:iron_ingot"
+          ],
           null,
           null
         ],
@@ -20,11 +24,6 @@
           null,
           null
         ]
-      ]
-    },
-    "tags": {
-      "#minecraft:iron_tool_materials": [
-        "minecraft:iron_ingot"
       ]
     }
   }

@@ -8,8 +8,7 @@
         "minecraft:blue_dye",
         "minecraft:green_dye"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -19,7 +18,6 @@
       "items": [
         "minecraft:pitcher_plant"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

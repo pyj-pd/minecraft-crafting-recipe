@@ -8,8 +8,7 @@
         "minecraft:cobblestone",
         "minecraft:moss_block"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -20,7 +19,6 @@
         "minecraft:cobblestone",
         "minecraft:vine"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

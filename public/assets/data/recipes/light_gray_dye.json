@@ -7,8 +7,7 @@
       "items": [
         "minecraft:azure_bluet"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -20,8 +19,7 @@
         "minecraft:white_dye",
         "minecraft:white_dye"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -32,8 +30,7 @@
         "minecraft:gray_dye",
         "minecraft:white_dye"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -43,8 +40,7 @@
       "items": [
         "minecraft:oxeye_daisy"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -54,7 +50,6 @@
       "items": [
         "minecraft:white_tulip"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

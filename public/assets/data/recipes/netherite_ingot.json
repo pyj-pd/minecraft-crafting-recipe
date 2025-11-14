@@ -14,8 +14,7 @@
         "minecraft:gold_ingot",
         "minecraft:gold_ingot"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -25,7 +24,6 @@
       "items": [
         "minecraft:netherite_block"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

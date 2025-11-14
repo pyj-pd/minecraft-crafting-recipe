@@ -7,8 +7,7 @@
       "items": [
         "minecraft:honey_bottle"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -18,7 +17,6 @@
       "items": [
         "minecraft:sugar_cane"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

@@ -1,0 +1,38 @@
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:tnt",
+    "count": 1,
+    "recipe": {
+      "grid": [
+        [
+          "minecraft:gunpowder",
+          [
+            "minecraft:sand",
+            "minecraft:red_sand"
+          ],
+          "minecraft:gunpowder"
+        ],
+        [
+          [
+            "minecraft:sand",
+            "minecraft:red_sand"
+          ],
+          "minecraft:gunpowder",
+          [
+            "minecraft:sand",
+            "minecraft:red_sand"
+          ]
+        ],
+        [
+          "minecraft:gunpowder",
+          [
+            "minecraft:sand",
+            "minecraft:red_sand"
+          ],
+          "minecraft:gunpowder"
+        ]
+      ]
+    }
+  }
+]

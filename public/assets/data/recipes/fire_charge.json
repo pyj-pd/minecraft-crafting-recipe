@@ -1,0 +1,17 @@
+[
+  {
+    "type": "shapeless",
+    "itemId": "minecraft:fire_charge",
+    "count": 3,
+    "recipe": {
+      "items": [
+        "minecraft:gunpowder",
+        "minecraft:blaze_powder",
+        [
+          "minecraft:coal",
+          "minecraft:charcoal"
+        ]
+      ]
+    }
+  }
+]

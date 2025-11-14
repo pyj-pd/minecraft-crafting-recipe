@@ -7,8 +7,7 @@
       "items": [
         "minecraft:cactus_flower"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -18,8 +17,7 @@
       "items": [
         "minecraft:peony"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -29,8 +27,7 @@
       "items": [
         "minecraft:pink_petals"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -40,8 +37,7 @@
       "items": [
         "minecraft:pink_tulip"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -52,7 +48,6 @@
         "minecraft:red_dye",
         "minecraft:white_dye"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

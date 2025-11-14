@@ -5,15 +5,12 @@
     "count": 4,
     "recipe": {
       "items": [
-        "#minecraft:warped_stems"
-      ]
-    },
-    "tags": {
-      "#minecraft:warped_stems": [
-        "minecraft:warped_stem",
-        "minecraft:stripped_warped_stem",
-        "minecraft:warped_hyphae",
-        "minecraft:stripped_warped_hyphae"
+        [
+          "minecraft:warped_stem",
+          "minecraft:stripped_warped_stem",
+          "minecraft:warped_hyphae",
+          "minecraft:stripped_warped_hyphae"
+        ]
       ]
     }
   }

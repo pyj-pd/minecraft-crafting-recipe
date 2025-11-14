@@ -7,8 +7,7 @@
       "items": [
         "minecraft:ink_sac"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -18,7 +17,6 @@
       "items": [
         "minecraft:wither_rose"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

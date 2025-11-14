@@ -6,12 +6,18 @@
     "recipe": {
       "grid": [
         [
-          "#minecraft:copper_tool_materials",
-          "#minecraft:copper_tool_materials",
+          [
+            "minecraft:copper_ingot"
+          ],
+          [
+            "minecraft:copper_ingot"
+          ],
           null
         ],
         [
-          "#minecraft:copper_tool_materials",
+          [
+            "minecraft:copper_ingot"
+          ],
           "minecraft:stick",
           null
         ],
@@ -20,11 +26,6 @@
           "minecraft:stick",
           null
         ]
-      ]
-    },
-    "tags": {
-      "#minecraft:copper_tool_materials": [
-        "minecraft:copper_ingot"
       ]
     }
   }

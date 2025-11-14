@@ -1,0 +1,32 @@
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:soul_torch",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          [
+            "minecraft:coal",
+            "minecraft:charcoal"
+          ],
+          null,
+          null
+        ],
+        [
+          "minecraft:stick",
+          null,
+          null
+        ],
+        [
+          [
+            "minecraft:soul_sand",
+            "minecraft:soul_soil"
+          ],
+          null,
+          null
+        ]
+      ]
+    }
+  }
+]

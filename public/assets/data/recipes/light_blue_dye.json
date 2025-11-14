@@ -7,8 +7,7 @@
       "items": [
         "minecraft:blue_orchid"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -19,7 +18,6 @@
         "minecraft:blue_dye",
         "minecraft:white_dye"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

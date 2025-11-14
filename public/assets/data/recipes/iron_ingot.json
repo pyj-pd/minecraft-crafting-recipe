@@ -7,8 +7,7 @@
       "items": [
         "minecraft:iron_block"
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shaped",
@@ -32,7 +31,6 @@
           "minecraft:iron_nugget"
         ]
       ]
-    },
-    "tags": {}
+    }
   }
 ]

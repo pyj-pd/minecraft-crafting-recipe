@@ -1,0 +1,50 @@
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:red_sandstone_stairs",
+    "count": 4,
+    "recipe": {
+      "grid": [
+        [
+          [
+            "minecraft:red_sandstone",
+            "minecraft:chiseled_red_sandstone",
+            "minecraft:cut_red_sandstone"
+          ],
+          null,
+          null
+        ],
+        [
+          [
+            "minecraft:red_sandstone",
+            "minecraft:chiseled_red_sandstone",
+            "minecraft:cut_red_sandstone"
+          ],
+          [
+            "minecraft:red_sandstone",
+            "minecraft:chiseled_red_sandstone",
+            "minecraft:cut_red_sandstone"
+          ],
+          null
+        ],
+        [
+          [
+            "minecraft:red_sandstone",
+            "minecraft:chiseled_red_sandstone",
+            "minecraft:cut_red_sandstone"
+          ],
+          [
+            "minecraft:red_sandstone",
+            "minecraft:chiseled_red_sandstone",
+            "minecraft:cut_red_sandstone"
+          ],
+          [
+            "minecraft:red_sandstone",
+            "minecraft:chiseled_red_sandstone",
+            "minecraft:cut_red_sandstone"
+          ]
+        ]
+      ]
+    }
+  }
+]

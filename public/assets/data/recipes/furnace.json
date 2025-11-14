@@ -6,27 +6,52 @@
     "recipe": {
       "grid": [
         [
-          "#minecraft:stone_crafting_materials",
-          "#minecraft:stone_crafting_materials",
-          "#minecraft:stone_crafting_materials"
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ],
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ],
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ]
         ],
         [
-          "#minecraft:stone_crafting_materials",
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ],
           null,
-          "#minecraft:stone_crafting_materials"
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ]
         ],
         [
-          "#minecraft:stone_crafting_materials",
-          "#minecraft:stone_crafting_materials",
-          "#minecraft:stone_crafting_materials"
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ],
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ],
+          [
+            "minecraft:cobblestone",
+            "minecraft:blackstone",
+            "minecraft:cobbled_deepslate"
+          ]
         ]
-      ]
-    },
-    "tags": {
-      "#minecraft:stone_crafting_materials": [
-        "minecraft:cobblestone",
-        "minecraft:blackstone",
-        "minecraft:cobbled_deepslate"
       ]
     }
   }

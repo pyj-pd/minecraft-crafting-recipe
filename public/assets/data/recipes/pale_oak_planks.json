@@ -5,15 +5,12 @@
     "count": 4,
     "recipe": {
       "items": [
-        "#minecraft:pale_oak_logs"
-      ]
-    },
-    "tags": {
-      "#minecraft:pale_oak_logs": [
-        "minecraft:pale_oak_log",
-        "minecraft:pale_oak_wood",
-        "minecraft:stripped_pale_oak_log",
-        "minecraft:stripped_pale_oak_wood"
+        [
+          "minecraft:pale_oak_log",
+          "minecraft:pale_oak_wood",
+          "minecraft:stripped_pale_oak_log",
+          "minecraft:stripped_pale_oak_wood"
+        ]
       ]
     }
   }

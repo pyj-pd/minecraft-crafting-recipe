@@ -1,0 +1,38 @@
+[
+  {
+    "type": "shaped",
+    "itemId": "minecraft:quartz_slab",
+    "count": 6,
+    "recipe": {
+      "grid": [
+        [
+          [
+            "minecraft:chiseled_quartz_block",
+            "minecraft:quartz_block",
+            "minecraft:quartz_pillar"
+          ],
+          [
+            "minecraft:chiseled_quartz_block",
+            "minecraft:quartz_block",
+            "minecraft:quartz_pillar"
+          ],
+          [
+            "minecraft:chiseled_quartz_block",
+            "minecraft:quartz_block",
+            "minecraft:quartz_pillar"
+          ]
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  }
+]

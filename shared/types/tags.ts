@@ -1,8 +1,8 @@
 import * as z from 'zod'
-import { ItemId, ItemTag } from './minecraft'
+import { ItemId, ItemIdOrTag, ItemTag } from './minecraft'
 
 export const RawTagFile = z.object({
-  values: z.array(z.union([ItemId, ItemTag])),
+  values: z.array(ItemIdOrTag),
 })
 export type RawTagFile = z.infer<typeof RawTagFile>
 

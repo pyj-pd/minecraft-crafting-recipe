@@ -6,12 +6,16 @@
     "recipe": {
       "grid": [
         [
-          "#minecraft:diamond_tool_materials",
+          [
+            "minecraft:diamond"
+          ],
           null,
           null
         ],
         [
-          "#minecraft:diamond_tool_materials",
+          [
+            "minecraft:diamond"
+          ],
           null,
           null
         ],
@@ -20,11 +24,6 @@
           null,
           null
         ]
-      ]
-    },
-    "tags": {
-      "#minecraft:diamond_tool_materials": [
-        "minecraft:diamond"
       ]
     }
   }

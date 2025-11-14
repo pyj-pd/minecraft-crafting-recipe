@@ -5,15 +5,12 @@
     "count": 4,
     "recipe": {
       "items": [
-        "#minecraft:acacia_logs"
-      ]
-    },
-    "tags": {
-      "#minecraft:acacia_logs": [
-        "minecraft:acacia_log",
-        "minecraft:acacia_wood",
-        "minecraft:stripped_acacia_log",
-        "minecraft:stripped_acacia_wood"
+        [
+          "minecraft:acacia_log",
+          "minecraft:acacia_wood",
+          "minecraft:stripped_acacia_log",
+          "minecraft:stripped_acacia_wood"
+        ]
       ]
     }
   }

@@ -21,8 +21,7 @@
           null
         ]
       ]
-    },
-    "tags": {}
+    }
   },
   {
     "type": "shapeless",
@@ -33,7 +32,6 @@
         "minecraft:oxidized_cut_copper",
         "minecraft:honeycomb"
       ]
-    },
-    "tags": {}
+    }
   }
 ]

@@ -5,15 +5,12 @@
     "count": 4,
     "recipe": {
       "items": [
-        "#minecraft:spruce_logs"
-      ]
-    },
-    "tags": {
-      "#minecraft:spruce_logs": [
-        "minecraft:spruce_log",
-        "minecraft:spruce_wood",
-        "minecraft:stripped_spruce_log",
-        "minecraft:stripped_spruce_wood"
+        [
+          "minecraft:spruce_log",
+          "minecraft:spruce_wood",
+          "minecraft:stripped_spruce_log",
+          "minecraft:stripped_spruce_wood"
+        ]
       ]
     }
   }

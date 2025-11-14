@@ -5,13 +5,10 @@
     "count": 2,
     "recipe": {
       "items": [
-        "#minecraft:bamboo_blocks"
-      ]
-    },
-    "tags": {
-      "#minecraft:bamboo_blocks": [
-        "minecraft:bamboo_block",
-        "minecraft:stripped_bamboo_block"
+        [
+          "minecraft:bamboo_block",
+          "minecraft:stripped_bamboo_block"
+        ]
       ]
     }
   }

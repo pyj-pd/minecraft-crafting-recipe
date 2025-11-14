@@ -12,7 +12,11 @@
         ],
         [
           "minecraft:sugar",
-          "#minecraft:eggs",
+          [
+            "minecraft:egg",
+            "minecraft:blue_egg",
+            "minecraft:brown_egg"
+          ],
           "minecraft:sugar"
         ],
         [
@@ -20,13 +24,6 @@
           "minecraft:wheat",
           "minecraft:wheat"
         ]
-      ]
-    },
-    "tags": {
-      "#minecraft:eggs": [
-        "minecraft:egg",
-        "minecraft:blue_egg",
-        "minecraft:brown_egg"
       ]
     }
   }

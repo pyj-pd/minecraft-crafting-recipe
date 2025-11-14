@@ -5,7 +5,6 @@ import {
   RawShapedRecipeData,
   RawShapelessRecipeData,
   RecipeFileData,
-  RecipeDataTagData,
   ShapedRecipe,
   ShapedRecipeGrid,
   ShapelessRecipe,
@@ -17,9 +16,18 @@ import {
   RAW_RECIPE_DATA_FOLDER,
 } from './common'
 import { getTagData } from './process-tags'
-import { ITEM_TAG_PREFIX, ItemId, ItemTag } from '../shared/types/minecraft'
+import {
+  ITEM_TAG_PREFIX,
+  ItemId,
+  ItemTag,
+  PossibleItem,
+} from '../shared/types/minecraft'
 import { DATA_FILE_EXTENSION } from '../shared/constants/path'
 import { getPureItemName } from '../shared/utils/string'
+import {
+  SHAPED_RECIPE_TAG,
+  SHAPELESS_RECIPE_TAG,
+} from '../shared/constants/minecraft'
 
 // Recipe
 const DEFAULT_ITEM_COUNT = 1
@@ -49,6 +57,8 @@ export async function processRawRecipeData(): Promise<void> {
     processedRecipes = 0, // Because there are duplicated recipes sometimes
     processedFiles = 0
 
+  const failedToParseFileNames: string[] = []
+
   for (const fileInfo of rawRecipeFileList) {
     if (!fileInfo.isFile()) continue // Only parse files
 
@@ -58,16 +68,25 @@ export async function processRawRecipeData(): Promise<void> {
 
     const rawRecipeData = await parseRawFile(fileContent, RawRecipeData)
 
-    if (rawRecipeData === null) continue // Invalid file format
+    if (rawRecipeData === null) {
+      // Invalid file format
+      if (
+        fileContent.includes(SHAPED_RECIPE_TAG) ||
+        fileContent.includes(SHAPELESS_RECIPE_TAG)
+      )
+        failedToParseFileNames.push(fileName)
+
+      continue
+    }
 
     let recipeData
 
     switch (rawRecipeData.type) {
-      case 'minecraft:crafting_shaped':
+      case SHAPED_RECIPE_TAG:
         recipeData = await processShapedRecipeData(rawRecipeData)
         break
 
-      case 'minecraft:crafting_shapeless':
+      case SHAPELESS_RECIPE_TAG:
         recipeData = await processShapelessRecipeData(rawRecipeData)
         break
 
@@ -107,6 +126,11 @@ export async function processRawRecipeData(): Promise<void> {
   console.log(`Processed files: ${processedFiles}`)
   console.log(`Processed items: ${processedItems}`)
   console.log(`Processed recipes: ${processedRecipes}`)
+  console.log(
+    `\nThese files couldn't be parsed for some reasons: ${failedToParseFileNames.join(
+      ', '
+    )}`
+  )
 }
 
 /**
@@ -126,8 +150,6 @@ async function processShapedRecipeData(
     ] as z.infer<typeof ShapedRecipeGrid>,
   }
 
-  const tags: RecipeDataTagData = {}
-
   for (
     let patternIndex = 0;
     patternIndex < data.pattern.length;
@@ -140,12 +162,26 @@ async function processShapedRecipeData(
 
       if (!(key in data.key)) continue
 
-      const id = data.key[key]
-      recipe.grid[patternIndex][keyIndex] = id
+      const rawItemData = data.key[key]
+      let itemData: PossibleItem
 
-      if (id.startsWith(ITEM_TAG_PREFIX) && !(id in tags)) {
-        tags[id as ItemTag] = tagData[id as ItemTag]
+      if (typeof rawItemData === 'string') {
+        if (rawItemData.startsWith(ITEM_TAG_PREFIX))
+          // Convert tag into array of items
+          itemData = tagData[rawItemData as ItemTag]
+        // It's normal item
+        else itemData = rawItemData as ItemId
       }
+      // Array of items
+      // @todo optimize repeated code
+      else
+        itemData = rawItemData.flatMap((value) =>
+          value.startsWith(ITEM_TAG_PREFIX)
+            ? tagData[value as ItemTag]
+            : (value as ItemId)
+        )
+
+      recipe.grid[patternIndex][keyIndex] = itemData
     }
   }
 
@@ -154,7 +190,6 @@ async function processShapedRecipeData(
     itemId: data.result.id,
     count: data.result.count ?? DEFAULT_ITEM_COUNT,
     recipe,
-    tags,
   }
 
   return processedData
@@ -169,12 +204,27 @@ async function processShapedRecipeData(
 async function processShapelessRecipeData(
   data: RawShapelessRecipeData
 ): Promise<ShapelessRecipe> {
-  // Get tag list
-  const tags: RecipeDataTagData = {}
+  const ingredientItems: PossibleItem[] = []
 
-  for (const id of data.ingredients) {
-    if (id.startsWith(ITEM_TAG_PREFIX) && !(id in tags))
-      tags[id as ItemTag] = tagData[id as ItemTag]
+  for (const rawItemData of data.ingredients) {
+    let currentItem: PossibleItem
+
+    if (typeof rawItemData === 'string') {
+      if (rawItemData.startsWith(ITEM_TAG_PREFIX))
+        // Convert tag id into array of items
+        currentItem = tagData[rawItemData as ItemTag]
+      // Normal item id
+      else currentItem = rawItemData as ItemId
+    }
+    // Array of items
+    else
+      currentItem = rawItemData.flatMap((value) =>
+        value.startsWith(ITEM_TAG_PREFIX)
+          ? tagData[value as ItemTag]
+          : (value as ItemId)
+      )
+
+    ingredientItems.push(currentItem)
   }
 
   // Result
@@ -183,9 +233,8 @@ async function processShapelessRecipeData(
     itemId: data.result.id,
     count: data.result.count ?? DEFAULT_ITEM_COUNT,
     recipe: {
-      items: data.ingredients,
+      items: ingredientItems,
     },
-    tags,
   }
   return processedData
 }
