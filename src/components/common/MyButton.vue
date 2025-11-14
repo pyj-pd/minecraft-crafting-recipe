@@ -11,7 +11,7 @@ withDefaults(defineProps<MyButtonProps>(), {
 </script>
 
 <template>
-  <button><slot /></button>
+  <button :class="$style.button"><slot /></button>
 </template>
 
 <style lang="scss" module>
@@ -19,7 +19,7 @@ withDefaults(defineProps<MyButtonProps>(), {
 @use '@/styles/palette' as palette;
 @use '@/styles/mixin' as mixin;
 
-button {
+.button {
   padding: value.$button-padding;
 
   font-size: value.$button-font-size;

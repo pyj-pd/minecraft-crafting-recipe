@@ -15,7 +15,7 @@ defineExpose({ focusText })
 // Search
 const { searchItem } = useSearchStore()
 
-const AUTO_SEARCH_DELAY = 300
+const AUTO_SEARCH_DELAY = 200
 let searchTimer: number | null = null // setTimeout
 
 const handleSearch = (event: InputEvent): void => {

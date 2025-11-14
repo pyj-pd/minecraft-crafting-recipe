@@ -1,19 +1,7 @@
 <script setup lang="ts">
-import { useSearchStore } from '@/stores/search'
-import MyButton from '@/components/common/MyButton.vue'
 import SearchTextInput from './SearchTextInput/SearchTextInput.vue'
-import { useTemplateRef } from 'vue'
 
 let searchRawQuery = ''
-
-const { searchItem } = useSearchStore()
-
-const searchTextInputRef = useTemplateRef('text-input')
-
-const onClickSearch = (): void => {
-  searchItem(searchRawQuery)
-  searchTextInputRef.value?.focusText()
-}
 </script>
 
 <template>
@@ -21,17 +9,12 @@ const onClickSearch = (): void => {
     <h1 :class="$style.title">Minecraft Crafting Recipe</h1>
     <form
       :class="$style['input-container']"
-      @submit.prevent="onClickSearch"
+      @submit.prevent
     >
       <SearchTextInput
         ref="text-input"
         v-model="searchRawQuery"
       />
-      <MyButton
-        type="submit"
-        :class="$style['search-button']"
-        >Search</MyButton
-      >
     </form>
   </section>
 </template>
