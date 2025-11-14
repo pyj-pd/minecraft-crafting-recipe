@@ -15,7 +15,7 @@ const getPatternItemImage = (patternIndex: number): string | null => {
     recipeItem = currentRecipeData.value.itemId
   else {
     // Ingredient items
-    /** @todo support tags */
+    /** @todo support multiple items animation */
     const recipe = currentRecipeData.value.recipe
 
     if ('grid' in recipe) {
@@ -44,6 +44,8 @@ const getPatternItemImage = (patternIndex: number): string | null => {
   if (itemId === null) return null
   else return getItemImageUrl(itemId)
 }
+
+// @todo make hover tooltip
 </script>
 
 <template>
