@@ -16,7 +16,9 @@ const createFuseInstance = (
   translationData?: LanguageData
 ): Fuse<SearchLanguageData[number]> => {
   const translationDataForSearching = getTranslationsForSearching(
-    translationData ? [translationData] : undefined // Use default language data if data not provided
+    translationData
+      ? [translationData] // Merge this translation data into default language data
+      : undefined // Use default language data if no parameter provided
   )
 
   const fuseInstance = new Fuse(translationDataForSearching, {
@@ -35,7 +37,7 @@ export const useSearchStore = defineStore('search', {
 
     // Search
     searchResults: null as null | ItemId[],
-    fuseInstance: createFuseInstance(),
+    fuseInstance: createFuseInstance(), // @todo support multi language support
     lastQuery: null as null | string,
   }),
   actions: {

@@ -1,4 +1,3 @@
-import 'server-only'
 import { readdir, readFile } from 'fs/promises'
 import path from 'path'
 import {

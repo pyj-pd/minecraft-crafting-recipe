@@ -1,4 +1,3 @@
-import 'server-only'
 import { access, mkdir, readdir, readFile, writeFile } from 'fs/promises'
 import path from 'path'
 import { LanguageData, RawLanguageFile } from '../shared/types/language'

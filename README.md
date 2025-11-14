@@ -6,10 +6,10 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 
 # How to process raw data
 
-1. Make sure you have deleted all the folders inside `public/data` folder for proper processing.
+1. Empty all the folders/files inside `public/assets/data` folder unless you want to merge into the existing data.
 1. Download Minecraft client `.jar` file.
 1. Copy `data/minecraft/recipe` folder entirely inside that JAR file into `data/raw_data` folder in project directory.
 1. Copy `data/minecraft/tags` folder entirely inside that JAR file into `data/raw_data` folder in project directory.
-1. Copy `assets/minecraft/lang` folder entirely inside that JAR file into `data/raw_data` folder in project directory.
+1. Copy language files you want to use from `assets/minecraft/lang` to `data/raw_data/lang` folder in project directory. **`en_us.json` file is necessary.**
 1. Put isometric item render images into `public/assets/data/renders` folder. Use [Isometric Render](https://github.com/gliscowo/isometric-renders) mod for rendering.
-1. Run `pnpm run process:recipe-data` command.
+1. Run `pnpm run process` command.
