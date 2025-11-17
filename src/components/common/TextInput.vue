@@ -90,5 +90,9 @@ defineExpose({ inputRef })
   cursor: pointer;
 
   padding: 20px;
+
+  &:hover {
+    filter: brightness(70%);
+  }
 }
 </style>

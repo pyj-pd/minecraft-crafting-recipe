@@ -35,7 +35,10 @@ withDefaults(defineProps<TabButtonProps>(), {
   white-space: nowrap;
 
   &.selected {
-    @include mixin.button-color-style($shadow-color-dark: palette.$green-2);
+    @include mixin.button-color-style(
+      $shadow-color-bright: transparent,
+      $shadow-color-dark: transparent
+    );
 
     height: 85%;
   }
