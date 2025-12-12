@@ -67,6 +67,7 @@ const onItemSelect = (itemId: ItemId): void => {
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 10;
 
   display: flex;
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import CraftingTable from './CraftingTable.vue'
+import CraftingTable from '../CraftingTable/CraftingTable.vue'
 import TabButton from './TabButton/TabButton.vue'
 import { useRecipeStore } from '@/stores/recipe'
 

@@ -26,6 +26,8 @@ export const ShapedRecipeGrid = z.tuple([
   ShapedRecipeRow,
 ])
 
+export type ShapedRecipeGrid = z.infer<typeof ShapedRecipeGrid>
+
 export const ShapedRecipe = RecipeDataCommon.extend({
   type: ShapedRecipeType,
   recipe: z.object({ grid: ShapedRecipeGrid }),

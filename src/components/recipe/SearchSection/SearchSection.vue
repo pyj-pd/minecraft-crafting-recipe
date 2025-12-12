@@ -6,7 +6,12 @@ let searchRawQuery = ''
 
 <template>
   <section :class="$style['search-section']">
-    <h1 :class="$style.title">Minecraft Crafting Recipe</h1>
+    <a
+      href="/"
+      :class="$style['title-link']"
+    >
+      <h1 :class="$style.title">Minecraft Crafting Recipe</h1>
+    </a>
     <form
       :class="$style['input-container']"
       @submit.prevent
@@ -21,6 +26,11 @@ let searchRawQuery = ''
 
 <style lang="scss" module>
 @use '@/styles/value' as value;
+
+.title-link {
+  color: currentColor;
+  text-decoration: none;
+}
 
 .search-section {
   display: flex;
