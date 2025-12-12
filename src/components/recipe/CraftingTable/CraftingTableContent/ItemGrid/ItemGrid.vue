@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import { useRecipeStore } from '@/stores/recipe'
 import ItemImage from './ItemImage.vue'
-import type { PossibleItem } from '@shared/types/minecraft'
+import type { ItemId, PossibleItem } from '@shared/types/minecraft'
 
 type ItemGridProps = {
   grid: (PossibleItem | null)[][]
@@ -10,6 +11,8 @@ type ItemGridProps = {
 withDefaults(defineProps<ItemGridProps>(), {
   size: 'normal',
 })
+
+const { setItemId } = useRecipeStore()
 </script>
 
 <template>
@@ -29,7 +32,17 @@ withDefaults(defineProps<ItemGridProps>(), {
         :key="columnIndex"
         :class="$style.item"
       >
-        <ItemImage :item-data="column" />
+        <!-- @todo change to URL based navigation -->
+        <!-- @todo add animation pause button -->
+        <!-- @todo fix this  -->
+        <!-- @todo add tooltip -->
+        <button
+          v-if="column !== null"
+          :class="$style['item-button']"
+          @click="() => setItemId(typeof column === 'string' ? column : (column[0] as ItemId))"
+        >
+          <ItemImage :item-data="column" />
+        </button>
       </div>
     </div>
   </div>
@@ -65,8 +78,6 @@ $item-image-width: calc($item-original-width * 0.73);
   position: relative;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
 
   width: $item-original-width;
   aspect-ratio: 1 / 1;
@@ -90,13 +101,35 @@ $item-image-width: calc($item-original-width * 0.73);
 
     background-color: palette.$dark-gray-1; // Real background color
   }
+}
+
+.item-button {
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+
+  background: none;
 
   img {
-    z-index: 1;
-
     display: block;
     width: $item-image-width;
     height: $item-image-width;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: rgba(palette.$light-gray, 0.1);
   }
 }
 </style>

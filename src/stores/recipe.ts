@@ -21,11 +21,17 @@ export const useRecipeStore = defineStore('recipe', {
         return
       }
 
-      const recipeData = await getRecipeData(newItemId)
+      try {
+        const recipeData = await getRecipeData(newItemId)
 
-      this.itemId = newItemId
-      this.recipeFileData = recipeData
-      this.recipeVariantIndex = DEFAULT_RECIPE_VARIANT_INDEX
+        this.itemId = newItemId
+        this.recipeFileData = recipeData
+        this.recipeVariantIndex = DEFAULT_RECIPE_VARIANT_INDEX
+      } catch {
+        console.error(
+          "Failed to fetch item data. Maybe the item recipe doesn't exist?"
+        )
+      }
     },
     /**
      * Sets recipe varaint index.

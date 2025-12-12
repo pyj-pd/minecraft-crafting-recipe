@@ -5,25 +5,21 @@ import type { ItemId, PossibleItem } from '@shared/types/minecraft'
 import { computed, ref, watch } from 'vue'
 
 type ItemImageProps = {
-  itemData: PossibleItem | null
+  itemData: PossibleItem
 }
 
 const { itemData } = defineProps<ItemImageProps>()
 
 const itemIndex = ref<number>(0)
 
-const itemId = computed<ItemId | null>(() => {
-  if (itemData === null) return null
-
+const itemId = computed<ItemId>(() => {
   if (typeof itemData === 'string') return itemData
   else {
     return itemData[itemIndex.value] as ItemId
   }
 })
 
-const imageUrl = computed(() =>
-  itemId.value ? getItemImageUrl(itemId.value) : null
-)
+const imageUrl = computed(() => getItemImageUrl(itemId.value))
 
 // Handle item tags
 const imageTick = useImageAnimation()
