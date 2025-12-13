@@ -1,12 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:coal",
-    "count": 9,
-    "recipe": {
-      "items": [
-        "minecraft:coal_block"
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:coal","count":9,"recipe":{"items":["minecraft:coal_block"]}}]

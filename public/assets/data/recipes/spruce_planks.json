@@ -1,17 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:spruce_planks",
-    "count": 4,
-    "recipe": {
-      "items": [
-        [
-          "minecraft:spruce_log",
-          "minecraft:spruce_wood",
-          "minecraft:stripped_spruce_log",
-          "minecraft:stripped_spruce_wood"
-        ]
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:spruce_planks","count":4,"recipe":{"items":[["minecraft:spruce_log","minecraft:spruce_wood","minecraft:stripped_spruce_log","minecraft:stripped_spruce_wood"]]}}]

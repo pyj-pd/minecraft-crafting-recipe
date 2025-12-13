@@ -1,17 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:mangrove_planks",
-    "count": 4,
-    "recipe": {
-      "items": [
-        [
-          "minecraft:mangrove_log",
-          "minecraft:mangrove_wood",
-          "minecraft:stripped_mangrove_log",
-          "minecraft:stripped_mangrove_wood"
-        ]
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:mangrove_planks","count":4,"recipe":{"items":[["minecraft:mangrove_log","minecraft:mangrove_wood","minecraft:stripped_mangrove_log","minecraft:stripped_mangrove_wood"]]}}]

@@ -28,6 +28,11 @@ export const PROCESSED_LANGUAGE_DATA_FOLDER = path.resolve(
   `.${LANGUAGE_DATA_FILE_URL}`
 )
 
+export const RECIPE_LIST_DATA_FILE_PATH = path.resolve(
+  import.meta.dirname,
+  '../src/data/recipe-list.json'
+)
+
 // Tag files
 export const RAW_TAGS_DATA_FOLDER = path.resolve(
   import.meta.dirname,

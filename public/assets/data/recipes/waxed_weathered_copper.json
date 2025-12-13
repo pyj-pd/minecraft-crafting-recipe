@@ -1,13 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:waxed_weathered_copper",
-    "count": 1,
-    "recipe": {
-      "items": [
-        "minecraft:weathered_copper",
-        "minecraft:honeycomb"
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:waxed_weathered_copper","count":1,"recipe":{"items":["minecraft:weathered_copper","minecraft:honeycomb"]}}]

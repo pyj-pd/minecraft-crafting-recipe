@@ -1,13 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:green_candle",
-    "count": 1,
-    "recipe": {
-      "items": [
-        "minecraft:candle",
-        "minecraft:green_dye"
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:green_candle","count":1,"recipe":{"items":["minecraft:candle","minecraft:green_dye"]}}]

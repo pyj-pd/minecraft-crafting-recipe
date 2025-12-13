@@ -1,13 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:tnt_minecart",
-    "count": 1,
-    "recipe": {
-      "items": [
-        "minecraft:tnt",
-        "minecraft:minecart"
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:tnt_minecart","count":1,"recipe":{"items":["minecraft:tnt","minecraft:minecart"]}}]

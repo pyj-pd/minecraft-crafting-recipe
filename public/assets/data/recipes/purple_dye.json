@@ -1,13 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:purple_dye",
-    "count": 2,
-    "recipe": {
-      "items": [
-        "minecraft:blue_dye",
-        "minecraft:red_dye"
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:purple_dye","count":2,"recipe":{"items":["minecraft:blue_dye","minecraft:red_dye"]}}]

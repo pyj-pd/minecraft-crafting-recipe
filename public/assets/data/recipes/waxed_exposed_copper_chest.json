@@ -1,13 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:waxed_exposed_copper_chest",
-    "count": 1,
-    "recipe": {
-      "items": [
-        "minecraft:exposed_copper_chest",
-        "minecraft:honeycomb"
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:waxed_exposed_copper_chest","count":1,"recipe":{"items":["minecraft:exposed_copper_chest","minecraft:honeycomb"]}}]

@@ -6,6 +6,7 @@ import {
   LANGUAGE_DATA_FILE_URL,
 } from '@shared/constants/path'
 import Inko from 'inko'
+import recipeList from '@/data/recipe-list.json'
 
 export async function getTranslationData(
   languageId: string
@@ -30,7 +31,6 @@ export const inko = new Inko()
 export function getTranslationsForSearching(
   languageData?: LanguageData[]
 ): SearchLanguageData {
-  // @todo exclude items that are not in recipe list
   const data: SearchLanguageData = []
 
   const allLanguageData: LanguageData[] = [
@@ -38,7 +38,7 @@ export function getTranslationsForSearching(
     ...(languageData ?? []),
   ]
 
-  for (const itemId of Object.keys(defaultLanguageData.translations)) {
+  for (const itemId of recipeList) {
     const itemData: SearchLanguageData[number] = {
       itemId: itemId as ItemId,
       translations: [],

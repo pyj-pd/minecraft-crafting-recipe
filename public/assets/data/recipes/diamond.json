@@ -1,12 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:diamond",
-    "count": 9,
-    "recipe": {
-      "items": [
-        "minecraft:diamond_block"
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:diamond","count":9,"recipe":{"items":["minecraft:diamond_block"]}}]

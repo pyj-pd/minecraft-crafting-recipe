@@ -1,12 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:lapis_lazuli",
-    "count": 9,
-    "recipe": {
-      "items": [
-        "minecraft:lapis_block"
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:lapis_lazuli","count":9,"recipe":{"items":["minecraft:lapis_block"]}}]

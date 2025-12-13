@@ -1,13 +1,1 @@
-[
-  {
-    "type": "shapeless",
-    "itemId": "minecraft:field_masoned_banner_pattern",
-    "count": 1,
-    "recipe": {
-      "items": [
-        "minecraft:paper",
-        "minecraft:bricks"
-      ]
-    }
-  }
-]
+[{"type":"shapeless","itemId":"minecraft:field_masoned_banner_pattern","count":1,"recipe":{"items":["minecraft:paper","minecraft:bricks"]}}]

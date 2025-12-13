@@ -14,6 +14,7 @@ import {
   parseRawFile,
   PROCESSED_RECIPE_DATA_FOLDER,
   RAW_RECIPE_DATA_FOLDER,
+  RECIPE_LIST_DATA_FILE_PATH,
 } from './common'
 import { getTagData } from './process-tags'
 import {
@@ -56,6 +57,8 @@ export async function processRawRecipeData(): Promise<void> {
   let processedItems = 0,
     processedRecipes = 0, // Because there are duplicated recipes sometimes
     processedFiles = 0
+
+  const processedItemIds: ItemId[] = []
 
   const failedToParseFileNames: string[] = []
 
@@ -115,13 +118,14 @@ export async function processRawRecipeData(): Promise<void> {
       PROCESSED_RECIPE_DATA_FOLDER,
       itemName + DATA_FILE_EXTENSION
     )
-    await writeFile(
-      processedFilePath,
-      JSON.stringify(recipeFileData, undefined, 2)
-    )
+    await writeFile(processedFilePath, JSON.stringify(recipeFileData))
 
     processedFiles++
+    processedItemIds.push(itemId as ItemId)
   }
+
+  // Write recipe list data file
+  await writeFile(RECIPE_LIST_DATA_FILE_PATH, JSON.stringify(processedItemIds))
 
   console.log(`Processed files: ${processedFiles}`)
   console.log(`Processed items: ${processedItems}`)
