@@ -10,6 +10,8 @@ withDefaults(defineProps<TextInputProps>(), {
   type: 'text',
 })
 
+defineEmits(['clear']) // @todo scroll to top when cleared
+
 const model = defineModel<string>()
 const isInputValueEmpty = computed(() => model.value?.length ?? 0 < 1)
 
@@ -34,6 +36,7 @@ defineExpose({ inputRef })
       :class="[$style['clear-button'], !isInputValueEmpty && $style.visible]"
       type="reset"
       aria-label="Clear"
+      @click="$emit('clear')"
     >
       <XIcon />
     </button>

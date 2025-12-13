@@ -14,10 +14,12 @@ const { setItemId } = useRecipeStore()
 
 const listRef = useTemplateRef('list-element')
 
+const scrollToTop = (): void => listRef.value?.scrollTo({ top: 0 })
+
 watch(
   searchResults,
   () => {
-    listRef.value?.scrollTo({ top: 0 })
+    scrollToTop()
   },
   { immediate: true }
 )
