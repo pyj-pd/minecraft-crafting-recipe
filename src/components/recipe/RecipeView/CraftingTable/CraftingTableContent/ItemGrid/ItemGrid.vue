@@ -31,8 +31,6 @@ withDefaults(defineProps<ItemGridProps>(), {
         :class="$style.item"
       >
         <!-- @todo change to URL based navigation -->
-        <!-- @todo add animation pause button -->
-        <!-- @todo add tooltip -->
         <ItemImage
           v-if="column !== null"
           :item-data="column"

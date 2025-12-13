@@ -27,17 +27,46 @@ const itemId = computed<ItemId>(() => {
   }
 })
 
-const imageUrl = computed(() => getItemImageUrl(itemId.value))
+const imageUrls = computed<string[]>(() => {
+  let itemIds: ItemId[]
+
+  if (typeof itemData === 'string') itemIds = [itemData]
+  else itemIds = [...itemData]
+
+  return itemIds.map((id) => getItemImageUrl(id))
+})
+
+const imageUrl = computed<string>(() => {
+  return imageUrls.value[itemIndex.value] as string
+})
 
 // Handle item tags
 const { imageTick } = storeToRefs(useAnimationTimerStore())
 
-watch(imageTick, () => {
-  let newItemIndex = itemIndex.value + 1
-  if (newItemIndex >= (itemData?.length ?? 0)) newItemIndex = 0
+watch(
+  imageTick,
+  () => {
+    if (typeof itemData === 'string') return
 
-  itemIndex.value = newItemIndex
-})
+    let newItemIndex = itemIndex.value + 1
+    if (newItemIndex >= itemData.length) newItemIndex = 0
+
+    itemIndex.value = newItemIndex
+  },
+  { immediate: true }
+)
+
+watch(
+  imageUrls,
+  () => {
+    // Preload images
+    for (const url of imageUrls.value) {
+      const image = new Image()
+      image.src = url
+    }
+  },
+  { immediate: true }
+)
 
 // Tooltip
 const tooltipId = computed(() => `item-${index}`)

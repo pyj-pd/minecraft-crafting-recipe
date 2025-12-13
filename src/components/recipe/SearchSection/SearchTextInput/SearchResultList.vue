@@ -14,9 +14,13 @@ const { setItemId } = useRecipeStore()
 
 const listRef = useTemplateRef('list-element')
 
-watch(searchResults, () => {
-  listRef.value?.scrollTo({ top: 0 })
-})
+watch(
+  searchResults,
+  () => {
+    listRef.value?.scrollTo({ top: 0 })
+  },
+  { immediate: true }
+)
 
 const onItemSelect = (itemId: ItemId): void => {
   setItemId(itemId)

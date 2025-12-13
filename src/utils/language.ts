@@ -30,6 +30,7 @@ export const inko = new Inko()
 export function getTranslationsForSearching(
   languageData?: LanguageData[]
 ): SearchLanguageData {
+  // @todo exclude items that are not in recipe list
   const data: SearchLanguageData = []
 
   const allLanguageData: LanguageData[] = [
