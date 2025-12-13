@@ -62,7 +62,7 @@ const getReactantItemGrid = (): CraftingTableReactantGrid | null => {
         :grid="getReactantItemGrid() ?? EMPTY_REACTANT_GRID"
       />
     </div>
-    <RightArrowIcon :style="$style.arrow" />
+    <RightArrowIcon :class="$style.arrow" />
     <ItemGrid
       :key="`${itemId},${recipeVariantIndex}`"
       :grid="[[itemId]]"
@@ -97,6 +97,6 @@ const getReactantItemGrid = (): CraftingTableReactantGrid | null => {
 .arrow {
   width: calc(var(--table-width) * 0.05);
 
-  color: palette.$dark-gray-5;
+  color: palette.$gray-1;
 }
 </style>
