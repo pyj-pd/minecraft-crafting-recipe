@@ -14,9 +14,7 @@ type ItemImageProps = {
   align?: 'left' | 'right'
 }
 
-const { itemData, index, align } = withDefaults(defineProps<ItemImageProps>(), {
-  align: 'left',
-})
+const { itemData, index, align = 'right' } = defineProps<ItemImageProps>()
 
 const { setItemId } = useRecipeStore()
 const { translationData } = storeToRefs(useSearchStore())
