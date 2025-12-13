@@ -32,13 +32,16 @@
 
   // Border
   $border-width: value.$border-width-normal,
-  $border-color: palette.$black
+  $border-color: palette.$black,
+
+  // Hover animation
+  $hover-animation: true
 ) {
   background-color: $background-color;
   color: $color;
 
   box-shadow: inset 0 $shadow-width 0 0 $shadow-color-bright,
-    inset 0 (-1 * $shadow-width) 0 0 $shadow-color-dark;
+    inset 0 (-1 * calc($shadow-width * 1.5)) 0 0 $shadow-color-dark;
 
   @if ($border-color == null or $border-width == null) {
     border: none;
@@ -46,7 +49,11 @@
     border: solid $border-width $border-color;
   }
 
-  @include hover-animation($active-background-color: $active-background-color);
+  @if ($hover-animation) {
+    @include hover-animation(
+      $active-background-color: $active-background-color
+    );
+  }
 }
 
 @mixin gray-button-color-style {

@@ -2,7 +2,7 @@
 import { useRecipeStore } from '@/stores/recipe'
 import type { PossibleItem } from '@shared/types/minecraft'
 import { storeToRefs } from 'pinia'
-import RightArrowIcon from '../../../common/icons/RightArrowIcon.vue'
+import RightArrowIcon from '@/components/common/icons/RightArrowIcon.vue'
 import ItemGrid from './ItemGrid/ItemGrid.vue'
 import type { CraftingTableReactantGrid } from '@/types/crafting-table'
 import {

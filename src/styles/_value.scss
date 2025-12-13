@@ -1,3 +1,5 @@
+@use '@/styles/palette' as palette;
+
 // Body
 $body-padding: 130px 15px;
 
@@ -7,18 +9,24 @@ $section-gap: 100px;
 $inset-shadow-offset: 9px;
 $text-input-padding: 15px;
 
-$button-inset-shadow-offset: 5px;
-$button-inset-shadow-offset-small: 4px;
+$button-inset-shadow-offset: 4px;
+$button-inset-shadow-offset-small: 3px;
+$button-inset-shadow-offset-x-small: 2px;
 $button-font-weight: 500;
 
 $button-padding: 15px 30px;
 $small-button-padding: 14px 17px;
+
+$tooltip-padding: 8px 12px;
 
 // Font sizes
 $bold-weight: 500;
 
 $button-font-size: 20px;
 $small-button-font-size: 17px;
+
+$tooltip-font-size: 18px;
+$tooltip-font-weight: 500;
 
 $footer-font-size: 0.9rem;
 $main-title: 2.1rem;
@@ -28,6 +36,9 @@ $border-width-normal: 2px;
 $border-width-thick: 3px;
 
 $box-shadow-offset-normal: 4px;
+
+// Shadow
+$slight-shadow: 0 $box-shadow-offset-normal 0 0 rgba(palette.$black, 0.4);
 
 // Screen
 $small-screen-width: 760px;

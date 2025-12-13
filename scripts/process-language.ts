@@ -7,14 +7,9 @@ import {
   parseRawFile,
   PARSING_TAG_TYPES,
   PROCESSED_LANGUAGE_DATA_FOLDER,
-  PROCESSED_RECIPE_DATA_FOLDER,
   RAW_LANGUAGE_DATA_FOLDER,
 } from './common'
-import { DATA_FILE_EXTENSION } from '../shared/constants/path'
-import {
-  minecraftPrefix,
-  minecraftNamespace,
-} from '../shared/constants/minecraft'
+import { minecraftNamespace } from '../shared/constants/minecraft'
 
 // Strings
 const TRANSLATION_SEPARATOR = '.'
@@ -22,7 +17,7 @@ const ITEM_SEPARATOR = ':'
 
 /**
  * Parses raw language files into processed data.
- * This function will remove all other translations that are not included in the recipe data.
+ * This function will remove all other translations that are not blocks or items.
  */
 export async function processRawLanguageData(): Promise<void> {
   const rawLanguageFileList = await readdir(RAW_LANGUAGE_DATA_FOLDER, {
@@ -34,20 +29,6 @@ export async function processRawLanguageData(): Promise<void> {
     await access(PROCESSED_LANGUAGE_DATA_FOLDER)
   } catch {
     await mkdir(PROCESSED_LANGUAGE_DATA_FOLDER)
-  }
-
-  // Get item lists from recipe data
-  const itemList: ItemId[] = []
-  for (const fileInfo of await readdir(PROCESSED_RECIPE_DATA_FOLDER, {
-    withFileTypes: true,
-  })) {
-    const fileName = fileInfo.name
-    if (!fileInfo.isFile || !fileName.endsWith(DATA_FILE_EXTENSION)) continue // Only read recipe file
-
-    const itemId: ItemId = `${minecraftPrefix}${getFileNameWithoutExtension(
-      fileName
-    )}`
-    itemList.push(itemId)
   }
 
   let processed = 0
@@ -72,7 +53,8 @@ export async function processRawLanguageData(): Promise<void> {
     for (const [key, translation] of Object.entries(rawLanguageData)) {
       const splitKeys = key.split(TRANSLATION_SEPARATOR)
 
-      if (!PARSING_TAG_TYPES.includes(splitKeys[0])) continue // Only useful translations
+      const itemType = splitKeys[0]
+      if (!PARSING_TAG_TYPES.includes(itemType)) continue // Only include items that are blocks or items
 
       const itemKeys = splitKeys.slice(1) // Remove key types(such as `item.`, `block.`)
 
@@ -80,7 +62,6 @@ export async function processRawLanguageData(): Promise<void> {
       if (itemKeys[0] !== minecraftNamespace) continue
 
       const itemId = itemKeys.join(ITEM_SEPARATOR) as ItemId
-      if (!itemList.includes(itemId)) continue // Only include items that are included in recipe data
 
       languageData.translations[itemId] = translation
     }

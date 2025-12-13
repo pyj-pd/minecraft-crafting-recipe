@@ -72,7 +72,7 @@ const onItemSelect = (itemId: ItemId): void => {
   display: flex;
 
   border: solid value.$border-width-normal palette.$black;
-  box-shadow: 0 value.$box-shadow-offset-normal 0 0 rgba(palette.$black, 0.2);
+  box-shadow: value.$slight-shadow;
 
   color: palette.$text-color;
 

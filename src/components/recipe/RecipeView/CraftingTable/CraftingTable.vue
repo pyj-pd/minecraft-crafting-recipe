@@ -50,6 +50,8 @@ initImageAnimationTimer()
   width: 100%;
 
   border: solid value.$border-width-normal palette.$black;
+
+  overflow: hidden;
 }
 
 .table-grid-container {
