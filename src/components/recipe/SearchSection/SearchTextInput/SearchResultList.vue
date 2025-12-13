@@ -66,12 +66,13 @@ const onItemSelect = (itemId: ItemId): void => {
 @use '@/styles/value' as value;
 @use '@/styles/palette' as palette;
 @use '@/styles/mixin' as mixin;
+@use '@/styles/fonts' as fonts;
 
 .search-result-container {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 10;
+  z-index: 30;
 
   display: flex;
 
@@ -147,7 +148,7 @@ const onItemSelect = (itemId: ItemId): void => {
   text-align: left;
 
   .item-name {
-    font-family: 'Instrument Sans';
+    font-family: fonts.$default-sans-serif;
     font-size: 17px;
     font-weight: value.$bold-weight;
   }
