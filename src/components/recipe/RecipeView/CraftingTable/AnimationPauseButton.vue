@@ -41,7 +41,10 @@ const { isAnimationOn } = storeToRefs(animationTimerStore)
 
   padding: 0;
 
-  @include mixin.gray-button-color-style;
+  @include mixin.gray-button-color-style(
+    $shadow-width: calc(var(--table-width) * 0.005),
+    $border-width: calc(var(--table-width) * 0.0025)
+  );
 
   color: palette.$light-gray;
 }

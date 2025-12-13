@@ -6,10 +6,12 @@ import type { PossibleItem } from '@shared/types/minecraft'
 type ItemGridProps = {
   grid: (PossibleItem | null)[][]
   size?: 'normal' | 'large'
+  align?: 'left' | 'right'
 }
 
 withDefaults(defineProps<ItemGridProps>(), {
   size: 'normal',
+  align: 'left',
 })
 </script>
 
@@ -35,6 +37,7 @@ withDefaults(defineProps<ItemGridProps>(), {
           v-if="column !== null"
           :item-data="column"
           :index="rowIndex * REACTANT_ROW_NUMBER + columnIndex"
+          :align="$props.align"
         />
       </div>
     </div>

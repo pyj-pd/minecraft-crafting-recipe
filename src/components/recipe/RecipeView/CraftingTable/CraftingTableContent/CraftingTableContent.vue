@@ -67,6 +67,7 @@ const getReactantItemGrid = (): CraftingTableReactantGrid | null => {
       :key="`${itemId},${recipeVariantIndex}`"
       :grid="[[itemId]]"
       size="large"
+      align="right"
     />
   </div>
 </template>

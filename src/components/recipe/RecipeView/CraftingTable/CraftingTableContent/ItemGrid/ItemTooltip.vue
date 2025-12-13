@@ -1,13 +1,22 @@
 <script setup lang="ts">
-defineProps<{
-  id: string
-}>()
+withDefaults(
+  defineProps<{
+    id: string
+    align?: 'left' | 'right'
+  }>(),
+  { align: 'left' }
+)
 
 defineSlots()
 </script>
 
 <template>
-  <div :class="$style['tooltip-container']">
+  <div
+    :class="[
+      $style['tooltip-container'],
+      $props.align === 'right' && $style.right,
+    ]"
+  >
     <div
       :id="$props.id"
       role="tooltip"
@@ -28,8 +37,14 @@ defineSlots()
   position: absolute;
   transform: translateY(-100%);
   top: 0;
-  left: 0;
   z-index: 10;
+
+  &:not(.right) {
+    left: 0;
+  }
+  &.right {
+    right: 0;
+  }
 
   display: none;
 

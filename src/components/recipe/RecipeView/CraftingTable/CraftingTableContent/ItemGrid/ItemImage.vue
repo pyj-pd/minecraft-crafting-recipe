@@ -11,9 +11,12 @@ import { useSearchStore } from '@/stores/search'
 type ItemImageProps = {
   itemData: PossibleItem
   index: number
+  align?: 'left' | 'right'
 }
 
-const { itemData, index } = defineProps<ItemImageProps>()
+const { itemData, index, align } = withDefaults(defineProps<ItemImageProps>(), {
+  align: 'left',
+})
 
 const { setItemId } = useRecipeStore()
 const { translationData } = storeToRefs(useSearchStore())
@@ -77,6 +80,7 @@ const tooltipId = computed(() => `item-${index}`)
     <ItemTooltip
       :id="tooltipId"
       :class="$style.tooltip"
+      :align
     >
       {{ translationData?.translations[itemId] }}
     </ItemTooltip>
@@ -109,7 +113,18 @@ $item-image-width: calc(var(--table-width) * 0.065);
   &:has(:focus-visible) {
     .tooltip {
       display: flex;
+
+      animation: tooltip-enter-animation 0.4s both ease-out;
     }
+  }
+}
+
+@keyframes tooltip-enter-animation {
+  0% {
+    transform: translateY(-90%);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }
 

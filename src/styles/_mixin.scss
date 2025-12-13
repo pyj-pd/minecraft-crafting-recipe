@@ -41,7 +41,7 @@
   color: $color;
 
   box-shadow: inset 0 $shadow-width 0 0 $shadow-color-bright,
-    inset 0 (-1 * calc($shadow-width * 1.5)) 0 0 $shadow-color-dark;
+    inset 0 (calc($shadow-width * -1.5)) 0 0 $shadow-color-dark;
 
   @if ($border-color == null or $border-width == null) {
     border: none;
@@ -56,13 +56,15 @@
   }
 }
 
-@mixin gray-button-color-style {
+@mixin gray-button-color-style($parameters...) {
   @include button-color-style(
     $background-color: palette.$dark-gray-4,
     $active-background-color: palette.$dark-gray-2,
     $color: palette.$text-color,
 
     $shadow-color-bright: palette.$dark-gray-5,
-    $shadow-color-dark: palette.$dark-gray-2
+    $shadow-color-dark: palette.$dark-gray-2,
+
+    $parameters...
   );
 }
