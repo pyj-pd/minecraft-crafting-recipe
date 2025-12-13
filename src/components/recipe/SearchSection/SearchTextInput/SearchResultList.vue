@@ -86,7 +86,7 @@ const onItemSelect = (itemId: ItemId): void => {
   overflow-y: auto;
 
   width: 100%;
-  max-height: 300px;
+  max-height: 450px;
 }
 
 .list-container {
@@ -100,10 +100,10 @@ const onItemSelect = (itemId: ItemId): void => {
 
 .search-result-item {
   display: flex;
-  gap: 10px;
+  gap: 13px;
   align-items: center;
 
-  padding: 12px 17px;
+  padding: 16px 18px;
 
   width: 100%;
 
@@ -127,7 +127,7 @@ const onItemSelect = (itemId: ItemId): void => {
 .image-container {
   display: flex;
 
-  height: 30px;
+  height: 35px;
   aspect-ratio: 1 / 1;
 
   img {

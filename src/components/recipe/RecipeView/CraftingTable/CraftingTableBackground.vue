@@ -1,118 +1,108 @@
 <template>
   <svg
-    :class="$style.svg"
     xmlns="http://www.w3.org/2000/svg"
-    width="897"
-    height="473"
     fill="none"
-    viewBox="0 0 897 473"
+    viewBox="0 0 858 473"
   >
     <path
-      fill="#171615"
-      d="M0 0h897v475H0z"
+      fill="#191613"
+      d="M.5-1h858v475H.5z"
     />
     <mask
-      id="a"
+      id="path-1-outside-1_13_41"
       width="71"
       height="71"
-      x="-2"
-      y="-2"
+      x="-1.5"
+      y="-3"
       fill="#000"
       maskUnits="userSpaceOnUse"
     >
       <path
         fill="#fff"
-        d="M-2-2h71v71H-2z"
+        d="M-1.5-3h71v71h-71z"
       />
-      <path d="M22.333 67H0V0h67v22.333H44.667v22.334H22.333z" />
+      <path d="M22.833 66H.5V-1h67v22.333H45.167v22.334H22.833V66Z" />
     </mask>
     <path
-      fill="#241f17"
-      d="M22.333 67H0V0h67v22.333H44.667v22.334H22.333z"
+      fill="#2F281C"
+      d="M22.833 66H.5V-1h67v22.333H45.167v22.334H22.833V66Z"
     />
     <path
       fill="#000"
-      d="M22.333 67v2h2v-2zM0 67h-2v2h2zM0 0v-2h-2v2zm67 0h2v-2h-2zm0 22.333v2h2v-2zm-22.333 0v-2h-2v2zm0 22.334v2h2v-2zm-22.334 0v-2h-2v2zm0 22.333v-2H0v4h22.333zM0 67h2V0h-4v67zM0 0v2h67v-4H0zm67 0h-2v22.333h4V0zm0 22.333v-2H44.667v4H67zm-22.333 0h-2v22.334h4V22.333zm0 22.334v-2H22.333v4h22.334zm-22.334 0h-2V67h4V44.667z"
-      mask="url(#a)"
+      d="M22.833 66v2h2v-2h-2ZM.5 66h-2v2h2v-2Zm0-67v-2h-2v2h2Zm67 0h2v-2h-2v2Zm0 22.333v2h2v-2h-2Zm-22.333 0v-2h-2v2h2Zm0 22.334v2h2v-2h-2Zm-22.334 0v-2h-2v2h2Zm0 22.333v-2H.5v4h22.333v-2ZM.5 66h2V-1h-4v67h2Zm0-67v2h67v-4H.5v2Zm67 0h-2v22.333h4V-1h-2Zm0 22.333v-2H45.167v4H67.5v-2Zm-22.333 0h-2v22.334h4V21.333h-2Zm0 22.334v-2H22.833v4h22.334v-2Zm-22.334 0h-2V66h4V43.667h-2Z"
+      mask="url(#path-1-outside-1_13_41)"
     />
     <mask
-      id="b"
+      id="path-3-outside-2_13_41"
       width="71"
       height="71"
-      x="-2"
-      y="406"
+      x="-1.5"
+      y="405"
       fill="#000"
       maskUnits="userSpaceOnUse"
     >
       <path
         fill="#fff"
-        d="M-2 406h71v71H-2z"
+        d="M-1.5 405h71v71h-71z"
       />
-      <path d="M22.333 408H0v67h67v-22.333H44.667v-22.334H22.333z" />
+      <path d="M22.833 407H.5v67h67v-22.333H45.167v-22.334H22.833V407Z" />
     </mask>
     <path
-      fill="#241f17"
-      d="M22.333 408H0v67h67v-22.333H44.667v-22.334H22.333z"
+      fill="#2F281C"
+      d="M22.833 407H.5v67h67v-22.333H45.167v-22.334H22.833V407Z"
     />
     <path
       fill="#000"
-      d="M22.333 408v-2h2v2zM0 408h-2v-2h2zm0 67v2h-2v-2zm67 0h2v2h-2zm0-22.333v-2h2v2zm-22.333 0v2h-2v-2zm0-22.334v-2h2v2zm-22.334 0v2h-2v-2zm0-22.333v2H0v-4h22.333zM0 408h2v67h-4v-67zm0 67v-2h67v4H0zm67 0h-2v-22.333h4V475zm0-22.333v2H44.667v-4H67zm-22.333 0h-2v-22.334h4v22.334zm0-22.334v2H22.333v-4h22.334zm-22.334 0h-2V408h4v22.333z"
-      mask="url(#b)"
+      d="M22.833 407v-2h2v2h-2ZM.5 407h-2v-2h2v2Zm0 67v2h-2v-2h2Zm67 0h2v2h-2v-2Zm0-22.333v-2h2v2h-2Zm-22.333 0v2h-2v-2h2Zm0-22.334v-2h2v2h-2Zm-22.334 0v2h-2v-2h2Zm0-22.333v2H.5v-4h22.333v2ZM.5 407h2v67h-4v-67h2Zm0 67v-2h67v4H.5v-2Zm67 0h-2v-22.333h4V474h-2Zm0-22.333v2H45.167v-4H67.5v2Zm-22.333 0h-2v-22.334h4v22.334h-2Zm0-22.334v2H22.833v-4h22.334v2Zm-22.334 0h-2V407h4v22.333h-2Z"
+      mask="url(#path-3-outside-2_13_41)"
     />
     <mask
-      id="c"
+      id="path-5-outside-3_13_41"
       width="71"
       height="71"
-      x="828"
-      y="-2"
+      x="789.5"
+      y="-3"
       fill="#000"
       maskUnits="userSpaceOnUse"
     >
       <path
         fill="#fff"
-        d="M828-2h71v71h-71z"
+        d="M789.5-3h71v71h-71z"
       />
-      <path d="M874.667 67H897V0h-67v22.333h22.333v22.334h22.334z" />
+      <path d="M836.167 66H858.5V-1h-67v22.333h22.333v22.334h22.334V66Z" />
     </mask>
     <path
-      fill="#241f17"
-      d="M874.667 67H897V0h-67v22.333h22.333v22.334h22.334z"
+      fill="#2F281C"
+      d="M836.167 66H858.5V-1h-67v22.333h22.333v22.334h22.334V66Z"
     />
     <path
       fill="#000"
-      d="M874.667 67v2h-2v-2zM897 67h2v2h-2zm0-67v-2h2v2zm-67 0h-2v-2h2zm0 22.333v2h-2v-2zm22.333 0v-2h2v2zm0 22.334v2h-2v-2zm22.334 0v-2h2v2zm0 22.333v-2H897v4h-22.333zM897 67h-2V0h4v67zm0-67v2h-67v-4h67zm-67 0h2v22.333h-4V0zm0 22.333v-2h22.333v4H830zm22.333 0h2v22.334h-4V22.333zm0 22.334v-2h22.334v4h-22.334zm22.334 0h2V67h-4V44.667z"
-      mask="url(#c)"
+      d="M836.167 66v2h-2v-2h2Zm22.333 0h2v2h-2v-2Zm0-67v-2h2v2h-2Zm-67 0h-2v-2h2v2Zm0 22.333v2h-2v-2h2Zm22.333 0v-2h2v2h-2Zm0 22.334v2h-2v-2h2Zm22.334 0v-2h2v2h-2Zm0 22.333v-2H858.5v4h-22.333v-2Zm22.333 0h-2V-1h4v67h-2Zm0-67v2h-67v-4h67v2Zm-67 0h2v22.333h-4V-1h2Zm0 22.333v-2h22.333v4H791.5v-2Zm22.333 0h2v22.334h-4V21.333h2Zm0 22.334v-2h22.334v4h-22.334v-2Zm22.334 0h2V66h-4V43.667h2Z"
+      mask="url(#path-5-outside-3_13_41)"
     />
     <mask
-      id="d"
+      id="path-7-outside-4_13_41"
       width="71"
       height="71"
-      x="828"
-      y="406"
+      x="789.5"
+      y="405"
       fill="#000"
       maskUnits="userSpaceOnUse"
     >
       <path
         fill="#fff"
-        d="M828 406h71v71h-71z"
+        d="M789.5 405h71v71h-71z"
       />
-      <path d="M874.667 408H897v67h-67v-22.333h22.333v-22.334h22.334z" />
+      <path d="M836.167 407H858.5v67h-67v-22.333h22.333v-22.334h22.334V407Z" />
     </mask>
     <path
-      fill="#241f17"
-      d="M874.667 408H897v67h-67v-22.333h22.333v-22.334h22.334z"
+      fill="#2F281C"
+      d="M836.167 407H858.5v67h-67v-22.333h22.333v-22.334h22.334V407Z"
     />
     <path
       fill="#000"
-      d="M874.667 408v-2h-2v2zM897 408h2v-2h-2zm0 67v2h2v-2zm-67 0h-2v2h2zm0-22.333v-2h-2v2zm22.333 0v2h2v-2zm0-22.334v-2h-2v2zm22.334 0v2h2v-2zm0-22.333v2H897v-4h-22.333zM897 408h-2v67h4v-67zm0 67v-2h-67v4h67zm-67 0h2v-22.333h-4V475zm0-22.333v2h22.333v-4H830zm22.333 0h2v-22.334h-4v22.334zm0-22.334v2h22.334v-4h-22.334zm22.334 0h2V408h-4v22.333z"
-      mask="url(#d)"
+      d="M836.167 407v-2h-2v2h2Zm22.333 0h2v-2h-2v2Zm0 67v2h2v-2h-2Zm-67 0h-2v2h2v-2Zm0-22.333v-2h-2v2h2Zm22.333 0v2h2v-2h-2Zm0-22.334v-2h-2v2h2Zm22.334 0v2h2v-2h-2Zm0-22.333v2H858.5v-4h-22.333v2Zm22.333 0h-2v67h4v-67h-2Zm0 67v-2h-67v4h67v-2Zm-67 0h2v-22.333h-4V474h2Zm0-22.333v2h22.333v-4H791.5v2Zm22.333 0h2v-22.334h-4v22.334h2Zm0-22.334v2h22.334v-4h-22.334v2Zm22.334 0h2V407h-4v22.333h2Z"
+      mask="url(#path-7-outside-4_13_41)"
     />
   </svg>
 </template>
-
-<style lang="scss" module>
-.svg {
-  width: fit-content;
-  height: fit-content;
-}
-</style>

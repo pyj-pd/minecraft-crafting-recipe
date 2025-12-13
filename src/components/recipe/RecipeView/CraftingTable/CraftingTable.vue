@@ -29,7 +29,7 @@ initImageAnimationTimer()
     ref="table-ref"
     :class="$style['crafting-table']"
   >
-    <CraftingTableBackground />
+    <CraftingTableBackground :class="$style['crafting-table-background-svg']" />
     <div :class="$style['table-grid-container']">
       <CraftingTableContent />
     </div>
@@ -52,6 +52,10 @@ initImageAnimationTimer()
   border: solid value.$border-width-normal palette.$black;
 
   overflow: hidden;
+}
+
+.crafting-table-background-svg {
+  width: 100%;
 }
 
 .table-grid-container {

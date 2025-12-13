@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { onBeforeUnmount, onMounted } from 'vue'
 
-export const ITEM_IMAGE_ANIMATION_INTERVAL = 1000
+export const ITEM_IMAGE_ANIMATION_INTERVAL = 2000
 
 export const useAnimationTimerStore = defineStore('animation-timer-store', {
   state: () => ({

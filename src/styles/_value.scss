@@ -1,20 +1,20 @@
 @use '@/styles/palette' as palette;
 
 // Body
-$body-padding: 130px 15px;
+$body-padding: 90px 15px;
 
-$section-gap: 100px;
+$section-gap: 55px;
 
 // Input/Button
 $inset-shadow-offset: 9px;
-$text-input-padding: 15px;
+$text-input-padding: 15px 16px;
 
 $button-inset-shadow-offset: 4px;
 $button-inset-shadow-offset-small: 3px;
 $button-inset-shadow-offset-x-small: 2px;
 $button-font-weight: 500;
 
-$button-padding: 15px 30px;
+$button-padding: 10px 23px;
 $small-button-padding: 14px 17px;
 
 $tooltip-padding: 8px 12px;
@@ -28,8 +28,10 @@ $small-button-font-size: 17px;
 $tooltip-font-size: 18px;
 $tooltip-font-weight: 500;
 
+$input-font-weight: 520;
+
 $footer-font-size: 0.9rem;
-$main-title: 2.1rem;
+$main-title: 2rem;
 
 // Border
 $border-width-normal: 2px;

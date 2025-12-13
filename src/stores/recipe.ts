@@ -11,13 +11,16 @@ export const useRecipeStore = defineStore('recipe', {
 
     recipeFileData: null as null | RecipeFileData,
     recipeVariantIndex: null as null | number,
+
+    _abortController: null as null | AbortController,
   }),
   actions: {
     async setItemId(newItemId: null | ItemId): Promise<void> {
       window.location.hash = newItemId ? `#${newItemId}` : ''
     },
-    /** @todo add abort controller */
     async _setItemRecipeData(itemId: null | ItemId): Promise<void> {
+      if (this._abortController !== null) this._abortController.abort() // Abort previous request
+
       if (itemId === null) {
         // Reset item id data
         this.itemId = null
@@ -27,7 +30,12 @@ export const useRecipeStore = defineStore('recipe', {
       }
 
       try {
-        const recipeData = await getRecipeData(itemId)
+        this._abortController = new AbortController()
+
+        const recipeData = await getRecipeData(
+          itemId,
+          this._abortController.signal
+        )
 
         this.itemId = itemId
         this.recipeFileData = recipeData

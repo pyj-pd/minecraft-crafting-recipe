@@ -2,9 +2,15 @@
 import { initRecipeHashHandler } from '@/stores/recipe'
 import SearchTextInput from './SearchTextInput/SearchTextInput.vue'
 import { minecraftVersion } from '@shared/constants/minecraft'
+import { ref } from 'vue'
 
-let searchRawQuery = ''
+const searchRawQuery = ref()
 
+const resetSearchQuery = (): void => {
+  searchRawQuery.value = ''
+}
+
+// @todo add loading spinner
 initRecipeHashHandler()
 </script>
 
@@ -15,6 +21,7 @@ initRecipeHashHandler()
       <a
         href="/#"
         :class="$style.title"
+        @click="resetSearchQuery"
       >
         <h1>Minecraft Crafting Recipe</h1>
       </a>
@@ -62,8 +69,9 @@ initRecipeHashHandler()
 
   background-color: palette.$dark-gray-1;
 
-  font-size: 15px;
-  font-weight: value.$tooltip-font-weight;
+  font-size: 13px;
+  font-weight: value.$bold-weight;
+  letter-spacing: -0.02em;
 }
 
 .title {
@@ -84,7 +92,7 @@ initRecipeHashHandler()
   gap: 10px;
 
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 @media screen and (max-width: value.$small-screen-width) {

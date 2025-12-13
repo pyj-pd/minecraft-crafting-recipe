@@ -102,7 +102,7 @@ const tooltipId = computed(() => `item-${index}`)
 <style lang="scss" module>
 @use '@/styles/palette' as palette;
 
-$item-image-width: calc(var(--table-width) * 0.065);
+$item-image-width: calc(var(--table-width) * 0.055);
 
 .container {
   position: relative;

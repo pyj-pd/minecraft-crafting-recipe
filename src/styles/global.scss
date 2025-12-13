@@ -30,11 +30,13 @@ body {
   flex-direction: column;
   align-content: center;
 
-  background-color: red;
-
   padding: value.$body-padding;
 
   min-height: 100vh;
+
+  background-image: url('/assets/images/background.png');
+  background-size: 50px;
+  image-rendering: pixelated;
 
   background-color: palette.$background-color;
   color: palette.$text-color;

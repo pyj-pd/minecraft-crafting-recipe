@@ -56,8 +56,12 @@ const doSearch = (query: string): void => {
 
   &:not(:focus-within) {
     .search-result {
-      display: none;
+      visibility: hidden;
     }
+  }
+
+  .search-result {
+    transition: visibility 0.2s;
   }
 }
 

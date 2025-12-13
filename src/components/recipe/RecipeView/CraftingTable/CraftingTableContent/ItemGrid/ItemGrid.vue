@@ -52,6 +52,8 @@ $table-border-width: calc(var(--table-width) * 0.0025);
 $item-original-width: calc(var(--table-width) * 0.09);
 $item-large-width: calc($item-original-width * 1.15);
 
+$item-grid-border-width: calc($item-original-width * 0.035);
+
 .table-container {
   display: flex;
   gap: $table-border-width;
@@ -79,7 +81,7 @@ $item-large-width: calc($item-original-width * 1.15);
     width: $item-large-width;
   }
 
-  background-color: palette.$dark-gray-2; // Border color
+  background-color: palette.$dark-gray-4; // Border color
 
   &::before {
     content: '';
@@ -89,10 +91,10 @@ $item-large-width: calc($item-original-width * 1.15);
     bottom: 0;
     right: 0;
 
-    width: 96%;
+    width: calc(100% - $item-grid-border-width);
     aspect-ratio: 1 / 1;
 
-    background-color: palette.$dark-gray-1; // Real background color
+    background-color: palette.$dark-gray-2; // Real background color
   }
 }
 </style>
