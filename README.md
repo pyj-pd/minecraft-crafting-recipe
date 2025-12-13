@@ -13,3 +13,4 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 1. Copy language files you want to use from `assets/minecraft/lang` to `data/raw_data/lang` folder in project directory. **`en_us.json` file is necessary.**
 1. Put isometric item render images into `public/assets/data/renders` folder. Use [Isometric Render](https://github.com/gliscowo/isometric-renders) mod for rendering.
 1. Run `pnpm run process` command.
+1. Edit `minecraftVersion` variable in `shared/constants/minecraft.ts` file.

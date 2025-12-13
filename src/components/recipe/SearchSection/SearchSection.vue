@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { initRecipeHashHandler } from '@/stores/recipe'
 import SearchTextInput from './SearchTextInput/SearchTextInput.vue'
+import { minecraftVersion } from '@shared/constants/minecraft'
 
 let searchRawQuery = ''
 
@@ -9,12 +10,15 @@ initRecipeHashHandler()
 
 <template>
   <section :class="$style['search-section']">
-    <a
-      href="/#"
-      :class="$style['title-link']"
-    >
-      <h1 :class="$style.title">Minecraft Crafting Recipe</h1>
-    </a>
+    <div :class="$style['title-container']">
+      <span :class="$style.version">{{ minecraftVersion }}</span>
+      <a
+        href="/#"
+        :class="$style.title"
+      >
+        <h1>Minecraft Crafting Recipe</h1>
+      </a>
+    </div>
     <form
       :class="$style['input-container']"
       @submit.prevent
@@ -29,11 +33,7 @@ initRecipeHashHandler()
 
 <style lang="scss" module>
 @use '@/styles/value' as value;
-
-.title-link {
-  color: currentColor;
-  text-decoration: none;
-}
+@use '@/styles/palette' as palette;
 
 .search-section {
   display: flex;
@@ -44,13 +44,41 @@ initRecipeHashHandler()
   width: 100%;
 }
 
-.title {
-  font-size: value.$main-title;
-  font-weight: value.$bold-weight;
-
-  text-align: center;
+// Title
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
 }
 
+.version {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3px 5px;
+  border: solid value.$border-width-normal palette.$dark-gray-4;
+
+  background-color: palette.$dark-gray-1;
+
+  font-size: 15px;
+  font-weight: value.$tooltip-font-weight;
+}
+
+.title {
+  color: currentColor;
+  text-decoration: none;
+
+  > h1 {
+    font-size: value.$main-title;
+    font-weight: value.$bold-weight;
+
+    text-align: center;
+  }
+}
+
+// Input
 .input-container {
   display: flex;
   gap: 10px;
