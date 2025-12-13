@@ -8,6 +8,10 @@ import {
 import Inko from 'inko'
 import recipeList from '@/data/recipe-list.json'
 
+export function recipeExists(itemId: ItemId): boolean {
+  return recipeList.includes(itemId)
+}
+
 export async function getTranslationData(
   languageId: string
 ): Promise<LanguageData> {

@@ -1,13 +1,16 @@
 <script setup lang="ts">
+import { initRecipeHashHandler } from '@/stores/recipe'
 import SearchTextInput from './SearchTextInput/SearchTextInput.vue'
 
 let searchRawQuery = ''
+
+initRecipeHashHandler()
 </script>
 
 <template>
   <section :class="$style['search-section']">
     <a
-      href="/"
+      href="/#"
       :class="$style['title-link']"
     >
       <h1 :class="$style.title">Minecraft Crafting Recipe</h1>

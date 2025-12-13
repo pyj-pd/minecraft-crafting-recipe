@@ -32,7 +32,6 @@ withDefaults(defineProps<ItemGridProps>(), {
         :key="columnIndex"
         :class="$style.item"
       >
-        <!-- @todo change to URL based navigation -->
         <ItemImage
           v-if="column !== null"
           :item-data="column"

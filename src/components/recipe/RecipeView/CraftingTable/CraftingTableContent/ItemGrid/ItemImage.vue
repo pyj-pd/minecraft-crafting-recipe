@@ -7,6 +7,7 @@ import { storeToRefs } from 'pinia'
 import { computed, ref, watch } from 'vue'
 import ItemTooltip from './ItemTooltip.vue'
 import { useSearchStore } from '@/stores/search'
+import { recipeExists } from '@/utils/language'
 
 type ItemImageProps = {
   itemData: PossibleItem
@@ -40,6 +41,8 @@ const imageUrls = computed<string[]>(() => {
 const imageUrl = computed<string>(() => {
   return imageUrls.value[itemIndex.value] as string
 })
+
+const doesRecipeExist = computed<boolean>(() => recipeExists(itemId.value))
 
 // Handle item tags
 const { imageTick } = storeToRefs(useAnimationTimerStore())
@@ -85,6 +88,7 @@ const tooltipId = computed(() => `item-${index}`)
     <button
       :aria-labelledby="tooltipId"
       :class="$style['item-button']"
+      :disabled="!doesRecipeExist"
       @click="() => setItemId(itemId)"
     >
       <img
@@ -153,6 +157,10 @@ $item-image-width: calc(var(--table-width) * 0.065);
   &:hover,
   &:focus-visible {
     background-color: rgba(palette.$light-gray, 0.1);
+
+    &:disabled {
+      background-color: rgba(palette.$red, 0.1);
+    }
   }
 }
 </style>

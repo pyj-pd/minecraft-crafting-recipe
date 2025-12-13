@@ -1,8 +1,9 @@
-import type { ItemId } from '@shared/types/minecraft'
+import { ItemId } from '@shared/types/minecraft'
 import type { RecipeData, RecipeFileData } from '@shared/types/recipe'
 import { getRecipeData } from '@/utils/recipe'
 import { defineStore } from 'pinia'
 import { DEFAULT_RECIPE_VARIANT_INDEX } from '@/constants/default'
+import { onBeforeUnmount, onMounted } from 'vue'
 
 export const useRecipeStore = defineStore('recipe', {
   state: () => ({
@@ -12,9 +13,13 @@ export const useRecipeStore = defineStore('recipe', {
     recipeVariantIndex: null as null | number,
   }),
   actions: {
-    /** @todo add abort controller */
     async setItemId(newItemId: null | ItemId): Promise<void> {
-      if (newItemId === null) {
+      window.location.hash = newItemId ? `#${newItemId}` : ''
+    },
+    /** @todo add abort controller */
+    async _setItemRecipeData(itemId: null | ItemId): Promise<void> {
+      if (itemId === null) {
+        // Reset item id data
         this.itemId = null
         this.recipeFileData = null
         this.recipeVariantIndex = null
@@ -22,9 +27,9 @@ export const useRecipeStore = defineStore('recipe', {
       }
 
       try {
-        const recipeData = await getRecipeData(newItemId)
+        const recipeData = await getRecipeData(itemId)
 
-        this.itemId = newItemId
+        this.itemId = itemId
         this.recipeFileData = recipeData
         this.recipeVariantIndex = DEFAULT_RECIPE_VARIANT_INDEX
       } catch {
@@ -61,3 +66,38 @@ export const useRecipeStore = defineStore('recipe', {
     },
   },
 })
+
+/**
+ * Handles hash URL to match item id data in the store.
+ * Should belong to `SearchSection` component.
+ */
+export const initRecipeHashHandler = (): void => {
+  const { _setItemRecipeData } = useRecipeStore()
+
+  const onHashChange = (): void => {
+    const { hash } = window.location
+
+    if (hash.length <= 0) {
+      // If URL is empty, reset item id
+      _setItemRecipeData(null)
+      return
+    }
+
+    try {
+      const hashItemId = ItemId.parse(hash.slice(1)) // Remove '#' from hash
+
+      _setItemRecipeData(hashItemId)
+    } catch {
+      // Wrong id
+    }
+  }
+
+  onMounted(() => {
+    window.addEventListener('hashchange', onHashChange)
+    onHashChange()
+  })
+
+  onBeforeUnmount(() => {
+    window.removeEventListener('hashchange', onHashChange)
+  })
+}
