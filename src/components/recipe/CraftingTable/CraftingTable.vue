@@ -2,7 +2,7 @@
 import { onBeforeUnmount, onMounted, ref, useTemplateRef } from 'vue'
 import CraftingTableBackground from './CraftingTableBackground.vue'
 import CraftingTableContent from './CraftingTableContent/CraftingTableContent.vue'
-import { initImageAnimationTimer } from '@/composables/useImageAnimation'
+import { initImageAnimationTimer } from '@/stores/image-animation'
 
 const tableWidth = ref<string>()
 const tableRef = useTemplateRef('table-ref')

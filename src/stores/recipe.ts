@@ -28,9 +28,7 @@ export const useRecipeStore = defineStore('recipe', {
         this.recipeFileData = recipeData
         this.recipeVariantIndex = DEFAULT_RECIPE_VARIANT_INDEX
       } catch {
-        console.error(
-          "Failed to fetch item data. Maybe the item recipe doesn't exist?"
-        )
+        // No recipe exist
       }
     },
     /**

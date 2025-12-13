@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { useImageAnimation } from '@/composables/useImageAnimation'
+import { useAnimationTimerStore } from '@/stores/image-animation'
 import { getItemImageUrl } from '@/utils/image'
 import type { ItemId, PossibleItem } from '@shared/types/minecraft'
+import { storeToRefs } from 'pinia'
 import { computed, ref, watch } from 'vue'
 
 type ItemImageProps = {
@@ -22,7 +23,7 @@ const itemId = computed<ItemId>(() => {
 const imageUrl = computed(() => getItemImageUrl(itemId.value))
 
 // Handle item tags
-const imageTick = useImageAnimation()
+const { imageTick } = storeToRefs(useAnimationTimerStore())
 
 watch(imageTick, () => {
   let newItemIndex = itemIndex.value + 1

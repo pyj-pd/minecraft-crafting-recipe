@@ -43,14 +43,7 @@ withDefaults(defineProps<TabButtonProps>(), {
     height: 85%;
   }
   &:not(.selected) {
-    @include mixin.button-color-style(
-      $background-color: palette.$dark-gray-4,
-      $active-background-color: palette.$dark-gray-2,
-      $color: palette.$text-color,
-
-      $shadow-color-bright: palette.$dark-gray-5,
-      $shadow-color-dark: palette.$dark-gray-2
-    );
+    @include mixin.gray-button-color-style;
   }
 
   @media screen and (max-width: value.$small-screen-width) {
