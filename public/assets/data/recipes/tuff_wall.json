@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:tuff_wall","count":6,"recipe":{"grid":[["minecraft:tuff","minecraft:tuff","minecraft:tuff"],["minecraft:tuff","minecraft:tuff","minecraft:tuff"],[null,null,null]]}}]
+{"itemId":"minecraft:tuff_wall","allItemIds":["minecraft:tuff","minecraft:tuff_wall"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:tuff","minecraft:tuff","minecraft:tuff"],["minecraft:tuff","minecraft:tuff","minecraft:tuff"],[null,null,null]]}}]}

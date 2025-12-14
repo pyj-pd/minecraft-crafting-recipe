@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:purple_dye","count":2,"recipe":{"items":["minecraft:blue_dye","minecraft:red_dye"]}}]
+{"itemId":"minecraft:purple_dye","allItemIds":["minecraft:blue_dye","minecraft:red_dye"],"variants":[{"type":"shapeless","count":2,"recipe":{"items":["minecraft:blue_dye","minecraft:red_dye"]}}]}

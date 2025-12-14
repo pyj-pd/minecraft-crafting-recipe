@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:firework_rocket","count":3,"recipe":{"items":["minecraft:gunpowder","minecraft:paper"]}}]
+{"itemId":"minecraft:firework_rocket","allItemIds":["minecraft:gunpowder","minecraft:paper"],"variants":[{"type":"shapeless","count":3,"recipe":{"items":["minecraft:gunpowder","minecraft:paper"]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:deepslate_brick_slab","count":6,"recipe":{"grid":[["minecraft:deepslate_bricks","minecraft:deepslate_bricks","minecraft:deepslate_bricks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:deepslate_brick_slab","allItemIds":["minecraft:deepslate_bricks","minecraft:deepslate_brick_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:deepslate_bricks","minecraft:deepslate_bricks","minecraft:deepslate_bricks"],[null,null,null],[null,null,null]]}}]}

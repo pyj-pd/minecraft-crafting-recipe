@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:prismarine_stairs","count":4,"recipe":{"grid":[["minecraft:prismarine",null,null],["minecraft:prismarine","minecraft:prismarine",null],["minecraft:prismarine","minecraft:prismarine","minecraft:prismarine"]]}}]
+{"itemId":"minecraft:prismarine_stairs","allItemIds":["minecraft:prismarine","minecraft:prismarine_stairs"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:prismarine",null,null],["minecraft:prismarine","minecraft:prismarine",null],["minecraft:prismarine","minecraft:prismarine","minecraft:prismarine"]]}}]}

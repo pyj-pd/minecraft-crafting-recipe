@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:copper_pickaxe","count":1,"recipe":{"grid":[[["minecraft:copper_ingot"],["minecraft:copper_ingot"],["minecraft:copper_ingot"]],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}]
+{"itemId":"minecraft:copper_pickaxe","allItemIds":["minecraft:copper_ingot","minecraft:stick","minecraft:copper_pickaxe"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[["minecraft:copper_ingot"],["minecraft:copper_ingot"],["minecraft:copper_ingot"]],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}]}

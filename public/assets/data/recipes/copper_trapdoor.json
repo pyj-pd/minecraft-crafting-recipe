@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:copper_trapdoor","count":1,"recipe":{"grid":[["minecraft:copper_ingot","minecraft:copper_ingot",null],["minecraft:copper_ingot","minecraft:copper_ingot",null],[null,null,null]]}}]
+{"itemId":"minecraft:copper_trapdoor","allItemIds":["minecraft:copper_ingot","minecraft:copper_trapdoor"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:copper_ingot","minecraft:copper_ingot",null],["minecraft:copper_ingot","minecraft:copper_ingot",null],[null,null,null]]}}]}

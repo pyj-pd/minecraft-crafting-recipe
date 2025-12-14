@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:cyan_candle","count":1,"recipe":{"items":["minecraft:candle","minecraft:cyan_dye"]}}]
+{"itemId":"minecraft:cyan_candle","allItemIds":["minecraft:candle","minecraft:cyan_dye"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:candle","minecraft:cyan_dye"]}}]}

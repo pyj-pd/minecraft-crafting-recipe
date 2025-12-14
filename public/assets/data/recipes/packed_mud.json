@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:packed_mud","count":1,"recipe":{"items":["minecraft:mud","minecraft:wheat"]}}]
+{"itemId":"minecraft:packed_mud","allItemIds":["minecraft:mud","minecraft:wheat"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:mud","minecraft:wheat"]}}]}

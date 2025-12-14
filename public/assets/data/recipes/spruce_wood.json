@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:spruce_wood","count":3,"recipe":{"grid":[["minecraft:spruce_log","minecraft:spruce_log",null],["minecraft:spruce_log","minecraft:spruce_log",null],[null,null,null]]}}]
+{"itemId":"minecraft:spruce_wood","allItemIds":["minecraft:spruce_log","minecraft:spruce_wood"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:spruce_log","minecraft:spruce_log",null],["minecraft:spruce_log","minecraft:spruce_log",null],[null,null,null]]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:oxidized_copper_grate","count":4,"recipe":{"grid":[[null,"minecraft:oxidized_copper",null],["minecraft:oxidized_copper",null,"minecraft:oxidized_copper"],[null,"minecraft:oxidized_copper",null]]}}]
+{"itemId":"minecraft:oxidized_copper_grate","allItemIds":["minecraft:oxidized_copper","minecraft:oxidized_copper_grate"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[[null,"minecraft:oxidized_copper",null],["minecraft:oxidized_copper",null,"minecraft:oxidized_copper"],[null,"minecraft:oxidized_copper",null]]}}]}

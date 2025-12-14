@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:andesite_slab","count":6,"recipe":{"grid":[["minecraft:andesite","minecraft:andesite","minecraft:andesite"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:andesite_slab","allItemIds":["minecraft:andesite","minecraft:andesite_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:andesite","minecraft:andesite","minecraft:andesite"],[null,null,null],[null,null,null]]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:mud_brick_slab","count":6,"recipe":{"grid":[["minecraft:mud_bricks","minecraft:mud_bricks","minecraft:mud_bricks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:mud_brick_slab","allItemIds":["minecraft:mud_bricks","minecraft:mud_brick_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:mud_bricks","minecraft:mud_bricks","minecraft:mud_bricks"],[null,null,null],[null,null,null]]}}]}

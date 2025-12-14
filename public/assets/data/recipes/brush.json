@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:brush","count":1,"recipe":{"grid":[["minecraft:feather",null,null],["minecraft:copper_ingot",null,null],["minecraft:stick",null,null]]}}]
+{"itemId":"minecraft:brush","allItemIds":["minecraft:feather","minecraft:copper_ingot","minecraft:stick","minecraft:brush"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:feather",null,null],["minecraft:copper_ingot",null,null],["minecraft:stick",null,null]]}}]}

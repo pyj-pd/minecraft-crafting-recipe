@@ -5,7 +5,6 @@ export const RecipeDataTagData = z.record(ItemTag, z.array(ItemId))
 export type RecipeDataTagData = z.infer<typeof RecipeDataTagData>
 
 const RecipeDataCommon = z.object({
-  itemId: ItemId,
   count: z.number(),
 })
 
@@ -49,7 +48,11 @@ export type ShapelessRecipe = z.infer<typeof ShapelessRecipe>
 export const RecipeData = z.union([ShapedRecipe, ShapelessRecipe])
 export type RecipeData = z.infer<typeof RecipeData>
 
-export const RecipeFileData = z.array(RecipeData)
+export const RecipeFileData = z.object({
+  itemId: ItemId,
+  allItemIds: z.array(ItemId),
+  variants: z.array(RecipeData),
+})
 export type RecipeFileData = z.infer<typeof RecipeFileData>
 
 // Recipe list data

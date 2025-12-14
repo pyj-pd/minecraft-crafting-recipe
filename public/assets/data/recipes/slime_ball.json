@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:slime_ball","count":9,"recipe":{"items":["minecraft:slime_block"]}}]
+{"itemId":"minecraft:slime_ball","allItemIds":["minecraft:slime_block"],"variants":[{"type":"shapeless","count":9,"recipe":{"items":["minecraft:slime_block"]}}]}

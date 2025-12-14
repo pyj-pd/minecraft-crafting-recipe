@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:light_blue_dye","count":1,"recipe":{"items":["minecraft:blue_orchid"]}},{"type":"shapeless","itemId":"minecraft:light_blue_dye","count":2,"recipe":{"items":["minecraft:blue_dye","minecraft:white_dye"]}}]
+{"itemId":"minecraft:light_blue_dye","allItemIds":["minecraft:blue_orchid","minecraft:blue_dye","minecraft:white_dye"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:blue_orchid"]}},{"type":"shapeless","count":2,"recipe":{"items":["minecraft:blue_dye","minecraft:white_dye"]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:gold_nugget","count":9,"recipe":{"items":["minecraft:gold_ingot"]}}]
+{"itemId":"minecraft:gold_nugget","allItemIds":["minecraft:gold_ingot"],"variants":[{"type":"shapeless","count":9,"recipe":{"items":["minecraft:gold_ingot"]}}]}

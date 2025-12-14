@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:polished_diorite_slab","count":6,"recipe":{"grid":[["minecraft:polished_diorite","minecraft:polished_diorite","minecraft:polished_diorite"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:polished_diorite_slab","allItemIds":["minecraft:polished_diorite","minecraft:polished_diorite_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:polished_diorite","minecraft:polished_diorite","minecraft:polished_diorite"],[null,null,null],[null,null,null]]}}]}

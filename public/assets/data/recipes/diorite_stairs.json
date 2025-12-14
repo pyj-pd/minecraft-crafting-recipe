@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:diorite_stairs","count":4,"recipe":{"grid":[["minecraft:diorite",null,null],["minecraft:diorite","minecraft:diorite",null],["minecraft:diorite","minecraft:diorite","minecraft:diorite"]]}}]
+{"itemId":"minecraft:diorite_stairs","allItemIds":["minecraft:diorite","minecraft:diorite_stairs"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:diorite",null,null],["minecraft:diorite","minecraft:diorite",null],["minecraft:diorite","minecraft:diorite","minecraft:diorite"]]}}]}

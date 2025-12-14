@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:diamond_boots","count":1,"recipe":{"grid":[["minecraft:diamond",null,"minecraft:diamond"],["minecraft:diamond",null,"minecraft:diamond"],[null,null,null]]}}]
+{"itemId":"minecraft:diamond_boots","allItemIds":["minecraft:diamond","minecraft:diamond_boots"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:diamond",null,"minecraft:diamond"],["minecraft:diamond",null,"minecraft:diamond"],[null,null,null]]}}]}

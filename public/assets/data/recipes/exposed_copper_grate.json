@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:exposed_copper_grate","count":4,"recipe":{"grid":[[null,"minecraft:exposed_copper",null],["minecraft:exposed_copper",null,"minecraft:exposed_copper"],[null,"minecraft:exposed_copper",null]]}}]
+{"itemId":"minecraft:exposed_copper_grate","allItemIds":["minecraft:exposed_copper","minecraft:exposed_copper_grate"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[[null,"minecraft:exposed_copper",null],["minecraft:exposed_copper",null,"minecraft:exposed_copper"],[null,"minecraft:exposed_copper",null]]}}]}

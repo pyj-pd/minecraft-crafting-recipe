@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:oak_fence","count":3,"recipe":{"grid":[["minecraft:oak_planks","minecraft:stick","minecraft:oak_planks"],["minecraft:oak_planks","minecraft:stick","minecraft:oak_planks"],[null,null,null]]}}]
+{"itemId":"minecraft:oak_fence","allItemIds":["minecraft:oak_planks","minecraft:stick","minecraft:oak_fence"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:oak_planks","minecraft:stick","minecraft:oak_planks"],["minecraft:oak_planks","minecraft:stick","minecraft:oak_planks"],[null,null,null]]}}]}

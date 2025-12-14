@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:magma_cream","count":1,"recipe":{"items":["minecraft:blaze_powder","minecraft:slime_ball"]}}]
+{"itemId":"minecraft:magma_cream","allItemIds":["minecraft:blaze_powder","minecraft:slime_ball"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:blaze_powder","minecraft:slime_ball"]}}]}

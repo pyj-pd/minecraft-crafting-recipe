@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:end_rod","count":4,"recipe":{"grid":[["minecraft:blaze_rod",null,null],["minecraft:popped_chorus_fruit",null,null],[null,null,null]]}}]
+{"itemId":"minecraft:end_rod","allItemIds":["minecraft:blaze_rod","minecraft:popped_chorus_fruit","minecraft:end_rod"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:blaze_rod",null,null],["minecraft:popped_chorus_fruit",null,null],[null,null,null]]}}]}

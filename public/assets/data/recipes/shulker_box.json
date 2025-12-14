@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:shulker_box","count":1,"recipe":{"grid":[["minecraft:shulker_shell",null,null],["minecraft:chest",null,null],["minecraft:shulker_shell",null,null]]}}]
+{"itemId":"minecraft:shulker_box","allItemIds":["minecraft:shulker_shell","minecraft:chest","minecraft:shulker_box"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:shulker_shell",null,null],["minecraft:chest",null,null],["minecraft:shulker_shell",null,null]]}}]}

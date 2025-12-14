@@ -3,9 +3,14 @@ import { onBeforeUnmount, onMounted, ref, useTemplateRef } from 'vue'
 import CraftingTableBackground from './CraftingTableBackground.vue'
 import CraftingTableContent from './CraftingTableContent/CraftingTableContent.vue'
 import { initImageAnimationTimer } from '@/stores/image-animation'
+import { storeToRefs } from 'pinia'
+import { useRecipeStore } from '@/stores/recipe'
+import LoadingOverlay from './LoadingOverlay.vue'
 
 const tableWidth = ref<string>()
 const tableRef = useTemplateRef('table-ref')
+
+const { isItemRecipeLoading } = storeToRefs(useRecipeStore())
 
 const tableResizeObserver = new ResizeObserver((entries) => {
   const width = entries[0]?.contentRect.width
@@ -29,6 +34,7 @@ initImageAnimationTimer()
     ref="table-ref"
     :class="$style['crafting-table']"
   >
+    <LoadingOverlay v-if="isItemRecipeLoading" />
     <CraftingTableBackground :class="$style['crafting-table-background-svg']" />
     <div :class="$style['table-grid-container']">
       <CraftingTableContent />

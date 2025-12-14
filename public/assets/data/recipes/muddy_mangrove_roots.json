@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:muddy_mangrove_roots","count":1,"recipe":{"items":["minecraft:mud","minecraft:mangrove_roots"]}}]
+{"itemId":"minecraft:muddy_mangrove_roots","allItemIds":["minecraft:mud","minecraft:mangrove_roots"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:mud","minecraft:mangrove_roots"]}}]}

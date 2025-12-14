@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:mud_bricks","count":4,"recipe":{"grid":[["minecraft:packed_mud","minecraft:packed_mud",null],["minecraft:packed_mud","minecraft:packed_mud",null],[null,null,null]]}}]
+{"itemId":"minecraft:mud_bricks","allItemIds":["minecraft:packed_mud","minecraft:mud_bricks"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:packed_mud","minecraft:packed_mud",null],["minecraft:packed_mud","minecraft:packed_mud",null],[null,null,null]]}}]}

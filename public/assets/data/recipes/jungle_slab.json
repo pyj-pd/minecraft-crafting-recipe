@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:jungle_slab","count":6,"recipe":{"grid":[["minecraft:jungle_planks","minecraft:jungle_planks","minecraft:jungle_planks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:jungle_slab","allItemIds":["minecraft:jungle_planks","minecraft:jungle_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:jungle_planks","minecraft:jungle_planks","minecraft:jungle_planks"],[null,null,null],[null,null,null]]}}]}

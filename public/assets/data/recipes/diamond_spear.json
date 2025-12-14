@@ -1,0 +1,1 @@
+{"itemId":"minecraft:diamond_spear","allItemIds":["minecraft:diamond","minecraft:stick","minecraft:diamond_spear"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[null,null,["minecraft:diamond"]],[null,"minecraft:stick",null],["minecraft:stick",null,null]]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:warped_planks","count":4,"recipe":{"items":[["minecraft:warped_stem","minecraft:stripped_warped_stem","minecraft:warped_hyphae","minecraft:stripped_warped_hyphae"]]}}]
+{"itemId":"minecraft:warped_planks","allItemIds":["minecraft:warped_stem","minecraft:stripped_warped_stem","minecraft:warped_hyphae","minecraft:stripped_warped_hyphae"],"variants":[{"type":"shapeless","count":4,"recipe":{"items":[["minecraft:warped_stem","minecraft:stripped_warped_stem","minecraft:warped_hyphae","minecraft:stripped_warped_hyphae"]]}}]}

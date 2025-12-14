@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:copper_hoe","count":1,"recipe":{"grid":[[["minecraft:copper_ingot"],["minecraft:copper_ingot"],null],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}]
+{"itemId":"minecraft:copper_hoe","allItemIds":["minecraft:copper_ingot","minecraft:stick","minecraft:copper_hoe"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[["minecraft:copper_ingot"],["minecraft:copper_ingot"],null],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}]}

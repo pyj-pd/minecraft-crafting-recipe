@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:bamboo_slab","count":6,"recipe":{"grid":[["minecraft:bamboo_planks","minecraft:bamboo_planks","minecraft:bamboo_planks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:bamboo_slab","allItemIds":["minecraft:bamboo_planks","minecraft:bamboo_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:bamboo_planks","minecraft:bamboo_planks","minecraft:bamboo_planks"],[null,null,null],[null,null,null]]}}]}

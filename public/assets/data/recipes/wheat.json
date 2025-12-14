@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:wheat","count":9,"recipe":{"items":["minecraft:hay_block"]}}]
+{"itemId":"minecraft:wheat","allItemIds":["minecraft:hay_block"],"variants":[{"type":"shapeless","count":9,"recipe":{"items":["minecraft:hay_block"]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:diamond_pickaxe","count":1,"recipe":{"grid":[[["minecraft:diamond"],["minecraft:diamond"],["minecraft:diamond"]],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}]
+{"itemId":"minecraft:diamond_pickaxe","allItemIds":["minecraft:diamond","minecraft:stick","minecraft:diamond_pickaxe"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[["minecraft:diamond"],["minecraft:diamond"],["minecraft:diamond"]],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}]}

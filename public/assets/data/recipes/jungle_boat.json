@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:jungle_boat","count":1,"recipe":{"grid":[["minecraft:jungle_planks",null,"minecraft:jungle_planks"],["minecraft:jungle_planks","minecraft:jungle_planks","minecraft:jungle_planks"],[null,null,null]]}}]
+{"itemId":"minecraft:jungle_boat","allItemIds":["minecraft:jungle_planks","minecraft:jungle_boat"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:jungle_planks",null,"minecraft:jungle_planks"],["minecraft:jungle_planks","minecraft:jungle_planks","minecraft:jungle_planks"],[null,null,null]]}}]}

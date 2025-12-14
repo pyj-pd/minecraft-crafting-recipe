@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:cherry_button","count":1,"recipe":{"items":["minecraft:cherry_planks"]}}]
+{"itemId":"minecraft:cherry_button","allItemIds":["minecraft:cherry_planks"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:cherry_planks"]}}]}

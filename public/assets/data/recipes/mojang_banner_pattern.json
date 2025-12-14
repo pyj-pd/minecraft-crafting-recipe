@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:mojang_banner_pattern","count":1,"recipe":{"items":["minecraft:paper","minecraft:enchanted_golden_apple"]}}]
+{"itemId":"minecraft:mojang_banner_pattern","allItemIds":["minecraft:paper","minecraft:enchanted_golden_apple"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:paper","minecraft:enchanted_golden_apple"]}}]}

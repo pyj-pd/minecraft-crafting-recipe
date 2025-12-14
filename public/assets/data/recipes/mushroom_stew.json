@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:mushroom_stew","count":1,"recipe":{"items":["minecraft:brown_mushroom","minecraft:red_mushroom","minecraft:bowl"]}}]
+{"itemId":"minecraft:mushroom_stew","allItemIds":["minecraft:brown_mushroom","minecraft:red_mushroom","minecraft:bowl"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:brown_mushroom","minecraft:red_mushroom","minecraft:bowl"]}}]}

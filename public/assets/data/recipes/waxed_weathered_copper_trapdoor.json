@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:waxed_weathered_copper_trapdoor","count":1,"recipe":{"items":["minecraft:weathered_copper_trapdoor","minecraft:honeycomb"]}}]
+{"itemId":"minecraft:waxed_weathered_copper_trapdoor","allItemIds":["minecraft:weathered_copper_trapdoor","minecraft:honeycomb"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:weathered_copper_trapdoor","minecraft:honeycomb"]}}]}

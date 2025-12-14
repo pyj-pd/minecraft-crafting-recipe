@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:scaffolding","count":6,"recipe":{"grid":[["minecraft:bamboo","minecraft:string","minecraft:bamboo"],["minecraft:bamboo",null,"minecraft:bamboo"],["minecraft:bamboo",null,"minecraft:bamboo"]]}}]
+{"itemId":"minecraft:scaffolding","allItemIds":["minecraft:bamboo","minecraft:string","minecraft:scaffolding"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:bamboo","minecraft:string","minecraft:bamboo"],["minecraft:bamboo",null,"minecraft:bamboo"],["minecraft:bamboo",null,"minecraft:bamboo"]]}}]}

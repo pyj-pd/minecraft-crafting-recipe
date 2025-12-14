@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:chiseled_tuff_bricks","count":1,"recipe":{"grid":[["minecraft:tuff_brick_slab",null,null],["minecraft:tuff_brick_slab",null,null],[null,null,null]]}}]
+{"itemId":"minecraft:chiseled_tuff_bricks","allItemIds":["minecraft:tuff_brick_slab","minecraft:chiseled_tuff_bricks"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:tuff_brick_slab",null,null],["minecraft:tuff_brick_slab",null,null],[null,null,null]]}}]}

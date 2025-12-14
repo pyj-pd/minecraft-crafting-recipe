@@ -45,8 +45,6 @@ const { variantNumbers, recipeVariantIndex } = storeToRefs(recipeStore)
     }
   }
 
-  // @todo add drag
-
   @media screen and (max-width: value.$small-screen-width) {
     height: 53px;
   }

@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:dark_oak_planks","count":4,"recipe":{"items":[["minecraft:dark_oak_log","minecraft:dark_oak_wood","minecraft:stripped_dark_oak_log","minecraft:stripped_dark_oak_wood"]]}}]
+{"itemId":"minecraft:dark_oak_planks","allItemIds":["minecraft:dark_oak_log","minecraft:dark_oak_wood","minecraft:stripped_dark_oak_log","minecraft:stripped_dark_oak_wood"],"variants":[{"type":"shapeless","count":4,"recipe":{"items":[["minecraft:dark_oak_log","minecraft:dark_oak_wood","minecraft:stripped_dark_oak_log","minecraft:stripped_dark_oak_wood"]]}}]}

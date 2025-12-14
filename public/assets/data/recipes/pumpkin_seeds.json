@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:pumpkin_seeds","count":4,"recipe":{"items":["minecraft:pumpkin"]}}]
+{"itemId":"minecraft:pumpkin_seeds","allItemIds":["minecraft:pumpkin"],"variants":[{"type":"shapeless","count":4,"recipe":{"items":["minecraft:pumpkin"]}}]}

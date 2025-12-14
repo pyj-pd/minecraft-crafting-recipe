@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:blue_dye","count":1,"recipe":{"items":["minecraft:lapis_lazuli"]}},{"type":"shapeless","itemId":"minecraft:blue_dye","count":1,"recipe":{"items":["minecraft:cornflower"]}}]
+{"itemId":"minecraft:blue_dye","allItemIds":["minecraft:lapis_lazuli","minecraft:cornflower"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:lapis_lazuli"]}},{"type":"shapeless","count":1,"recipe":{"items":["minecraft:cornflower"]}}]}

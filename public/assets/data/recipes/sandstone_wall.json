@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:sandstone_wall","count":6,"recipe":{"grid":[["minecraft:sandstone","minecraft:sandstone","minecraft:sandstone"],["minecraft:sandstone","minecraft:sandstone","minecraft:sandstone"],[null,null,null]]}}]
+{"itemId":"minecraft:sandstone_wall","allItemIds":["minecraft:sandstone","minecraft:sandstone_wall"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:sandstone","minecraft:sandstone","minecraft:sandstone"],["minecraft:sandstone","minecraft:sandstone","minecraft:sandstone"],[null,null,null]]}}]}

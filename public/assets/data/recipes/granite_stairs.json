@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:granite_stairs","count":4,"recipe":{"grid":[["minecraft:granite",null,null],["minecraft:granite","minecraft:granite",null],["minecraft:granite","minecraft:granite","minecraft:granite"]]}}]
+{"itemId":"minecraft:granite_stairs","allItemIds":["minecraft:granite","minecraft:granite_stairs"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:granite",null,null],["minecraft:granite","minecraft:granite",null],["minecraft:granite","minecraft:granite","minecraft:granite"]]}}]}

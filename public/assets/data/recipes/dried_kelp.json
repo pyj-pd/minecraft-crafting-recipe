@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:dried_kelp","count":9,"recipe":{"items":["minecraft:dried_kelp_block"]}}]
+{"itemId":"minecraft:dried_kelp","allItemIds":["minecraft:dried_kelp_block"],"variants":[{"type":"shapeless","count":9,"recipe":{"items":["minecraft:dried_kelp_block"]}}]}

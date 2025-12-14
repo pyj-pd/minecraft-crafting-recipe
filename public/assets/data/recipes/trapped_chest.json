@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:trapped_chest","count":1,"recipe":{"items":["minecraft:chest","minecraft:tripwire_hook"]}}]
+{"itemId":"minecraft:trapped_chest","allItemIds":["minecraft:chest","minecraft:tripwire_hook"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:chest","minecraft:tripwire_hook"]}}]}

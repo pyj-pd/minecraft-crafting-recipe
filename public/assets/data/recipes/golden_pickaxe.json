@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:golden_pickaxe","count":1,"recipe":{"grid":[[["minecraft:gold_ingot"],["minecraft:gold_ingot"],["minecraft:gold_ingot"]],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}]
+{"itemId":"minecraft:golden_pickaxe","allItemIds":["minecraft:gold_ingot","minecraft:stick","minecraft:golden_pickaxe"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[["minecraft:gold_ingot"],["minecraft:gold_ingot"],["minecraft:gold_ingot"]],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}]}

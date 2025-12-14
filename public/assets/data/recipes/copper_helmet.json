@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:copper_helmet","count":1,"recipe":{"grid":[["minecraft:copper_ingot","minecraft:copper_ingot","minecraft:copper_ingot"],["minecraft:copper_ingot",null,"minecraft:copper_ingot"],[null,null,null]]}}]
+{"itemId":"minecraft:copper_helmet","allItemIds":["minecraft:copper_ingot","minecraft:copper_helmet"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:copper_ingot","minecraft:copper_ingot","minecraft:copper_ingot"],["minecraft:copper_ingot",null,"minecraft:copper_ingot"],[null,null,null]]}}]}

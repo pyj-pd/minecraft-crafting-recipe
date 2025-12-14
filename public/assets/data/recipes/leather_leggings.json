@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:leather_leggings","count":1,"recipe":{"grid":[["minecraft:leather","minecraft:leather","minecraft:leather"],["minecraft:leather",null,"minecraft:leather"],["minecraft:leather",null,"minecraft:leather"]]}}]
+{"itemId":"minecraft:leather_leggings","allItemIds":["minecraft:leather","minecraft:leather_leggings"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:leather","minecraft:leather","minecraft:leather"],["minecraft:leather",null,"minecraft:leather"],["minecraft:leather",null,"minecraft:leather"]]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:oxidized_cut_copper_slab","count":6,"recipe":{"grid":[["minecraft:oxidized_cut_copper","minecraft:oxidized_cut_copper","minecraft:oxidized_cut_copper"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:oxidized_cut_copper_slab","allItemIds":["minecraft:oxidized_cut_copper","minecraft:oxidized_cut_copper_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:oxidized_cut_copper","minecraft:oxidized_cut_copper","minecraft:oxidized_cut_copper"],[null,null,null],[null,null,null]]}}]}

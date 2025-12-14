@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:fishing_rod","count":1,"recipe":{"grid":[[null,null,"minecraft:stick"],[null,"minecraft:stick","minecraft:string"],["minecraft:stick",null,"minecraft:string"]]}}]
+{"itemId":"minecraft:fishing_rod","allItemIds":["minecraft:stick","minecraft:string","minecraft:fishing_rod"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[null,null,"minecraft:stick"],[null,"minecraft:stick","minecraft:string"],["minecraft:stick",null,"minecraft:string"]]}}]}

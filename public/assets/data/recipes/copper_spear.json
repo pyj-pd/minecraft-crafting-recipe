@@ -1,0 +1,1 @@
+{"itemId":"minecraft:copper_spear","allItemIds":["minecraft:copper_ingot","minecraft:stick","minecraft:copper_spear"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[null,null,["minecraft:copper_ingot"]],[null,"minecraft:stick",null],["minecraft:stick",null,null]]}}]}

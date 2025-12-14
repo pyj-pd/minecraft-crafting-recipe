@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:pink_candle","count":1,"recipe":{"items":["minecraft:candle","minecraft:pink_dye"]}}]
+{"itemId":"minecraft:pink_candle","allItemIds":["minecraft:candle","minecraft:pink_dye"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:candle","minecraft:pink_dye"]}}]}

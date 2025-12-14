@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:lightning_rod","count":1,"recipe":{"grid":[["minecraft:copper_ingot",null,null],["minecraft:copper_ingot",null,null],["minecraft:copper_ingot",null,null]]}}]
+{"itemId":"minecraft:lightning_rod","allItemIds":["minecraft:copper_ingot","minecraft:lightning_rod"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:copper_ingot",null,null],["minecraft:copper_ingot",null,null],["minecraft:copper_ingot",null,null]]}}]}

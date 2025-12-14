@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:granite","count":1,"recipe":{"items":["minecraft:diorite","minecraft:quartz"]}}]
+{"itemId":"minecraft:granite","allItemIds":["minecraft:diorite","minecraft:quartz"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:diorite","minecraft:quartz"]}}]}

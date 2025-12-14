@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:jungle_fence_gate","count":1,"recipe":{"grid":[["minecraft:stick","minecraft:jungle_planks","minecraft:stick"],["minecraft:stick","minecraft:jungle_planks","minecraft:stick"],[null,null,null]]}}]
+{"itemId":"minecraft:jungle_fence_gate","allItemIds":["minecraft:stick","minecraft:jungle_planks","minecraft:jungle_fence_gate"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:stick","minecraft:jungle_planks","minecraft:stick"],["minecraft:stick","minecraft:jungle_planks","minecraft:stick"],[null,null,null]]}}]}

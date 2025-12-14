@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:spruce_planks","count":4,"recipe":{"items":[["minecraft:spruce_log","minecraft:spruce_wood","minecraft:stripped_spruce_log","minecraft:stripped_spruce_wood"]]}}]
+{"itemId":"minecraft:spruce_planks","allItemIds":["minecraft:spruce_log","minecraft:spruce_wood","minecraft:stripped_spruce_log","minecraft:stripped_spruce_wood"],"variants":[{"type":"shapeless","count":4,"recipe":{"items":[["minecraft:spruce_log","minecraft:spruce_wood","minecraft:stripped_spruce_log","minecraft:stripped_spruce_wood"]]}}]}

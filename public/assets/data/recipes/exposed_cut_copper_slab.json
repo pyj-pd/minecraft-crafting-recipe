@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:exposed_cut_copper_slab","count":6,"recipe":{"grid":[["minecraft:exposed_cut_copper","minecraft:exposed_cut_copper","minecraft:exposed_cut_copper"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:exposed_cut_copper_slab","allItemIds":["minecraft:exposed_cut_copper","minecraft:exposed_cut_copper_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:exposed_cut_copper","minecraft:exposed_cut_copper","minecraft:exposed_cut_copper"],[null,null,null],[null,null,null]]}}]}

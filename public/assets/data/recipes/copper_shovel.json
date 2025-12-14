@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:copper_shovel","count":1,"recipe":{"grid":[[["minecraft:copper_ingot"],null,null],["minecraft:stick",null,null],["minecraft:stick",null,null]]}}]
+{"itemId":"minecraft:copper_shovel","allItemIds":["minecraft:copper_ingot","minecraft:stick","minecraft:copper_shovel"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[["minecraft:copper_ingot"],null,null],["minecraft:stick",null,null],["minecraft:stick",null,null]]}}]}

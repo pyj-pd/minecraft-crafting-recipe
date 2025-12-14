@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:andesite_wall","count":6,"recipe":{"grid":[["minecraft:andesite","minecraft:andesite","minecraft:andesite"],["minecraft:andesite","minecraft:andesite","minecraft:andesite"],[null,null,null]]}}]
+{"itemId":"minecraft:andesite_wall","allItemIds":["minecraft:andesite","minecraft:andesite_wall"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:andesite","minecraft:andesite","minecraft:andesite"],["minecraft:andesite","minecraft:andesite","minecraft:andesite"],[null,null,null]]}}]}

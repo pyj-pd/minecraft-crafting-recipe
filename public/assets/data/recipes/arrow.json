@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:arrow","count":4,"recipe":{"grid":[["minecraft:flint",null,null],["minecraft:stick",null,null],["minecraft:feather",null,null]]}}]
+{"itemId":"minecraft:arrow","allItemIds":["minecraft:flint","minecraft:stick","minecraft:feather","minecraft:arrow"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:flint",null,null],["minecraft:stick",null,null],["minecraft:feather",null,null]]}}]}

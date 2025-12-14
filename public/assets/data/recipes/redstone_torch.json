@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:redstone_torch","count":1,"recipe":{"grid":[["minecraft:redstone",null,null],["minecraft:stick",null,null],[null,null,null]]}}]
+{"itemId":"minecraft:redstone_torch","allItemIds":["minecraft:redstone","minecraft:stick","minecraft:redstone_torch"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:redstone",null,null],["minecraft:stick",null,null],[null,null,null]]}}]}

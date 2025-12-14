@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:bamboo_planks","count":2,"recipe":{"items":[["minecraft:bamboo_block","minecraft:stripped_bamboo_block"]]}}]
+{"itemId":"minecraft:bamboo_planks","allItemIds":["minecraft:bamboo_block","minecraft:stripped_bamboo_block"],"variants":[{"type":"shapeless","count":2,"recipe":{"items":[["minecraft:bamboo_block","minecraft:stripped_bamboo_block"]]}}]}

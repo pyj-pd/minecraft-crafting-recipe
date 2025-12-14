@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:amethyst_block","count":1,"recipe":{"grid":[["minecraft:amethyst_shard","minecraft:amethyst_shard",null],["minecraft:amethyst_shard","minecraft:amethyst_shard",null],[null,null,null]]}}]
+{"itemId":"minecraft:amethyst_block","allItemIds":["minecraft:amethyst_shard","minecraft:amethyst_block"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:amethyst_shard","minecraft:amethyst_shard",null],["minecraft:amethyst_shard","minecraft:amethyst_shard",null],[null,null,null]]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:crimson_pressure_plate","count":1,"recipe":{"grid":[["minecraft:crimson_planks","minecraft:crimson_planks",null],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:crimson_pressure_plate","allItemIds":["minecraft:crimson_planks","minecraft:crimson_pressure_plate"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:crimson_planks","minecraft:crimson_planks",null],[null,null,null],[null,null,null]]}}]}

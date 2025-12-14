@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:acacia_slab","count":6,"recipe":{"grid":[["minecraft:acacia_planks","minecraft:acacia_planks","minecraft:acacia_planks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:acacia_slab","allItemIds":["minecraft:acacia_planks","minecraft:acacia_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:acacia_planks","minecraft:acacia_planks","minecraft:acacia_planks"],[null,null,null],[null,null,null]]}}]}

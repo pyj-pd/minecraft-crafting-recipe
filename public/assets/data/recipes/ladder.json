@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:ladder","count":3,"recipe":{"grid":[["minecraft:stick",null,"minecraft:stick"],["minecraft:stick","minecraft:stick","minecraft:stick"],["minecraft:stick",null,"minecraft:stick"]]}}]
+{"itemId":"minecraft:ladder","allItemIds":["minecraft:stick","minecraft:ladder"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:stick",null,"minecraft:stick"],["minecraft:stick","minecraft:stick","minecraft:stick"],["minecraft:stick",null,"minecraft:stick"]]}}]}

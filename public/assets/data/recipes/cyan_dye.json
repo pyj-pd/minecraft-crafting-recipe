@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:cyan_dye","count":2,"recipe":{"items":["minecraft:blue_dye","minecraft:green_dye"]}},{"type":"shapeless","itemId":"minecraft:cyan_dye","count":2,"recipe":{"items":["minecraft:pitcher_plant"]}}]
+{"itemId":"minecraft:cyan_dye","allItemIds":["minecraft:blue_dye","minecraft:green_dye","minecraft:pitcher_plant"],"variants":[{"type":"shapeless","count":2,"recipe":{"items":["minecraft:blue_dye","minecraft:green_dye"]}},{"type":"shapeless","count":2,"recipe":{"items":["minecraft:pitcher_plant"]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:spectral_arrow","count":2,"recipe":{"grid":[[null,"minecraft:glowstone_dust",null],["minecraft:glowstone_dust","minecraft:arrow","minecraft:glowstone_dust"],[null,"minecraft:glowstone_dust",null]]}}]
+{"itemId":"minecraft:spectral_arrow","allItemIds":["minecraft:glowstone_dust","minecraft:arrow","minecraft:spectral_arrow"],"variants":[{"type":"shaped","count":2,"recipe":{"grid":[[null,"minecraft:glowstone_dust",null],["minecraft:glowstone_dust","minecraft:arrow","minecraft:glowstone_dust"],[null,"minecraft:glowstone_dust",null]]}}]}

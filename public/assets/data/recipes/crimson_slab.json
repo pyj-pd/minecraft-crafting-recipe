@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:crimson_slab","count":6,"recipe":{"grid":[["minecraft:crimson_planks","minecraft:crimson_planks","minecraft:crimson_planks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:crimson_slab","allItemIds":["minecraft:crimson_planks","minecraft:crimson_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:crimson_planks","minecraft:crimson_planks","minecraft:crimson_planks"],[null,null,null],[null,null,null]]}}]}

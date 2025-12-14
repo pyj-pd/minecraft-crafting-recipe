@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:melon_seeds","count":1,"recipe":{"items":["minecraft:melon_slice"]}}]
+{"itemId":"minecraft:melon_seeds","allItemIds":["minecraft:melon_slice"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:melon_slice"]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:clay","count":1,"recipe":{"grid":[["minecraft:clay_ball","minecraft:clay_ball",null],["minecraft:clay_ball","minecraft:clay_ball",null],[null,null,null]]}}]
+{"itemId":"minecraft:clay","allItemIds":["minecraft:clay_ball","minecraft:clay"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:clay_ball","minecraft:clay_ball",null],["minecraft:clay_ball","minecraft:clay_ball",null],[null,null,null]]}}]}

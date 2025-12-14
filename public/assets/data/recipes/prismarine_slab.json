@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:prismarine_slab","count":6,"recipe":{"grid":[["minecraft:prismarine","minecraft:prismarine","minecraft:prismarine"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:prismarine_slab","allItemIds":["minecraft:prismarine","minecraft:prismarine_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:prismarine","minecraft:prismarine","minecraft:prismarine"],[null,null,null],[null,null,null]]}}]}

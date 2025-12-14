@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:spruce_boat","count":1,"recipe":{"grid":[["minecraft:spruce_planks",null,"minecraft:spruce_planks"],["minecraft:spruce_planks","minecraft:spruce_planks","minecraft:spruce_planks"],[null,null,null]]}}]
+{"itemId":"minecraft:spruce_boat","allItemIds":["minecraft:spruce_planks","minecraft:spruce_boat"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:spruce_planks",null,"minecraft:spruce_planks"],["minecraft:spruce_planks","minecraft:spruce_planks","minecraft:spruce_planks"],[null,null,null]]}}]}

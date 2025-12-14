@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:yellow_candle","count":1,"recipe":{"items":["minecraft:candle","minecraft:yellow_dye"]}}]
+{"itemId":"minecraft:yellow_candle","allItemIds":["minecraft:candle","minecraft:yellow_dye"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:candle","minecraft:yellow_dye"]}}]}

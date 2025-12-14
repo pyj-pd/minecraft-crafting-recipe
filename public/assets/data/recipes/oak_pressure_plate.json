@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:oak_pressure_plate","count":1,"recipe":{"grid":[["minecraft:oak_planks","minecraft:oak_planks",null],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:oak_pressure_plate","allItemIds":["minecraft:oak_planks","minecraft:oak_pressure_plate"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:oak_planks","minecraft:oak_planks",null],[null,null,null],[null,null,null]]}}]}

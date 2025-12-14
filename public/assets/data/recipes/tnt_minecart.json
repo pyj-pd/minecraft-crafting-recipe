@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:tnt_minecart","count":1,"recipe":{"items":["minecraft:tnt","minecraft:minecart"]}}]
+{"itemId":"minecraft:tnt_minecart","allItemIds":["minecraft:tnt","minecraft:minecart"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:tnt","minecraft:minecart"]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:cherry_wood","count":3,"recipe":{"grid":[["minecraft:cherry_log","minecraft:cherry_log",null],["minecraft:cherry_log","minecraft:cherry_log",null],[null,null,null]]}}]
+{"itemId":"minecraft:cherry_wood","allItemIds":["minecraft:cherry_log","minecraft:cherry_wood"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:cherry_log","minecraft:cherry_log",null],["minecraft:cherry_log","minecraft:cherry_log",null],[null,null,null]]}}]}

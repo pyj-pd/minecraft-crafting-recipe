@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:dark_oak_button","count":1,"recipe":{"items":["minecraft:dark_oak_planks"]}}]
+{"itemId":"minecraft:dark_oak_button","allItemIds":["minecraft:dark_oak_planks"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:dark_oak_planks"]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:polished_deepslate","count":4,"recipe":{"grid":[["minecraft:cobbled_deepslate","minecraft:cobbled_deepslate",null],["minecraft:cobbled_deepslate","minecraft:cobbled_deepslate",null],[null,null,null]]}}]
+{"itemId":"minecraft:polished_deepslate","allItemIds":["minecraft:cobbled_deepslate","minecraft:polished_deepslate"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:cobbled_deepslate","minecraft:cobbled_deepslate",null],["minecraft:cobbled_deepslate","minecraft:cobbled_deepslate",null],[null,null,null]]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:oak_door","count":3,"recipe":{"grid":[["minecraft:oak_planks","minecraft:oak_planks",null],["minecraft:oak_planks","minecraft:oak_planks",null],["minecraft:oak_planks","minecraft:oak_planks",null]]}}]
+{"itemId":"minecraft:oak_door","allItemIds":["minecraft:oak_planks","minecraft:oak_door"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:oak_planks","minecraft:oak_planks",null],["minecraft:oak_planks","minecraft:oak_planks",null],["minecraft:oak_planks","minecraft:oak_planks",null]]}}]}

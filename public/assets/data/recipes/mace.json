@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:mace","count":1,"recipe":{"grid":[[null,"minecraft:heavy_core",null],[null,"minecraft:breeze_rod",null],[null,null,null]]}}]
+{"itemId":"minecraft:mace","allItemIds":["minecraft:heavy_core","minecraft:breeze_rod","minecraft:mace"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[null,"minecraft:heavy_core",null],[null,"minecraft:breeze_rod",null],[null,null,null]]}}]}

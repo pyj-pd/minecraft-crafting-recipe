@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:birch_wood","count":3,"recipe":{"grid":[["minecraft:birch_log","minecraft:birch_log",null],["minecraft:birch_log","minecraft:birch_log",null],[null,null,null]]}}]
+{"itemId":"minecraft:birch_wood","allItemIds":["minecraft:birch_log","minecraft:birch_wood"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:birch_log","minecraft:birch_log",null],["minecraft:birch_log","minecraft:birch_log",null],[null,null,null]]}}]}

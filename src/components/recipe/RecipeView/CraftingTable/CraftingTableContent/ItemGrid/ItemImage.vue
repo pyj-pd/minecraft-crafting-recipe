@@ -63,11 +63,11 @@ watch(
 watch(
   imageUrls,
   () => {
-    // Preload images
-    for (const url of imageUrls.value) {
-      const image = new Image()
-      image.src = url
-    }
+    // // Preload images
+    // for (const url of imageUrls.value) {
+    //   const image = new Image()
+    //   image.src = url
+    // }
   },
   { immediate: true }
 )

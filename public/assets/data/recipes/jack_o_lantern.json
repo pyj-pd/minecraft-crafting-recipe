@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:jack_o_lantern","count":1,"recipe":{"grid":[["minecraft:carved_pumpkin",null,null],["minecraft:torch",null,null],[null,null,null]]}}]
+{"itemId":"minecraft:jack_o_lantern","allItemIds":["minecraft:carved_pumpkin","minecraft:torch","minecraft:jack_o_lantern"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:carved_pumpkin",null,null],["minecraft:torch",null,null],[null,null,null]]}}]}

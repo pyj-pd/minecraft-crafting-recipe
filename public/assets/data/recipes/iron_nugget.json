@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:iron_nugget","count":9,"recipe":{"items":["minecraft:iron_ingot"]}}]
+{"itemId":"minecraft:iron_nugget","allItemIds":["minecraft:iron_ingot"],"variants":[{"type":"shapeless","count":9,"recipe":{"items":["minecraft:iron_ingot"]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:jungle_button","count":1,"recipe":{"items":["minecraft:jungle_planks"]}}]
+{"itemId":"minecraft:jungle_button","allItemIds":["minecraft:jungle_planks"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:jungle_planks"]}}]}

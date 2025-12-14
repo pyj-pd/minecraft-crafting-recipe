@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:golden_sword","count":1,"recipe":{"grid":[[["minecraft:gold_ingot"],null,null],[["minecraft:gold_ingot"],null,null],["minecraft:stick",null,null]]}}]
+{"itemId":"minecraft:golden_sword","allItemIds":["minecraft:gold_ingot","minecraft:stick","minecraft:golden_sword"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[["minecraft:gold_ingot"],null,null],[["minecraft:gold_ingot"],null,null],["minecraft:stick",null,null]]}}]}

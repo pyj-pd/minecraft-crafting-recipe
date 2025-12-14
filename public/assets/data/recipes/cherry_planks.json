@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:cherry_planks","count":4,"recipe":{"items":[["minecraft:cherry_log","minecraft:cherry_wood","minecraft:stripped_cherry_log","minecraft:stripped_cherry_wood"]]}}]
+{"itemId":"minecraft:cherry_planks","allItemIds":["minecraft:cherry_log","minecraft:cherry_wood","minecraft:stripped_cherry_log","minecraft:stripped_cherry_wood"],"variants":[{"type":"shapeless","count":4,"recipe":{"items":[["minecraft:cherry_log","minecraft:cherry_wood","minecraft:stripped_cherry_log","minecraft:stripped_cherry_wood"]]}}]}

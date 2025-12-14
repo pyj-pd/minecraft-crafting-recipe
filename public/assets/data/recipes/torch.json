@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:torch","count":4,"recipe":{"grid":[[["minecraft:coal","minecraft:charcoal"],null,null],["minecraft:stick",null,null],[null,null,null]]}}]
+{"itemId":"minecraft:torch","allItemIds":["minecraft:coal","minecraft:charcoal","minecraft:stick","minecraft:torch"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[[["minecraft:coal","minecraft:charcoal"],null,null],["minecraft:stick",null,null],[null,null,null]]}}]}

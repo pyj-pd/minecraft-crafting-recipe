@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:mangrove_button","count":1,"recipe":{"items":["minecraft:mangrove_planks"]}}]
+{"itemId":"minecraft:mangrove_button","allItemIds":["minecraft:mangrove_planks"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:mangrove_planks"]}}]}

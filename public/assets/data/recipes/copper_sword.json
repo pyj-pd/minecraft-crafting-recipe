@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:copper_sword","count":1,"recipe":{"grid":[[["minecraft:copper_ingot"],null,null],[["minecraft:copper_ingot"],null,null],["minecraft:stick",null,null]]}}]
+{"itemId":"minecraft:copper_sword","allItemIds":["minecraft:copper_ingot","minecraft:stick","minecraft:copper_sword"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[["minecraft:copper_ingot"],null,null],[["minecraft:copper_ingot"],null,null],["minecraft:stick",null,null]]}}]}

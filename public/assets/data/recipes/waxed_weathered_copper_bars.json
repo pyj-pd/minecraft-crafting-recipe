@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:waxed_weathered_copper_bars","count":1,"recipe":{"items":["minecraft:weathered_copper_bars","minecraft:honeycomb"]}}]
+{"itemId":"minecraft:waxed_weathered_copper_bars","allItemIds":["minecraft:weathered_copper_bars","minecraft:honeycomb"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:weathered_copper_bars","minecraft:honeycomb"]}}]}

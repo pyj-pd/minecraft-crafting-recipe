@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:red_banner","count":1,"recipe":{"grid":[["minecraft:red_wool","minecraft:red_wool","minecraft:red_wool"],["minecraft:red_wool","minecraft:red_wool","minecraft:red_wool"],[null,"minecraft:stick",null]]}}]
+{"itemId":"minecraft:red_banner","allItemIds":["minecraft:red_wool","minecraft:stick","minecraft:red_banner"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:red_wool","minecraft:red_wool","minecraft:red_wool"],["minecraft:red_wool","minecraft:red_wool","minecraft:red_wool"],[null,"minecraft:stick",null]]}}]}

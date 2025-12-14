@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:raw_iron","count":9,"recipe":{"items":["minecraft:raw_iron_block"]}}]
+{"itemId":"minecraft:raw_iron","allItemIds":["minecraft:raw_iron_block"],"variants":[{"type":"shapeless","count":9,"recipe":{"items":["minecraft:raw_iron_block"]}}]}

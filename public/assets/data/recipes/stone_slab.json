@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:stone_slab","count":6,"recipe":{"grid":[["minecraft:stone","minecraft:stone","minecraft:stone"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:stone_slab","allItemIds":["minecraft:stone","minecraft:stone_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:stone","minecraft:stone","minecraft:stone"],[null,null,null],[null,null,null]]}}]}

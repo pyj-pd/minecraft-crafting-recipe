@@ -6,3 +6,20 @@ export function getItemImageUrl(itemId: ItemId): string {
 
   return `/assets/data/renders/${pureItemId}.png`
 }
+
+const preloadImage = (url: string): Promise<void> =>
+  new Promise((resolve) => {
+    const image = new Image()
+    image.src = url
+    image.onload = (): void => resolve()
+  })
+
+export async function preloadItemImages(itemIds: ItemId[]): Promise<void> {
+  for (const itemId of itemIds) {
+    try {
+      await preloadImage(getItemImageUrl(itemId))
+    } catch {
+      console.error(`Failed to preload item image of '${itemId}'.`)
+    }
+  }
+}

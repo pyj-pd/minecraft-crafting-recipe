@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:iron_shovel","count":1,"recipe":{"grid":[[["minecraft:iron_ingot"],null,null],["minecraft:stick",null,null],["minecraft:stick",null,null]]}}]
+{"itemId":"minecraft:iron_shovel","allItemIds":["minecraft:iron_ingot","minecraft:stick","minecraft:iron_shovel"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[["minecraft:iron_ingot"],null,null],["minecraft:stick",null,null],["minecraft:stick",null,null]]}}]}

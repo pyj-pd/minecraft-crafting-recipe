@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:sugar","count":3,"recipe":{"items":["minecraft:honey_bottle"]}},{"type":"shapeless","itemId":"minecraft:sugar","count":1,"recipe":{"items":["minecraft:sugar_cane"]}}]
+{"itemId":"minecraft:sugar","allItemIds":["minecraft:honey_bottle","minecraft:sugar_cane"],"variants":[{"type":"shapeless","count":3,"recipe":{"items":["minecraft:honey_bottle"]}},{"type":"shapeless","count":1,"recipe":{"items":["minecraft:sugar_cane"]}}]}

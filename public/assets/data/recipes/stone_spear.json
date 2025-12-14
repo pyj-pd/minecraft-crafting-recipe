@@ -1,0 +1,1 @@
+{"itemId":"minecraft:stone_spear","allItemIds":["minecraft:cobblestone","minecraft:blackstone","minecraft:cobbled_deepslate","minecraft:stick","minecraft:stone_spear"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[null,null,["minecraft:cobblestone","minecraft:blackstone","minecraft:cobbled_deepslate"]],[null,"minecraft:stick",null],["minecraft:stick",null,null]]}}]}

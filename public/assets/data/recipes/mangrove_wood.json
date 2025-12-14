@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:mangrove_wood","count":3,"recipe":{"grid":[["minecraft:mangrove_log","minecraft:mangrove_log",null],["minecraft:mangrove_log","minecraft:mangrove_log",null],[null,null,null]]}}]
+{"itemId":"minecraft:mangrove_wood","allItemIds":["minecraft:mangrove_log","minecraft:mangrove_wood"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:mangrove_log","minecraft:mangrove_log",null],["minecraft:mangrove_log","minecraft:mangrove_log",null],[null,null,null]]}}]}

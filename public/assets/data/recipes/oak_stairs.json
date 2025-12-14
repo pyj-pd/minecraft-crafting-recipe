@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:oak_stairs","count":4,"recipe":{"grid":[["minecraft:oak_planks",null,null],["minecraft:oak_planks","minecraft:oak_planks",null],["minecraft:oak_planks","minecraft:oak_planks","minecraft:oak_planks"]]}}]
+{"itemId":"minecraft:oak_stairs","allItemIds":["minecraft:oak_planks","minecraft:oak_stairs"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:oak_planks",null,null],["minecraft:oak_planks","minecraft:oak_planks",null],["minecraft:oak_planks","minecraft:oak_planks","minecraft:oak_planks"]]}}]}

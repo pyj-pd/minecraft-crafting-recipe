@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:waxed_oxidized_copper_bars","count":1,"recipe":{"items":["minecraft:oxidized_copper_bars","minecraft:honeycomb"]}}]
+{"itemId":"minecraft:waxed_oxidized_copper_bars","allItemIds":["minecraft:oxidized_copper_bars","minecraft:honeycomb"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:oxidized_copper_bars","minecraft:honeycomb"]}}]}

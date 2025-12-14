@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:blackstone_slab","count":6,"recipe":{"grid":[["minecraft:blackstone","minecraft:blackstone","minecraft:blackstone"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:blackstone_slab","allItemIds":["minecraft:blackstone","minecraft:blackstone_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:blackstone","minecraft:blackstone","minecraft:blackstone"],[null,null,null],[null,null,null]]}}]}

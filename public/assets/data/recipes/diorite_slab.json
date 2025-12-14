@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:diorite_slab","count":6,"recipe":{"grid":[["minecraft:diorite","minecraft:diorite","minecraft:diorite"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:diorite_slab","allItemIds":["minecraft:diorite","minecraft:diorite_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:diorite","minecraft:diorite","minecraft:diorite"],[null,null,null],[null,null,null]]}}]}

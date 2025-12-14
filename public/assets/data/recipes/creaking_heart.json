@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:creaking_heart","count":1,"recipe":{"grid":[[null,"minecraft:pale_oak_log",null],[null,"minecraft:resin_block",null],[null,"minecraft:pale_oak_log",null]]}}]
+{"itemId":"minecraft:creaking_heart","allItemIds":["minecraft:pale_oak_log","minecraft:resin_block","minecraft:creaking_heart"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[null,"minecraft:pale_oak_log",null],[null,"minecraft:resin_block",null],[null,"minecraft:pale_oak_log",null]]}}]}

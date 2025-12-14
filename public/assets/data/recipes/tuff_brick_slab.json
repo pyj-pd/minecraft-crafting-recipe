@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:tuff_brick_slab","count":6,"recipe":{"grid":[["minecraft:tuff_bricks","minecraft:tuff_bricks","minecraft:tuff_bricks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:tuff_brick_slab","allItemIds":["minecraft:tuff_bricks","minecraft:tuff_brick_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:tuff_bricks","minecraft:tuff_bricks","minecraft:tuff_bricks"],[null,null,null],[null,null,null]]}}]}

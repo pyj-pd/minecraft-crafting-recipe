@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:bamboo_raft","count":1,"recipe":{"grid":[["minecraft:bamboo_planks",null,"minecraft:bamboo_planks"],["minecraft:bamboo_planks","minecraft:bamboo_planks","minecraft:bamboo_planks"],[null,null,null]]}}]
+{"itemId":"minecraft:bamboo_raft","allItemIds":["minecraft:bamboo_planks","minecraft:bamboo_raft"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:bamboo_planks",null,"minecraft:bamboo_planks"],["minecraft:bamboo_planks","minecraft:bamboo_planks","minecraft:bamboo_planks"],[null,null,null]]}}]}

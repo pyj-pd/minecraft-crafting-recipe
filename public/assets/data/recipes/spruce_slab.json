@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:spruce_slab","count":6,"recipe":{"grid":[["minecraft:spruce_planks","minecraft:spruce_planks","minecraft:spruce_planks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:spruce_slab","allItemIds":["minecraft:spruce_planks","minecraft:spruce_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:spruce_planks","minecraft:spruce_planks","minecraft:spruce_planks"],[null,null,null],[null,null,null]]}}]}

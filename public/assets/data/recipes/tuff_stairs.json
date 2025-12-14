@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:tuff_stairs","count":4,"recipe":{"grid":[["minecraft:tuff",null,null],["minecraft:tuff","minecraft:tuff",null],["minecraft:tuff","minecraft:tuff","minecraft:tuff"]]}}]
+{"itemId":"minecraft:tuff_stairs","allItemIds":["minecraft:tuff","minecraft:tuff_stairs"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:tuff",null,null],["minecraft:tuff","minecraft:tuff",null],["minecraft:tuff","minecraft:tuff","minecraft:tuff"]]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:purpur_block","count":4,"recipe":{"grid":[["minecraft:popped_chorus_fruit","minecraft:popped_chorus_fruit",null],["minecraft:popped_chorus_fruit","minecraft:popped_chorus_fruit",null],[null,null,null]]}}]
+{"itemId":"minecraft:purpur_block","allItemIds":["minecraft:popped_chorus_fruit","minecraft:purpur_block"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:popped_chorus_fruit","minecraft:popped_chorus_fruit",null],["minecraft:popped_chorus_fruit","minecraft:popped_chorus_fruit",null],[null,null,null]]}}]}

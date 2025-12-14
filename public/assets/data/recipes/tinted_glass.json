@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:tinted_glass","count":2,"recipe":{"grid":[[null,"minecraft:amethyst_shard",null],["minecraft:amethyst_shard","minecraft:glass","minecraft:amethyst_shard"],[null,"minecraft:amethyst_shard",null]]}}]
+{"itemId":"minecraft:tinted_glass","allItemIds":["minecraft:amethyst_shard","minecraft:glass","minecraft:tinted_glass"],"variants":[{"type":"shaped","count":2,"recipe":{"grid":[[null,"minecraft:amethyst_shard",null],["minecraft:amethyst_shard","minecraft:glass","minecraft:amethyst_shard"],[null,"minecraft:amethyst_shard",null]]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:diamond_hoe","count":1,"recipe":{"grid":[[["minecraft:diamond"],["minecraft:diamond"],null],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}]
+{"itemId":"minecraft:diamond_hoe","allItemIds":["minecraft:diamond","minecraft:stick","minecraft:diamond_hoe"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[["minecraft:diamond"],["minecraft:diamond"],null],[null,"minecraft:stick",null],[null,"minecraft:stick",null]]}}]}

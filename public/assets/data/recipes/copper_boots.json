@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:copper_boots","count":1,"recipe":{"grid":[["minecraft:copper_ingot",null,"minecraft:copper_ingot"],["minecraft:copper_ingot",null,"minecraft:copper_ingot"],[null,null,null]]}}]
+{"itemId":"minecraft:copper_boots","allItemIds":["minecraft:copper_ingot","minecraft:copper_boots"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:copper_ingot",null,"minecraft:copper_ingot"],["minecraft:copper_ingot",null,"minecraft:copper_ingot"],[null,null,null]]}}]}

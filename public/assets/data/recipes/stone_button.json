@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:stone_button","count":1,"recipe":{"items":["minecraft:stone"]}}]
+{"itemId":"minecraft:stone_button","allItemIds":["minecraft:stone"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:stone"]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:weathered_cut_copper","count":4,"recipe":{"grid":[["minecraft:weathered_copper","minecraft:weathered_copper",null],["minecraft:weathered_copper","minecraft:weathered_copper",null],[null,null,null]]}}]
+{"itemId":"minecraft:weathered_cut_copper","allItemIds":["minecraft:weathered_copper","minecraft:weathered_cut_copper"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:weathered_copper","minecraft:weathered_copper",null],["minecraft:weathered_copper","minecraft:weathered_copper",null],[null,null,null]]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:end_stone_brick_slab","count":6,"recipe":{"grid":[["minecraft:end_stone_bricks","minecraft:end_stone_bricks","minecraft:end_stone_bricks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:end_stone_brick_slab","allItemIds":["minecraft:end_stone_bricks","minecraft:end_stone_brick_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:end_stone_bricks","minecraft:end_stone_bricks","minecraft:end_stone_bricks"],[null,null,null],[null,null,null]]}}]}

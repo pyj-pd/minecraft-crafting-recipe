@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:mud_brick_stairs","count":4,"recipe":{"grid":[["minecraft:mud_bricks",null,null],["minecraft:mud_bricks","minecraft:mud_bricks",null],["minecraft:mud_bricks","minecraft:mud_bricks","minecraft:mud_bricks"]]}}]
+{"itemId":"minecraft:mud_brick_stairs","allItemIds":["minecraft:mud_bricks","minecraft:mud_brick_stairs"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:mud_bricks",null,null],["minecraft:mud_bricks","minecraft:mud_bricks",null],["minecraft:mud_bricks","minecraft:mud_bricks","minecraft:mud_bricks"]]}}]}

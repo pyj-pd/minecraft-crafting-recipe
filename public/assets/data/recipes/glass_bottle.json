@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:glass_bottle","count":3,"recipe":{"grid":[["minecraft:glass",null,"minecraft:glass"],[null,"minecraft:glass",null],[null,null,null]]}}]
+{"itemId":"minecraft:glass_bottle","allItemIds":["minecraft:glass","minecraft:glass_bottle"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:glass",null,"minecraft:glass"],[null,"minecraft:glass",null],[null,null,null]]}}]}

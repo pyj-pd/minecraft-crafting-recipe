@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:mangrove_slab","count":6,"recipe":{"grid":[["minecraft:mangrove_planks","minecraft:mangrove_planks","minecraft:mangrove_planks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:mangrove_slab","allItemIds":["minecraft:mangrove_planks","minecraft:mangrove_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:mangrove_planks","minecraft:mangrove_planks","minecraft:mangrove_planks"],[null,null,null],[null,null,null]]}}]}

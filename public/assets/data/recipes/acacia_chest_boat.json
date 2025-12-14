@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:acacia_chest_boat","count":1,"recipe":{"items":["minecraft:chest","minecraft:acacia_boat"]}}]
+{"itemId":"minecraft:acacia_chest_boat","allItemIds":["minecraft:chest","minecraft:acacia_boat"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:chest","minecraft:acacia_boat"]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:saddle","count":1,"recipe":{"grid":[[null,"minecraft:leather",null],["minecraft:leather","minecraft:iron_ingot","minecraft:leather"],[null,null,null]]}}]
+{"itemId":"minecraft:saddle","allItemIds":["minecraft:leather","minecraft:iron_ingot","minecraft:saddle"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[null,"minecraft:leather",null],["minecraft:leather","minecraft:iron_ingot","minecraft:leather"],[null,null,null]]}}]}

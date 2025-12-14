@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:waxed_oxidized_copper_chain","count":1,"recipe":{"items":["minecraft:oxidized_copper_chain","minecraft:honeycomb"]}}]
+{"itemId":"minecraft:waxed_oxidized_copper_chain","allItemIds":["minecraft:oxidized_copper_chain","minecraft:honeycomb"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:oxidized_copper_chain","minecraft:honeycomb"]}}]}

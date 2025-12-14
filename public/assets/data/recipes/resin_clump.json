@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:resin_clump","count":9,"recipe":{"items":["minecraft:resin_block"]}}]
+{"itemId":"minecraft:resin_clump","allItemIds":["minecraft:resin_block"],"variants":[{"type":"shapeless","count":9,"recipe":{"items":["minecraft:resin_block"]}}]}

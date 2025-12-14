@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:redstone","count":9,"recipe":{"items":["minecraft:redstone_block"]}}]
+{"itemId":"minecraft:redstone","allItemIds":["minecraft:redstone_block"],"variants":[{"type":"shapeless","count":9,"recipe":{"items":["minecraft:redstone_block"]}}]}

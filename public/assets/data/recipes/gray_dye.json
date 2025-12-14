@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:gray_dye","count":2,"recipe":{"items":["minecraft:black_dye","minecraft:white_dye"]}},{"type":"shapeless","itemId":"minecraft:gray_dye","count":1,"recipe":{"items":["minecraft:closed_eyeblossom"]}}]
+{"itemId":"minecraft:gray_dye","allItemIds":["minecraft:black_dye","minecraft:white_dye","minecraft:closed_eyeblossom"],"variants":[{"type":"shapeless","count":2,"recipe":{"items":["minecraft:black_dye","minecraft:white_dye"]}},{"type":"shapeless","count":1,"recipe":{"items":["minecraft:closed_eyeblossom"]}}]}

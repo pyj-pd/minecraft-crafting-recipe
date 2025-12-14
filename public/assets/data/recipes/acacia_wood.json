@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:acacia_wood","count":3,"recipe":{"grid":[["minecraft:acacia_log","minecraft:acacia_log",null],["minecraft:acacia_log","minecraft:acacia_log",null],[null,null,null]]}}]
+{"itemId":"minecraft:acacia_wood","allItemIds":["minecraft:acacia_log","minecraft:acacia_wood"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:acacia_log","minecraft:acacia_log",null],["minecraft:acacia_log","minecraft:acacia_log",null],[null,null,null]]}}]}

@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:birch_chest_boat","count":1,"recipe":{"items":["minecraft:chest","minecraft:birch_boat"]}}]
+{"itemId":"minecraft:birch_chest_boat","allItemIds":["minecraft:chest","minecraft:birch_boat"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:chest","minecraft:birch_boat"]}}]}

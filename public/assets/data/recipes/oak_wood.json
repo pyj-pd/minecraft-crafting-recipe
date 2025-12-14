@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:oak_wood","count":3,"recipe":{"grid":[["minecraft:oak_log","minecraft:oak_log",null],["minecraft:oak_log","minecraft:oak_log",null],[null,null,null]]}}]
+{"itemId":"minecraft:oak_wood","allItemIds":["minecraft:oak_log","minecraft:oak_wood"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:oak_log","minecraft:oak_log",null],["minecraft:oak_log","minecraft:oak_log",null],[null,null,null]]}}]}

@@ -4,6 +4,7 @@ import { getRecipeData } from '@/utils/recipe'
 import { defineStore } from 'pinia'
 import { DEFAULT_RECIPE_VARIANT_INDEX } from '@/constants/default'
 import { onBeforeUnmount, onMounted } from 'vue'
+import { preloadItemImages } from '@/utils/image'
 
 export const useRecipeStore = defineStore('recipe', {
   state: () => ({
@@ -37,6 +38,8 @@ export const useRecipeStore = defineStore('recipe', {
           this._abortController.signal
         )
 
+        await preloadItemImages(recipeData.allItemIds)
+
         this.itemId = itemId
         this.recipeFileData = recipeData
         this.recipeVariantIndex = DEFAULT_RECIPE_VARIANT_INDEX
@@ -66,12 +69,12 @@ export const useRecipeStore = defineStore('recipe', {
       if (this.recipeFileData === null || this.recipeVariantIndex === null)
         return null
 
-      return this.recipeFileData[this.recipeVariantIndex] as RecipeData
+      return this.recipeFileData.variants[this.recipeVariantIndex] as RecipeData
     },
     variantNumbers(): number | null {
       if (this.recipeFileData === null) return null // Not loaded
 
-      return this.recipeFileData.length
+      return this.recipeFileData.variants.length
     },
     isItemRecipeLoading(): boolean {
       return this._abortController !== null

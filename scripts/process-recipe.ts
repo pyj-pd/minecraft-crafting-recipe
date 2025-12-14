@@ -4,6 +4,7 @@ import {
   RawRecipeData,
   RawShapedRecipeData,
   RawShapelessRecipeData,
+  RecipeData,
   RecipeFileData,
   ShapedRecipe,
   ShapedRecipeGrid,
@@ -82,30 +83,40 @@ export async function processRawRecipeData(): Promise<void> {
       continue
     }
 
-    let recipeData
+    let processedData: ProcessedDataReturnType | null = null
 
     switch (rawRecipeData.type) {
       case SHAPED_RECIPE_TAG:
-        recipeData = await processShapedRecipeData(rawRecipeData)
+        processedData = await processShapedRecipeData(rawRecipeData)
         break
 
       case SHAPELESS_RECIPE_TAG:
-        recipeData = await processShapelessRecipeData(rawRecipeData)
+        processedData = await processShapelessRecipeData(rawRecipeData)
         break
 
       default:
         break
     }
 
-    if (typeof recipeData !== 'object') continue // The data was not parsed
+    if (processedData === null) continue // The data was not parsed
 
-    const { itemId } = recipeData
+    const { itemId, allItemIds, recipeData } = processedData
 
     if (!(itemId in fileData)) {
       processedItems++
-      fileData[itemId] = []
+      fileData[itemId] = {
+        itemId,
+        allItemIds: [],
+        variants: [],
+      }
     }
-    fileData[itemId].push(recipeData)
+
+    for (const involvedItemId of allItemIds) {
+      if (!fileData[itemId].allItemIds.includes(involvedItemId))
+        fileData[itemId].allItemIds.push(involvedItemId)
+    }
+
+    fileData[itemId].variants.push(recipeData)
 
     processedRecipes++
   }
@@ -137,6 +148,12 @@ export async function processRawRecipeData(): Promise<void> {
   )
 }
 
+type ProcessedDataReturnType<RecipeDataType = RecipeData> = {
+  itemId: ItemId
+  allItemIds: Set<ItemId>
+  recipeData: RecipeDataType
+}
+
 /**
  * Processes raw shaped recipe data.
  * @param data Raw recipe data
@@ -145,7 +162,7 @@ export async function processRawRecipeData(): Promise<void> {
  */
 async function processShapedRecipeData(
   data: RawShapedRecipeData
-): Promise<ShapedRecipe> {
+): Promise<ProcessedDataReturnType<ShapedRecipe>> {
   const recipe = {
     grid: [
       [null, null, null],
@@ -153,6 +170,8 @@ async function processShapedRecipeData(
       [null, null, null],
     ] as z.infer<typeof ShapedRecipeGrid>,
   }
+
+  const allItemIds = new Set<ItemId>()
 
   for (
     let patternIndex = 0;
@@ -186,17 +205,23 @@ async function processShapedRecipeData(
         )
 
       recipe.grid[patternIndex][keyIndex] = itemData
+
+      if (typeof itemData === 'string') allItemIds.add(itemData)
+      else itemData.forEach((id) => allItemIds.add(id))
     }
   }
 
-  const processedData: ShapedRecipe = {
+  // Result
+  const itemId = data.result.id
+  allItemIds.add(itemId)
+
+  const recipeData: ShapedRecipe = {
     type: 'shaped',
-    itemId: data.result.id,
     count: data.result.count ?? DEFAULT_ITEM_COUNT,
     recipe,
   }
 
-  return processedData
+  return { itemId, allItemIds, recipeData }
 }
 
 /**
@@ -207,8 +232,10 @@ async function processShapedRecipeData(
  */
 async function processShapelessRecipeData(
   data: RawShapelessRecipeData
-): Promise<ShapelessRecipe> {
+): Promise<ProcessedDataReturnType<ShapelessRecipe>> {
   const ingredientItems: PossibleItem[] = []
+
+  const allItemIds = new Set<ItemId>()
 
   for (const rawItemData of data.ingredients) {
     let currentItem: PossibleItem
@@ -229,18 +256,23 @@ async function processShapelessRecipeData(
       )
 
     ingredientItems.push(currentItem)
+
+    if (typeof currentItem === 'string') allItemIds.add(currentItem)
+    else currentItem.forEach((id) => allItemIds.add(id))
   }
 
   // Result
-  const processedData: ShapelessRecipe = {
+  const itemId = data.result.id
+
+  const recipeData: ShapelessRecipe = {
     type: 'shapeless',
-    itemId: data.result.id,
     count: data.result.count ?? DEFAULT_ITEM_COUNT,
     recipe: {
       items: ingredientItems,
     },
   }
-  return processedData
+
+  return { itemId, allItemIds, recipeData }
 }
 
 await processRawRecipeData()

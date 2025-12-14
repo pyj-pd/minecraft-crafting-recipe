@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:spruce_chest_boat","count":1,"recipe":{"items":["minecraft:chest","minecraft:spruce_boat"]}}]
+{"itemId":"minecraft:spruce_chest_boat","allItemIds":["minecraft:chest","minecraft:spruce_boat"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:chest","minecraft:spruce_boat"]}}]}

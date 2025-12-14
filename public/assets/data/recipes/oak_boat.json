@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:oak_boat","count":1,"recipe":{"grid":[["minecraft:oak_planks",null,"minecraft:oak_planks"],["minecraft:oak_planks","minecraft:oak_planks","minecraft:oak_planks"],[null,null,null]]}}]
+{"itemId":"minecraft:oak_boat","allItemIds":["minecraft:oak_planks","minecraft:oak_boat"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:oak_planks",null,"minecraft:oak_planks"],["minecraft:oak_planks","minecraft:oak_planks","minecraft:oak_planks"],[null,null,null]]}}]}

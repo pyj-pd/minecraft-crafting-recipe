@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:warped_slab","count":6,"recipe":{"grid":[["minecraft:warped_planks","minecraft:warped_planks","minecraft:warped_planks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:warped_slab","allItemIds":["minecraft:warped_planks","minecraft:warped_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:warped_planks","minecraft:warped_planks","minecraft:warped_planks"],[null,null,null],[null,null,null]]}}]}

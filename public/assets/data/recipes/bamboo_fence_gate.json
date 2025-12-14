@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:bamboo_fence_gate","count":1,"recipe":{"grid":[["minecraft:stick","minecraft:bamboo_planks","minecraft:stick"],["minecraft:stick","minecraft:bamboo_planks","minecraft:stick"],[null,null,null]]}}]
+{"itemId":"minecraft:bamboo_fence_gate","allItemIds":["minecraft:stick","minecraft:bamboo_planks","minecraft:bamboo_fence_gate"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:stick","minecraft:bamboo_planks","minecraft:stick"],["minecraft:stick","minecraft:bamboo_planks","minecraft:stick"],[null,null,null]]}}]}

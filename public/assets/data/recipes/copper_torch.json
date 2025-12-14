@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:copper_torch","count":4,"recipe":{"grid":[["minecraft:copper_nugget",null,null],[["minecraft:coal","minecraft:charcoal"],null,null],["minecraft:stick",null,null]]}}]
+{"itemId":"minecraft:copper_torch","allItemIds":["minecraft:copper_nugget","minecraft:coal","minecraft:charcoal","minecraft:stick","minecraft:copper_torch"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:copper_nugget",null,null],[["minecraft:coal","minecraft:charcoal"],null,null],["minecraft:stick",null,null]]}}]}

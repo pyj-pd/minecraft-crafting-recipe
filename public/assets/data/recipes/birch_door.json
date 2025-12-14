@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:birch_door","count":3,"recipe":{"grid":[["minecraft:birch_planks","minecraft:birch_planks",null],["minecraft:birch_planks","minecraft:birch_planks",null],["minecraft:birch_planks","minecraft:birch_planks",null]]}}]
+{"itemId":"minecraft:birch_door","allItemIds":["minecraft:birch_planks","minecraft:birch_door"],"variants":[{"type":"shaped","count":3,"recipe":{"grid":[["minecraft:birch_planks","minecraft:birch_planks",null],["minecraft:birch_planks","minecraft:birch_planks",null],["minecraft:birch_planks","minecraft:birch_planks",null]]}}]}

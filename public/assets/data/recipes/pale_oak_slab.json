@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:pale_oak_slab","count":6,"recipe":{"grid":[["minecraft:pale_oak_planks","minecraft:pale_oak_planks","minecraft:pale_oak_planks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:pale_oak_slab","allItemIds":["minecraft:pale_oak_planks","minecraft:pale_oak_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:pale_oak_planks","minecraft:pale_oak_planks","minecraft:pale_oak_planks"],[null,null,null],[null,null,null]]}}]}

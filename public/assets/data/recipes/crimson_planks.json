@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:crimson_planks","count":4,"recipe":{"items":[["minecraft:crimson_stem","minecraft:stripped_crimson_stem","minecraft:crimson_hyphae","minecraft:stripped_crimson_hyphae"]]}}]
+{"itemId":"minecraft:crimson_planks","allItemIds":["minecraft:crimson_stem","minecraft:stripped_crimson_stem","minecraft:crimson_hyphae","minecraft:stripped_crimson_hyphae"],"variants":[{"type":"shapeless","count":4,"recipe":{"items":[["minecraft:crimson_stem","minecraft:stripped_crimson_stem","minecraft:crimson_hyphae","minecraft:stripped_crimson_hyphae"]]}}]}

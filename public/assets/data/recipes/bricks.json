@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:bricks","count":1,"recipe":{"grid":[["minecraft:brick","minecraft:brick",null],["minecraft:brick","minecraft:brick",null],[null,null,null]]}}]
+{"itemId":"minecraft:bricks","allItemIds":["minecraft:brick","minecraft:bricks"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:brick","minecraft:brick",null],["minecraft:brick","minecraft:brick",null],[null,null,null]]}}]}

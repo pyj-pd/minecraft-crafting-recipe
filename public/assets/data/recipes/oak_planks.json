@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:oak_planks","count":4,"recipe":{"items":[["minecraft:oak_log","minecraft:oak_wood","minecraft:stripped_oak_log","minecraft:stripped_oak_wood"]]}}]
+{"itemId":"minecraft:oak_planks","allItemIds":["minecraft:oak_log","minecraft:oak_wood","minecraft:stripped_oak_log","minecraft:stripped_oak_wood"],"variants":[{"type":"shapeless","count":4,"recipe":{"items":[["minecraft:oak_log","minecraft:oak_wood","minecraft:stripped_oak_log","minecraft:stripped_oak_wood"]]}}]}

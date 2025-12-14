@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:prismarine","count":1,"recipe":{"grid":[["minecraft:prismarine_shard","minecraft:prismarine_shard",null],["minecraft:prismarine_shard","minecraft:prismarine_shard",null],[null,null,null]]}}]
+{"itemId":"minecraft:prismarine","allItemIds":["minecraft:prismarine_shard","minecraft:prismarine"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:prismarine_shard","minecraft:prismarine_shard",null],["minecraft:prismarine_shard","minecraft:prismarine_shard",null],[null,null,null]]}}]}

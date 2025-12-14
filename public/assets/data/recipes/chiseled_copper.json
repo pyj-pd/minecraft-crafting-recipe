@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:chiseled_copper","count":1,"recipe":{"grid":[["minecraft:cut_copper_slab",null,null],["minecraft:cut_copper_slab",null,null],[null,null,null]]}}]
+{"itemId":"minecraft:chiseled_copper","allItemIds":["minecraft:cut_copper_slab","minecraft:chiseled_copper"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:cut_copper_slab",null,null],["minecraft:cut_copper_slab",null,null],[null,null,null]]}}]}

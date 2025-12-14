@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:crimson_button","count":1,"recipe":{"items":["minecraft:crimson_planks"]}}]
+{"itemId":"minecraft:crimson_button","allItemIds":["minecraft:crimson_planks"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:crimson_planks"]}}]}

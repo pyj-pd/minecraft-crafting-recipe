@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:diamond_axe","count":1,"recipe":{"grid":[[["minecraft:diamond"],["minecraft:diamond"],null],[["minecraft:diamond"],"minecraft:stick",null],[null,"minecraft:stick",null]]}}]
+{"itemId":"minecraft:diamond_axe","allItemIds":["minecraft:diamond","minecraft:stick","minecraft:diamond_axe"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[["minecraft:diamond"],["minecraft:diamond"],null],[["minecraft:diamond"],"minecraft:stick",null],[null,"minecraft:stick",null]]}}]}

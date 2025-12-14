@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:stonecutter","count":1,"recipe":{"grid":[[null,"minecraft:iron_ingot",null],["minecraft:stone","minecraft:stone","minecraft:stone"],[null,null,null]]}}]
+{"itemId":"minecraft:stonecutter","allItemIds":["minecraft:iron_ingot","minecraft:stone","minecraft:stonecutter"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[null,"minecraft:iron_ingot",null],["minecraft:stone","minecraft:stone","minecraft:stone"],[null,null,null]]}}]}

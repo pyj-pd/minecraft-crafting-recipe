@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:resin_brick_slab","count":6,"recipe":{"grid":[["minecraft:resin_bricks","minecraft:resin_bricks","minecraft:resin_bricks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:resin_brick_slab","allItemIds":["minecraft:resin_bricks","minecraft:resin_brick_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:resin_bricks","minecraft:resin_bricks","minecraft:resin_bricks"],[null,null,null],[null,null,null]]}}]}

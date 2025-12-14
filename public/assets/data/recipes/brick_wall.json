@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:brick_wall","count":6,"recipe":{"grid":[["minecraft:bricks","minecraft:bricks","minecraft:bricks"],["minecraft:bricks","minecraft:bricks","minecraft:bricks"],[null,null,null]]}}]
+{"itemId":"minecraft:brick_wall","allItemIds":["minecraft:bricks","minecraft:brick_wall"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:bricks","minecraft:bricks","minecraft:bricks"],["minecraft:bricks","minecraft:bricks","minecraft:bricks"],[null,null,null]]}}]}

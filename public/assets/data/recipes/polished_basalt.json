@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:polished_basalt","count":4,"recipe":{"grid":[["minecraft:basalt","minecraft:basalt",null],["minecraft:basalt","minecraft:basalt",null],[null,null,null]]}}]
+{"itemId":"minecraft:polished_basalt","allItemIds":["minecraft:basalt","minecraft:polished_basalt"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:basalt","minecraft:basalt",null],["minecraft:basalt","minecraft:basalt",null],[null,null,null]]}}]}

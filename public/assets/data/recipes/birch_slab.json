@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:birch_slab","count":6,"recipe":{"grid":[["minecraft:birch_planks","minecraft:birch_planks","minecraft:birch_planks"],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:birch_slab","allItemIds":["minecraft:birch_planks","minecraft:birch_slab"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:birch_planks","minecraft:birch_planks","minecraft:birch_planks"],[null,null,null],[null,null,null]]}}]}

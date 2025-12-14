@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:brown_dye","count":1,"recipe":{"items":["minecraft:cocoa_beans"]}}]
+{"itemId":"minecraft:brown_dye","allItemIds":["minecraft:cocoa_beans"],"variants":[{"type":"shapeless","count":1,"recipe":{"items":["minecraft:cocoa_beans"]}}]}

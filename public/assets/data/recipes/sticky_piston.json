@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:sticky_piston","count":1,"recipe":{"grid":[["minecraft:slime_ball",null,null],["minecraft:piston",null,null],[null,null,null]]}}]
+{"itemId":"minecraft:sticky_piston","allItemIds":["minecraft:slime_ball","minecraft:piston","minecraft:sticky_piston"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:slime_ball",null,null],["minecraft:piston",null,null],[null,null,null]]}}]}

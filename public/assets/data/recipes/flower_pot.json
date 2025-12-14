@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:flower_pot","count":1,"recipe":{"grid":[["minecraft:brick",null,"minecraft:brick"],[null,"minecraft:brick",null],[null,null,null]]}}]
+{"itemId":"minecraft:flower_pot","allItemIds":["minecraft:brick","minecraft:flower_pot"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:brick",null,"minecraft:brick"],[null,"minecraft:brick",null],[null,null,null]]}}]}

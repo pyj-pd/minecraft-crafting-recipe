@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:warped_pressure_plate","count":1,"recipe":{"grid":[["minecraft:warped_planks","minecraft:warped_planks",null],[null,null,null],[null,null,null]]}}]
+{"itemId":"minecraft:warped_pressure_plate","allItemIds":["minecraft:warped_planks","minecraft:warped_pressure_plate"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:warped_planks","minecraft:warped_planks",null],[null,null,null],[null,null,null]]}}]}

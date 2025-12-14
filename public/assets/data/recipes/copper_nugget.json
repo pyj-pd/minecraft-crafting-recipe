@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:copper_nugget","count":9,"recipe":{"items":["minecraft:copper_ingot"]}}]
+{"itemId":"minecraft:copper_nugget","allItemIds":["minecraft:copper_ingot"],"variants":[{"type":"shapeless","count":9,"recipe":{"items":["minecraft:copper_ingot"]}}]}

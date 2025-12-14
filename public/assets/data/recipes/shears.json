@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:shears","count":1,"recipe":{"grid":[[null,"minecraft:iron_ingot",null],["minecraft:iron_ingot",null,null],[null,null,null]]}}]
+{"itemId":"minecraft:shears","allItemIds":["minecraft:iron_ingot","minecraft:shears"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[[null,"minecraft:iron_ingot",null],["minecraft:iron_ingot",null,null],[null,null,null]]}}]}

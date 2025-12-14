@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:stone_stairs","count":4,"recipe":{"grid":[["minecraft:stone",null,null],["minecraft:stone","minecraft:stone",null],["minecraft:stone","minecraft:stone","minecraft:stone"]]}}]
+{"itemId":"minecraft:stone_stairs","allItemIds":["minecraft:stone","minecraft:stone_stairs"],"variants":[{"type":"shaped","count":4,"recipe":{"grid":[["minecraft:stone",null,null],["minecraft:stone","minecraft:stone",null],["minecraft:stone","minecraft:stone","minecraft:stone"]]}}]}

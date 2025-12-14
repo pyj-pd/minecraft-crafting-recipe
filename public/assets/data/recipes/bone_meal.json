@@ -1,1 +1,1 @@
-[{"type":"shapeless","itemId":"minecraft:bone_meal","count":3,"recipe":{"items":["minecraft:bone"]}},{"type":"shapeless","itemId":"minecraft:bone_meal","count":9,"recipe":{"items":["minecraft:bone_block"]}}]
+{"itemId":"minecraft:bone_meal","allItemIds":["minecraft:bone","minecraft:bone_block"],"variants":[{"type":"shapeless","count":3,"recipe":{"items":["minecraft:bone"]}},{"type":"shapeless","count":9,"recipe":{"items":["minecraft:bone_block"]}}]}

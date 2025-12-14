@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:prismarine_wall","count":6,"recipe":{"grid":[["minecraft:prismarine","minecraft:prismarine","minecraft:prismarine"],["minecraft:prismarine","minecraft:prismarine","minecraft:prismarine"],[null,null,null]]}}]
+{"itemId":"minecraft:prismarine_wall","allItemIds":["minecraft:prismarine","minecraft:prismarine_wall"],"variants":[{"type":"shaped","count":6,"recipe":{"grid":[["minecraft:prismarine","minecraft:prismarine","minecraft:prismarine"],["minecraft:prismarine","minecraft:prismarine","minecraft:prismarine"],[null,null,null]]}}]}

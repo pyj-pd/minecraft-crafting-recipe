@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:candle","count":1,"recipe":{"grid":[["minecraft:string",null,null],["minecraft:honeycomb",null,null],[null,null,null]]}}]
+{"itemId":"minecraft:candle","allItemIds":["minecraft:string","minecraft:honeycomb","minecraft:candle"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:string",null,null],["minecraft:honeycomb",null,null],[null,null,null]]}}]}

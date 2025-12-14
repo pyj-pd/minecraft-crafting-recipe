@@ -1,1 +1,1 @@
-[{"type":"shaped","itemId":"minecraft:honeycomb_block","count":1,"recipe":{"grid":[["minecraft:honeycomb","minecraft:honeycomb",null],["minecraft:honeycomb","minecraft:honeycomb",null],[null,null,null]]}}]
+{"itemId":"minecraft:honeycomb_block","allItemIds":["minecraft:honeycomb","minecraft:honeycomb_block"],"variants":[{"type":"shaped","count":1,"recipe":{"grid":[["minecraft:honeycomb","minecraft:honeycomb",null],["minecraft:honeycomb","minecraft:honeycomb",null],[null,null,null]]}}]}
