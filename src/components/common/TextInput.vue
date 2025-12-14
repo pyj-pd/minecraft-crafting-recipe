@@ -11,7 +11,7 @@ withDefaults(defineProps<TextInputProps>(), {
   type: 'text',
 })
 
-defineEmits(['clear']) // @todo scroll to top when cleared
+defineEmits(['clear'])
 
 const model = defineModel<string>()
 const isInputValueEmpty = computed(() => model.value?.length ?? 0 < 1)
@@ -84,6 +84,10 @@ defineExpose({ inputRef })
 
   &::placeholder {
     color: palette.$dark-gray-5;
+  }
+
+  &:focus-visible {
+    outline: none;
   }
 }
 

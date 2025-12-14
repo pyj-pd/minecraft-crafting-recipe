@@ -1,7 +1,8 @@
-$background-color: hsl(0, 0%, 8%);
-$text-color: hsl(0, 0%, 100%);
-
 $black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+
+$background-color: hsl(0, 0%, 8%);
+$text-color: $white;
 
 $dark-gray-0: hsl(0, 0%, 7%);
 $dark-gray-1: hsl(0, 0%, 11%);

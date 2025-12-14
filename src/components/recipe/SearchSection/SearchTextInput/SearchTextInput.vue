@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TextInput from '@/components/common/TextInput.vue'
-import SearchResult from './SearchResultList.vue'
+import SearchResultList from './SearchResultList.vue'
 import { useTemplateRef } from 'vue'
 import { useSearchStore } from '@/stores/search'
 
@@ -41,9 +41,10 @@ const doSearch = (query: string): void => {
       placeholder="Search for items"
       :class="$style.input"
       type="search"
+      autofocus
       @input="handleSearch"
     />
-    <SearchResult :class="$style['search-result']" />
+    <SearchResultList :class="$style['search-result']" />
   </div>
 </template>
 

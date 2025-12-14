@@ -41,3 +41,8 @@ body {
   background-color: palette.$background-color;
   color: palette.$text-color;
 }
+
+// Focus outline
+*:focus-visible {
+  outline: solid value.$focus-border-width palette.$text-color;
+}

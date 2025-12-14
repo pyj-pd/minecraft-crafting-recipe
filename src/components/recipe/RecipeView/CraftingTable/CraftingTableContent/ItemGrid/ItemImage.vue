@@ -87,9 +87,9 @@ const tooltipId = computed(() => `item-${index}`)
     </ItemTooltip>
     <button
       :aria-labelledby="tooltipId"
-      :class="$style['item-button']"
-      :disabled="!doesRecipeExist"
-      @click="() => setItemId(itemId)"
+      :class="[$style['item-button'], !doesRecipeExist && $style['no-recipe']]"
+      :aria-disabled="!doesRecipeExist"
+      @click="() => doesRecipeExist && setItemId(itemId)"
     >
       <img
         v-if="imageUrl !== null"
@@ -158,7 +158,7 @@ $item-image-width: calc(var(--table-width) * 0.055);
   &:focus-visible {
     background-color: rgba(palette.$light-gray, 0.1);
 
-    &:disabled {
+    &.no-recipe {
       background-color: rgba(palette.$red, 0.1);
     }
   }

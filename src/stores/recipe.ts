@@ -40,8 +40,9 @@ export const useRecipeStore = defineStore('recipe', {
         this.itemId = itemId
         this.recipeFileData = recipeData
         this.recipeVariantIndex = DEFAULT_RECIPE_VARIANT_INDEX
+        this._abortController = null
       } catch {
-        // No recipe exist
+        // No recipe exist or aborted
       }
     },
     /**
@@ -71,6 +72,9 @@ export const useRecipeStore = defineStore('recipe', {
       if (this.recipeFileData === null) return null // Not loaded
 
       return this.recipeFileData.length
+    },
+    isItemRecipeLoading(): boolean {
+      return this._abortController !== null
     },
   },
 })
