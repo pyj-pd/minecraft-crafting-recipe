@@ -1,28 +1,11 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia'
 import CraftingTable from './CraftingTable/CraftingTable.vue'
-import TabButton from './TabButton/TabButton.vue'
-import { useRecipeStore } from '@/stores/recipe'
-
-const recipeStore = useRecipeStore()
-const { setRecipeVariantIndex } = recipeStore
-const { variantNumbers, recipeVariantIndex } = storeToRefs(recipeStore)
+import MethodTab from './MethodTab/MethodTab.vue'
 </script>
 
 <template>
   <section :class="$style['recipe-view-section']">
-    <div :class="$style['tab-button-container']">
-      <template v-if="variantNumbers !== null && variantNumbers >= 1">
-        <TabButton
-          v-for="(num, index) in variantNumbers"
-          :key="index"
-          :is-selected="index == recipeVariantIndex"
-          @click="() => setRecipeVariantIndex(index)"
-        >
-          Method {{ num }}
-        </TabButton>
-      </template>
-    </div>
+    <MethodTab />
     <CraftingTable />
   </section>
 </template>
@@ -37,21 +20,5 @@ const { variantNumbers, recipeVariantIndex } = storeToRefs(recipeStore)
 
   width: 100%;
   max-width: 900px;
-}
-
-.tab-button-container {
-  display: flex;
-  align-items: end;
-
-  width: 100%;
-  height: 60px;
-
-  overflow-x: auto;
-
-  // @todo add drag
-
-  @media screen and (max-width: value.$small-screen-width) {
-    height: 53px;
-  }
 }
 </style>
