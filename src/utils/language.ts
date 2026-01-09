@@ -12,18 +12,22 @@ export function recipeExists(itemId: ItemId): boolean {
   return recipeList.includes(itemId)
 }
 
-export async function getTranslationData(
-  languageId: string
+export async function fetchTranslationData(
+  languageId: string,
+  signal?: AbortSignal
 ): Promise<LanguageData> {
   const response = await fetch(
-    `${LANGUAGE_DATA_FILE_URL}${languageId}${DATA_FILE_EXTENSION}`
+    `${LANGUAGE_DATA_FILE_URL}${languageId}${DATA_FILE_EXTENSION}`,
+    { signal }
   )
   const data = LanguageData.parse(await response.json())
 
   return data
 }
 
-export const defaultLanguageData = await getTranslationData(DEFAULT_LANGUAGE_ID)
+export const defaultLanguageData = await fetchTranslationData(
+  DEFAULT_LANGUAGE_ID
+)
 
 export const inko = new Inko()
 

@@ -29,6 +29,10 @@ const itemId = computed<ItemId>(() => {
   }
 })
 
+const itemName = computed<string | null>(
+  () => translationData.value?.translations[itemId.value] ?? null
+)
+
 const imageUrls = computed<string[]>(() => {
   let itemIds: ItemId[]
 
@@ -78,13 +82,15 @@ const tooltipId = computed(() => `item-${index}`)
 
 <template>
   <div :class="$style.container">
-    <ItemTooltip
-      :id="tooltipId"
-      :class="$style.tooltip"
-      :align
-    >
-      {{ translationData?.translations[itemId] }}
-    </ItemTooltip>
+    <template v-if="itemName !== null">
+      <ItemTooltip
+        :element-id="tooltipId"
+        :class="$style.tooltip"
+        :align
+        :item-name="itemName"
+        :item-id="itemId"
+      />
+    </template>
     <button
       :aria-labelledby="tooltipId"
       :class="[$style['item-button'], !doesRecipeExist && $style['no-recipe']]"

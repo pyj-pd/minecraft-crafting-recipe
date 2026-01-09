@@ -6,6 +6,7 @@ export type RawLanguageFile = z.infer<typeof RawLanguageFile>
 
 export const LanguageData = z.object({
   languageId: z.string(),
+  languageName: z.string(),
   translations: z.record(ItemId, z.string()),
 })
 export type LanguageData = z.infer<typeof LanguageData>
@@ -18,3 +19,9 @@ export const SearchLanguageData = z.array(
   })
 )
 export type SearchLanguageData = z.infer<typeof SearchLanguageData>
+
+// Language list
+export type LanguageListData = {
+  languageId: string
+  languageName: string
+}

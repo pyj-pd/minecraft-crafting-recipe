@@ -1,13 +1,14 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    id: string
+    elementId: string
     align?: 'left' | 'right'
+
+    itemName: string
+    itemId: string
   }>(),
   { align: 'left' }
 )
-
-defineSlots()
 </script>
 
 <template>
@@ -18,11 +19,14 @@ defineSlots()
     ]"
   >
     <div
-      :id="$props.id"
+      :id="$props.elementId"
       role="tooltip"
       :class="$style.tooltip"
     >
-      <slot />
+      <span>
+        {{ $props.itemName }}
+      </span>
+      <span :class="$style['item-id']">{{ $props.itemId }}</span>
     </div>
   </div>
 </template>
@@ -53,8 +57,10 @@ defineSlots()
 
 .tooltip {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 2px;
 
   white-space: nowrap;
 
@@ -76,5 +82,11 @@ defineSlots()
 
     $hover-animation: false
   );
+}
+
+.item-id {
+  color: palette.$light-gray;
+
+  font-size: value.$tooltip-font-size-id;
 }
 </style>

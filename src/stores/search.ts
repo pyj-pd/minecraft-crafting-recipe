@@ -3,7 +3,7 @@ import type { LanguageData, SearchLanguageData } from '@shared/types/language'
 import type { ItemId } from '@shared/types/minecraft'
 import {
   defaultLanguageData,
-  getTranslationData,
+  fetchTranslationData,
   getTranslationsForSearching,
   inko,
 } from '@/utils/language'
@@ -37,12 +37,21 @@ export const useSearchStore = defineStore('search', {
 
     // Search
     searchResults: null as null | ItemId[],
-    fuseInstance: createFuseInstance(), // @todo support multi language support
+    fuseInstance: createFuseInstance(),
     lastQuery: null as null | string,
+
+    _languageAbortController: null as AbortController | null,
   }),
   actions: {
     async setLanguage(newLanguageId: string): Promise<void> {
-      const translationData = await getTranslationData(newLanguageId)
+      if (this._languageAbortController) this._languageAbortController.abort()
+
+      this._languageAbortController = new AbortController()
+
+      const translationData = await fetchTranslationData(
+        newLanguageId,
+        this._languageAbortController.signal
+      )
 
       // Set language
       this.languageId = newLanguageId

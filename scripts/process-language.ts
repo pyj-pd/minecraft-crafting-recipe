@@ -1,9 +1,14 @@
 import { access, mkdir, readdir, readFile, writeFile } from 'fs/promises'
 import path from 'path'
-import { LanguageData, RawLanguageFile } from '../shared/types/language'
+import {
+  LanguageData,
+  RawLanguageFile,
+  type LanguageListData,
+} from '../shared/types/language'
 import { ItemId } from '../shared/types/minecraft'
 import {
   getFileNameWithoutExtension,
+  LANGUAGE_LIST_DATA_FILE_PATH,
   parseRawFile,
   PARSING_TAG_TYPES,
   PROCESSED_LANGUAGE_DATA_FOLDER,
@@ -14,6 +19,8 @@ import { minecraftNamespace } from '../shared/constants/minecraft'
 // Strings
 const TRANSLATION_SEPARATOR = '.'
 const ITEM_SEPARATOR = ':'
+
+const LANGUAGE_NAME_KEY = 'language.name'
 
 /**
  * Parses raw language files into processed data.
@@ -31,7 +38,7 @@ export async function processRawLanguageData(): Promise<void> {
     await mkdir(PROCESSED_LANGUAGE_DATA_FOLDER)
   }
 
-  let processed = 0
+  const processedLanguages: LanguageListData[] = []
 
   // Parse each language file
   for (const fileInfo of rawLanguageFileList) {
@@ -46,8 +53,13 @@ export async function processRawLanguageData(): Promise<void> {
     if (rawLanguageData === null) continue // Invalid file format
 
     const languageId = getFileNameWithoutExtension(fileName)
+    const languageName = rawLanguageData[LANGUAGE_NAME_KEY]
 
-    const languageData: LanguageData = { languageId, translations: {} }
+    const languageData: LanguageData = {
+      languageId,
+      languageName,
+      translations: {},
+    }
 
     // Parse each item
     for (const [key, translation] of Object.entries(rawLanguageData)) {
@@ -71,12 +83,24 @@ export async function processRawLanguageData(): Promise<void> {
       fileName
     )
     await writeFile(processedFilePath, JSON.stringify(languageData))
-    processed++
+
+    processedLanguages.push({
+      languageId,
+      languageName,
+    })
   }
 
+  // Write language list data file
+  await writeFile(
+    LANGUAGE_LIST_DATA_FILE_PATH,
+    JSON.stringify(processedLanguages)
+  )
+
+  const processedCount = processedLanguages.length
+
   console.log(
-    `Processed ${processed} language file${
-      processed > 1 ? 's' : ''
+    `Processed ${processedCount} language file${
+      processedCount > 1 ? 's' : ''
     } successfully.`
   )
 }
