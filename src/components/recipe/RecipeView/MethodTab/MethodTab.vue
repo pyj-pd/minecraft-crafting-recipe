@@ -37,14 +37,6 @@ const { variantNumbers, recipeVariantIndex } = storeToRefs(recipeStore)
 
   overflow-x: auto;
 
-  * {
-    cursor: grab;
-
-    :active & {
-      cursor: grabbing;
-    }
-  }
-
   @media screen and (max-width: value.$small-screen-width) {
     height: 53px;
   }

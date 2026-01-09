@@ -10,7 +10,6 @@ const resetSearchQuery = (): void => {
   searchRawQuery.value = ''
 }
 
-// @todo add loading spinner
 initRecipeHashHandler()
 </script>
 

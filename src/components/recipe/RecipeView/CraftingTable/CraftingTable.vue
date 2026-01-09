@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref, useTemplateRef } from 'vue'
+import { onBeforeUnmount, onMounted, ref, useTemplateRef, watch } from 'vue'
 import CraftingTableBackground from './CraftingTableBackground.vue'
 import CraftingTableContent from './CraftingTableContent/CraftingTableContent.vue'
 import { initImageAnimationTimer } from '@/stores/image-animation'
@@ -10,7 +10,32 @@ import LoadingOverlay from './LoadingOverlay.vue'
 const tableWidth = ref<string>()
 const tableRef = useTemplateRef('table-ref')
 
+// Loading handling
 const { isItemRecipeLoading } = storeToRefs(useRecipeStore())
+
+const LOADING_VISIBLE_DEBOUNCE_MS = 200 // Prevent loading overlay from 'flickering'
+let loadingVisibleTimeout: ReturnType<typeof setTimeout> | null = null
+
+const isLoadingOverlayVisible = ref<boolean>(false)
+
+watch(
+  isItemRecipeLoading,
+  () => {
+    if (loadingVisibleTimeout !== null) clearTimeout(loadingVisibleTimeout)
+
+    if (isItemRecipeLoading.value) {
+      // Loading started
+      loadingVisibleTimeout = setTimeout(() => {
+        isLoadingOverlayVisible.value = true
+      }, LOADING_VISIBLE_DEBOUNCE_MS)
+    } else {
+      // Loading complete
+      isLoadingOverlayVisible.value = false
+      return
+    }
+  },
+  { immediate: true }
+)
 
 const tableResizeObserver = new ResizeObserver((entries) => {
   const width = entries[0]?.contentRect.width
@@ -34,7 +59,7 @@ initImageAnimationTimer()
     ref="table-ref"
     :class="$style['crafting-table']"
   >
-    <LoadingOverlay v-if="isItemRecipeLoading" />
+    <LoadingOverlay v-if="isLoadingOverlayVisible" />
     <CraftingTableBackground :class="$style['crafting-table-background-svg']" />
     <div :class="$style['table-grid-container']">
       <CraftingTableContent />
@@ -47,7 +72,7 @@ initImageAnimationTimer()
 @use '@/styles/palette' as palette;
 
 .crafting-table {
-  --table-width: v-bind(tableWidth);
+  --table-width: v-bind(tableWidth); // For width-relative sizes
 
   position: relative;
 
