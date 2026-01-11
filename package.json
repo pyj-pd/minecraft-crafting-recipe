@@ -1,48 +1,37 @@
 {
   "name": "minecraft-crafting-recipe",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "private": true,
   "scripts": {
     "process:language-data": "jiti ./scripts/process-language.ts",
     "process:recipe-data": "jiti ./scripts/process-recipe.ts",
     "process": "pnpm run process:recipe-data && pnpm run process:language-data",
-    "dev": "vite",
-    "build": "pnpm process && vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/eslint": "1.12.1",
+    "@nuxt/fonts": "0.12.1",
+    "@pinia/nuxt": "0.11.3",
+    "eslint": "^9.39.2",
     "fuse.js": "^7.1.0",
-    "inko": "^1.1.1",
+    "nuxt": "^4.2.2",
     "pinia": "^3.0.4",
-    "vue": "^3.5.25"
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
-    "@types/node": "^25.0.1",
-    "@typescript-eslint/parser": "^8.49.0",
-    "@vitejs/plugin-vue": "^6.0.3",
-    "@vue/tsconfig": "^0.8.1",
-    "eslint": "^9.39.2",
+    "@types/node": "^25.0.5",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-vue": "^10.6.2",
-    "globals": "^16.5.0",
+    "globals": "^17.0.0",
     "jiti": "^2.6.1",
-    "sass": "^1.96.0",
-    "typescript": "~5.9.3",
-    "typescript-eslint": "^8.49.0",
-    "vite": "npm:rolldown-vite@7.2.11",
-    "vue-eslint-parser": "^10.2.0",
-    "vue-tsc": "^3.1.8",
-    "zod": "^4.1.13"
-  },
-  "pnpm": {
-    "overrides": {
-      "vite": "npm:rolldown-vite@7.1.14"
-    },
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild"
-    ]
+    "sass": "^1.97.2",
+    "typescript-eslint": "^8.52.0",
+    "zod": "^4.3.5"
   }
 }

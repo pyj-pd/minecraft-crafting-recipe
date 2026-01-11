@@ -1,11 +1,11 @@
-import { access, mkdir, readdir, readFile, writeFile } from 'fs/promises'
-import path from 'path'
+import { access, mkdir, readdir, readFile, writeFile } from "fs/promises"
+import path from "path"
 import {
   LanguageData,
   RawLanguageFile,
   type LanguageListData,
-} from '../shared/types/language'
-import { ItemId } from '../shared/types/minecraft'
+} from "../shared/types/language"
+import { ItemId } from "../shared/types/minecraft"
 import {
   getFileNameWithoutExtension,
   LANGUAGE_LIST_DATA_FILE_PATH,
@@ -13,14 +13,14 @@ import {
   PARSING_TAG_TYPES,
   PROCESSED_LANGUAGE_DATA_FOLDER,
   RAW_LANGUAGE_DATA_FOLDER,
-} from './common'
-import { minecraftNamespace } from '../shared/constants/minecraft'
+} from "./common"
+import { minecraftNamespace } from "../shared/constants/minecraft"
 
 // Strings
-const TRANSLATION_SEPARATOR = '.'
-const ITEM_SEPARATOR = ':'
+const TRANSLATION_SEPARATOR = "."
+const ITEM_SEPARATOR = ":"
 
-const LANGUAGE_NAME_KEY = 'language.name'
+const LANGUAGE_NAME_KEY = "language.name"
 
 /**
  * Parses raw language files into processed data.
@@ -46,7 +46,7 @@ export async function processRawLanguageData(): Promise<void> {
 
     const fileName = fileInfo.name
     const filePath = path.join(RAW_LANGUAGE_DATA_FOLDER, fileName)
-    const fileContent = await readFile(filePath, { encoding: 'utf-8' })
+    const fileContent = await readFile(filePath, { encoding: "utf-8" })
 
     const rawLanguageData = await parseRawFile(fileContent, RawLanguageFile)
 
@@ -100,7 +100,7 @@ export async function processRawLanguageData(): Promise<void> {
 
   console.log(
     `Processed ${processedCount} language file${
-      processedCount > 1 ? 's' : ''
+      processedCount > 1 ? "s" : ""
     } successfully.`
   )
 }

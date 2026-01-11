@@ -1,9 +1,6 @@
 import { ZodType, type output } from 'zod'
 import path from 'path'
-import {
-  LANGUAGE_DATA_FILE_URL,
-  RECIPE_DATA_FILE_URL,
-} from '../shared/constants/path'
+import { RECIPE_DATA_FILE_URL } from '../shared/constants/path'
 
 // Paths
 // Recipe files
@@ -24,17 +21,16 @@ export const RAW_LANGUAGE_DATA_FOLDER = path.resolve(
 )
 export const PROCESSED_LANGUAGE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
-  '../public',
-  `.${LANGUAGE_DATA_FILE_URL}`
+  '../app/assets/data/translations'
 )
 
 export const LANGUAGE_LIST_DATA_FILE_PATH = path.resolve(
   import.meta.dirname,
-  '../src/data/language-list.json'
+  '../app/assets/data/language-list.json'
 )
 export const RECIPE_LIST_DATA_FILE_PATH = path.resolve(
   import.meta.dirname,
-  '../src/data/recipe-list.json'
+  '../app/assets/data/recipe-list.json'
 )
 
 // Tag files
