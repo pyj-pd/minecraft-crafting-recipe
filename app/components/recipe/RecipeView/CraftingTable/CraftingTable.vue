@@ -1,9 +1,4 @@
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref, useTemplateRef, watch } from 'vue'
-import { initImageAnimationTimer } from '@/stores/image-animation'
-import { storeToRefs } from 'pinia'
-import { useRecipeStore } from '@/stores/recipe'
-
 const tableWidth = ref<string>()
 const tableRef = useTemplateRef('table-ref')
 
@@ -34,18 +29,20 @@ watch(
   { immediate: true }
 )
 
-const tableResizeObserver = new ResizeObserver((entries) => {
-  const width = entries[0]?.contentRect.width
-
-  if (typeof width === 'number') tableWidth.value = `${width}px`
-})
+let tableResizeObserver: ResizeObserver | null = null
 
 onMounted(() => {
+  tableResizeObserver = new ResizeObserver((entries) => {
+    const width = entries[0]?.contentRect.width
+
+    if (typeof width === 'number') tableWidth.value = `${width}px`
+  })
+
   if (tableRef.value) tableResizeObserver.observe(tableRef.value)
 })
 
 onBeforeUnmount(() => {
-  tableResizeObserver.disconnect()
+  tableResizeObserver?.disconnect()
 })
 
 initImageAnimationTimer()

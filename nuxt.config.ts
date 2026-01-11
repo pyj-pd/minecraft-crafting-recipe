@@ -2,5 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@pinia/nuxt', '@nuxt/fonts']
+  modules: ['@nuxt/eslint', '@pinia/nuxt', '@nuxt/fonts'],
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
 })

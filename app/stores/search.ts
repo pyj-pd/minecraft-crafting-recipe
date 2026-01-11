@@ -39,7 +39,7 @@ export const useSearchStore = defineStore('search', {
     _languageAbortController: null as AbortController | null,
   }),
   actions: {
-    async fetchInitialData(): Promise<void> {
+    async _fetchInitialData(): Promise<void> {
       const defaultTranslationData = await fetchTranslationData(
         DEFAULT_LANGUAGE_ID
       )

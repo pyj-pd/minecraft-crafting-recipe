@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useRecipeStore } from '@/stores/recipe'
-import { storeToRefs } from 'pinia'
-
 const recipeStore = useRecipeStore()
 const { setRecipeVariantIndex } = recipeStore
 const { variantNumbers, recipeVariantIndex } = storeToRefs(recipeStore)

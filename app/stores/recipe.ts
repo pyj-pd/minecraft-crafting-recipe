@@ -17,6 +17,7 @@ export const useRecipeStore = defineStore('recipe', {
   }),
   actions: {
     async setItemId(newItemId: null | ItemId): Promise<void> {
+      // @todo change this to parameter
       window.location.hash = newItemId ? `#${newItemId}` : ''
     },
     async _setItemRecipeData(itemId: null | ItemId): Promise<void> {

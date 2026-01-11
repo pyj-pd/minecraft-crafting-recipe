@@ -6,7 +6,6 @@ import {
 } from '@/constants/seo'
 import { useRecipeStore } from '@/stores/recipe'
 import { useSearchStore } from '@/stores/search'
-import { useHead, useSeoMeta } from '@unhead/vue'
 import { storeToRefs } from 'pinia'
 
 export const initMetaTags = (): void => {

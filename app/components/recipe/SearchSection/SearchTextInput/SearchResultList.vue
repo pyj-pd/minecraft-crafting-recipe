@@ -1,10 +1,5 @@
 <script setup lang="ts">
-import { useRecipeStore } from '@/stores/recipe'
-import { useSearchStore } from '@/stores/search'
-import { getItemImageUrl } from '@/utils/image'
 import type { ItemId } from '#shared/types/minecraft'
-import { storeToRefs } from 'pinia'
-import { useTemplateRef, watch } from 'vue'
 
 const searchStore = useSearchStore()
 const { translationData } = storeToRefs(searchStore)

@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useAnimationTimerStore } from '@/stores/image-animation'
-import { storeToRefs } from 'pinia'
-
 const animationTimerStore = useAnimationTimerStore()
 const { toggleInterval } = animationTimerStore
 const { isAnimationOn } = storeToRefs(animationTimerStore)

@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useTemplateRef } from 'vue'
-import { useSearchStore } from '@/stores/search'
-
 const model = defineModel<string>()
 
 const input = useTemplateRef('text-input')
@@ -29,6 +26,10 @@ const doSearch = (query: string): void => {
   searchItem(query)
   focusText()
 }
+
+const clearQuery = (): void => {
+  model.value = ''
+}
 </script>
 
 <template>
@@ -41,6 +42,7 @@ const doSearch = (query: string): void => {
       type="search"
       autofocus
       @input="handleSearch"
+      @clear="clearQuery"
     />
     <SearchResultList :class="$style['search-result']" />
   </div>

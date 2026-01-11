@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { initRecipeHashHandler } from '@/stores/recipe'
 import { minecraftVersion } from '#shared/constants/minecraft'
-import { ref } from 'vue'
 
-const searchRawQuery = ref()
+const searchRawQuery = ref('')
 
 const resetSearchQuery = (): void => {
   searchRawQuery.value = ''
@@ -25,15 +23,12 @@ initRecipeHashHandler()
       </a>
     </div>
     <LanguageSelection />
-    <form
-      :class="$style['input-container']"
-      @submit.prevent
-    >
+    <div :class="$style['input-container']">
       <SearchTextInput
         ref="text-input"
         v-model="searchRawQuery"
       />
-    </form>
+    </div>
   </section>
 </template>
 

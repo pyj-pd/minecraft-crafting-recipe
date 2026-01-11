@@ -20,10 +20,7 @@ defineExpose({ inputRef })
 </script>
 
 <template>
-  <form
-    :class="$style['input-container']"
-    @submit.prevent
-  >
+  <div :class="$style['input-container']">
     <div
       v-if="$attrs.type === 'search'"
       :class="$style['left-icon-container']"
@@ -44,7 +41,7 @@ defineExpose({ inputRef })
     >
       <XIcon :class="$style['x-icon']" />
     </button>
-  </form>
+  </div>
 </template>
 
 <style lang="scss" module>

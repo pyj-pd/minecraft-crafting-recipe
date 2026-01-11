@@ -1,12 +1,5 @@
 <script setup lang="ts">
-import { useAnimationTimerStore } from '@/stores/image-animation'
-import { useRecipeStore } from '@/stores/recipe'
-import { getItemImageUrl } from '@/utils/image'
 import type { ItemId, PossibleItem } from '#shared/types/minecraft'
-import { storeToRefs } from 'pinia'
-import { computed, ref, watch } from 'vue'
-import { useSearchStore } from '@/stores/search'
-import { recipeExists } from '@/utils/language'
 
 type ItemImageProps = {
   itemData: PossibleItem

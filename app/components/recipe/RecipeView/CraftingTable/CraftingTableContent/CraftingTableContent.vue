@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { useRecipeStore } from '@/stores/recipe'
 import type { PossibleItem } from '#shared/types/minecraft'
-import { storeToRefs } from 'pinia'
 import type { CraftingTableReactantGrid } from '@/types/crafting-table'
 import {
   REACTANT_ROW_NUMBER,

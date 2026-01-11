@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { useSearchStore } from '@/stores/search'
-import languageList from '@/data/language-list.json'
-import { computed } from 'vue'
+import languageList from '@/assets/data/language-list.json'
 
 const searchStore = useSearchStore()
 
