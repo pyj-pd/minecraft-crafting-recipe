@@ -37,18 +37,22 @@ watch(
   { immediate: true }
 )
 
-const tableResizeObserver = new ResizeObserver((entries) => {
-  const width = entries[0]?.contentRect.width
-
-  if (typeof width === 'number') tableWidth.value = `${width}px`
-})
+let tableResizeObserver: null | ResizeObserver = null
 
 onMounted(() => {
-  if (tableRef.value) tableResizeObserver.observe(tableRef.value)
+  if (!tableRef.value) return
+
+  tableResizeObserver = new ResizeObserver((entries) => {
+    const width = entries[0]?.contentRect.width
+
+    if (typeof width === 'number') tableWidth.value = `${width}px`
+  })
+
+  tableResizeObserver.observe(tableRef.value)
 })
 
 onBeforeUnmount(() => {
-  tableResizeObserver.disconnect()
+  tableResizeObserver?.disconnect()
 })
 
 initImageAnimationTimer()

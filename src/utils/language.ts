@@ -1,4 +1,3 @@
-import { DEFAULT_LANGUAGE_ID } from '@/constants/default'
 import { LanguageData, SearchLanguageData } from '@shared/types/language'
 import type { ItemId } from '@shared/types/minecraft'
 import {
@@ -12,39 +11,30 @@ export function recipeExists(itemId: ItemId): boolean {
   return recipeList.includes(itemId)
 }
 
+export const getLanguageDataFileURL = (languageId: string): string =>
+  `${LANGUAGE_DATA_FILE_URL}${languageId}${DATA_FILE_EXTENSION}`
 export async function fetchTranslationData(
   languageId: string,
   signal?: AbortSignal
 ): Promise<LanguageData> {
-  const response = await fetch(
-    `${LANGUAGE_DATA_FILE_URL}${languageId}${DATA_FILE_EXTENSION}`,
-    { signal }
-  )
+  console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!FETCHED')
+  const response = await fetch(getLanguageDataFileURL(languageId), { signal })
   const data = LanguageData.parse(await response.json())
 
   return data
 }
 
-export const defaultLanguageData = await fetchTranslationData(
-  DEFAULT_LANGUAGE_ID
-)
-
 export const inko = new Inko()
 
 /**
  * Gets array of items' translations that can be used for fuzzy searching.
- * @param languageData Optional. Array of language data that will be merged together. Default language data will be always included and be prioritized over other language data.
+ * @param languageData Optional. Array of language data that will be merged together.
  * @returns Array of translations.
  */
 export function getTranslationsForSearching(
-  languageData?: LanguageData[]
+  languageData: LanguageData[]
 ): SearchLanguageData {
   const data: SearchLanguageData = []
-
-  const allLanguageData: LanguageData[] = [
-    defaultLanguageData,
-    ...(languageData ?? []),
-  ]
 
   for (const itemId of recipeList) {
     const itemData: SearchLanguageData[number] = {
@@ -52,7 +42,7 @@ export function getTranslationsForSearching(
       translations: [],
     }
 
-    for (const translation of allLanguageData) {
+    for (const translation of languageData) {
       const rawTranslationString = translation.translations[itemId as ItemId]
       if (!rawTranslationString) continue
 

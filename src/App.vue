@@ -3,8 +3,10 @@ import MyFooter from './components/common/MyFooter.vue'
 import RecipeView from './components/recipe/RecipeView/RecipeView.vue'
 import SearchSection from './components/recipe/SearchSection/SearchSection.vue'
 import { initMetaTags } from './composables/initMetaTags'
+import { initSearchStore } from './stores/search'
 
 initMetaTags()
+initSearchStore()
 </script>
 
 <template>

@@ -1,43 +1,26 @@
 import { DEFAULT_LANGUAGE_ID } from '@/constants/default'
-import type { LanguageData, SearchLanguageData } from '@shared/types/language'
+import type { LanguageData } from '@shared/types/language'
 import type { ItemId } from '@shared/types/minecraft'
 import {
-  defaultLanguageData,
   fetchTranslationData,
   getTranslationsForSearching,
   inko,
 } from '@/utils/language'
 import Fuse from 'fuse.js'
-import { defineStore } from 'pinia'
+import { defineStore, storeToRefs } from 'pinia'
+import { onMounted } from 'vue'
 
 const SEARCH_RESULT_LIMIT = 15
-
-const createFuseInstance = (
-  translationData?: LanguageData
-): Fuse<SearchLanguageData[number]> => {
-  const translationDataForSearching = getTranslationsForSearching(
-    translationData
-      ? [translationData] // Merge this translation data into default language data
-      : undefined // Use default language data if no parameter provided
-  )
-
-  const fuseInstance = new Fuse(translationDataForSearching, {
-    isCaseSensitive: false,
-    keys: ['itemId', 'translations'],
-  })
-
-  return fuseInstance
-}
 
 export const useSearchStore = defineStore('search', {
   state: () => ({
     // Language
     languageId: DEFAULT_LANGUAGE_ID,
-    translationData: defaultLanguageData as null | LanguageData,
+    _DEFAULT_TRANSLATION_DATA: null as null | LanguageData,
+    translationData: null as null | LanguageData,
 
     // Search
     searchResults: null as null | ItemId[],
-    fuseInstance: createFuseInstance(),
     lastQuery: null as null | string,
 
     _languageAbortController: null as AbortController | null,
@@ -56,9 +39,6 @@ export const useSearchStore = defineStore('search', {
       // Set language
       this.languageId = newLanguageId
       this.translationData = translationData
-
-      // Create Fuse instance
-      this.fuseInstance = createFuseInstance(translationData)
     },
     searchItem(rawQuery: string): void {
       const trimmedRawQuery = rawQuery.trim()
@@ -76,4 +56,39 @@ export const useSearchStore = defineStore('search', {
       this.searchResults = results
     },
   },
+  getters: {
+    fuseInstance: (state) => {
+      const translationDataList: LanguageData[] = []
+
+      if (state._DEFAULT_TRANSLATION_DATA)
+        translationDataList.push(state._DEFAULT_TRANSLATION_DATA)
+      if (state.translationData) translationDataList.push(state.translationData)
+
+      const translationDataForSearching =
+        getTranslationsForSearching(translationDataList)
+
+      const fuseInstance = new Fuse(translationDataForSearching, {
+        isCaseSensitive: false,
+        keys: ['itemId', 'translations'],
+      })
+
+      return fuseInstance
+    },
+  },
 })
+
+export const initSearchStore = (): void => {
+  const { _DEFAULT_TRANSLATION_DATA, translationData } = storeToRefs(
+    useSearchStore()
+  )
+
+  onMounted(async () => {
+    if (_DEFAULT_TRANSLATION_DATA.value !== null) return
+
+    // Fetch default language data
+    const fetchedData = await fetchTranslationData(DEFAULT_LANGUAGE_ID)
+
+    _DEFAULT_TRANSLATION_DATA.value = fetchedData
+    translationData.value = structuredClone(fetchedData)
+  })
+}

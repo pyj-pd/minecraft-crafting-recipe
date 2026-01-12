@@ -1,17 +1,10 @@
 import '@/assets/styles/global.scss'
-import { createApp } from 'vue'
 import App from './App.vue'
 import { createPinia } from 'pinia'
-import { createHead } from '@unhead/vue/client'
+import { ViteSSG } from 'vite-ssg/single-page'
 
-const app = createApp(App)
-
-// Unhead
-const head = createHead()
-app.use(head)
-
-// Pinia
-const pinia = createPinia()
-app.use(pinia)
-
-app.mount('#app')
+export const createApp = ViteSSG(App, async ({ app }) => {
+  // Pinia
+  const pinia = createPinia()
+  app.use(pinia)
+})

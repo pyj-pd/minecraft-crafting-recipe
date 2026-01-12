@@ -1,3 +1,4 @@
+import { DEFAULT_LANGUAGE_ID } from '@/constants/default'
 import {
   DEFAULT_TITLE,
   SITE_DESCRIPTION,
@@ -6,6 +7,7 @@ import {
 } from '@/constants/seo'
 import { useRecipeStore } from '@/stores/recipe'
 import { useSearchStore } from '@/stores/search'
+import { getLanguageDataFileURL } from '@/utils/language'
 import { useHead, useSeoMeta } from '@unhead/vue'
 import { storeToRefs } from 'pinia'
 
@@ -36,6 +38,12 @@ export const initMetaTags = (): void => {
         rel: 'icon',
         type: 'image/svg+xml',
         href: '/favicon.svg',
+      },
+      {
+        // Preload default language file
+        rel: 'preload',
+        href: getLanguageDataFileURL(DEFAULT_LANGUAGE_ID),
+        as: 'fetch',
       },
     ],
   })
