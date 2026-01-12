@@ -26,9 +26,13 @@ export const initMetaTags = (): void => {
   }
 
   useSeoMeta({
+    // General
     title: getTitle,
     description: SITE_DESCRIPTION,
-    ogTitle: getTitle,
+
+    // Open Graph
+    ogSiteName: SITE_NAME,
+    ogTitle: SITE_NAME,
     ogDescription: SITE_DESCRIPTION,
   })
 

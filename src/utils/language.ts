@@ -17,7 +17,6 @@ export async function fetchTranslationData(
   languageId: string,
   signal?: AbortSignal
 ): Promise<LanguageData> {
-  console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!FETCHED')
   const response = await fetch(getLanguageDataFileURL(languageId), { signal })
   const data = LanguageData.parse(await response.json())
 

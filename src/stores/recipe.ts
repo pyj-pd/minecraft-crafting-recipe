@@ -5,6 +5,8 @@ import { defineStore } from 'pinia'
 import { DEFAULT_RECIPE_VARIANT_INDEX } from '@/constants/default'
 import { onBeforeUnmount, onMounted } from 'vue'
 import { preloadItemImages } from '@/utils/image'
+import { getPureItemName } from '@shared/utils/string'
+import { minecraftPrefix } from '@shared/constants/minecraft'
 
 export const useRecipeStore = defineStore('recipe', {
   state: () => ({
@@ -17,7 +19,7 @@ export const useRecipeStore = defineStore('recipe', {
   }),
   actions: {
     async setItemId(newItemId: null | ItemId): Promise<void> {
-      window.location.hash = newItemId ? `#${newItemId}` : ''
+      window.location.hash = newItemId ? `#${getPureItemName(newItemId)}` : ''
     },
     async _setItemRecipeData(itemId: null | ItemId): Promise<void> {
       if (this._abortController !== null) this._abortController.abort() // Abort previous request
@@ -99,7 +101,7 @@ export const initRecipeHashHandler = (): void => {
     }
 
     try {
-      const hashItemId = ItemId.parse(hash.slice(1)) // Remove '#' from hash
+      const hashItemId: ItemId = `${minecraftPrefix}${hash.slice(1)}` // Remove '#' from hash
 
       _setItemRecipeData(hashItemId)
     } catch {
