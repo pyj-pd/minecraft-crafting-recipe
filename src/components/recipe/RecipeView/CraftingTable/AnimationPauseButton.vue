@@ -28,8 +28,8 @@ const { isAnimationOn } = storeToRefs(animationTimerStore)
 </template>
 
 <style lang="scss" module>
-@use '@/styles/mixin' as mixin;
-@use '@/styles/palette' as palette;
+@use '@/assets/styles/mixin' as mixin;
+@use '@/assets/styles/palette' as palette;
 
 .button {
   display: flex;

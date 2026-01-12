@@ -20,9 +20,9 @@ withDefaults(defineProps<TabButtonProps>(), {
 </template>
 
 <style lang="scss" module>
-@use '@/styles/value' as value;
-@use '@/styles/palette' as palette;
-@use '@/styles/mixin' as mixin;
+@use '@/assets/styles/value' as value;
+@use '@/assets/styles/palette' as palette;
+@use '@/assets/styles/mixin' as mixin;
 
 .tab-button {
   display: flex;

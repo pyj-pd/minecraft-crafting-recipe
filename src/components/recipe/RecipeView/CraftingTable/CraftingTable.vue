@@ -68,8 +68,8 @@ initImageAnimationTimer()
 </template>
 
 <style lang="scss" module>
-@use '@/styles/value' as value;
-@use '@/styles/palette' as palette;
+@use '@/assets/styles/value' as value;
+@use '@/assets/styles/palette' as palette;
 
 .crafting-table {
   --table-width: v-bind(tableWidth); // For width-relative sizes

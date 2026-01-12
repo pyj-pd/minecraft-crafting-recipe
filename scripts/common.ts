@@ -30,11 +30,11 @@ export const PROCESSED_LANGUAGE_DATA_FOLDER = path.resolve(
 
 export const LANGUAGE_LIST_DATA_FILE_PATH = path.resolve(
   import.meta.dirname,
-  '../src/data/language-list.json'
+  '../src/assets/data/language-list.json'
 )
 export const RECIPE_LIST_DATA_FILE_PATH = path.resolve(
   import.meta.dirname,
-  '../src/data/recipe-list.json'
+  '../src/assets/data/recipe-list.json'
 )
 
 // Tag files

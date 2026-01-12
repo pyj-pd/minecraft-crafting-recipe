@@ -32,9 +32,9 @@ withDefaults(
 </template>
 
 <style lang="scss" module>
-@use '@/styles/value' as value;
-@use '@/styles/mixin' as mixin;
-@use '@/styles/palette' as palette;
+@use '@/assets/styles/value' as value;
+@use '@/assets/styles/mixin' as mixin;
+@use '@/assets/styles/palette' as palette;
 
 // Tooltips should have absolute sizes
 .tooltip-container {

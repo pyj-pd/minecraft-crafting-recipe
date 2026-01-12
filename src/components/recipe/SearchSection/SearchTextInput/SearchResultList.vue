@@ -65,10 +65,10 @@ const onItemSelect = (itemId: ItemId): void => {
 </template>
 
 <style lang="scss" module>
-@use '@/styles/value' as value;
-@use '@/styles/palette' as palette;
-@use '@/styles/mixin' as mixin;
-@use '@/styles/fonts' as fonts;
+@use '@/assets/styles/value' as value;
+@use '@/assets/styles/palette' as palette;
+@use '@/assets/styles/mixin' as mixin;
+@use '@/assets/styles/fonts' as fonts;
 
 .search-result-container {
   position: absolute;

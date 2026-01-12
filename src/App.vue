@@ -2,6 +2,9 @@
 import MyFooter from './components/common/MyFooter.vue'
 import RecipeView from './components/recipe/RecipeView/RecipeView.vue'
 import SearchSection from './components/recipe/SearchSection/SearchSection.vue'
+import { initMetaTags } from './composables/initMetaTags'
+
+initMetaTags()
 </script>
 
 <template>
@@ -13,7 +16,7 @@ import SearchSection from './components/recipe/SearchSection/SearchSection.vue'
 </template>
 
 <style lang="scss" module>
-@use '@/styles/value' as value;
+@use '@/assets/styles/value' as value;
 
 .main-wrapper {
   display: flex;

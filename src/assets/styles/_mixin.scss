@@ -1,5 +1,5 @@
-@use '@/styles/value' as value;
-@use '@/styles/palette' as palette;
+@use '@/assets/styles/value' as value;
+@use '@/assets/styles/palette' as palette;
 
 @mixin hover-animation($active-background-color, $brightness: 120%) {
   &:not(:disabled) {

@@ -26,7 +26,7 @@ const { variantNumbers, recipeVariantIndex } = storeToRefs(recipeStore)
 </template>
 
 <style lang="scss" module>
-@use '@/styles/value' as value;
+@use '@/assets/styles/value' as value;
 
 .tab-button-container {
   display: flex;

@@ -6,7 +6,7 @@ import {
   LANGUAGE_DATA_FILE_URL,
 } from '@shared/constants/path'
 import Inko from 'inko'
-import recipeList from '@/data/recipe-list.json'
+import recipeList from '@/assets/data/recipe-list.json'
 
 export function recipeExists(itemId: ItemId): boolean {
   return recipeList.includes(itemId)

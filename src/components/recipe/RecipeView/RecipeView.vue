@@ -11,7 +11,7 @@ import MethodTab from './MethodTab/MethodTab.vue'
 </template>
 
 <style lang="scss" module>
-@use '@/styles/value' as value;
+@use '@/assets/styles/value' as value;
 
 .recipe-view-section {
   display: flex;

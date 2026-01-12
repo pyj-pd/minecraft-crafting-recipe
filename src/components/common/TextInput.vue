@@ -50,8 +50,8 @@ defineExpose({ inputRef })
 </template>
 
 <style lang="scss" module>
-@use '@/styles/value' as value;
-@use '@/styles/palette' as palette;
+@use '@/assets/styles/value' as value;
+@use '@/assets/styles/palette' as palette;
 
 .input-container {
   display: flex;
