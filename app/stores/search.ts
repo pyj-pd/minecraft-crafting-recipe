@@ -39,15 +39,6 @@ export const useSearchStore = defineStore('search', {
     _languageAbortController: null as AbortController | null,
   }),
   actions: {
-    async _fetchInitialData(): Promise<void> {
-      const defaultTranslationData = await fetchTranslationData(
-        DEFAULT_LANGUAGE_ID
-      )
-      this._defaultTranslationData = defaultTranslationData
-      this.translationData = defaultTranslationData
-
-      this._createFuseInstance()
-    },
     async setLanguage(newLanguageId: string): Promise<void> {
       if (this._languageAbortController) this._languageAbortController.abort()
 
@@ -61,17 +52,6 @@ export const useSearchStore = defineStore('search', {
       // Set language
       this.languageId = newLanguageId
       this.translationData = translationData
-
-      // Create Fuse instance
-      this._createFuseInstance()
-    },
-    _createFuseInstance(): void {
-      const translationDataList = []
-      if (this._defaultTranslationData)
-        translationDataList.push(this._defaultTranslationData)
-      if (this.translationData) translationDataList.push(this.translationData)
-
-      this.fuseInstance = createFuseInstance(translationDataList)
     },
     searchItem(rawQuery: string): void {
       if (this.fuseInstance === null) return
@@ -90,6 +70,18 @@ export const useSearchStore = defineStore('search', {
         .map((result) => result.item.itemId)
 
       this.searchResults = results
+    },
+  },
+  getters: {
+    fuseInstance: (state) => {
+      const translationDataList = []
+
+      if (state._defaultTranslationData)
+        translationDataList.push(state._defaultTranslationData)
+
+      if (state.translationData) translationDataList.push(state.translationData)
+
+      return createFuseInstance(translationDataList)
     },
   },
 })

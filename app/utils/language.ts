@@ -14,7 +14,6 @@ export async function fetchTranslationData(
   languageId: string,
   signal?: AbortSignal
 ): Promise<LanguageData> {
-  // @todo make this work
   const response = await $fetch<LanguageData>(
     `${LANGUAGE_DATA_FILE_URL}${languageId}${DATA_FILE_EXTENSION}`,
     { signal }
