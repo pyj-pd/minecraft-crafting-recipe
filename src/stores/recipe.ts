@@ -4,7 +4,6 @@ import { getRecipeData } from '@/utils/recipe'
 import { defineStore } from 'pinia'
 import { DEFAULT_RECIPE_VARIANT_INDEX } from '@/constants/default'
 import { onBeforeUnmount, onMounted } from 'vue'
-import { preloadItemImages } from '@/utils/image'
 import { getPureItemName } from '@shared/utils/string'
 import { minecraftPrefix } from '@shared/constants/minecraft'
 
@@ -40,7 +39,8 @@ export const useRecipeStore = defineStore('recipe', {
           this._abortController.signal
         )
 
-        await preloadItemImages(recipeData.allItemIds)
+        // @todo
+        // await preloadItemImages(recipeData.allItemIds)
 
         this.itemId = itemId
         this.recipeFileData = recipeData

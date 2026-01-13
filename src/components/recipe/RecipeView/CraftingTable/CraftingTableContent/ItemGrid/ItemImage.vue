@@ -64,18 +64,6 @@ watch(
   { immediate: true }
 )
 
-watch(
-  imageUrls,
-  () => {
-    // // Preload images
-    // for (const url of imageUrls.value) {
-    //   const image = new Image()
-    //   image.src = url
-    // }
-  },
-  { immediate: true }
-)
-
 // Tooltip
 const tooltipId = computed(() => `item-${index}`)
 </script>
