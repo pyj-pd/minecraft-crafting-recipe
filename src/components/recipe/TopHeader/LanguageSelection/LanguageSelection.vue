@@ -12,13 +12,13 @@ const { languageId, isLanguageLoading } = storeToRefs(useSearchStore())
 <template>
   <div :class="$style['language-selection-container']">
     <div
-      v-for="languageData in languageList"
-      :key="languageData.languageId"
       :class="$style['language-container']"
       role="radiogroup"
       aria-label="Language selection"
     >
       <MyButton
+        v-for="languageData in languageList"
+        :key="languageData.languageId"
         :class="[
           $style['language-button'],
           languageData.languageId === languageId && $style.selected,
@@ -41,6 +41,8 @@ const { languageId, isLanguageLoading } = storeToRefs(useSearchStore())
 
 .language-selection-container {
   display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
 .language-container {
