@@ -31,7 +31,7 @@ export const useSearchStore = defineStore('search', {
   }),
   actions: {
     async setLanguage(newLanguageId: string): Promise<void> {
-      if (this._languageAbortController) this._languageAbortController.abort()
+      if (this.isLanguageLoading) this._languageAbortController?.abort()
 
       this._languageAbortController = new AbortController()
 
@@ -39,6 +39,8 @@ export const useSearchStore = defineStore('search', {
         newLanguageId,
         this._languageAbortController.signal
       )
+
+      this._languageAbortController = null
 
       // Set language
       this.languageId = newLanguageId
@@ -78,6 +80,7 @@ export const useSearchStore = defineStore('search', {
 
       return fuseInstance
     },
+    isLanguageLoading: (state) => state._languageAbortController !== null,
   },
 })
 

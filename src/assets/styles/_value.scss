@@ -1,9 +1,6 @@
 @use '@/assets/styles/palette' as palette;
 
-// Body
-$body-padding: 90px 15px;
-
-$section-gap: 55px;
+$safe-padding: 15px;
 
 // Input/Button
 $inset-shadow-offset: 9px;
@@ -24,6 +21,7 @@ $bold-weight: 500;
 
 $button-font-size: 20px;
 $small-button-font-size: 17px;
+$x-small-button-font-size: 14px;
 
 $tooltip-font-size: 18px;
 $tooltip-font-size-id: 12px;

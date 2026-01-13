@@ -11,11 +11,15 @@ const { variantNumbers, recipeVariantIndex } = storeToRefs(recipeStore)
 </script>
 
 <template>
-  <div :class="$style['tab-button-container']">
+  <div
+    :class="$style['tab-button-container']"
+    role="tablist"
+  >
     <template v-if="variantNumbers !== null && variantNumbers >= 1">
       <TabButton
         v-for="(num, index) in variantNumbers"
         :key="index"
+        role="tab"
         :is-selected="index == recipeVariantIndex"
         @click="() => setRecipeVariantIndex(index)"
       >

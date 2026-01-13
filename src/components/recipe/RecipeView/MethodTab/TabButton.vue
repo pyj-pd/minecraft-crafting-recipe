@@ -15,6 +15,7 @@ withDefaults(defineProps<TabButtonProps>(), {
 <template>
   <MyButton
     :class="[$style['tab-button'], $props.isSelected && $style['selected']]"
+    :aria-selected="$props.isSelected"
     ><slot
   /></MyButton>
 </template>

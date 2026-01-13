@@ -27,10 +27,6 @@ textarea {
 
 body {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-
-  padding: value.$body-padding;
 
   min-height: 100vh;
 
@@ -40,6 +36,15 @@ body {
 
   background-color: palette.$background-color;
   color: palette.$text-color;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 35px;
+
+  width: 100%;
 }
 
 // Focus outline

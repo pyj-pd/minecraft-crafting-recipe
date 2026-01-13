@@ -1,12 +1,12 @@
 @use '@/assets/styles/value' as value;
 @use '@/assets/styles/palette' as palette;
 
-@mixin hover-animation($active-background-color, $brightness: 120%) {
+@mixin hover-animation($active-background-color) {
   &:not(:disabled) {
     &:not(:active) {
       &:hover,
       &:focus-visible {
-        filter: brightness($brightness);
+        filter: brightness(120%);
       }
     }
 
@@ -14,6 +14,10 @@
       box-shadow: none;
       background-color: $active-background-color;
     }
+  }
+
+  &:disabled {
+    filter: brightness(80%);
   }
 }
 

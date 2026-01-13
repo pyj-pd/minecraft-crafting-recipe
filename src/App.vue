@@ -2,6 +2,7 @@
 import MyFooter from './components/common/MyFooter.vue'
 import RecipeView from './components/recipe/RecipeView/RecipeView.vue'
 import SearchSection from './components/recipe/SearchSection/SearchSection.vue'
+import TopHeader from './components/recipe/TopHeader/TopHeader.vue'
 import { initMetaTags } from './composables/initMetaTags'
 import { initSearchStore } from './stores/search'
 
@@ -10,6 +11,7 @@ initSearchStore()
 </script>
 
 <template>
+  <TopHeader />
   <main :class="$style['main-wrapper']">
     <SearchSection />
     <RecipeView />
@@ -24,6 +26,8 @@ initSearchStore()
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: value.$section-gap;
+  gap: 55px;
+
+  padding: value.$safe-padding;
 }
 </style>

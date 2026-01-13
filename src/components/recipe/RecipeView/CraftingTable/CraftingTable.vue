@@ -62,6 +62,7 @@ initImageAnimationTimer()
   <div
     ref="table-ref"
     :class="$style['crafting-table']"
+    role="tabpanel"
   >
     <LoadingOverlay v-if="isLoadingOverlayVisible" />
     <CraftingTableBackground :class="$style['crafting-table-background-svg']" />

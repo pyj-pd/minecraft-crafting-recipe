@@ -3,7 +3,6 @@ import { initRecipeHashHandler } from '@/stores/recipe'
 import SearchTextInput from './SearchTextInput/SearchTextInput.vue'
 import { minecraftVersion } from '@shared/constants/minecraft'
 import { ref } from 'vue'
-import LanguageSelection from './LanguageSelection/LanguageSelection.vue'
 
 const searchRawQuery = ref()
 
@@ -26,7 +25,6 @@ initRecipeHashHandler()
         <h1>Minecraft Crafting Recipe</h1>
       </a>
     </div>
-    <LanguageSelection />
     <form
       :class="$style['input-container']"
       @submit.prevent
