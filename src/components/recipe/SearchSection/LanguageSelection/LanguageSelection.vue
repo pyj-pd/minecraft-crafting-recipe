@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import { languageList } from '@/constants/language'
 import { useSearchStore } from '@/stores/search'
-import languageList from '@/assets/data/language-list.json'
 import { computed } from 'vue'
 
 const searchStore = useSearchStore()
@@ -11,7 +11,6 @@ const currentLanguageId = computed({
 })
 
 // @todo add design
-// @todo localstorage to make the language section persist
 </script>
 
 <template>

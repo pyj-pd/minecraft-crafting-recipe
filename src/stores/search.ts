@@ -8,14 +8,18 @@ import {
 } from '@/utils/language'
 import Fuse from 'fuse.js'
 import { defineStore, storeToRefs } from 'pinia'
-import { onMounted } from 'vue'
+import { onMounted, watch } from 'vue'
+import { LocalStorageUtil } from '@/utils/local-storage'
+import { LanguageId } from '@/types/language'
 
 const SEARCH_RESULT_LIMIT = 15
+
+const LANGUAGE_ID_LOCAL_STORAGE_KEY = 'languageId'
 
 export const useSearchStore = defineStore('search', {
   state: () => ({
     // Language
-    languageId: DEFAULT_LANGUAGE_ID,
+    languageId: DEFAULT_LANGUAGE_ID as LanguageId,
     _DEFAULT_TRANSLATION_DATA: null as null | LanguageData,
     translationData: null as null | LanguageData,
 
@@ -78,17 +82,50 @@ export const useSearchStore = defineStore('search', {
 })
 
 export const initSearchStore = (): void => {
-  const { _DEFAULT_TRANSLATION_DATA, translationData } = storeToRefs(
-    useSearchStore()
-  )
+  const searchStore = useSearchStore()
+  const { setLanguage } = searchStore
+  const { _DEFAULT_TRANSLATION_DATA, translationData, languageId } =
+    storeToRefs(searchStore)
+  let languageLocalStorageUtil: null | LocalStorageUtil<string> = null
 
-  onMounted(async () => {
-    if (_DEFAULT_TRANSLATION_DATA.value !== null) return
-
-    // Fetch default language data
+  /**
+   * Fetches default language data.
+   */
+  const fetchDefaultLanguageData = async (): Promise<void> => {
     const fetchedData = await fetchTranslationData(DEFAULT_LANGUAGE_ID)
 
     _DEFAULT_TRANSLATION_DATA.value = fetchedData
-    translationData.value = structuredClone(fetchedData)
+
+    if (translationData.value === null)
+      translationData.value = structuredClone(fetchedData)
+  }
+
+  /**
+   * Initializes language from local storage.
+   * @todo add loading indicator for this
+   */
+  const initLanguageLocalStorage = async (): Promise<void> => {
+    if (languageLocalStorageUtil === null)
+      languageLocalStorageUtil = new LocalStorageUtil(
+        LANGUAGE_ID_LOCAL_STORAGE_KEY,
+        LanguageId
+      )
+
+    const storedLanguageId = languageLocalStorageUtil.getData()
+    if (storedLanguageId !== null && storedLanguageId !== DEFAULT_LANGUAGE_ID)
+      await setLanguage(storedLanguageId)
+  }
+
+  // Watch language id data and store it in local storage
+  watch(languageId, (newLanguageId) => {
+    if (languageLocalStorageUtil === null) return
+
+    languageLocalStorageUtil.setData(newLanguageId)
+  })
+
+  onMounted(async () => {
+    await fetchDefaultLanguageData()
+
+    await initLanguageLocalStorage()
   })
 }
