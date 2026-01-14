@@ -12,7 +12,7 @@
 
 .loading-container {
   position: absolute;
-  z-index: 10;
+  z-index: 30;
   top: calc(var(--table-width) * 0.025 * var(--size-multiplier));
   left: 0;
 

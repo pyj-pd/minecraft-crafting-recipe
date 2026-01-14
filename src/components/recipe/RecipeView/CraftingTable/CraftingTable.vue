@@ -79,11 +79,11 @@ initImageAnimationTimer()
 
 .crafting-table {
   --table-width: v-bind(tableWidth); // For width-relative sizes
-  --size-multiplier: 1;
+  --size-multiplier: 1.05;
 
   @media screen and (max-width: value.$small-screen-width) {
     // Bigger crafting table size if screen is small
-    --size-multiplier: 1.25;
+    --size-multiplier: 1.2;
   }
 
   position: relative;

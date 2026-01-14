@@ -50,6 +50,7 @@ export type RecipeData = z.infer<typeof RecipeData>
 
 export const RecipeFileData = z.object({
   itemId: ItemId,
+
   allItemIds: z.array(ItemId),
   variants: z.array(RecipeData),
 })

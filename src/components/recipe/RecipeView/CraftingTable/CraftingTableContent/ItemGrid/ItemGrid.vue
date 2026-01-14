@@ -2,9 +2,11 @@
 import { REACTANT_ROW_NUMBER } from '@shared/constants/minecraft'
 import ItemImage from './ItemImage.vue'
 import type { PossibleItem } from '@shared/types/minecraft'
+import ItemCountText from './ItemCountText.vue'
 
 type ItemGridProps = {
   grid: (PossibleItem | null)[][]
+  count?: number
   size?: 'normal' | 'large'
   align?: 'left' | 'right'
 }
@@ -12,6 +14,7 @@ type ItemGridProps = {
 withDefaults(defineProps<ItemGridProps>(), {
   size: 'normal',
   align: 'left',
+  count: undefined,
 })
 </script>
 
@@ -37,6 +40,10 @@ withDefaults(defineProps<ItemGridProps>(), {
           :item-data="column"
           :index="rowIndex * REACTANT_ROW_NUMBER + columnIndex"
           :align="$props.align"
+        />
+        <ItemCountText
+          v-if="$props.count"
+          :count="$props.count"
         />
       </div>
     </div>

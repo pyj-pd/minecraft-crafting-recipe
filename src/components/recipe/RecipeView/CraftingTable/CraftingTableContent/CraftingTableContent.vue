@@ -65,6 +65,7 @@ const getReactantItemGrid = (): CraftingTableReactantGrid | null => {
     <RightArrowIcon :class="$style.arrow" />
     <ItemGrid
       :key="`${itemId},${recipeVariantIndex}`"
+      :count="currentRecipeData?.count"
       :grid="[[itemId]]"
       size="large"
       align="right"
