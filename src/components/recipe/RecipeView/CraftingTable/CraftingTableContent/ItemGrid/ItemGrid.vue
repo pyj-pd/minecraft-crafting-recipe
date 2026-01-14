@@ -47,12 +47,14 @@ withDefaults(defineProps<ItemGridProps>(), {
 @use '@/assets/styles/value' as value;
 @use '@/assets/styles/palette' as palette;
 
-$table-border-width: calc(var(--table-width) * 0.0025);
+$table-border-width: calc(var(--table-width) * 0.0025 * var(--size-multiplier));
 
-$item-original-width: calc(var(--table-width) * 0.09);
-$item-large-width: calc($item-original-width * 1.15);
+$item-original-width: calc(var(--table-width) * 0.09 * var(--size-multiplier));
+$item-large-width: calc($item-original-width * 1.15 * var(--size-multiplier));
 
-$item-grid-border-width: calc($item-original-width * 0.035);
+$item-grid-border-width: calc(
+  $item-original-width * 0.035 * var(--size-multiplier)
+);
 
 .table-container {
   display: flex;

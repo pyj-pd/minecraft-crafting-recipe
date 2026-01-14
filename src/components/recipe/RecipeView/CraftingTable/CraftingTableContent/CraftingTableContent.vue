@@ -10,7 +10,7 @@ import {
   REACTANT_COLUMN_NUMBER,
 } from '@shared/constants/minecraft'
 import { EMPTY_REACTANT_GRID } from '@/constants/crafting-table'
-import AnimationPauseButton from '../AnimationPauseButton.vue'
+import AnimationPauseButton from './AnimationPauseButton.vue'
 
 const { currentRecipeData, recipeVariantIndex, itemId } = storeToRefs(
   useRecipeStore()
@@ -80,7 +80,7 @@ const getReactantItemGrid = (): CraftingTableReactantGrid | null => {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: calc(var(--table-width) * 0.04);
+  gap: calc(var(--table-width) * 0.04 * var(--size-multiplier));
 }
 
 .reactant-grid-container {
@@ -90,13 +90,13 @@ const getReactantItemGrid = (): CraftingTableReactantGrid | null => {
 
   .pause-button {
     position: absolute;
-    top: calc(var(--table-width) * -0.065);
+    top: calc(var(--table-width) * -0.055 * var(--size-multiplier));
     z-index: 1;
   }
 }
 
 .arrow {
-  width: calc(var(--table-width) * 0.05);
+  width: calc(var(--table-width) * 0.04 * var(--size-multiplier));
 
   color: palette.$gray-1;
 }

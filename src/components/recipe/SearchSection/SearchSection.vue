@@ -93,10 +93,4 @@ initRecipeHashHandler()
   width: 100%;
   max-width: value.$small-screen-width;
 }
-
-@media screen and (max-width: value.$small-screen-width) {
-  .search-button {
-    display: none;
-  }
-}
 </style>

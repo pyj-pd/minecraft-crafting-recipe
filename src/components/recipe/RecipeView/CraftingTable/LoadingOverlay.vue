@@ -13,7 +13,7 @@
 .loading-container {
   position: absolute;
   z-index: 10;
-  top: calc(var(--table-width) * 0.025);
+  top: calc(var(--table-width) * 0.025 * var(--size-multiplier));
   left: 0;
 
   display: flex;
@@ -27,14 +27,15 @@
 .loading-line-container {
   display: flex;
 
-  width: calc(var(--table-width) * 0.25);
-  height: calc(var(--table-width) * 0.004);
+  width: calc(var(--table-width) * 0.25 * var(--size-multiplier));
+  height: calc(var(--table-width) * 0.004 * var(--size-multiplier));
 
   box-sizing: content-box;
 
   background-color: palette.$gray-2;
 
-  border: solid calc(var(--table-width) * 0.0025) palette.$black;
+  border: solid calc(var(--table-width) * 0.0025 * var(--size-multiplier))
+    palette.$black;
 
   span {
     display: block;

@@ -31,19 +31,21 @@ const { isAnimationOn } = storeToRefs(animationTimerStore)
 @use '@/assets/styles/mixin' as mixin;
 @use '@/assets/styles/palette' as palette;
 
+$button-size: calc(var(--table-width) * 0.05 * var(--size-multiplier));
+
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: calc(var(--table-width) * 0.06);
+  width: $button-size;
   aspect-ratio: 1 / 1;
 
   padding: 0;
 
   @include mixin.gray-button-color-style(
-    $shadow-width: calc(var(--table-width) * 0.005),
-    $border-width: calc(var(--table-width) * 0.0025)
+    $shadow-width: calc($button-size * 0.08),
+    $border-width: calc($button-size * 0.045)
   );
 
   color: palette.$light-gray;

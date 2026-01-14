@@ -66,6 +66,16 @@ watch(
 
 // Tooltip
 const tooltipId = computed(() => `item-${index}`)
+
+/**
+ * Prevents long press for mobile users
+ * for better UX on tooltip interaction.
+ */
+const preventLongPress = (event: PointerEvent): void => {
+  if (event.pointerType !== 'touch') return // Only detect touch
+
+  event.preventDefault()
+}
 </script>
 
 <template>
@@ -84,6 +94,7 @@ const tooltipId = computed(() => `item-${index}`)
       :class="[$style['item-button'], !doesRecipeExist && $style['no-recipe']]"
       :aria-disabled="!doesRecipeExist"
       @click="() => doesRecipeExist && setItemId(itemId)"
+      @contextmenu="preventLongPress"
     >
       <img
         v-if="imageUrl !== null"
@@ -96,7 +107,7 @@ const tooltipId = computed(() => `item-${index}`)
 <style lang="scss" module>
 @use '@/assets/styles/palette' as palette;
 
-$item-image-width: calc(var(--table-width) * 0.055);
+$item-image-width: calc(var(--table-width) * 0.055 * var(--size-multiplier));
 
 .container {
   position: relative;

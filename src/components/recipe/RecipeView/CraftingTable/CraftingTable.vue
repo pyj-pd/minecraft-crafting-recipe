@@ -42,6 +42,7 @@ let tableResizeObserver: null | ResizeObserver = null
 onMounted(() => {
   if (!tableRef.value) return
 
+  // Watch table resize
   tableResizeObserver = new ResizeObserver((entries) => {
     const width = entries[0]?.contentRect.width
 
@@ -78,6 +79,12 @@ initImageAnimationTimer()
 
 .crafting-table {
   --table-width: v-bind(tableWidth); // For width-relative sizes
+  --size-multiplier: 1;
+
+  @media screen and (max-width: value.$small-screen-width) {
+    // Bigger crafting table size if screen is small
+    --size-multiplier: 1.25;
+  }
 
   position: relative;
 

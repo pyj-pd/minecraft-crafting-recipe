@@ -3,7 +3,7 @@ import {
   SITE_DESCRIPTION,
   SITE_NAME,
   TITLE_SEPARATOR,
-} from '@/constants/seo'
+} from '@/constants/project'
 import { useRecipeStore } from '@/stores/recipe'
 import { useSearchStore } from '@/stores/search'
 import { useHead, useSeoMeta } from '@unhead/vue'
