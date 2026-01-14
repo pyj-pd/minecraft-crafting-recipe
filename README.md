@@ -4,14 +4,14 @@
 
 **Minecraft Crafting Recipe** is a web app for searching crafting recipes of Minecraft items, created with Vue on Vite.
 
-# Development
+## Development
 
 ```bash
 pnpm install
 pnpm run dev
 ```
 
-# Building
+## Building
 
 ```bash
 pnpm run build
@@ -19,7 +19,7 @@ pnpm run build
 
 Static site generating is powered by [Vite SSG](https://github.com/antfu-collective/vite-ssg). The output will be on `dist` folder.
 
-# How to process raw data
+## How to process raw data
 
 1. Empty all the folders/files inside `public/assets/data` folder unless you want to merge into the existing data.
 1. Download Minecraft assets files.
