@@ -30,7 +30,7 @@ const MINIMUM_COUNT_DISPLAY = 2
 
   margin: calc(var(--table-width) * 0.022 * var(--size-multiplier));
 
-  user-select: none;
+  pointer-events: none;
 
   span {
     color: palette.$white;
