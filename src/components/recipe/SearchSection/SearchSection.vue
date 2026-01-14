@@ -91,7 +91,7 @@ initRecipeHashHandler()
   gap: 10px;
 
   width: 100%;
-  max-width: 650px;
+  max-width: value.$small-screen-width;
 }
 
 @media screen and (max-width: value.$small-screen-width) {

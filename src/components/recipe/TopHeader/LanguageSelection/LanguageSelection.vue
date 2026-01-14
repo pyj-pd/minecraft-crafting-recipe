@@ -52,14 +52,17 @@ const { languageId, isLanguageLoading } = storeToRefs(useSearchStore())
 .language-button {
   font-size: value.$x-small-button-font-size;
 
+  $shadow-width: value.$button-inset-shadow-offset-small;
+
   &:not(.selected) {
-    @include mixin.gray-button-color-style;
+    @include mixin.gray-button-color-style($shadow-width: $shadow-width);
   }
 
   &.selected {
     @include mixin.button-color-style(
       $shadow-color-bright: transparent,
-      $shadow-color-dark: transparent
+      $shadow-color-dark: transparent,
+      $shadow-width: $shadow-width
     );
   }
 }
