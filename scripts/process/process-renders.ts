@@ -1,4 +1,4 @@
-import { readdir } from 'node:fs/promises'
+import { access, mkdir, readdir } from 'node:fs/promises'
 import {
   LOG_SEPARATOR,
   PROCESSED_RENDER_IMAGES_FOLDER,
@@ -34,6 +34,13 @@ export async function processRawRenderImages(): Promise<void> {
 
   console.log(LOG_SEPARATOR)
   console.log('Processing render images...')
+
+  // Make processed folder if not exists
+  try {
+    await access(PROCESSED_RENDER_IMAGES_FOLDER)
+  } catch {
+    await mkdir(PROCESSED_RENDER_IMAGES_FOLDER)
+  }
 
   const failedFiles: string[] = []
   let processed: number = 0

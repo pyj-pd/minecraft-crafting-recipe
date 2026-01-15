@@ -7,4 +7,4 @@ export const minecraftPrefix = `${minecraftNamespace}:`
 export const REACTANT_ROW_NUMBER = 3
 export const REACTANT_COLUMN_NUMBER = 3
 
-export const minecraftVersion = '1.21.10'
+export const minecraftVersion = '1.21.11'
