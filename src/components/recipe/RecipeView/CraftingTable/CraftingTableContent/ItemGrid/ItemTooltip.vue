@@ -6,8 +6,9 @@ withDefaults(
 
     itemName: string
     itemId: string
+    doesItemRecipeExists?: boolean
   }>(),
-  { align: 'left' }
+  { align: 'left', doesItemRecipeExists: true }
 )
 </script>
 
@@ -23,9 +24,17 @@ withDefaults(
       role="tooltip"
       :class="$style.tooltip"
     >
-      <span>
-        {{ $props.itemName }}
-      </span>
+      <div :class="$style['item-name-container']">
+        <span>
+          {{ $props.itemName }}
+        </span>
+        <span
+          v-if="!$props.doesItemRecipeExists"
+          :class="$style['doesnt-exist']"
+        >
+          (No recipe)
+        </span>
+      </div>
       <span :class="$style['item-id']">{{ $props.itemId }}</span>
     </div>
   </div>
@@ -82,6 +91,17 @@ withDefaults(
 
     $hover-animation: false
   );
+}
+
+.item-name-container {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+
+  .doesnt-exist {
+    font-size: value.$tooltip-font-size-no-recipe;
+    color: palette.$red;
+  }
 }
 
 .item-id {

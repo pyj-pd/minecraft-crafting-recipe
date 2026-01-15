@@ -29,4 +29,5 @@ dist-ssr
 data/raw_data/lang/*
 data/raw_data/recipe/*
 data/raw_data/tags/*
+data/raw_data/renders/*
 !.gitkeep

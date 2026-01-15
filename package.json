@@ -4,9 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "process:language-data": "jiti ./scripts/process-language.ts",
-    "process:recipe-data": "jiti ./scripts/process-recipe.ts",
-    "process": "pnpm run process:recipe-data && pnpm run process:language-data",
+    "process": "jiti ./scripts/process/index.ts",
     "dev": "vite",
     "build": "vite-ssg build",
     "preview": "vite preview"
@@ -16,6 +14,7 @@
     "fuse.js": "^7.1.0",
     "inko": "^1.1.1",
     "pinia": "^3.0.4",
+    "sharp": "^0.34.5",
     "unhead": "^2.1.2",
     "vue": "^3.5.26"
   },
@@ -47,7 +46,8 @@
     },
     "onlyBuiltDependencies": [
       "@parcel/watcher",
-      "esbuild"
+      "esbuild",
+      "sharp"
     ]
   }
 }

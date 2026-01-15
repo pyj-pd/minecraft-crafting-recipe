@@ -87,6 +87,7 @@ const preventLongPress = (event: PointerEvent): void => {
         :align
         :item-name="itemName"
         :item-id="itemId"
+        :does-item-recipe-exists="doesRecipeExist"
       />
     </template>
     <button

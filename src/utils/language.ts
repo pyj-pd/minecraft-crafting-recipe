@@ -45,7 +45,7 @@ export function getTranslationsForSearching(
       const rawTranslationString = translation.translations[itemId as ItemId]
       if (!rawTranslationString) continue
 
-      const translationString = inko.ko2en(rawTranslationString) // For korean search
+      const translationString = inko.ko2en(rawTranslationString) // For Hangul(Korean) search
       itemData.translations.push(translationString)
     }
 

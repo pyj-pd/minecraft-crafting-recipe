@@ -5,6 +5,8 @@ import {
   RECIPE_DATA_FILE_URL,
 } from '../shared/constants/path'
 
+export const LOG_SEPARATOR = '\n----------------------'
+
 // Paths
 // Recipe files
 export const RAW_RECIPE_DATA_FOLDER = path.resolve(
@@ -41,6 +43,16 @@ export const RECIPE_LIST_DATA_FILE_PATH = path.resolve(
 export const RAW_TAGS_DATA_FOLDER = path.resolve(
   import.meta.dirname,
   '../data/raw_data/tags'
+)
+
+// Render images
+export const RAW_RENDER_IMAGES_FOLDER = path.resolve(
+  import.meta.dirname,
+  '../data/raw_data/renders'
+)
+export const PROCESSED_RENDER_IMAGES_FOLDER = path.resolve(
+  import.meta.dirname,
+  '../public/assets/data/renders'
 )
 
 // Strings
