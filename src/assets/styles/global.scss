@@ -34,6 +34,8 @@ body {
   background-size: 50px;
   image-rendering: pixelated;
 
+  padding-bottom: value.$body-padding;
+
   background-color: palette.$background-color;
   color: palette.$text-color;
 }

@@ -26,8 +26,12 @@ initSearchStore()
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 55px;
+  gap: 60px;
 
   padding: value.$safe-padding;
+
+  @media screen and (max-width: value.$small-screen-width) {
+    gap: 100px;
+  }
 }
 </style>
