@@ -4,7 +4,7 @@ import { getPureItemName } from '@shared/utils/string'
 export function getItemImageUrl(itemId: ItemId): string {
   const pureItemId = getPureItemName(itemId)
 
-  return `/assets/data/renders/${pureItemId}.webp`
+  return `${import.meta.env.BASE_URL}assets/data/renders/${pureItemId}.webp`
 }
 
 const preloadImage = (url: string): Promise<void> =>

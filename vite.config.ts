@@ -6,6 +6,7 @@ import UnheadVite from '@unhead/addons/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), UnheadVite()],
+  base: '/minecraft-crafting-recipe/',
   resolve: {
     alias: {
       '@': path.resolve(import.meta.dirname, './src'),

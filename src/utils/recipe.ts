@@ -8,14 +8,14 @@ import { getPureItemName } from '@shared/utils/string'
 
 export async function getRecipeData(
   itemId: ItemId,
-  signal?: AbortSignal
+  signal?: AbortSignal,
 ): Promise<RecipeFileData> {
   const pureItemId = getPureItemName(itemId)
   const response = await fetch(
-    `${RECIPE_DATA_FILE_URL}${pureItemId}${DATA_FILE_EXTENSION}`,
+    `${import.meta.env.BASE_URL}${RECIPE_DATA_FILE_URL}${pureItemId}${DATA_FILE_EXTENSION}`,
     {
       signal,
-    }
+    },
   )
   const data = RecipeFileData.parse(await response.json())
 

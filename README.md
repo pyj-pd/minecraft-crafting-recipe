@@ -11,6 +11,8 @@ pnpm install
 pnpm run dev
 ```
 
+Make sure to change `base` value in `vite.config.ts` file to your repository name!
+
 ## Building
 
 ```bash

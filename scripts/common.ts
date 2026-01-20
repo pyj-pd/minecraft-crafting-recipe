@@ -11,48 +11,48 @@ export const LOG_SEPARATOR = '\n----------------------'
 // Recipe files
 export const RAW_RECIPE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
-  '../data/raw_data/recipe'
+  '../data/raw_data/recipe',
 )
 export const PROCESSED_RECIPE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
   '../public',
-  `.${RECIPE_DATA_FILE_URL}`
+  RECIPE_DATA_FILE_URL,
 )
 
 // Language files
 export const RAW_LANGUAGE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
-  '../data/raw_data/lang'
+  '../data/raw_data/lang',
 )
 export const PROCESSED_LANGUAGE_DATA_FOLDER = path.resolve(
   import.meta.dirname,
   '../public',
-  `.${LANGUAGE_DATA_FILE_URL}`
+  LANGUAGE_DATA_FILE_URL,
 )
 
 export const LANGUAGE_LIST_DATA_FILE_PATH = path.resolve(
   import.meta.dirname,
-  '../src/assets/data/language-list.json'
+  '../src/assets/data/language-list.json',
 )
 export const RECIPE_LIST_DATA_FILE_PATH = path.resolve(
   import.meta.dirname,
-  '../src/assets/data/recipe-list.json'
+  '../src/assets/data/recipe-list.json',
 )
 
 // Tag files
 export const RAW_TAGS_DATA_FOLDER = path.resolve(
   import.meta.dirname,
-  '../data/raw_data/tags'
+  '../data/raw_data/tags',
 )
 
 // Render images
 export const RAW_RENDER_IMAGES_FOLDER = path.resolve(
   import.meta.dirname,
-  '../data/raw_data/renders'
+  '../data/raw_data/renders',
 )
 export const PROCESSED_RENDER_IMAGES_FOLDER = path.resolve(
   import.meta.dirname,
-  '../public/assets/data/renders'
+  '../public/assets/data/renders',
 )
 
 // Strings
@@ -60,7 +60,7 @@ export const PARSING_TAG_TYPES = ['block', 'item']
 
 export async function parseRawFile<DataType extends ZodType>(
   fileContent: string,
-  Schema: DataType
+  Schema: DataType,
 ): Promise<null | output<DataType>> {
   try {
     const rawLanguageData = Schema.parse(JSON.parse(fileContent))

@@ -39,7 +39,7 @@ export const initMetaTags = (): void => {
       {
         rel: 'icon',
         type: 'image/svg+xml',
-        href: '/favicon.svg',
+        href: `${import.meta.env.BASE_URL}favicon.svg`,
       },
     ],
   })
