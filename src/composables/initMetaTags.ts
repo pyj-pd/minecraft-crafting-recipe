@@ -2,6 +2,7 @@ import {
   DEFAULT_TITLE,
   SITE_DESCRIPTION,
   SITE_NAME,
+  SITE_URL,
   TITLE_SEPARATOR,
 } from '@/constants/project'
 import { useRecipeStore } from '@/stores/recipe'
@@ -32,6 +33,7 @@ export const initMetaTags = (): void => {
     ogSiteName: SITE_NAME,
     ogTitle: SITE_NAME,
     ogDescription: SITE_DESCRIPTION,
+    ogUrl: SITE_URL,
   })
 
   useHead({
@@ -40,6 +42,10 @@ export const initMetaTags = (): void => {
         rel: 'icon',
         type: 'image/svg+xml',
         href: `${import.meta.env.BASE_URL}favicon.svg`,
+      },
+      {
+        rel: 'canonical',
+        href: SITE_URL,
       },
     ],
   })
