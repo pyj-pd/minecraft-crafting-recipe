@@ -9,6 +9,7 @@ import { useRecipeStore } from '@/stores/recipe'
 import { useSearchStore } from '@/stores/search'
 import { useHead, useSeoMeta } from '@unhead/vue'
 import { storeToRefs } from 'pinia'
+import type { WithContext, WebSite } from 'schema-dts'
 
 const OG_IMAGE_URL = `${SITE_URL}favicon.svg`
 
@@ -39,7 +40,7 @@ export const initMetaTags = (): void => {
     ogImage: OG_IMAGE_URL,
   })
 
-  const jsonLd = {
+  const jsonLd: WithContext<WebSite> = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: SITE_NAME,

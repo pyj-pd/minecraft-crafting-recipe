@@ -31,6 +31,7 @@
     "globals": "^17.0.0",
     "jiti": "^2.6.1",
     "sass": "^1.97.2",
+    "schema-dts": "^1.1.5",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.1",
     "vite": "npm:rolldown-vite@7.3.1",
