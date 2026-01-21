@@ -1,7 +1,7 @@
-export const SITE_NAME = 'Minecraft Crafting Recipe'
+export const SITE_NAME = 'pyj-pd'
 
 // Title
-export const DEFAULT_TITLE = SITE_NAME
+export const DEFAULT_TITLE = 'Minecraft Crafting Recipe'
 export const TITLE_SEPARATOR = ' - '
 
 // Description
