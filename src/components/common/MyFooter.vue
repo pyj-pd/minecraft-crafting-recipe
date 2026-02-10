@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { REPOSITORY_URL } from '@/constants/project'
+import { BLOG_URL, REPOSITORY_URL } from '@/constants/project'
 </script>
 
 <template>
@@ -13,9 +13,11 @@ import { REPOSITORY_URL } from '@/constants/project'
       <a
         :href="REPOSITORY_URL"
         target="_blank"
+        rel="noopener noreferrer"
         >GitHub repository</a
       >.
     </p>
+    <p>Made by <a :href="BLOG_URL">pyj-pd</a></p>
   </footer>
 </template>
 

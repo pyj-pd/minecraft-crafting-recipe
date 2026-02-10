@@ -11,3 +11,5 @@ export const SITE_DESCRIPTION = 'Search for Minecraft item crafting recipes.'
 export const REPOSITORY_URL =
   'https://github.com/pyj-pd/minecraft-crafting-recipe'
 export const SITE_URL = 'https://pyj-pd.dev/minecraft-crafting-recipe/'
+
+export const BLOG_URL = 'https://pyj-pd.dev/'
